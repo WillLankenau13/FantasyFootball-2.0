@@ -1,0 +1,499 @@
+player,Position,Team,Team_s,py_fl_per_tou,py_qb_fl
+Deshaun Watson,QB,Cleveland Browns,CLE,0,0.23536510751521095
+Kenny Pickett,QB,Pittsburgh Steelers,PIT,0,0.23536510751521095
+Dak Prescott,QB,Dallas Cowboys,DAL,0,0.3248000679438209
+Tom Brady,QB,Tampa Bay Buccaneers,TB,0,0.14932348842312373
+Josh Allen,QB,Buffalo Bills,BUF,0,0.1985319125335086
+Patrick Mahomes,QB,Kansas City Chiefs,KC,0,0.2231869597375754
+Justin Herbert,QB,Los Angeles Chargers,LAC,0,0.11205624078332709
+Mac Jones,QB,New England Patriots,NE,0,0.18622980650591237
+Joe Burrow,QB,Cincinnati Bengals,CIN,0,0.154661179054932
+Matthew Stafford,QB,Los Angeles Rams,LAR,0,0.14927265327424938
+Matt Ryan,QB,Indianapolis Colts,IND,0,0.24779117179276788
+Aaron Rodgers,QB,Green Bay Packers,GB,0,0.11205624078332709
+Kyler Murray,QB,Arizona Cardinals,ARI,0,0.25725377164752455
+Jalen Hurts,QB,Philadelphia Eagles,PHI,0,0.21653772226480855
+Trey Lance,QB,San Francisco 49ers,SF,0,0.11205624078332709
+Kirk Cousins,QB,Minnesota Vikings,MIN,0,0.24615809263517888
+Ryan Tannehill,QB,Tennessee Titans,TEN,0,0.23548906576517167
+Geno Smith,QB,Seattle Seahawks,SEA,0,0.194036179054932
+Lamar Jackson,QB,Baltimore Ravens,BAL,0,0.22012414201789493
+Derek Carr,QB,Las Vegas Raiders,LV,0,0.2847483250244309
+Jameis Winston,QB,New Orleans Saints,NO,0,0.15280932720308016
+Tua Tagovailoa,QB,Miami Dolphins,MIA,0,0.23454986555564034
+Russell Wilson,QB,Denver Broncos,DEN,0,0.16768587041295668
+Carson Wentz,QB,Washington Commanders,WAS,0,0.2232377948864498
+Jared Goff,QB,Detroit Lions,DET,0,0.2875006852277715
+Marcus Mariota,QB,Atlanta Falcons,ATL,0,0.16762414201789497
+Justin Fields,QB,Chicago Bears,CHI,0,0.3780562407833271
+Zach Wilson,QB,New York Jets,NYJ,0,0.159646934040687
+Baker Mayfield,QB,Carolina Panthers,CAR,0,0.19768587041295665
+Davis Mills,QB,Houston Texans,HOU,0,0.17320352256803578
+Daniel Jones,QB,New York Giants,NYG,0,0.25341538780914075
+Trevor Lawrence,QB,Jacksonville Jaguars,JAC,0,0.235539900914046
+Taysom Hill,TE,New Orleans Saints,NO,0.006495529462274038,0
+Tyler Allgeier,RB,Atlanta Falcons,ATL,0.006495529462274038,0
+James Cook,RB,Buffalo Bills,BUF,0.006495529462274038,0
+Kyren Williams,RB,Los Angeles Rams,LAR,0.006495529462274038,0
+Rachaad White,RB,Tampa Bay Buccaneers,TB,0.006495529462274038,0
+Ty Chandler,RB,Minnesota Vikings,MIN,0.006495529462274038,0
+Zamir White,RB,Las Vegas Raiders,LV,0.006495529462274038,0
+Brittain Brown,RB,Las Vegas Raiders,LV,0.006495529462274038,0
+Isaiah Spiller,RB,Los Angeles Chargers,LAC,0.006495529462274038,0
+Zander Horvath,RB,Los Angeles Chargers,LAC,0.006495529462274038,0
+Dameon Pierce,RB,Houston Texans,HOU,0.006495529462274038,0
+Josh Johnson,RB,Seattle Seahawks,SEA,0.006495529462274038,0
+Kenneth Walker,RB,Seattle Seahawks,SEA,0.006495529462274038,0
+Snoop Conner,RB,Jacksonville Jaguars,JAC,0.006495529462274038,0
+Brian Robinson,RB,Washington Commanders,WAS,0.006495529462274038,0
+Hassan Haskins,RB,Tennessee Titans,TEN,0.006495529462274038,0
+Isiah Pacheco,RB,Kansas City Chiefs,KC,0.006495529462274038,0
+Keaontay Ingram,RB,Arizona Cardinals,ARI,0.006495529462274038,0
+Pierre Strong,RB,New England Patriots,NE,0.006495529462274038,0
+Kevin Harris,RB,New England Patriots,NE,0.006495529462274038,0
+Tyrion Davis Price,RB,San Francisco 49ers,SF,0.006495529462274038,0
+Trestan Ebner,RB,Chicago Bears,CHI,0.006495529462274038,0
+Jerome Ford,RB,Cleveland Browns,CLE,0.006495529462274038,0
+Tyler Badie,RB,Baltimore Ravens,BAL,0.006495529462274038,0
+Breece Hall,RB,New York Jets,NYJ,0.006495529462274038,0
+Chris Olave,WR,New Orleans Saints,NO,0.006495529462274038,0
+Drake London,WR,Atlanta Falcons,ATL,0.006495529462274038,0
+John FitzPatrick,TE,Atlanta Falcons,ATL,0.006495529462274038,0
+Khalil Shakir,WR,Buffalo Bills,BUF,0.006495529462274038,0
+Cade Otton,TE,Tampa Bay Buccaneers,TB,0.006495529462274038,0
+Ko Kieft,TE,Tampa Bay Buccaneers,TB,0.006495529462274038,0
+Brandon Smith,WR,Dallas Cowboys,DAL,0.006495529462274038,0
+Jalen Tolbert,WR,Dallas Cowboys,DAL,0.006495529462274038,0
+Jake Ferguson,TE,Dallas Cowboys,DAL,0.006495529462274038,0
+Christian Watson,WR,Green Bay Packers,GB,0.006495529462274038,0
+Romeo Doubs,WR,Green Bay Packers,GB,0.006495529462274038,0
+Samori Toure,WR,Green Bay Packers,GB,0.006495529462274038,0
+Ben Ellefson,TE,Minnesota Vikings,MIN,0.006495529462274038,0
+Jalen Nailor,WR,Minnesota Vikings,MIN,0.006495529462274038,0
+Nick Muse,TE,Minnesota Vikings,MIN,0.006495529462274038,0
+Alec Pierce,WR,Indianapolis Colts,IND,0.006495529462274038,0
+Jelani Woods,TE,Indianapolis Colts,IND,0.006495529462274038,0
+Teagan Quitoriano,TE,Houston Texans,HOU,0.006495529462274038,0
+Greg Dulcich,TE,Denver Broncos,DEN,0.006495529462274038,0
+Montrell Washington,WR,Denver Broncos,DEN,0.006495529462274038,0
+Bo Melton,WR,Seattle Seahawks,SEA,0.006495529462274038,0
+Dareke Young,WR,Seattle Seahawks,SEA,0.006495529462274038,0
+Dylan Parham,TE,Denver Broncos,DEN,0.006495529462274038,0
+Jahan Dotson,WR,Washington Commanders,WAS,0.006495529462274038,0
+Cole Turner,TE,Washington Commanders,WAS,0.006495529462274038,0
+Wan Dale Robinson,WR,New York Giants,NYG,0.006495529462274038,0
+Daniel Bellinger,TE,New York Giants,NYG,0.006495529462274038,0
+Treylon Burks,WR,Tennessee Titans,TEN,0.006495529462274038,0
+Kyle Philips,WR,Tennessee Titans,TEN,0.006495529462274038,0
+Grant Calcaterra,TE,Philadelphia Eagles,PHI,0.006495529462274038,0
+DJ Chark,WR,Detroit Lions,DET,0.006495529462274038,0
+James Mitchell,TE,Detroit Lions,DET,0.006495529462274038,0
+Skyy Moore,WR,Kansas City Chiefs,KC,0.006495529462274038,0
+Trey McBride,TE,Arizona Cardinals,ARI,0.006495529462274038,0
+Tyquan Thornton,WR,New England Patriots,NE,0.006495529462274038,0
+Erik Ezukanma,WR,Miami Dolphins,MIA,0.006495529462274038,0
+Danny Gray,WR,San Francisco 49ers,SF,0.006495529462274038,0
+Velus Jones,WR,Chicago Bears,CHI,0.006495529462274038,0
+David Bell,WR,Cleveland Browns,CLE,0.006495529462274038,0
+Michael Woods,WR,Cleveland Browns,CLE,0.006495529462274038,0
+Colin Thompson,TE,Carolina Panthers,CAR,0.006495529462274038,0
+Stephen Sullivan,TE,Carolina Panthers,CAR,0.006495529462274038,0
+Giovanni Ricci,RB,Carolina Panthers,CAR,0.006495529462274038,0
+Charlie Kolar,TE,Baltimore Ravens,BAL,0.006495529462274038,0
+Isaiah Likely,TE,Baltimore Ravens,BAL,0.006495529462274038,0
+Garrett Wilson,WR,New York Jets,NYJ,0.006495529462274038,0
+Jeremy Ruckert,TE,New York Jets,NYJ,0.006495529462274038,0
+George Pickens,WR,Pittsburgh Steelers,PIT,0.006495529462274038,0
+Calvin Austin,WR,Pittsburgh Steelers,PIT,0.006495529462274038,0
+Connor Heyward,TE,Pittsburgh Steelers,PIT,0.006495529462274038,0
+Mark Ingram,RB,New Orleans Saints,NO,0.00429893186486267,0
+Alvin Kamara,RB,New Orleans Saints,NO,0.0027064706092808496,0
+Tony Jones,RB,New Orleans Saints,NO,0.0027064706092808496,0
+Cordarrelle Patterson,RB,Atlanta Falcons,ATL,0.0041567882408282495,0
+Damien Williams,RB,Atlanta Falcons,ATL,0.0027064706092808496,0
+Keith Smith,RB,Atlanta Falcons,ATL,0.0027064706092808496,0
+Qadree Ollison,RB,Atlanta Falcons,ATL,0.014221190457334028,0
+Olamide Zaccheaus,WR,Atlanta Falcons,ATL,0.0027064706092808496,0
+Jarvis Landry,WR,New Orleans Saints,NO,0.015386947696537595,0
+Bryan Edwards,WR,Atlanta Falcons,ATL,0.0068559904995414795,0
+Duke Johnson,RB,Buffalo Bills,BUF,0.0027064706092808496,0
+Isaiah McKenzie,WR,Buffalo Bills,BUF,0.01766531834590636,0
+Devin Singletary,RB,Buffalo Bills,BUF,0.005968101964070865,0
+Zack Moss,RB,Buffalo Bills,BUF,0.006446182543437224,0
+Cooper Kupp,WR,Los Angeles Rams,LAR,0.0027064706092808496,0
+Darrell Henderson,RB,Los Angeles Rams,LAR,0.0027064706092808496,0
+Van Jefferson,WR,Los Angeles Rams,LAR,0.0027064706092808496,0
+Giovani Bernard,RB,Tampa Bay Buccaneers,TB,0.007374680485824054,0
+Mike Evans,WR,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Breshad Perriman,WR,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Cyril Grayson,WR,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Leonard Fournette,RB,Tampa Bay Buccaneers,TB,0.0033040014734783798,0
+Chris Godwin,WR,Tampa Bay Buccaneers,TB,0.00851972723159896,0
+Ke Shawn Vaughn,RB,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Ezekiel Elliott,RB,Dallas Cowboys,DAL,0.0037569362796295597,0
+James Washington,WR,Dallas Cowboys,DAL,0.0027064706092808496,0
+Tony Pollard,RB,Dallas Cowboys,DAL,0.00446391432750888,0
+CeeDee Lamb,WR,Dallas Cowboys,DAL,0.0027064706092808496,0
+Randall Cobb,WR,Green Bay Packers,GB,0.012685894477593603,0
+Aaron Jones,RB,Green Bay Packers,GB,0.004709887716864619,0
+Allen Lazard,WR,Green Bay Packers,GB,0.0027064706092808496,0
+AJ Dillon,RB,Green Bay Packers,GB,0.004727936519635645,0
+Patrick Taylor,RB,Green Bay Packers,GB,0.0027064706092808496,0
+Adam Thielen,WR,Minnesota Vikings,MIN,0.004871437508547264,0
+C J Ham,RB,Minnesota Vikings,MIN,0.0027064706092808496,0
+Dalvin Cook,RB,Minnesota Vikings,MIN,0.00534079507459123,0
+Alexander Mattison,RB,Minnesota Vikings,MIN,0.004499181483828049,0
+Justin Jefferson,WR,Minnesota Vikings,MIN,0.005309798574927655,0
+K J Osborn,WR,Minnesota Vikings,MIN,0.0027064706092808496,0
+Kene Nwangwu,RB,Minnesota Vikings,MIN,0.0027064706092808496,0
+Brandon Bolden,RB,Las Vegas Raiders,LV,0.00444347893543646,0
+Ameer Abdullah,RB,Las Vegas Raiders,LV,0.0027064706092808496,0
+Josh Jacobs,RB,Las Vegas Raiders,LV,0.0049078141096439544,0
+Hunter Renfrow,WR,Las Vegas Raiders,LV,0.01108884051813051,0
+DeAndre Carter,WR,Los Angeles Chargers,LAC,0.01551070341351365,0
+Gerald Everett,TE,Los Angeles Chargers,LAC,0.014221190457334028,0
+Austin Ekeler,RB,Los Angeles Chargers,LAC,0.0064881704800300545,0
+Jalen Guyton,WR,Los Angeles Chargers,LAC,0.00653679666182912,0
+Joshua Kelley,RB,Los Angeles Chargers,LAC,0.01038295050798297,0
+Joshua Palmer,WR,Los Angeles Chargers,LAC,0.0027064706092808496,0
+Larry Rountree,RB,Los Angeles Chargers,LAC,0.0027064706092808496,0
+Austin Walter,RB,Las Vegas Raiders,LV,0.0027064706092808496,0
+Nyheim Hines,RB,Indianapolis Colts,IND,0.010419338115962785,0
+Ashton Dulin,WR,Indianapolis Colts,IND,0.0027064706092808496,0
+Michael Pittman,WR,Indianapolis Colts,IND,0.004295648439593429,0
+Jonathan Taylor,RB,Indianapolis Colts,IND,0.005112719574957875,0
+Deon Jackson,RB,Indianapolis Colts,IND,0.0027064706092808496,0
+Rex Burkhead,RB,Houston Texans,HOU,0.0037158132852901896,0
+Brandin Cooks,WR,Houston Texans,HOU,0.0027064706092808496,0
+Chris Conley,WR,Houston Texans,HOU,0.015180750444671794,0
+Marlon Mack,RB,Houston Texans,HOU,0.0027064706092808496,0
+Dare Ogunbowale,RB,Houston Texans,HOU,0.0027064706092808496,0
+Royce Freeman,RB,Houston Texans,HOU,0.0027064706092808496,0
+Phillip Lindsay,RB,Indianapolis Colts,IND,0.0027064706092808496,0
+Ty Son Williams,RB,Indianapolis Colts,IND,0.00602608652148935,0
+Chester Rogers,WR,Houston Texans,HOU,0.020206470609280852,0
+Melvin Gordon,RB,Denver Broncos,DEN,0.00657779883405735,0
+Mike Boone,RB,Denver Broncos,DEN,0.0027064706092808496,0
+Jerry Jeudy,WR,Denver Broncos,DEN,0.006349951488534084,0
+Javonte Williams,RB,Denver Broncos,DEN,0.0045233347068467,0
+Tyler Lockett,WR,Seattle Seahawks,SEA,0.0027064706092808496,0
+Rashaad Penny,RB,Seattle Seahawks,SEA,0.0027064706092808496,0
+D K Metcalf,WR,Seattle Seahawks,SEA,0.004646505882649455,0
+Travis Homer,RB,Seattle Seahawks,SEA,0.0027064706092808496,0
+DeeJay Dallas,RB,Seattle Seahawks,SEA,0.005422519991996895,0
+Freddie Swain,WR,Seattle Seahawks,SEA,0.00752526790119642,0
+Marquise Goodwin,WR,Seattle Seahawks,SEA,0.009201371307080094,0
+JaQuan Hardy,RB,Denver Broncos,DEN,0.0027064706092808496,0
+Evan Engram,TE,Jacksonville Jaguars,JAC,0.00894361052697632,0
+Zay Jones,WR,Jacksonville Jaguars,JAC,0.008694124930268499,0
+Jamal Agnew,WR,Jacksonville Jaguars,JAC,0.007374680485824054,0
+Christian Kirk,WR,Jacksonville Jaguars,JAC,0.0027064706092808496,0
+Ryquell Armstead,RB,Jacksonville Jaguars,JAC,0.0027064706092808496,0
+Laviska Shenault,WR,Carolina Panthers,CAR,0.00669824015660595,0
+James Robinson,RB,Jacksonville Jaguars,JAC,0.0072857097123294745,0
+Jonathan Williams,RB,Washington Commanders,WAS,0.0027064706092808496,0
+J D McKissic,RB,Washington Commanders,WAS,0.0027064706092808496,0
+Cam Sims,WR,Washington Commanders,WAS,0.0027064706092808496,0
+Terry McLaurin,WR,Washington Commanders,WAS,0.0027064706092808496,0
+Antonio Gibson,RB,Washington Commanders,WAS,0.0076775546501323295,0
+Jaret Patterson,RB,Washington Commanders,WAS,0.00459739106560215,0
+Sterling Shepard,WR,New York Giants,NYG,0.0027064706092808496,0
+Matt Breida,RB,New York Giants,NYG,0.01151184461073328,0
+Saquon Barkley,RB,New York Giants,NYG,0.0049063011587846,0
+Jordan Akins,TE,New York Giants,NYG,0.020206470609280852,0
+Darius Slayton,WR,New York Giants,NYG,0.013398710468187374,0
+Kadarius Toney,WR,New York Giants,NYG,0.0027064706092808496,0
+Robert Woods,WR,Tennessee Titans,TEN,0.0027064706092808496,0
+Derrick Henry,RB,Tennessee Titans,TEN,0.0033341290800765746,0
+Dontrell Hilliard,RB,Tennessee Titans,TEN,0.008611278926369864,0
+Zach Pascal,WR,Philadelphia Eagles,PHI,0.01000848807389994,0
+Boston Scott,RB,Philadelphia Eagles,PHI,0.0056706559167004796,0
+A J Brown,WR,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Miles Sanders,RB,Philadelphia Eagles,PHI,0.00453197497543562,0
+Jalen Reagor,WR,Minnesota Vikings,MIN,0.009496594066070969,0
+Jason Huntley,RB,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Quez Watkins,WR,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Kenneth Gainwell,RB,Philadelphia Eagles,PHI,0.00710613170828835,0
+Kalif Raymond,WR,Detroit Lions,DET,0.0027064706092808496,0
+Jamaal Williams,RB,Detroit Lions,DET,0.0035363745873329745,0
+Godwin Igwebuike,RB,Detroit Lions,DET,0.020206470609280852,0
+Craig Reynolds,RB,Detroit Lions,DET,0.0027064706092808496,0
+D Andre Swift,RB,Detroit Lions,DET,0.00480350533871433,0
+Amon Ra St Brown,WR,Detroit Lions,DET,0.0027064706092808496,0
+Jermar Jefferson,RB,Detroit Lions,DET,0.0027064706092808496,0
+Justin Jackson,RB,Detroit Lions,DET,0.00599639056586747,0
+Travis Kelce,TE,Kansas City Chiefs,KC,0.00585786762032698,0
+Blake Bell,TE,Kansas City Chiefs,KC,0.0027064706092808496,0
+Michael Burton,RB,Kansas City Chiefs,KC,0.0027064706092808496,0
+Ronald Jones,RB,Kansas City Chiefs,KC,0.00805259053873411,0
+Mecole Hardman,WR,Kansas City Chiefs,KC,0.01370864925851832,0
+Derrick Gore,RB,Kansas City Chiefs,KC,0.0027064706092808496,0
+Clyde Edwards Helaire,RB,Kansas City Chiefs,KC,0.007014135588408655,0
+Zach Ertz,TE,Arizona Cardinals,ARI,0.0027064706092808496,0
+James Conner,RB,Arizona Cardinals,ARI,0.003951326576359035,0
+Marquise Brown,WR,Arizona Cardinals,ARI,0.00913817112700287,0
+Eno Benjamin,RB,Arizona Cardinals,ARI,0.0027064706092808496,0
+Jonathan Ward,RB,Arizona Cardinals,ARI,0.0027064706092808496,0
+Rondale Moore,WR,Arizona Cardinals,ARI,0.010900280857885615,0
+Darrel Williams,RB,Arizona Cardinals,ARI,0.0027064706092808496,0
+Jerick McKinnon,RB,Kansas City Chiefs,KC,0.0027064706092808496,0
+Nelson Agholor,WR,New England Patriots,NE,0.0027064706092808496,0
+Jonnu Smith,TE,New England Patriots,NE,0.0066375947158435495,0
+Kendrick Bourne,WR,New England Patriots,NE,0.0071091576100070645,0
+Damien Harris,RB,New England Patriots,NE,0.005415816455881595,0
+Jakobi Meyers,WR,New England Patriots,NE,0.00622862020986182,0
+J J Taylor,RB,New England Patriots,NE,0.015180750444671794,0
+Rhamondre Stevenson,RB,New England Patriots,NE,0.005738669474813045,0
+Tyreek Hill,WR,Miami Dolphins,MIA,0.006415275833237585,0
+Sony Michel,RB,Los Angeles Chargers,LAC,0.004008134592104249,0
+Durham Smythe,TE,Miami Dolphins,MIA,0.0027064706092808496,0
+Chase Edmonds,RB,Miami Dolphins,MIA,0.00457761258458949,0
+Cedrick Wilson,WR,Miami Dolphins,MIA,0.012042890362367265,0
+Myles Gaskin,RB,Miami Dolphins,MIA,0.004718871650082485,0
+Alec Ingold,RB,Miami Dolphins,MIA,0.0027064706092808496,0
+Salvon Ahmed,RB,Miami Dolphins,MIA,0.0027064706092808496,0
+Jaylen Waddle,WR,Miami Dolphins,MIA,0.006900540068147815,0
+Kyle Juszczyk,RB,San Francisco 49ers,SF,0.0027064706092808496,0
+George Kittle,TE,San Francisco 49ers,SF,0.008690009703931054,0
+Ray Ray McCloud,WR,San Francisco 49ers,SF,0.020206470609280852,0
+Jeff Wilson,RB,San Francisco 49ers,SF,0.0044235133224921445,0
+Deebo Samuel,WR,San Francisco 49ers,SF,0.009257790785905159,0
+Brandon Aiyuk,WR,San Francisco 49ers,SF,0.009944622739906095,0
+Trey Sermon,RB,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Elijah Mitchell,RB,San Francisco 49ers,SF,0.0027064706092808496,0
+David Montgomery,RB,Chicago Bears,CHI,0.0038235702960322743,0
+Cole Kmet,TE,Chicago Bears,CHI,0.0027064706092808496,0
+Darnell Mooney,WR,Chicago Bears,CHI,0.0027064706092808496,0
+Khalil Herbert,RB,Chicago Bears,CHI,0.00397242583003833,0
+David Njoku,TE,Cleveland Browns,CLE,0.0027064706092808496,0
+Kareem Hunt,RB,Cleveland Browns,CLE,0.0027064706092808496,0
+Nick Chubb,RB,Cleveland Browns,CLE,0.004508741420922474,0
+D Ernest Johnson,RB,Cleveland Browns,CLE,0.003951326576359035,0
+Anthony Schwartz,WR,Cleveland Browns,CLE,0.0027064706092808496,0
+Demetric Felton,RB,Cleveland Browns,CLE,0.020206470609280852,0
+Christian McCaffrey,RB,Carolina Panthers,CAR,0.0037968553979624746,0
+D Onta Foreman,RB,Carolina Panthers,CAR,0.00584469041416732,0
+D J Moore,WR,Carolina Panthers,CAR,0.00564159527643166,0
+Tommy Tremble,TE,Carolina Panthers,CAR,0.0027064706092808496,0
+Chuba Hubbard,RB,Carolina Panthers,CAR,0.004218504528722175,0
+Mike Davis,RB,Baltimore Ravens,BAL,0.00843068298194495,0
+Patrick Ricard,RB,Baltimore Ravens,BAL,0.0027064706092808496,0
+Mark Andrews,TE,Baltimore Ravens,BAL,0.0040769542427614245,0
+Devin Duvernay,WR,Baltimore Ravens,BAL,0.006349951488534084,0
+Tevin Coleman,RB,New York Jets,NYJ,0.0027064706092808496,0
+Braxton Berrios,WR,New York Jets,NYJ,0.008250594980565715,0
+Ty Johnson,RB,New York Jets,NYJ,0.00738111052697632,0
+La Mical Perine,RB,New York Jets,NYJ,0.0027064706092808496,0
+Elijah Moore,WR,New York Jets,NYJ,0.0027064706092808496,0
+Michael Carter,RB,New York Jets,NYJ,0.0043335505878100995,0
+Diontae Johnson,WR,Pittsburgh Steelers,PIT,0.00800527974289824,0
+Benny Snell,RB,Pittsburgh Steelers,PIT,0.0027064706092808496,0
+Chase Claypool,WR,Pittsburgh Steelers,PIT,0.0027064706092808496,0
+Najee Harris,RB,Pittsburgh Steelers,PIT,0.0027064706092808496,0
+Tyler Boyd,WR,Cincinnati Bengals,CIN,0.004840509409986315,0
+Joe Mixon,RB,Cincinnati Bengals,CIN,0.004046068914053279,0
+Trayveon Williams,RB,Cincinnati Bengals,CIN,0.0027064706092808496,0
+Ja Marr Chase,WR,Cincinnati Bengals,CIN,0.0077487788351096746,0
+Chris Evans,RB,Cincinnati Bengals,CIN,0.0027064706092808496,0
+Jeremy McNichols,RB,Pittsburgh Steelers,PIT,0.0027064706092808496,0
+Samaje Perine,RB,Cincinnati Bengals,CIN,0.0027064706092808496,0
+Nick Vannett,TE,New Orleans Saints,NO,0.0027064706092808496,0
+Tre Quan Smith,WR,New Orleans Saints,NO,0.00723321958047426,0
+Adam Trautman,TE,New Orleans Saints,NO,0.013398710468187374,0
+Marquez Callaway,WR,New Orleans Saints,NO,0.0027064706092808496,0
+Juwan Johnson,TE,New Orleans Saints,NO,0.0027064706092808496,0
+Damiere Byrd,WR,Atlanta Falcons,ATL,0.013794719351850579,0
+Anthony Firkser,TE,Atlanta Falcons,ATL,0.015528340097817001,0
+Parker Hesse,TE,Atlanta Falcons,ATL,0.0027064706092808496,0
+Kyle Pitts,TE,Atlanta Falcons,ATL,0.0027064706092808496,0
+MyCole Pruitt,TE,Atlanta Falcons,ATL,0.0027064706092808496,0
+Jamison Crowder,WR,Buffalo Bills,BUF,0.008463830533307438,0
+Stefon Diggs,WR,Buffalo Bills,BUF,0.0041428428789864495,0
+O J Howard,TE,Houston Texans,HOU,0.0027064706092808496,0
+Dawson Knox,TE,Buffalo Bills,BUF,0.0027064706092808496,0
+Tommy Sweeney,TE,Buffalo Bills,BUF,0.017644742214219113,0
+Gabriel Davis,WR,Buffalo Bills,BUF,0.0027064706092808496,0
+Allen Robinson,WR,Los Angeles Rams,LAR,0.0027064706092808496,0
+Tyler Higbee,TE,Los Angeles Rams,LAR,0.005115869255238634,0
+Brycen Hopkins,TE,Los Angeles Rams,LAR,0.0027064706092808496,0
+Cameron Brate,TE,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Russell Gage,WR,Tampa Bay Buccaneers,TB,0.011643268103292269,0
+Tyler Johnson,WR,Houston Texans,HOU,0.0027064706092808496,0
+Jeremy Sprinkle,TE,Dallas Cowboys,DAL,0.0027064706092808496,0
+Michael Gallup,WR,Dallas Cowboys,DAL,0.0027064706092808496,0
+Dalton Schultz,TE,Dallas Cowboys,DAL,0.0027064706092808496,0
+Sean McKeon,TE,Dallas Cowboys,DAL,0.0027064706092808496,0
+Kyle Rudolph,TE,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Julio Jones,WR,Tampa Bay Buccaneers,TB,0.0027064706092808496,0
+Marcedes Lewis,TE,Green Bay Packers,GB,0.008930750444671794,0
+Sammy Watkins,WR,Green Bay Packers,GB,0.013398710468187374,0
+Robert Tonyan,TE,Green Bay Packers,GB,0.0027064706092808496,0
+Josiah Deguara,TE,Green Bay Packers,GB,0.0027064706092808496,0
+Tyler Davis,TE,Green Bay Packers,GB,0.0027064706092808496,0
+Johnny Mundt,TE,Minnesota Vikings,MIN,0.0027064706092808496,0
+Ihmir Smith Marsette,WR,Chicago Bears,CHI,0.0027064706092808496,0
+Davante Adams,WR,Las Vegas Raiders,LV,0.0027064706092808496,0
+Darren Waller,TE,Las Vegas Raiders,LV,0.0027064706092808496,0
+Mack Hollins,WR,Las Vegas Raiders,LV,0.0027064706092808496,0
+Keelan Cole,WR,Las Vegas Raiders,LV,0.0027064706092808496,0
+Jacob Hollister,TE,Las Vegas Raiders,LV,0.0027064706092808496,0
+Jakob Johnson,RB,Las Vegas Raiders,LV,0.0027064706092808496,0
+Foster Moreau,TE,Las Vegas Raiders,LV,0.00752526790119642,0
+Keenan Allen,WR,Los Angeles Chargers,LAC,0.00410257075927508,0
+Mike Williams,WR,Los Angeles Chargers,LAC,0.0027064706092808496,0
+Donald Parham,TE,Los Angeles Chargers,LAC,0.0027064706092808496,0
+Tre McKitty,TE,Los Angeles Chargers,LAC,0.0027064706092808496,0
+Jesper Horsted,TE,Las Vegas Raiders,LV,0.0027064706092808496,0
+Mo Alie Cox,TE,Indianapolis Colts,IND,0.008681779251256155,0
+Parris Campbell,WR,Indianapolis Colts,IND,0.0027064706092808496,0
+Kylen Granson,TE,Indianapolis Colts,IND,0.0027064706092808496,0
+Chris Moore,WR,Houston Texans,HOU,0.0027064706092808496,0
+Antony Auclair,TE,Houston Texans,HOU,0.0027064706092808496,0
+Pharaoh Brown,TE,Houston Texans,HOU,0.015180750444671794,0
+Nico Collins,WR,Houston Texans,HOU,0.0027064706092808496,0
+Brevin Jordan,TE,Houston Texans,HOU,0.0027064706092808496,0
+Eric Tomlinson,TE,Denver Broncos,DEN,0.0027064706092808496,0
+Eric Saubert,TE,Denver Broncos,DEN,0.0027064706092808496,0
+Courtland Sutton,WR,Denver Broncos,DEN,0.0027064706092808496,0
+Albert Okwuegbunam,TE,Denver Broncos,DEN,0.01151184461073328,0
+Kendall Hinton,WR,Denver Broncos,DEN,0.0027064706092808496,0
+Will Dissly,TE,Seattle Seahawks,SEA,0.009496594066070969,0
+Noah Fant,TE,Seattle Seahawks,SEA,0.0027064706092808496,0
+Colby Parkinson,TE,Seattle Seahawks,SEA,0.0027064706092808496,0
+Tim Patrick,WR,Denver Broncos,DEN,0.0027064706092808496,0
+Marvin Jones,WR,Jacksonville Jaguars,JAC,0.0027064706092808496,0
+Chris Manhertz,TE,Jacksonville Jaguars,JAC,0.0027064706092808496,0
+Laquon Treadwell,WR,Jacksonville Jaguars,JAC,0.0027064706092808496,0
+Dan Arnold,TE,Jacksonville Jaguars,JAC,0.011022657166208146,0
+Luke Farrell,TE,Jacksonville Jaguars,JAC,0.020206470609280852,0
+Logan Thomas,TE,Washington Commanders,WAS,0.01846345566451152,0
+John Bates,TE,Washington Commanders,WAS,0.00981993327829907,0
+Kendall Blanton,TE,Washington Commanders,WAS,0.020206470609280852,0
+Kenny Golladay,WR,New York Giants,NYG,0.0027064706092808496,0
+Chris Myarick,TE,New York Giants,NYG,0.0027064706092808496,0
+Geoff Swaim,TE,Tennessee Titans,TEN,0.0027064706092808496,0
+Austin Hooper,TE,Tennessee Titans,TEN,0.0027064706092808496,0
+Tommy Hudson,TE,Tennessee Titans,TEN,0.0027064706092808496,0
+Nick Westbrook Ikhine,WR,Tennessee Titans,TEN,0.01038295050798297,0
+Ricky Seals Jones,TE,New York Giants,NYG,0.0027064706092808496,0
+Richard Rodgers,TE,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Greg Ward,WR,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Dallas Goedert,TE,Philadelphia Eagles,PHI,0.005327220013655985,0
+DeVonta Smith,WR,Philadelphia Eagles,PHI,0.007312358548502119,0
+Jack Stoll,TE,Philadelphia Eagles,PHI,0.0027064706092808496,0
+Josh Reynolds,WR,Detroit Lions,DET,0.0027064706092808496,0
+T J Hockenson,TE,Detroit Lions,DET,0.0027064706092808496,0
+Quintez Cephus,WR,Detroit Lions,DET,0.0027064706092808496,0
+Brock Wright,TE,Detroit Lions,DET,0.0027064706092808496,0
+Shane Zylstra,TE,Detroit Lions,DET,0.0027064706092808496,0
+Marquez Valdes Scantling,WR,Kansas City Chiefs,KC,0.0027064706092808496,0
+Noah Gray,TE,Kansas City Chiefs,KC,0.0027064706092808496,0
+A J Green,WR,Arizona Cardinals,ARI,0.0027064706092808496,0
+DeAndre Hopkins,WR,Arizona Cardinals,ARI,0.0027064706092808496,0
+Maxx Williams,TE,Arizona Cardinals,ARI,0.0027064706092808496,0
+Stephen Anderson,TE,Arizona Cardinals,ARI,0.0027064706092808496,0
+Antoine Wesley,WR,Arizona Cardinals,ARI,0.0027064706092808496,0
+DeVante Parker,WR,New England Patriots,NE,0.0027064706092808496,0
+Hunter Henry,TE,New England Patriots,NE,0.0027064706092808496,0
+Cethan Carter,TE,Miami Dolphins,MIA,0.0027064706092808496,0
+Mike Gesicki,TE,Miami Dolphins,MIA,0.0027064706092808496,0
+Hunter Long,TE,Miami Dolphins,MIA,0.0027064706092808496,0
+Lil Jordan Humphrey,WR,New England Patriots,NE,0.0027064706092808496,0
+Adam Shaheen,TE,Miami Dolphins,MIA,0.0027064706092808496,0
+Ross Dwelley,TE,San Francisco 49ers,SF,0.0027064706092808496,0
+Malik Turner,WR,San Francisco 49ers,SF,0.0027064706092808496,0
+Charlie Woerner,TE,San Francisco 49ers,SF,0.0027064706092808496,0
+Jauan Jennings,WR,San Francisco 49ers,SF,0.008681779251256155,0
+Ryan Griffin,TE,Chicago Bears,CHI,0.008041567611044515,0
+James O Shaughnessy,TE,Chicago Bears,CHI,0.0027064706092808496,0
+Tajae Sharpe,WR,Chicago Bears,CHI,0.0027064706092808496,0
+Byron Pringle,WR,Chicago Bears,CHI,0.013142876006926554,0
+Tyler Kroft,TE,San Francisco 49ers,SF,0.0027064706092808496,0
+Amari Cooper,WR,Cleveland Browns,CLE,0.004871437508547264,0
+Harrison Bryant,TE,Cleveland Browns,CLE,0.0027064706092808496,0
+Donovan Peoples Jones,WR,Cleveland Browns,CLE,0.015528340097817001,0
+Rashard Higgins,WR,Carolina Panthers,CAR,0.0027064706092808496,0
+Brandon Zylstra,WR,Carolina Panthers,CAR,0.0027064706092808496,0
+Ian Thomas,TE,Carolina Panthers,CAR,0.0027064706092808496,0
+Nick Boyle,TE,Baltimore Ravens,BAL,0.0027064706092808496,0
+Josh Oliver,TE,Baltimore Ravens,BAL,0.017644742214219113,0
+Rashod Bateman,WR,Baltimore Ravens,BAL,0.0027064706092808496,0
+C J Uzomah,TE,New York Jets,NYJ,0.0027064706092808496,0
+Corey Davis,WR,New York Jets,NYJ,0.015528340097817001,0
+Tyler Conklin,TE,New York Jets,NYJ,0.005115869255238634,0
+Trevon Wesco,TE,Chicago Bears,CHI,0.0027064706092808496,0
+Kenny Yeboah,TE,New York Jets,NYJ,0.0027064706092808496,0
+Demarcus Robinson,WR,Baltimore Ravens,BAL,0.0027064706092808496,0
+Kevin Rader,TE,Pittsburgh Steelers,PIT,0.0027064706092808496,0
+Zach Gentry,TE,Pittsburgh Steelers,PIT,0.0027064706092808496,0
+Pat Freiermuth,TE,Pittsburgh Steelers,PIT,0.00761438398713958,0
+Hayden Hurst,TE,Cincinnati Bengals,CIN,0.020206470609280852,0
+Drew Sample,TE,Cincinnati Bengals,CIN,0.0027064706092808496,0
+Tee Higgins,WR,Cincinnati Bengals,CIN,0.00669824015660595,0
+Mitchell Wilcox,TE,Cincinnati Bengals,CIN,0.0027064706092808496,0
+Rob Gronkowski,TE,NA,NA,0.0027064706092808496,0
+Jared Cook,TE,NA,NA,0.0027064706092808496,0
+Jack Doyle,TE,NA,NA,0.0027064706092808496,0
+Devonta Freeman,RB,NA,NA,0.0027064706092808496,0
+Devontae Booker,RB,NA,NA,0.0027064706092808496,0
+Jimmy Graham,TE,NA,NA,0.0027064706092808496,0
+Latavius Murray,RB,NA,NA,0.0027064706092808496,0
+Emmanuel Sanders,WR,NA,NA,0.0027064706092808496,0
+Robby Anderson,WR,NA,NA,0.0027064706092808496,0
+Odell Beckham,WR,NA,NA,0.0027064706092808496,0
+Blake Jarwin,TE,NA,NA,0.0027064706092808496,0
+Kenyan Drake,RB,NA,NA,0.004295648439593429,0
+Antonio Brown,WR,NA,NA,0.0027064706092808496,0
+Cole Beasley,WR,NA,NA,0.004506262368911965,0
+Eric Ebron,TE,NA,NA,0.0027064706092808496,0
+Deonte Harris,WR,NA,NA,0.013391361849727645,0
+Jordan Howard,RB,NA,NA,0.0027064706092808496,0
+Alex Collins,RB,NA,NA,0.005243612270716295,0
+Joe Fortson,TE,NA,NA,0.0027064706092808496,0
+David Johnson,RB,NA,NA,0.0057002977697746746,0
+Lee Smith,TE,NA,NA,0.0027064706092808496,0
+Jesse James,TE,NA,NA,0.0027064706092808496,0
+Henry Ruggs,WR,NA,NA,0.0027064706092808496,0
+Chris Carson,RB,NA,NA,0.00761438398713958,0
+Chris Herndon,TE,NA,NA,0.0027064706092808496,0
+Peyton Barber,RB,NA,NA,0.00723321958047426,0
+Tyree Jackson,TE,NA,NA,0.0027064706092808496,0
+DeSean Jackson,WR,NA,NA,0.016314775884252793,0
+Carlos Hyde,RB,NA,NA,0.009750769810442796,0
+Le Veon Bell,RB,NA,NA,0.0027064706092808496,0
+Darren Fells,TE,NA,NA,0.0027064706092808496,0
+T Y Hilton,WR,NA,NA,0.0027064706092808496,0
+Elijhaa Penny,RB,NA,NA,0.0027064706092808496,0
+Garrett Griffin,TE,NA,NA,0.020206470609280852,0
+Jamycal Hasty,RB,NA,NA,0.013925606411749983,0
+Corey Clement,RB,NA,NA,0.0027064706092808496,0
+Dominique Dafney,TE,NA,NA,0.0027064706092808496,0
+Adrian Peterson,RB,NA,NA,0.0061804872615920745,0
+Kaden Smith,TE,NA,NA,0.0027064706092808496,0
+Danny Amendola,WR,NA,NA,0.008681779251256155,0
+Malcolm Brown,RB,NA,NA,0.0027064706092808496,0
+James White,RB,NA,NA,0.0027064706092808496,0
+Derek Carrier,TE,NA,NA,0.0027064706092808496,0
+Luke Stocker,TE,NA,NA,0.0027064706092808496,0
+Calvin Ridley,WR,NA,NA,0.0027064706092808496,0
+Demetrius Harris,TE,NA,NA,0.0027064706092808496,0
+Adam Humphries,WR,NA,NA,0.0027064706092808496,0
+Ethan Wolf,TE,NA,NA,0.0027064706092808496,0
+Wayne Gallman,RB,NA,NA,0.0027064706092808496,0
+Jalen Richard,RB,NA,NA,0.0027064706092808496,0
+Darrell Daniels,TE,NA,NA,0.0027064706092808496,0
+Jason Cabinda,RB,NA,NA,0.0027064706092808496,0
+Andy Janovich,RB,NA,NA,0.0027064706092808496,0
+John Ross,WR,NA,NA,0.014197448766925668,0
+Jakeem Grant,WR,NA,NA,0.020206470609280852,0
+Alex Armah,RB,NA,NA,0.0027064706092808496,0
+Isaiah Ford,WR,NA,NA,0.0027064706092808496,0
+Johnny Stanton,RB,NA,NA,0.0027064706092808496,0
+Tavon Austin,WR,NA,NA,0.013398710468187374,0
+Ito Smith,RB,NA,NA,0.0027064706092808496,0
+D J Chark,WR,NA,NA,0.0027064706092808496,0
+Rodney Smith,RB,NA,NA,0.0027064706092808496,0
+Wendell Smallwood,RB,NA,NA,0.0027064706092808496,0
+Kalen Ballage,RB,NA,NA,0.0027064706092808496,0
+Albert Wilson,WR,NA,NA,0.0027064706092808496,0
+Kylin Hill,RB,NA,NA,0.0027064706092808496,0
