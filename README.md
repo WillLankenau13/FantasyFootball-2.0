@@ -6,7 +6,7 @@ This repository contains the code for a model to predict the fantasy football po
 # Data
 
 Csv files downloaded weekly from Yahoo Daily Fantasy Football. 
-Player statistics were downloaded from [Stathead](Stathead.com).
+Player statistics are downloaded from [Stathead](Stathead.com).
 
 
 # Notes
