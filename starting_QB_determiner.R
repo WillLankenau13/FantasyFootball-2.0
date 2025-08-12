@@ -13,6 +13,11 @@ library("ggrepel")
 #week
 which_week <- 18
 
+#Years
+Years_Dataframe <- read_csv("~/R Stuff/FantasyFootball 2.0/Years_Dataframe.csv")
+Past_Year <- Years_Dataframe$Past_Year[1]
+This_Year <- Years_Dataframe$This_Year[1]
+
 #files
 passing_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/", This_Year, "/weekly_passing_stats.csv", sep = ""))) %>%
   clean_names()
