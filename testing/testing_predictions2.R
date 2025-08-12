@@ -136,21 +136,19 @@ data <- combined %>%
          fpros_r_sq = fpros_resid^2) %>%
   filter(!is.na(fpts)) %>%
   filter(!is.na(fpts_pred)) %>%
-  filter(!is.na(fpros_pred)) %>% 
-  filter(pas_yds > 25) %>% 
-  filter(snap_per > 99)
+  filter(!is.na(fpros_pred))
+
+median(data$fpros_resid)
+median(data$my_resid)
+
+sum(data$my_r_sq)
+sum(data$fpros_r_sq)
 
 # sum(data$pas_yds)
 # sum(data$rec_yds)
 # sum(data$pas_yds_pred)
 # sum(data$rec_yds_pred)
 # median(wr$rec_yds_resid)
-
-data <- data %>% 
-  mutate(pas_yds_resid = pas_yds - pas_yds_pred,
-         pas_tds_resid = pas_tds - pas_tds_pred,
-         rus_yds_resid = rus_yds - rus_yds_pred,
-         rus_tds_resid = rus_tds - rus_tds_pred) 
 
 qb <- data %>%
   filter(pos == "QB") 
@@ -212,19 +210,22 @@ mod <- lm(pas_yds ~ pas_yds_pred, qb)
 summary(mod)
 
 
+# qb <- data %>%
+#   filter(pos == "QB")
+# 
+# rb <- data %>%
+#   filter(pos == "RB")
+# 
+# wr <- data %>%
+#   filter(pos == "WR")
+# 
+# median(qb$pas_yds_resid)
+# median(rb$rus_yds_pred)
+# median(wr$rec_yds_pred)
+
+
 qb <- data %>%
-  filter(pos == "QB")
-
-rb <- data %>%
-  filter(pos == "RB")
-
-wr <- data %>%
-  filter(pos == "WR")
-
-median(qb$pas_yds_resid)
-median(rb$rus_yds_pred)
-median(wr$rec_yds_pred)
-
+  filter(pos == "QB") 
 
 sum(qb$fpros_r_sq)/nrow(qb)
 sum(qb$my_r_sq)/nrow(qb) 
@@ -237,6 +238,14 @@ sum(qb$my_r_sq)/nrow(qb)
 #50.78 new norm
 #50.20 new norm reg
 #50.24 fixed 0 snaps
+
+#45.08 old (wrong data file probably)
+#48.87 zeroes for inactives adjustment
+#49.00 no regress in update ratings
+#49.74 high vol
+#48.21 low vol
+#49.02 old vol
+#48.65 No high variance fix (low vol)
 
 rb <- data %>%
   filter(pos == "RB")
@@ -253,6 +262,14 @@ sum(rb$my_r_sq)/nrow(rb)
 #59.21 new norm reg
 #58.76 fixed 0 snaps
 
+#58.42 old
+#58.51 zeroes
+#58.63 no regress
+#58.05 high vol
+#59.44 low vol
+#58.41 old vol
+#61.31 no high variance fix (old vol)
+
 wr <- data %>%
   filter(pos == "WR")
 
@@ -268,6 +285,13 @@ sum(wr$my_r_sq)/nrow(wr)
 #50.00 new norm reg
 #48.72 fixed 0 snaps
 
+#47.80 old
+#47.96 zeroes
+#48.11 no regress
+#48.11 high vol
+#47.61 low vol
+#47.80 old vol
+#48.55 no high variance fix (old vol)
 
 te <- data %>%
   filter(pos == "TE")
@@ -283,6 +307,14 @@ sum(te$my_r_sq)/nrow(te)
 #37.94 new norm
 #38.10 new norm reg
 #38.22 fixed 0 snaps
+
+#38.78 old
+#38.39 zeroes
+#38.54 no regress
+#38.42 high vol
+#39.77 low vol
+#38.78 old vol
+#40.62 no high variance fix (old vol)
 
 
 #medians
