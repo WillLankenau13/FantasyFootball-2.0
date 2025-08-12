@@ -122,32 +122,21 @@ adjusted <- adjusted %>%
 
 
 ####update offensive ratings####
-#coefs, not tested much
-#new3
+rus_att <- 0
+rus_yds <- 0
+rus_tds <- 0
+pas_att <- 0.1
+cmp <- 0.4
+pas_yds <- 0.1
+pas_tds <- 0
+
 # rus_att <- 0.3
 # rus_yds <- 0.3
-# rus_tds <- 0.25
-# pas_att <- 0.2
-# cmp <- 0.2
-# pas_yds <- 0.15
-# pas_tds <- 0.15
-
-#new2
-# rus_att <- 0.5
-# rus_yds <- 0.5
-# rus_tds <- 0.4
-# pas_att <- 0.2
-# cmp <- 0.2
-# pas_yds <- 0.3
-# pas_tds <- 0.3
-
-rus_att <- 0.3
-rus_yds <- 0.3
-rus_tds <- 0.1
-pas_att <- 0.1
-cmp <- 0.1
-pas_yds <- 0.2
-pas_tds <- 0.2
+# rus_tds <- 0.1
+# pas_att <- 0.1
+# cmp <- 0.1
+# pas_yds <- 0.2
+# pas_tds <- 0.2
 
 #No adjust for players
 # adjusted_off_team_ratings <- QB_adj_off_team_ratings %>%
@@ -202,12 +191,12 @@ team_predictions <- matchups %>%
 
 ####Tean Predictions####
 #combining coefficients
+#well tested
 cmp_off_coef <- 0.7
 pas_att_off_coef <- 0.7
-pas_yds_off_coef <- 0.65
-pas_tds_off_coef <- 0.6
-int_off_coef <- 0.8
-
+pas_yds_off_coef <- 0.8
+pas_tds_off_coef <- 0.8
+int_off_coef <- 0.7
 rus_att_off_coef <- 0.6
 rus_yds_off_coef <- 0.5
 rus_tds_off_coef <- 0.5
@@ -237,7 +226,7 @@ team_predictions <- combine_predictions(team_predictions, "int")
 team_predictions <- team_predictions %>% 
   select(team, team_pas_att_pred:team_int_pred)
 
-####player predictions####
+####Player Predictions####
 player_predictions <- adjusted %>% 
   full_join(team_predictions, by = c("team")) 
 
