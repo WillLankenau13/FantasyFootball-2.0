@@ -181,15 +181,13 @@ updated_player_percents <- updated_player_percents %>%
          upd_rec_tds_per = adj_rec_tds_per + d_rec_tds_per) 
 
 #fix high variance percents
-v1 <- val1
-v2 <- 1-v1
-  
+#tested
 updated_player_percents <- updated_player_percents %>%
   mutate(upd_rus_yds_per = 0.9*upd_rus_yds_per + 0.1*upd_rus_att_per,
          upd_rus_tds_per = 0.5*upd_rus_tds_per + 0.2*upd_rus_yds_per + 0.3*upd_rus_att_per,
          upd_rec_per = 0.7*upd_rec_per + 0.3*upd_tgt_per,
-         upd_rec_yds_per = 0.7*upd_rec_yds_per + upd_rec_per*0.1 + upd_tgt_per*0.2,#here
-         upd_rec_tds_per = 0.2*upd_rec_tds_per + 0.3*upd_rec_yds_per + 0.2*upd_rec_per + 0.3*upd_tgt_per)
+         upd_rec_yds_per = 0.8*upd_rec_yds_per + upd_rec_per*0 + upd_tgt_per*0.2,
+         upd_rec_tds_per = 0.4*upd_rec_tds_per + 0.2*upd_rec_yds_per + 0*upd_rec_per + 0.4*upd_tgt_per)
 
 #Normalize player percents
 player_percents_by_team <- updated_player_percents %>%
