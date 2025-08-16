@@ -3,9 +3,9 @@
 
 
 #Create Dataframe
-vl1 <- c(0.6, 0.7, 0.8)
-vl2 <- c(0)
-vl3 <- c(0)
+vl1 <- c(0, 0.2, 0.4, 0.6)
+vl2 <- c(0, 0.2)
+vl3 <- c(0, 0.2)
 
 results_df <- expand.grid(Value1 = vl1, Value2 = vl2, Value3 = vl3)
 
@@ -159,5 +159,5 @@ a <- a+1
 
 
 t <- results_df %>% 
-  select(Value1, pas_att_avg_r_sq:pas_tds_avg_r_sq, tgt_avg_r_sq:rec_tds_avg_r_sq)
+  select(Value1, Value2, Value3, pas_att_avg_r_sq:pas_tds_avg_r_sq, tgt_avg_r_sq:rec_tds_avg_r_sq)
 
