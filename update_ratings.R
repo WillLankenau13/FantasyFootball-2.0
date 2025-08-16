@@ -11,8 +11,8 @@
 # library("ggrepel")
 
 #Week
-# past_week <- 11
-# upcoming_week <- 12
+past_week <- 11
+upcoming_week <- 12
 
 #Year
 This_Year <- Years_Dataframe$This_Year[1]
@@ -68,6 +68,8 @@ if(This_Year == 2022 & past_week == 17){
 past_week_player_stats <- past_week_player_stats %>% 
   mutate(touches_game = rus_att + rec)
 
+#Team Stats
+#There is no serious problem with summing of player stats to get team snaps. It does not include special teams (good), while team data does. However, sometimes players playing offensive snaps whose position is not an offensive position (lb/rb hybrid) are not counted.
 past_week_team_stats <- past_week_player_stats %>% 
   group_by(team) %>% 
   summarize(team_pas_att = sum(pas_att),
@@ -82,7 +84,6 @@ past_week_team_stats <- past_week_player_stats %>%
             team_rec = sum(rec),
             team_rec_yds = sum(rec_yds),
             team_rec_tds = sum(rec_tds))
-
 
 #combine with player stats
 past_week_player_percents <- past_week_player_stats %>% 
@@ -258,10 +259,10 @@ updated_player_percents[updated_player_percents < 0] <- 0
 colnames(updated_player_percents) <- colnames(past_week_combined_player_percents_rat)
 
 #combine with full player percents rating
-not_actice_player_percents <- past_week_combined_player_percents_rat %>% 
+not_active_player_percents <- past_week_combined_player_percents_rat %>% 
   filter(!(player %in% updated_player_percents$player))
 
-full_updated_player_percents <- rbind(not_actice_player_percents, updated_player_percents)
+full_updated_player_percents <- rbind(not_active_player_percents, updated_player_percents)
 
 
 ####QB Ratings####
@@ -368,7 +369,7 @@ colnames(updated_QB_ratings) <- colnames(past_week_QB_ratings)
 
 ####Off Team Ratings####
 #get team stats
-past_week_team_stats <- past_week_player_stats %>% 
+past_week_team_stats2 <- past_week_player_stats %>% 
   group_by(team) %>% 
   summarise(across(pas_att:rec_tds, sum),
                            .groups = 'drop') %>% 
@@ -450,10 +451,10 @@ updated_off_team_ratings <- updated_off_team_ratings %>%
 colnames(updated_off_team_ratings) <- colnames(past_week_off_team_ratings)
 
 #teams on bye
-not_actice_off_team_ratings <- past_week_off_team_ratings %>% 
+not_active_off_team_ratings <- past_week_off_team_ratings %>% 
   filter(!(team %in% updated_off_team_ratings$team))
 
-full_updated_off_team_ratings <- rbind(not_actice_off_team_ratings, updated_off_team_ratings)
+full_updated_off_team_ratings <- rbind(not_active_off_team_ratings, updated_off_team_ratings)
 
 
 ####Def Team Ratings####
@@ -508,10 +509,10 @@ updated_def_team_ratings <- updated_def_team_ratings %>%
 colnames(updated_def_team_ratings) <- colnames(past_week_def_team_ratings)
 
 #teams on bye
-not_actice_def_team_ratings <- past_week_def_team_ratings %>% 
+not_active_def_team_ratings <- past_week_def_team_ratings %>% 
   filter(!(team %in% updated_def_team_ratings$team))
 
-full_updated_def_team_ratings <- rbind(not_actice_def_team_ratings, updated_def_team_ratings)
+full_updated_def_team_ratings <- rbind(not_active_def_team_ratings, updated_def_team_ratings)
 
 
 ####Write Csv####
