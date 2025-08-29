@@ -1,566 +1,566 @@
-Contest ID,Entry ID,QB,RB1,RB2,WR1,WR2,WR3,TE,FLEX,DEF," ",Instructions,ID,First Name,Last Name,ID + Name,Position,Team,Opponent,Game,Time,Salary,FPPG,Injury Status,Starting
-14443604,223824366," "," "," "," "," "," "," "," "," "," ",1. The Contest ID column lists the contest you are editing; you may only edit one contest at a time," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," ",2. The Entry ID column lists all of your contest entries for this contest," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," ",3. Your current lineup is listed next to each entry (blank for reserved entries)," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," ",4. You can change the lineup for an entry by entering the IDs of the players in the row next to that entry," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," ","5. Use values from the ""ID"" or ""ID + Name"" column (you cannot use just the player's name)"," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," ",6. For faster processing only include entries you are changing in the file you upload," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," ","Note: For each entry, the salary cap is 200"," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28389$nfl.g.13520080,Jameis,Winston,nfl.p.28389$nfl.g.13520080 - Jameis Winston,QB,CLE,CIN,CLE@CIN,1:00PM EST,23,13.0,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30142$nfl.g.13520080,David,Njoku,nfl.p.30142$nfl.g.13520080 - David Njoku,TE,CLE,CIN,CLE@CIN,1:00PM EST,24,10.6,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30202$nfl.g.13520080,D'Onta,Foreman,nfl.p.30202$nfl.g.13520080 - D'Onta Foreman,RB,CLE,CIN,CLE@CIN,1:00PM EST,10,3.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31005$nfl.g.13520080,Nick,Chubb,nfl.p.31005$nfl.g.13520080 - Nick Chubb,RB,CLE,CIN,CLE@CIN,1:00PM EST,10,7.6,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31068$nfl.g.13520080,Jordan,Akins,nfl.p.31068$nfl.g.13520080 - Jordan Akins,TE,CLE,CIN,CLE@CIN,1:00PM EST,10,3.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32685$nfl.g.13520080,Jerry,Jeudy,nfl.p.32685$nfl.g.13520080 - Jerry Jeudy,WR,CLE,CIN,CLE@CIN,1:00PM EST,36,12.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33422$nfl.g.13520080,Elijah,Moore,nfl.p.33422$nfl.g.13520080 - Elijah Moore,WR,CLE,CIN,CLE@CIN,1:00PM EST,18,5.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34083$nfl.g.13520080,Pierre,Strong Jr.,nfl.p.34083$nfl.g.13520080 - Pierre Strong Jr.,RB,CLE,CIN,CLE@CIN,1:00PM EST,10,2.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34093$nfl.g.13520080,Bailey,Zappe,nfl.p.34093$nfl.g.13520080 - Bailey Zappe,QB,CLE,CIN,CLE@CIN,1:00PM EST,20,7.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34112$nfl.g.13520080,Jerome,Ford,nfl.p.34112$nfl.g.13520080 - Jerome Ford,RB,CLE,CIN,CLE@CIN,1:00PM EST,22,7.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40093$nfl.g.13520080,Cedric,Tillman,nfl.p.40093$nfl.g.13520080 - Cedric Tillman,WR,CLE,CIN,CLE@CIN,1:00PM EST,23,7.3,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40195$nfl.g.13520080,Dorian,Thompson-Robinson,nfl.p.40195$nfl.g.13520080 - Dorian Thompson-Robinson,QB,CLE,CIN,CLE@CIN,1:00PM EST,20,2.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40433$nfl.g.13520080,Blake,Whiteheart,nfl.p.40433$nfl.g.13520080 - Blake Whiteheart,TE,CLE,CIN,CLE@CIN,1:00PM EST,10,2.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41016$nfl.g.13520080,Jamari,Thrash,nfl.p.41016$nfl.g.13520080 - Jamari Thrash,WR,CLE,CIN,CLE@CIN,1:00PM EST,10,1.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31012$nfl.g.13520080,Mike,Gesicki,nfl.p.31012$nfl.g.13520080 - Mike Gesicki,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,6.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31257$nfl.g.13520080,Tanner,Hudson,nfl.p.31257$nfl.g.13520080 - Tanner Hudson,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,3.4,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31884$nfl.g.13520080,Drew,Sample,nfl.p.31884$nfl.g.13520080 - Drew Sample,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32014$nfl.g.13520080,Trayveon,Williams,nfl.p.32014$nfl.g.13520080 - Trayveon Williams,RB,CIN,CLE,CLE@CIN,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32138$nfl.g.13520080,Jake,Browning,nfl.p.32138$nfl.g.13520080 - Jake Browning,QB,CIN,CLE,CLE@CIN,1:00PM EST,20,-0.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32671$nfl.g.13520080,Joe,Burrow,nfl.p.32671$nfl.g.13520080 - Joe Burrow,QB,CIN,CLE,CLE@CIN,1:00PM EST,35,22.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32703$nfl.g.13520080,Tee,Higgins,nfl.p.32703$nfl.g.13520080 - Tee Higgins,WR,CIN,CLE,CLE@CIN,1:00PM EST,32,14.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33393$nfl.g.13520080,Ja'Marr,Chase,nfl.p.33393$nfl.g.13520080 - Ja'Marr Chase,WR,CIN,CLE,CLE@CIN,1:00PM EST,40,20.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33605$nfl.g.13520080,Khalil,Herbert,nfl.p.33605$nfl.g.13520080 - Khalil Herbert,RB,CIN,CLE,CLE@CIN,1:00PM EST,10,1.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40158$nfl.g.13520080,Charlie,Jones,nfl.p.40158$nfl.g.13520080 - Charlie Jones,WR,CIN,CLE,CLE@CIN,1:00PM EST,10,0.7,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40196$nfl.g.13520080,Chase,Brown,nfl.p.40196$nfl.g.13520080 - Chase Brown,RB,CIN,CLE,CLE@CIN,1:00PM EST,36,14.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40211$nfl.g.13520080,Andrei,Iosivas,nfl.p.40211$nfl.g.13520080 - Andrei Iosivas,WR,CIN,CLE,CLE@CIN,1:00PM EST,14,5.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40974$nfl.g.13520080,Jermaine,Burton,nfl.p.40974$nfl.g.13520080 - Jermaine Burton,WR,CIN,CLE,CLE@CIN,1:00PM EST,10,2.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41066$nfl.g.13520080,Tanner,McLachlan,nfl.p.41066$nfl.g.13520080 - Tanner McLachlan,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41353$nfl.g.13520080,Cam,Grandy,nfl.p.41353$nfl.g.13520080 - Cam Grandy,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,1.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41421$nfl.g.13520080,Isaiah,Williams,nfl.p.41421$nfl.g.13520080 - Isaiah Williams,WR,CIN,CLE,CLE@CIN,1:00PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.5$nfl.g.13520080,Cleveland,Browns,nfl.t.5$nfl.g.13520080 - Cleveland Browns,DEF,CLE,CIN,CLE@CIN,1:00PM EST,11,5.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.4$nfl.g.13520080,Cincinnati,Bengals,nfl.t.4$nfl.g.13520080 - Cincinnati Bengals,DEF,CIN,CLE,CLE@CIN,1:00PM EST,15,5.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34158$nfl.g.13520080,Michael,Woods II,nfl.p.34158$nfl.g.13520080 - Michael Woods II,WR,CLE,CIN,CLE@CIN,1:00PM EST,10,3.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32871$nfl.g.13520080,James,Proche II,nfl.p.32871$nfl.g.13520080 - James Proche II,WR,CLE,CIN,CLE@CIN,1:00PM EST,10,0.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31219$nfl.g.13520080,Logan,Woodside,nfl.p.31219$nfl.g.13520080 - Logan Woodside,QB,CIN,CLE,CLE@CIN,1:00PM EST,20,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26664$nfl.g.13520081,Robert,Woods,nfl.p.26664$nfl.g.13520081 - Robert Woods,WR,HOU,KC,HOU@KC,1:00PM EST,10,1.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30161$nfl.g.13520081,Joe,Mixon,nfl.p.30161$nfl.g.13520081 - Joe Mixon,RB,HOU,KC,HOU@KC,1:00PM EST,35,17.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30860$nfl.g.13520081,Dare,Ogunbowale,nfl.p.30860$nfl.g.13520081 - Dare Ogunbowale,RB,HOU,KC,HOU@KC,1:00PM EST,10,2.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31107$nfl.g.13520081,Dalton,Schultz,nfl.p.31107$nfl.g.13520081 - Dalton Schultz,TE,HOU,KC,HOU@KC,1:00PM EST,13,5.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32187$nfl.g.13520081,Steven,Sims,nfl.p.32187$nfl.g.13520081 - Steven Sims,WR,HOU,KC,HOU@KC,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33455$nfl.g.13520081,Davis,Mills,nfl.p.33455$nfl.g.13520081 - Davis Mills,QB,HOU,KC,HOU@KC,1:00PM EST,20,1.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33477$nfl.g.13520081,Nico,Collins,nfl.p.33477$nfl.g.13520081 - Nico Collins,WR,HOU,KC,HOU@KC,1:00PM EST,33,15.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33999$nfl.g.13520081,John,Metchie III,nfl.p.33999$nfl.g.13520081 - John Metchie III,WR,HOU,KC,HOU@KC,1:00PM EST,10,4.1,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34063$nfl.g.13520081,Dameon,Pierce,nfl.p.34063$nfl.g.13520081 - Dameon Pierce,RB,HOU,KC,HOU@KC,1:00PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40030$nfl.g.13520081,C.J.,Stroud,nfl.p.40030$nfl.g.13520081 - C.J. Stroud,QB,HOU,KC,HOU@KC,1:00PM EST,24,14.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40097$nfl.g.13520081,Tank,Dell,nfl.p.40097$nfl.g.13520081 - Tank Dell,WR,HOU,KC,HOU@KC,1:00PM EST,18,8.2,D," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40232$nfl.g.13520081,Xavier,Hutchinson,nfl.p.40232$nfl.g.13520081 - Xavier Hutchinson,WR,HOU,KC,HOU@KC,1:00PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40987$nfl.g.13520081,Cade,Stover,nfl.p.40987$nfl.g.13520081 - Cade Stover,TE,HOU,KC,HOU@KC,1:00PM EST,10,2.4,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26650$nfl.g.13520081,DeAndre,Hopkins,nfl.p.26650$nfl.g.13520081 - DeAndre Hopkins,WR,KC,HOU,HOU@KC,1:00PM EST,22,7.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26686$nfl.g.13520081,Travis,Kelce,nfl.p.26686$nfl.g.13520081 - Travis Kelce,TE,KC,HOU,HOU@KC,1:00PM EST,22,8.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29236$nfl.g.13520081,Carson,Wentz,nfl.p.29236$nfl.g.13520081 - Carson Wentz,QB,KC,HOU,HOU@KC,1:00PM EST,20,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30123$nfl.g.13520081,Patrick,Mahomes,nfl.p.30123$nfl.g.13520081 - Patrick Mahomes,QB,KC,HOU,HOU@KC,1:00PM EST,28,17.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30175$nfl.g.13520081,JuJu,Smith-Schuster,nfl.p.30175$nfl.g.13520081 - JuJu Smith-Schuster,WR,KC,HOU,HOU@KC,1:00PM EST,10,4.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30199$nfl.g.13520081,Kareem,Hunt,nfl.p.30199$nfl.g.13520081 - Kareem Hunt,RB,KC,HOU,HOU@KC,1:00PM EST,18,11.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30227$nfl.g.13520081,Samaje,Perine,nfl.p.30227$nfl.g.13520081 - Samaje Perine,RB,KC,HOU,HOU@KC,1:00PM EST,10,4.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31114$nfl.g.13520081,Justin,Watson,nfl.p.31114$nfl.g.13520081 - Justin Watson,WR,KC,HOU,HOU@KC,1:00PM EST,10,2.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32702$nfl.g.13520081,Clyde,Edwards-Helaire,nfl.p.32702$nfl.g.13520081 - Clyde Edwards-Helaire,RB,KC,HOU,HOU@KC,1:00PM EST,10,3.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33550$nfl.g.13520081,Noah,Gray,nfl.p.33550$nfl.g.13520081 - Noah Gray,TE,KC,HOU,HOU@KC,1:00PM EST,16,6.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34207$nfl.g.13520081,Isiah,Pacheco,nfl.p.34207$nfl.g.13520081 - Isiah Pacheco,RB,KC,HOU,HOU@KC,1:00PM EST,18,8.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40877$nfl.g.13520081,Xavier,Worthy,nfl.p.40877$nfl.g.13520081 - Xavier Worthy,WR,KC,HOU,HOU@KC,1:00PM EST,19,9.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41464$nfl.g.13520081,Carson,Steele,nfl.p.41464$nfl.g.13520081 - Carson Steele,RB,KC,HOU,HOU@KC,1:00PM EST,10,1.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.34$nfl.g.13520081,Houston,Texans,nfl.t.34$nfl.g.13520081 - Houston Texans,DEF,HOU,KC,HOU@KC,1:00PM EST,15,8.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.12$nfl.g.13520081,Kansas City,Chiefs,nfl.t.12$nfl.g.13520081 - Kansas City Chiefs,DEF,KC,HOU,HOU@KC,1:00PM EST,14,6.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40571$nfl.g.13520081,Nikko,Remigio,nfl.p.40571$nfl.g.13520081 - Nikko Remigio,WR,KC,HOU,HOU@KC,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31857$nfl.g.13520081,Hollywood,Brown,nfl.p.31857$nfl.g.13520081 - Hollywood Brown,WR,KC,HOU,HOU@KC,1:00PM EST,20,7.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30571$nfl.g.13520081,Anthony,Firkser,nfl.p.30571$nfl.g.13520081 - Anthony Firkser,TE,KC,HOU,HOU@KC,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31882$nfl.g.13520081,Irv,Smith,nfl.p.31882$nfl.g.13520081 - Irv Smith,TE,HOU,KC,HOU@KC,1:00PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34009$nfl.g.13520081,Skyy,Moore,nfl.p.34009$nfl.g.13520081 - Skyy Moore,WR,KC,HOU,HOU@KC,1:00PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34607$nfl.g.13520081,Peyton,Hendershot,nfl.p.34607$nfl.g.13520081 - Peyton Hendershot,TE,KC,HOU,HOU@KC,1:00PM EST,10,1.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.25785$nfl.g.13520082,Russell,Wilson,nfl.p.25785$nfl.g.13520082 - Russell Wilson,QB,PIT,BAL,PIT@BAL,4:30PM EST,25,16.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26652$nfl.g.13520082,Cordarrelle,Patterson,nfl.p.26652$nfl.g.13520082 - Cordarrelle Patterson,RB,PIT,BAL,PIT@BAL,4:30PM EST,10,2.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28531$nfl.g.13520082,MyCole,Pruitt,nfl.p.28531$nfl.g.13520082 - MyCole Pruitt,TE,PIT,BAL,PIT@BAL,4:30PM EST,10,1.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30120$nfl.g.13520082,Mike,Williams,nfl.p.30120$nfl.g.13520082 - Mike Williams,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,3.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31301$nfl.g.13520082,Kyle,Allen,nfl.p.31301$nfl.g.13520082 - Kyle Allen,QB,PIT,BAL,PIT@BAL,4:30PM EST,20,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32040$nfl.g.13520082,Scotty,Miller,nfl.p.32040$nfl.g.13520082 - Scotty Miller,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,1.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32727$nfl.g.13520082,Van,Jefferson,nfl.p.32727$nfl.g.13520082 - Van Jefferson,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,3.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33399$nfl.g.13520082,Justin,Fields,nfl.p.33399$nfl.g.13520082 - Justin Fields,QB,PIT,BAL,PIT@BAL,4:30PM EST,20,12.0,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33412$nfl.g.13520082,Najee,Harris,nfl.p.33412$nfl.g.13520082 - Najee Harris,RB,PIT,BAL,PIT@BAL,4:30PM EST,24,10.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33443$nfl.g.13520082,Pat,Freiermuth,nfl.p.33443$nfl.g.13520082 - Pat Freiermuth,TE,PIT,BAL,PIT@BAL,4:30PM EST,18,7.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33637$nfl.g.13520082,Ben,Skowronek,nfl.p.33637$nfl.g.13520082 - Ben Skowronek,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34007$nfl.g.13520082,George,Pickens,nfl.p.34007$nfl.g.13520082 - George Pickens,WR,PIT,BAL,PIT@BAL,4:30PM EST,27,10.7,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34094$nfl.g.13520082,Calvin,Austin III,nfl.p.34094$nfl.g.13520082 - Calvin Austin III,WR,PIT,BAL,PIT@BAL,4:30PM EST,16,6.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34163$nfl.g.13520082,Connor,Heyward,nfl.p.34163$nfl.g.13520082 - Connor Heyward,TE,PIT,BAL,PIT@BAL,4:30PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34447$nfl.g.13520082,Jaylen,Warren,nfl.p.34447$nfl.g.13520082 - Jaylen Warren,RB,PIT,BAL,PIT@BAL,4:30PM EST,16,6.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40094$nfl.g.13520082,Darnell,Washington,nfl.p.40094$nfl.g.13520082 - Darnell Washington,TE,PIT,BAL,PIT@BAL,4:30PM EST,10,2.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.8937$nfl.g.13520082,Josh,Johnson,nfl.p.8937$nfl.g.13520082 - Josh Johnson,QB,BAL,PIT,PIT@BAL,4:30PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28408$nfl.g.13520082,Nelson,Agholor,nfl.p.28408$nfl.g.13520082 - Nelson Agholor,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,3.2,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29279$nfl.g.13520082,Derrick,Henry,nfl.p.29279$nfl.g.13520082 - Derrick Henry,RB,BAL,PIT,PIT@BAL,4:30PM EST,35,18.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30592$nfl.g.13520082,Patrick,Ricard,nfl.p.30592$nfl.g.13520082 - Patrick Ricard,RB,BAL,PIT,PIT@BAL,4:30PM EST,10,2.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31002$nfl.g.13520082,Lamar,Jackson,nfl.p.31002$nfl.g.13520082 - Lamar Jackson,QB,BAL,PIT,PIT@BAL,4:30PM EST,38,25.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31056$nfl.g.13520082,Mark,Andrews,nfl.p.31056$nfl.g.13520082 - Mark Andrews,TE,BAL,PIT,PIT@BAL,4:30PM EST,21,8.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31898$nfl.g.13520082,Diontae,Johnson,nfl.p.31898$nfl.g.13520082 - Diontae Johnson,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,7.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31945$nfl.g.13520082,Justice,Hill,nfl.p.31945$nfl.g.13520082 - Justice Hill,RB,BAL,PIT,PIT@BAL,4:30PM EST,14,7.1,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33415$nfl.g.13520082,Rashod,Bateman,nfl.p.33415$nfl.g.13520082 - Rashod Bateman,WR,BAL,PIT,PIT@BAL,4:30PM EST,22,9.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33519$nfl.g.13520082,Tylan,Wallace,nfl.p.33519$nfl.g.13520082 - Tylan Wallace,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,3.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34095$nfl.g.13520082,Isaiah,Likely,nfl.p.34095$nfl.g.13520082 - Isaiah Likely,TE,BAL,PIT,PIT@BAL,4:30PM EST,11,6.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40039$nfl.g.13520082,Zay,Flowers,nfl.p.40039$nfl.g.13520082 - Zay Flowers,WR,BAL,PIT,PIT@BAL,4:30PM EST,26,11.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40641$nfl.g.13520082,Keaton,Mitchell,nfl.p.40641$nfl.g.13520082 - Keaton Mitchell,RB,BAL,PIT,PIT@BAL,4:30PM EST,10,0.0,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40991$nfl.g.13520082,Devontez,Walker,nfl.p.40991$nfl.g.13520082 - Devontez Walker,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,4.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41033$nfl.g.13520082,Rasheen,Ali,nfl.p.41033$nfl.g.13520082 - Rasheen Ali,RB,BAL,PIT,PIT@BAL,4:30PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.23$nfl.g.13520082,Pittsburgh,Steelers,nfl.t.23$nfl.g.13520082 - Pittsburgh Steelers,DEF,PIT,BAL,PIT@BAL,4:30PM EST,13,9.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.33$nfl.g.13520082,Baltimore,Ravens,nfl.t.33$nfl.g.13520082 - Baltimore Ravens,DEF,BAL,PIT,PIT@BAL,4:30PM EST,13,5.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32398$nfl.g.13520082,Deonte,Harty,nfl.p.32398$nfl.g.13520082 - Deonte Harty,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40952$nfl.g.13520082,Roman,Wilson,nfl.p.40952$nfl.g.13520082 - Roman Wilson,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28365$nfl.g.13520083,Chris,Manhertz,nfl.p.28365$nfl.g.13520083 - Chris Manhertz,TE,NYG,ATL,NYG@ATL,1:00PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31874$nfl.g.13520083,Drew,Lock,nfl.p.31874$nfl.g.13520083 - Drew Lock,QB,NYG,ATL,NYG@ATL,1:00PM EST,20,8.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31906$nfl.g.13520083,Devin,Singletary,nfl.p.31906$nfl.g.13520083 - Devin Singletary,RB,NYG,ATL,NYG@ATL,1:00PM EST,11,6.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32003$nfl.g.13520083,Darius,Slayton,nfl.p.32003$nfl.g.13520083 - Darius Slayton,WR,NYG,ATL,NYG@ATL,1:00PM EST,11,6.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33545$nfl.g.13520083,Ihmir,Smith-Marsette,nfl.p.33545$nfl.g.13520083 - Ihmir Smith-Marsette,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33998$nfl.g.13520083,Wan'Dale,Robinson,nfl.p.33998$nfl.g.13520083 - Wan'Dale Robinson,WR,NYG,ATL,NYG@ATL,1:00PM EST,15,7.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34036$nfl.g.13520083,Greg,Dulcich,nfl.p.34036$nfl.g.13520083 - Greg Dulcich,TE,NYG,ATL,NYG@ATL,1:00PM EST,10,1.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34068$nfl.g.13520083,Daniel,Bellinger,nfl.p.34068$nfl.g.13520083 - Daniel Bellinger,TE,NYG,ATL,NYG@ATL,1:00PM EST,10,2.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40128$nfl.g.13520083,Jalin,Hyatt,nfl.p.40128$nfl.g.13520083 - Jalin Hyatt,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40198$nfl.g.13520083,Eric,Gray,nfl.p.40198$nfl.g.13520083 - Eric Gray,RB,NYG,ATL,NYG@ATL,1:00PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40529$nfl.g.13520083,Bryce,Ford-Wheaton,nfl.p.40529$nfl.g.13520083 - Bryce Ford-Wheaton,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40533$nfl.g.13520083,Tommy,DeVito,nfl.p.40533$nfl.g.13520083 - Tommy DeVito,QB,NYG,ATL,NYG@ATL,1:00PM EST,20,6.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40899$nfl.g.13520083,Malik,Nabers,nfl.p.40899$nfl.g.13520083 - Malik Nabers,WR,NYG,ATL,NYG@ATL,1:00PM EST,29,13.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41048$nfl.g.13520083,Tyrone,Tracy Jr.,nfl.p.41048$nfl.g.13520083 - Tyrone Tracy Jr.,RB,NYG,ATL,NYG@ATL,1:00PM EST,21,9.5,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.25812$nfl.g.13520083,Kirk,Cousins,nfl.p.25812$nfl.g.13520083 - Kirk Cousins,QB,ATL,NYG,NYG@ATL,1:00PM EST,21,13.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31157$nfl.g.13520083,Ray-Ray,McCloud,nfl.p.31157$nfl.g.13520083 - Ray-Ray McCloud,WR,ATL,NYG,NYG@ATL,1:00PM EST,19,6.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31329$nfl.g.13520083,Ross,Dwelley,nfl.p.31329$nfl.g.13520083 - Ross Dwelley,TE,ATL,NYG,NYG@ATL,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31769$nfl.g.13520083,KhaDarel,Hodge,nfl.p.31769$nfl.g.13520083 - KhaDarel Hodge,WR,ATL,NYG,NYG@ATL,1:00PM EST,10,2.0,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32843$nfl.g.13520083,Darnell,Mooney,nfl.p.32843$nfl.g.13520083 - Darnell Mooney,WR,ATL,NYG,NYG@ATL,1:00PM EST,24,10.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32860$nfl.g.13520083,Charlie,Woerner,nfl.p.32860$nfl.g.13520083 - Charlie Woerner,TE,ATL,NYG,NYG@ATL,1:00PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33392$nfl.g.13520083,Kyle,Pitts,nfl.p.33392$nfl.g.13520083 - Kyle Pitts,TE,ATL,NYG,NYG@ATL,1:00PM EST,12,6.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33571$nfl.g.13520083,Avery,Williams,nfl.p.33571$nfl.g.13520083 - Avery Williams,RB,ATL,NYG,NYG@ATL,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33963$nfl.g.13520083,Drake,London,nfl.p.33963$nfl.g.13520083 - Drake London,WR,ATL,NYG,NYG@ATL,1:00PM EST,29,12.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34107$nfl.g.13520083,Tyler,Allgeier,nfl.p.34107$nfl.g.13520083 - Tyler Allgeier,RB,ATL,NYG,NYG@ATL,1:00PM EST,14,6.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40055$nfl.g.13520083,Bijan,Robinson,nfl.p.40055$nfl.g.13520083 - Bijan Robinson,RB,ATL,NYG,NYG@ATL,1:00PM EST,38,16.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40298$nfl.g.13520083,Robert,Burns,nfl.p.40298$nfl.g.13520083 - Robert Burns,RB,ATL,NYG,NYG@ATL,1:00PM EST,10,0.0,PUP," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40889$nfl.g.13520083,Michael,Penix Jr.,nfl.p.40889$nfl.g.13520083 - Michael Penix Jr.,QB,ATL,NYG,NYG@ATL,1:00PM EST,20,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41074$nfl.g.13520083,Casey,Washington,nfl.p.41074$nfl.g.13520083 - Casey Washington,WR,ATL,NYG,NYG@ATL,1:00PM EST,10,1.0,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.19$nfl.g.13520083,New York,Giants,nfl.t.19$nfl.g.13520083 - New York Giants,DEF,NYG,ATL,NYG@ATL,1:00PM EST,11,5.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.1$nfl.g.13520083,Atlanta,Falcons,nfl.t.1$nfl.g.13520083 - Atlanta Falcons,DEF,ATL,NYG,NYG@ATL,1:00PM EST,14,5.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40420$nfl.g.13520083,Carlos,Washington Jr.,nfl.p.40420$nfl.g.13520083 - Carlos Washington Jr.,RB,ATL,NYG,NYG@ATL,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31431$nfl.g.13520083,Tim,Boyle,nfl.p.31431$nfl.g.13520083 - Tim Boyle,QB,NYG,ATL,NYG@ATL,1:00PM EST,20,5.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32612$nfl.g.13520083,Gunner,Olszewski,nfl.p.32612$nfl.g.13520083 - Gunner Olszewski,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29269$nfl.g.13520084,Hunter,Henry,nfl.p.29269$nfl.g.13520084 - Hunter Henry,TE,NE,BUF,NE@BUF,4:25PM EST,16,7.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29315$nfl.g.13520084,Austin,Hooper,nfl.p.29315$nfl.g.13520084 - Austin Hooper,TE,NE,BUF,NE@BUF,4:25PM EST,13,5.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29325$nfl.g.13520084,Jacoby,Brissett,nfl.p.29325$nfl.g.13520084 - Jacoby Brissett,QB,NE,BUF,NE@BUF,4:25PM EST,20,7.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30551$nfl.g.13520084,Kendrick,Bourne,nfl.p.30551$nfl.g.13520084 - Kendrick Bourne,WR,NE,BUF,NE@BUF,4:25PM EST,16,4.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32736$nfl.g.13520084,Antonio,Gibson,nfl.p.32736$nfl.g.13520084 - Antonio Gibson,RB,NE,BUF,NE@BUF,4:25PM EST,10,5.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33199$nfl.g.13520084,JaMycal,Hasty,nfl.p.33199$nfl.g.13520084 - JaMycal Hasty,RB,NE,BUF,NE@BUF,4:25PM EST,10,2.2,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33508$nfl.g.13520084,Rhamondre,Stevenson,nfl.p.33508$nfl.g.13520084 - Rhamondre Stevenson,RB,NE,BUF,NE@BUF,4:25PM EST,19,11.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40222$nfl.g.13520084,DeMario,Douglas,nfl.p.40222$nfl.g.13520084 - DeMario Douglas,WR,NE,BUF,NE@BUF,4:25PM EST,17,6.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40224$nfl.g.13520084,Kayshon,Boutte,nfl.p.40224$nfl.g.13520084 - Kayshon Boutte,WR,NE,BUF,NE@BUF,4:25PM EST,14,4.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40881$nfl.g.13520084,Drake,Maye,nfl.p.40881$nfl.g.13520084 - Drake Maye,QB,NE,BUF,NE@BUF,4:25PM EST,24,14.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40914$nfl.g.13520084,Ja'Lynn,Polk,nfl.p.40914$nfl.g.13520084 - Ja'Lynn Polk,WR,NE,BUF,NE@BUF,4:25PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40982$nfl.g.13520084,Javon,Baker,nfl.p.40982$nfl.g.13520084 - Javon Baker,WR,NE,BUF,NE@BUF,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41060$nfl.g.13520084,Joe,Milton III,nfl.p.41060$nfl.g.13520084 - Joe Milton III,QB,NE,BUF,NE@BUF,4:25PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41106$nfl.g.13520084,Jaheim,Bell,nfl.p.41106$nfl.g.13520084 - Jaheim Bell,TE,NE,BUF,NE@BUF,4:25PM EST,10,0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28392$nfl.g.13520084,Amari,Cooper,nfl.p.28392$nfl.g.13520084 - Amari Cooper,WR,BUF,NE,NE@BUF,4:25PM EST,22,7.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30115$nfl.g.13520084,Mitchell,Trubisky,nfl.p.30115$nfl.g.13520084 - Mitchell Trubisky,QB,BUF,NE,NE@BUF,4:25PM EST,20,-0.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30153$nfl.g.13520084,Curtis,Samuel,nfl.p.30153$nfl.g.13520084 - Curtis Samuel,WR,BUF,NE,NE@BUF,4:25PM EST,11,3.0,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30231$nfl.g.13520084,Mack,Hollins,nfl.p.30231$nfl.g.13520084 - Mack Hollins,WR,BUF,NE,NE@BUF,4:25PM EST,12,5.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30977$nfl.g.13520084,Josh,Allen,nfl.p.30977$nfl.g.13520084 - Josh Allen,QB,BUF,NE,NE@BUF,4:25PM EST,40,25.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31928$nfl.g.13520084,Dawson,Knox,nfl.p.31928$nfl.g.13520084 - Dawson Knox,TE,BUF,NE,NE@BUF,4:25PM EST,10,3.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32018$nfl.g.13520084,Ty,Johnson,nfl.p.32018$nfl.g.13520084 - Ty Johnson,RB,BUF,NE,NE@BUF,4:25PM EST,13,5.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33357$nfl.g.13520084,Reggie,Gilliam,nfl.p.33357$nfl.g.13520084 - Reggie Gilliam,RB,BUF,NE,NE@BUF,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33819$nfl.g.13520084,Quintin,Morris,nfl.p.33819$nfl.g.13520084 - Quintin Morris,TE,BUF,NE,NE@BUF,4:25PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34019$nfl.g.13520084,James,Cook,nfl.p.34019$nfl.g.13520084 - James Cook,RB,BUF,NE,NE@BUF,4:25PM EST,34,15.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34104$nfl.g.13520084,Khalil,Shakir,nfl.p.34104$nfl.g.13520084 - Khalil Shakir,WR,BUF,NE,NE@BUF,4:25PM EST,27,10.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40048$nfl.g.13520084,Dalton,Kincaid,nfl.p.40048$nfl.g.13520084 - Dalton Kincaid,TE,BUF,NE,NE@BUF,4:25PM EST,16,6.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40911$nfl.g.13520084,Keon,Coleman,nfl.p.40911$nfl.g.13520084 - Keon Coleman,WR,BUF,NE,NE@BUF,4:25PM EST,21,8.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40980$nfl.g.13520084,Ray,Davis,nfl.p.40980$nfl.g.13520084 - Ray Davis,RB,BUF,NE,NE@BUF,4:25PM EST,13,6.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.17$nfl.g.13520084,New England,Patriots,nfl.t.17$nfl.g.13520084 - New England Patriots,DEF,NE,BUF,NE@BUF,4:25PM EST,10,4.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.2$nfl.g.13520084,Buffalo,Bills,nfl.t.2$nfl.g.13520084 - Buffalo Bills,DEF,BUF,NE,NE@BUF,4:25PM EST,19,7.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41352$nfl.g.13520084,Jack,Westover,nfl.p.41352$nfl.g.13520084 - Jack Westover,TE,NE,BUF,NE@BUF,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31141$nfl.g.13520084,Mike,White,nfl.p.31141$nfl.g.13520084 - Mike White,QB,BUF,NE,NE@BUF,4:25PM EST,20,0.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27589$nfl.g.13520085,Allen,Robinson,nfl.p.27589$nfl.g.13520085 - Allen Robinson,WR,DET,CHI,DET@CHI,1:00PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29235$nfl.g.13520085,Jared,Goff,nfl.p.29235$nfl.g.13520085 - Jared Goff,QB,DET,CHI,DET@CHI,1:00PM EST,31,19.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30511$nfl.g.13520085,Tim,Patrick,nfl.p.30511$nfl.g.13520085 - Tim Patrick,WR,DET,CHI,DET@CHI,1:00PM EST,18,5.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31905$nfl.g.13520085,David,Montgomery,nfl.p.31905$nfl.g.13520085 - David Montgomery,RB,DET,CHI,DET@CHI,1:00PM EST,28,14.6,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32596$nfl.g.13520085,Craig,Reynolds,nfl.p.32596$nfl.g.13520085 - Craig Reynolds,RB,DET,CHI,DET@CHI,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33500$nfl.g.13520085,Amon-Ra,St. Brown,nfl.p.33500$nfl.g.13520085 - Amon-Ra St. Brown,WR,DET,CHI,DET@CHI,1:00PM EST,34,15.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33774$nfl.g.13520085,Brock,Wright,nfl.p.33774$nfl.g.13520085 - Brock Wright,TE,DET,CHI,DET@CHI,1:00PM EST,10,2.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33803$nfl.g.13520085,Shane,Zylstra,nfl.p.33803$nfl.g.13520085 - Shane Zylstra,TE,DET,CHI,DET@CHI,1:00PM EST,10,1.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33967$nfl.g.13520085,Jameson,Williams,nfl.p.33967$nfl.g.13520085 - Jameson Williams,WR,DET,CHI,DET@CHI,1:00PM EST,23,10.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40059$nfl.g.13520085,Jahmyr,Gibbs,nfl.p.40059$nfl.g.13520085 - Jahmyr Gibbs,RB,DET,CHI,DET@CHI,1:00PM EST,38,17.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40064$nfl.g.13520085,Sam,LaPorta,nfl.p.40064$nfl.g.13520085 - Sam LaPorta,TE,DET,CHI,DET@CHI,1:00PM EST,20,8.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40096$nfl.g.13520085,Hendon,Hooker,nfl.p.40096$nfl.g.13520085 - Hendon Hooker,QB,DET,CHI,DET@CHI,1:00PM EST,20,0.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41006$nfl.g.13520085,Sione,Vaki,nfl.p.41006$nfl.g.13520085 - Sione Vaki,RB,DET,CHI,DET@CHI,1:00PM EST,10,0.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.7777$nfl.g.13520085,Marcedes,Lewis,nfl.p.7777$nfl.g.13520085 - Marcedes Lewis,TE,CHI,DET,DET@CHI,1:00PM EST,10,0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26699$nfl.g.13520085,Keenan,Allen,nfl.p.26699$nfl.g.13520085 - Keenan Allen,WR,CHI,DET,DET@CHI,1:00PM EST,26,9.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30157$nfl.g.13520085,Gerald,Everett,nfl.p.30157$nfl.g.13520085 - Gerald Everett,TE,CHI,DET,DET@CHI,1:00PM EST,10,0.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30994$nfl.g.13520085,DJ,Moore,nfl.p.30994$nfl.g.13520085 - DJ Moore,WR,CHI,DET,DET@CHI,1:00PM EST,29,10.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32036$nfl.g.13520085,Travis,Homer,nfl.p.32036$nfl.g.13520085 - Travis Homer,RB,CHI,DET,DET@CHI,1:00PM EST,10,0.6,D," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32705$nfl.g.13520085,D'Andre,Swift,nfl.p.32705$nfl.g.13520085 - D'Andre Swift,RB,CHI,DET,DET@CHI,1:00PM EST,20,11.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32713$nfl.g.13520085,Cole,Kmet,nfl.p.32713$nfl.g.13520085 - Cole Kmet,TE,CHI,DET,DET@CHI,1:00PM EST,14,6.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32835$nfl.g.13520085,Collin,Johnson,nfl.p.32835$nfl.g.13520085 - Collin Johnson,WR,CHI,DET,DET@CHI,1:00PM EST,10,0.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40141$nfl.g.13520085,Tyler,Scott,nfl.p.40141$nfl.g.13520085 - Tyler Scott,WR,CHI,DET,DET@CHI,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40162$nfl.g.13520085,Roschon,Johnson,nfl.p.40162$nfl.g.13520085 - Roschon Johnson,RB,CHI,DET,DET@CHI,1:00PM EST,11,6.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40504$nfl.g.13520085,Tyson,Bagent,nfl.p.40504$nfl.g.13520085 - Tyson Bagent,QB,CHI,DET,DET@CHI,1:00PM EST,20,0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40900$nfl.g.13520085,Caleb,Williams,nfl.p.40900$nfl.g.13520085 - Caleb Williams,QB,CHI,DET,DET@CHI,1:00PM EST,28,15.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40901$nfl.g.13520085,Rome,Odunze,nfl.p.40901$nfl.g.13520085 - Rome Odunze,WR,CHI,DET,DET@CHI,1:00PM EST,20,7.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.8$nfl.g.13520085,Detroit,Lions,nfl.t.8$nfl.g.13520085 - Detroit Lions,DEF,DET,CHI,DET@CHI,1:00PM EST,17,7.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.3$nfl.g.13520085,Chicago,Bears,nfl.t.3$nfl.g.13520085 - Chicago Bears,DEF,CHI,DET,DET@CHI,1:00PM EST,11,6.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34712$nfl.g.13520085,Maurice,Alexander,nfl.p.34712$nfl.g.13520085 - Maurice Alexander,WR,DET,CHI,DET@CHI,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32273$nfl.g.13520085,Stephen,Carlson,nfl.p.32273$nfl.g.13520085 - Stephen Carlson,TE,CHI,DET,DET@CHI,1:00PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29631$nfl.g.13520085,Kalif,Raymond,nfl.p.29631$nfl.g.13520085 - Kalif Raymond,WR,DET,CHI,DET@CHI,1:00PM EST,10,4.2,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29288$nfl.g.13520086,Tyler,Boyd,nfl.p.29288$nfl.g.13520086 - Tyler Boyd,WR,TEN,IND,TEN@IND,1:00PM EST,10,4.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29328$nfl.g.13520086,Nick,Vannett,nfl.p.29328$nfl.g.13520086 - Nick Vannett,TE,TEN,IND,TEN@IND,1:00PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30996$nfl.g.13520086,Calvin,Ridley,nfl.p.30996$nfl.g.13520086 - Calvin Ridley,WR,TEN,IND,TEN@IND,1:00PM EST,23,9.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31046$nfl.g.13520086,Mason,Rudolph,nfl.p.31046$nfl.g.13520086 - Mason Rudolph,QB,TEN,IND,TEN@IND,1:00PM EST,20,14.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31960$nfl.g.13520086,Tony,Pollard,nfl.p.31960$nfl.g.13520086 - Tony Pollard,RB,TEN,IND,TEN@IND,1:00PM EST,25,11.9,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32782$nfl.g.13520086,Joshua,Kelley,nfl.p.32782$nfl.g.13520086 - Joshua Kelley,RB,TEN,IND,TEN@IND,1:00PM EST,10,3.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33348$nfl.g.13520086,Nick,Westbrook-Ikhine,nfl.p.33348$nfl.g.13520086 - Nick Westbrook-Ikhine,WR,TEN,IND,TEN@IND,1:00PM EST,19,9.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34099$nfl.g.13520086,Chig,Okonkwo,nfl.p.34099$nfl.g.13520086 - Chig Okonkwo,TE,TEN,IND,TEN@IND,1:00PM EST,11,4.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34451$nfl.g.13520086,Julius,Chestnut,nfl.p.34451$nfl.g.13520086 - Julius Chestnut,RB,TEN,IND,TEN@IND,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40068$nfl.g.13520086,Will,Levis,nfl.p.40068$nfl.g.13520086 - Will Levis,QB,TEN,IND,TEN@IND,1:00PM EST,20,10.9,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40119$nfl.g.13520086,Tyjae,Spears,nfl.p.40119$nfl.g.13520086 - Tyjae Spears,RB,TEN,IND,TEN@IND,1:00PM EST,19,6.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40182$nfl.g.13520086,Josh,Whyle,nfl.p.40182$nfl.g.13520086 - Josh Whyle,TE,TEN,IND,TEN@IND,1:00PM EST,10,3.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40263$nfl.g.13520086,Colton,Dowell,nfl.p.40263$nfl.g.13520086 - Colton Dowell,WR,TEN,IND,TEN@IND,1:00PM EST,10,0.2,PUP," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41065$nfl.g.13520086,Jha'Quan,Jackson,nfl.p.41065$nfl.g.13520086 - Jha'Quan Jackson,WR,TEN,IND,TEN@IND,1:00PM EST,10,0.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41251$nfl.g.13520086,Bryce,Oliver,nfl.p.41251$nfl.g.13520086 - Bryce Oliver,WR,TEN,IND,TEN@IND,1:00PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41662$nfl.g.13520086,David,Martin-Robinson,nfl.p.41662$nfl.g.13520086 - David Martin-Robinson,TE,TEN,IND,TEN@IND,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.8795$nfl.g.13520086,Joe,Flacco,nfl.p.8795$nfl.g.13520086 - Joe Flacco,QB,IND,TEN,TEN@IND,1:00PM EST,20,14.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30112$nfl.g.13520086,Mo,Alie-Cox,nfl.p.30112$nfl.g.13520086 - Mo Alie-Cox,TE,IND,TEN,TEN@IND,1:00PM EST,10,2.7,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32292$nfl.g.13520086,Ashton,Dulin,nfl.p.32292$nfl.g.13520086 - Ashton Dulin,WR,IND,TEN,TEN@IND,1:00PM EST,10,1.7,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32704$nfl.g.13520086,Michael,Pittman Jr.,nfl.p.32704$nfl.g.13520086 - Michael Pittman Jr.,WR,IND,TEN,TEN@IND,1:00PM EST,20,7.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32711$nfl.g.13520086,Jonathan,Taylor,nfl.p.32711$nfl.g.13520086 - Jonathan Taylor,RB,IND,TEN,TEN@IND,1:00PM EST,27,13.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33476$nfl.g.13520086,Trey,Sermon,nfl.p.33476$nfl.g.13520086 - Trey Sermon,RB,IND,TEN,TEN@IND,1:00PM EST,10,3.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33515$nfl.g.13520086,Kylen,Granson,nfl.p.33515$nfl.g.13520086 - Kylen Granson,TE,IND,TEN,TEN@IND,1:00PM EST,10,1.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33606$nfl.g.13520086,Sam,Ehlinger,nfl.p.33606$nfl.g.13520086 - Sam Ehlinger,QB,IND,TEN,TEN@IND,1:00PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34008$nfl.g.13520086,Alec,Pierce,nfl.p.34008$nfl.g.13520086 - Alec Pierce,WR,IND,TEN,TEN@IND,1:00PM EST,16,7.8,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34148$nfl.g.13520086,Drew,Ogletree,nfl.p.34148$nfl.g.13520086 - Drew Ogletree,TE,IND,TEN,TEN@IND,1:00PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34261$nfl.g.13520086,Tyler,Goodson,nfl.p.34261$nfl.g.13520086 - Tyler Goodson,RB,IND,TEN,TEN@IND,1:00PM EST,10,3.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40040$nfl.g.13520086,Anthony,Richardson,nfl.p.40040$nfl.g.13520086 - Anthony Richardson,QB,IND,TEN,TEN@IND,1:00PM EST,26,15.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40126$nfl.g.13520086,Josh,Downs,nfl.p.40126$nfl.g.13520086 - Josh Downs,WR,IND,TEN,TEN@IND,1:00PM EST,24,10.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40180$nfl.g.13520086,Will,Mallory,nfl.p.40180$nfl.g.13520086 - Will Mallory,TE,IND,TEN,TEN@IND,1:00PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40915$nfl.g.13520086,Adonai,Mitchell,nfl.p.40915$nfl.g.13520086 - Adonai Mitchell,WR,IND,TEN,TEN@IND,1:00PM EST,10,2.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41046$nfl.g.13520086,Anthony,Gould,nfl.p.41046$nfl.g.13520086 - Anthony Gould,WR,IND,TEN,TEN@IND,1:00PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.10$nfl.g.13520086,Tennessee,Titans,nfl.t.10$nfl.g.13520086 - Tennessee Titans,DEF,TEN,IND,TEN@IND,1:00PM EST,12,4.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.11$nfl.g.13520086,Indianapolis,Colts,nfl.t.11$nfl.g.13520086 - Indianapolis Colts,DEF,IND,TEN,TEN@IND,1:00PM EST,18,6.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33351$nfl.g.13520086,Mason,Kinsey,nfl.p.33351$nfl.g.13520086 - Mason Kinsey,WR,TEN,IND,TEN@IND,1:00PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34300$nfl.g.13520086,Thomas,Odukoya,nfl.p.34300$nfl.g.13520086 - Thomas Odukoya,TE,TEN,IND,TEN@IND,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30150$nfl.g.13520087,Zay,Jones,nfl.p.30150$nfl.g.13520087 - Zay Jones,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,0.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30218$nfl.g.13520087,James,Conner,nfl.p.30218$nfl.g.13520087 - James Conner,RB,ARI,CAR,ARI@CAR,1:00PM EST,36,14.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30502$nfl.g.13520087,Zach,Pascal,nfl.p.30502$nfl.g.13520087 - Zach Pascal,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31833$nfl.g.13520087,Kyler,Murray,nfl.p.31833$nfl.g.13520087 - Kyler Murray,QB,ARI,CAR,ARI@CAR,1:00PM EST,30,17.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32523$nfl.g.13520087,Greg,Dortch,nfl.p.32523$nfl.g.13520087 - Greg Dortch,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,3.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32814$nfl.g.13520087,DeeJay,Dallas,nfl.p.32814$nfl.g.13520087 - DeeJay Dallas,RB,ARI,CAR,ARI@CAR,1:00PM EST,10,0.7,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34010$nfl.g.13520087,Trey,McBride,nfl.p.34010$nfl.g.13520087 - Trey McBride,TE,ARI,CAR,ARI@CAR,1:00PM EST,26,11.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40121$nfl.g.13520087,Michael,Wilson,nfl.p.40121$nfl.g.13520087 - Michael Wilson,WR,ARI,CAR,ARI@CAR,1:00PM EST,16,6.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40188$nfl.g.13520087,Clayton,Tune,nfl.p.40188$nfl.g.13520087 - Clayton Tune,QB,ARI,CAR,ARI@CAR,1:00PM EST,20,0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40226$nfl.g.13520087,Elijah,Higgins,nfl.p.40226$nfl.g.13520087 - Elijah Higgins,TE,ARI,CAR,ARI@CAR,1:00PM EST,10,2.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40430$nfl.g.13520087,Emari,Demercado,nfl.p.40430$nfl.g.13520087 - Emari Demercado,RB,ARI,CAR,ARI@CAR,1:00PM EST,10,3.6,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40643$nfl.g.13520087,Travis,Vokolek,nfl.p.40643$nfl.g.13520087 - Travis Vokolek,TE,ARI,CAR,ARI@CAR,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40893$nfl.g.13520087,Marvin,Harrison Jr.,nfl.p.40893$nfl.g.13520087 - Marvin Harrison Jr.,WR,ARI,CAR,ARI@CAR,1:00PM EST,21,9.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40958$nfl.g.13520087,Trey,Benson,nfl.p.40958$nfl.g.13520087 - Trey Benson,RB,ARI,CAR,ARI@CAR,1:00PM EST,10,3.7,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40959$nfl.g.13520087,Tip,Reiman,nfl.p.40959$nfl.g.13520087 - Tip Reiman,TE,ARI,CAR,ARI@CAR,1:00PM EST,10,1.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41202$nfl.g.13520087,Xavier,Weaver,nfl.p.41202$nfl.g.13520087 - Xavier Weaver,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.24822$nfl.g.13520087,Andy,Dalton,nfl.p.24822$nfl.g.13520087 - Andy Dalton,QB,CAR,ARI,ARI@CAR,1:00PM EST,20,10.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27277$nfl.g.13520087,Adam,Thielen,nfl.p.27277$nfl.g.13520087 - Adam Thielen,WR,CAR,ARI,ARI@CAR,1:00PM EST,25,10.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30339$nfl.g.13520087,David,Moore,nfl.p.30339$nfl.g.13520087 - David Moore,WR,CAR,ARI,ARI@CAR,1:00PM EST,14,4.4,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33471$nfl.g.13520087,Tommy,Tremble,nfl.p.33471$nfl.g.13520087 - Tommy Tremble,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,3.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33514$nfl.g.13520087,Chuba,Hubbard,nfl.p.33514$nfl.g.13520087 - Chuba Hubbard,RB,CAR,ARI,ARI@CAR,1:00PM EST,26,13.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33729$nfl.g.13520087,Feleipe,Franks,nfl.p.33729$nfl.g.13520087 - Feleipe Franks,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34520$nfl.g.13520087,Deven,Thompkins,nfl.p.34520$nfl.g.13520087 - Deven Thompkins,WR,CAR,ARI,ARI@CAR,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34617$nfl.g.13520087,Raheem,Blackshear,nfl.p.34617$nfl.g.13520087 - Raheem Blackshear,RB,CAR,ARI,ARI@CAR,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40029$nfl.g.13520087,Bryce,Young,nfl.p.40029$nfl.g.13520087 - Bryce Young,QB,CAR,ARI,ARI@CAR,1:00PM EST,22,11.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40890$nfl.g.13520087,Xavier,Legette,nfl.p.40890$nfl.g.13520087 - Xavier Legette,WR,CAR,ARI,ARI@CAR,1:00PM EST,17,7.0,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40995$nfl.g.13520087,Ja'Tavion,Sanders,nfl.p.40995$nfl.g.13520087 - Ja'Tavion Sanders,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,3.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41293$nfl.g.13520087,Jalen,Coker,nfl.p.41293$nfl.g.13520087 - Jalen Coker,WR,CAR,ARI,ARI@CAR,1:00PM EST,17,7.5,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.22$nfl.g.13520087,Arizona,Cardinals,nfl.t.22$nfl.g.13520087 - Arizona Cardinals,DEF,ARI,CAR,ARI@CAR,1:00PM EST,15,6.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.29$nfl.g.13520087,Carolina,Panthers,nfl.t.29$nfl.g.13520087 - Carolina Panthers,DEF,CAR,ARI,ARI@CAR,1:00PM EST,10,2.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34027$nfl.g.13520087,Velus,Jones Jr.,nfl.p.34027$nfl.g.13520087 - Velus Jones Jr.,WR,CAR,ARI,ARI@CAR,1:00PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31228$nfl.g.13520087,Mike,Boone,nfl.p.31228$nfl.g.13520087 - Mike Boone,RB,CAR,ARI,ARI@CAR,1:00PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31885$nfl.g.13520087,Miles,Sanders,nfl.p.31885$nfl.g.13520087 - Miles Sanders,RB,CAR,ARI,ARI@CAR,1:00PM EST,14,4.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31071$nfl.g.13520087,Ian,Thomas,nfl.p.31071$nfl.g.13520087 - Ian Thomas,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,0.7,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30972$nfl.g.13520088,Saquon,Barkley,nfl.p.30972$nfl.g.13520088 - Saquon Barkley,RB,PHI,WAS,PHI@WAS,1:00PM EST,40,21.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31883$nfl.g.13520088,A.J.,Brown,nfl.p.31883$nfl.g.13520088 - A.J. Brown,WR,PHI,WAS,PHI@WAS,1:00PM EST,33,13.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32723$nfl.g.13520088,Jalen,Hurts,nfl.p.32723$nfl.g.13520088 - Jalen Hurts,QB,PHI,WAS,PHI@WAS,1:00PM EST,36,22.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33398$nfl.g.13520088,DeVonta,Smith,nfl.p.33398$nfl.g.13520088 - DeVonta Smith,WR,PHI,WAS,PHI@WAS,1:00PM EST,24,11.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33538$nfl.g.13520088,Kenneth,Gainwell,nfl.p.33538$nfl.g.13520088 - Kenneth Gainwell,RB,PHI,WAS,PHI@WAS,1:00PM EST,11,3.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33971$nfl.g.13520088,Jahan,Dotson,nfl.p.33971$nfl.g.13520088 - Jahan Dotson,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33975$nfl.g.13520088,Kenny,Pickett,nfl.p.33975$nfl.g.13520088 - Kenny Pickett,QB,PHI,WAS,PHI@WAS,1:00PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34154$nfl.g.13520088,Grant,Calcaterra,nfl.p.34154$nfl.g.13520088 - Grant Calcaterra,TE,PHI,WAS,PHI@WAS,1:00PM EST,10,3.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34378$nfl.g.13520088,Britain,Covey,nfl.p.34378$nfl.g.13520088 - Britain Covey,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,1.7,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40220$nfl.g.13520088,Tanner,McKee,nfl.p.40220$nfl.g.13520088 - Tanner McKee,QB,PHI,WAS,PHI@WAS,1:00PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41002$nfl.g.13520088,Will,Shipley,nfl.p.41002$nfl.g.13520088 - Will Shipley,RB,PHI,WAS,PHI@WAS,1:00PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41030$nfl.g.13520088,Ainias,Smith,nfl.p.41030$nfl.g.13520088 - Ainias Smith,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41089$nfl.g.13520088,Johnny,Wilson,nfl.p.41089$nfl.g.13520088 - Johnny Wilson,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,0.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26658$nfl.g.13520088,Zach,Ertz,nfl.p.26658$nfl.g.13520088 - Zach Ertz,TE,WAS,PHI,PHI@WAS,1:00PM EST,17,7.7,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28390$nfl.g.13520088,Marcus,Mariota,nfl.p.28390$nfl.g.13520088 - Marcus Mariota,QB,WAS,PHI,PHI@WAS,1:00PM EST,20,9.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29441$nfl.g.13520088,Jeff,Driskel,nfl.p.29441$nfl.g.13520088 - Jeff Driskel,QB,WAS,PHI,PHI@WAS,1:00PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30275$nfl.g.13520088,Jeremy,McNichols,nfl.p.30275$nfl.g.13520088 - Jeremy McNichols,RB,WAS,PHI,PHI@WAS,1:00PM EST,10,4.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30352$nfl.g.13520088,Noah,Brown,nfl.p.30352$nfl.g.13520088 - Noah Brown,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,6.3,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31908$nfl.g.13520088,Terry,McLaurin,nfl.p.31908$nfl.g.13520088 - Terry McLaurin,WR,WAS,PHI,PHI@WAS,1:00PM EST,32,13.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32123$nfl.g.13520088,Olamide,Zaccheaus,nfl.p.32123$nfl.g.13520088 - Olamide Zaccheaus,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,3.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33470$nfl.g.13520088,Dyami,Brown,nfl.p.33470$nfl.g.13520088 - Dyami Brown,WR,WAS,PHI,PHI@WAS,1:00PM EST,11,3.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33512$nfl.g.13520088,John,Bates,nfl.p.33512$nfl.g.13520088 - John Bates,TE,WAS,PHI,PHI@WAS,1:00PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34054$nfl.g.13520088,Brian,Robinson Jr.,nfl.p.34054$nfl.g.13520088 - Brian Robinson Jr.,RB,WAS,PHI,PHI@WAS,1:00PM EST,24,12.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40231$nfl.g.13520088,Chris,Rodriguez Jr.,nfl.p.40231$nfl.g.13520088 - Chris Rodriguez Jr.,RB,WAS,PHI,PHI@WAS,1:00PM EST,10,4.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40896$nfl.g.13520088,Jayden,Daniels,nfl.p.40896$nfl.g.13520088 - Jayden Daniels,QB,WAS,PHI,PHI@WAS,1:00PM EST,33,20.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40931$nfl.g.13520088,Ben,Sinnott,nfl.p.40931$nfl.g.13520088 - Ben Sinnott,TE,WAS,PHI,PHI@WAS,1:00PM EST,10,2.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40964$nfl.g.13520088,Luke,McCaffrey,nfl.p.40964$nfl.g.13520088 - Luke McCaffrey,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.21$nfl.g.13520088,Philadelphia,Eagles,nfl.t.21$nfl.g.13520088 - Philadelphia Eagles,DEF,PHI,WAS,PHI@WAS,1:00PM EST,16,7.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.28$nfl.g.13520088,Washington,Commanders,nfl.t.28$nfl.g.13520088 - Washington Commanders,DEF,WAS,PHI,PHI@WAS,1:00PM EST,12,5.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28545$nfl.g.13520088,C.J.,Uzomah,nfl.p.28545$nfl.g.13520088 - C.J. Uzomah,TE,PHI,WAS,PHI@WAS,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40550$nfl.g.13520088,E.J.,Jenkins,nfl.p.40550$nfl.g.13520088 - E.J. Jenkins,TE,PHI,WAS,PHI@WAS,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32846$nfl.g.13520088,K.J.,Osborn,nfl.p.32846$nfl.g.13520088 - K.J. Osborn,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,2.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28493$nfl.g.13520088,Jamison,Crowder,nfl.p.28493$nfl.g.13520088 - Jamison Crowder,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32140$nfl.g.13520088,Khari,Blasingame,nfl.p.32140$nfl.g.13520088 - Khari Blasingame,RB,PHI,WAS,PHI@WAS,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30423$nfl.g.13520088,Austin,Ekeler,nfl.p.30423$nfl.g.13520088 - Austin Ekeler,RB,WAS,PHI,PHI@WAS,1:00PM EST,23,10.1,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41233$nfl.g.13520088,Colson,Yankoff,nfl.p.41233$nfl.g.13520088 - Colson Yankoff,TE,WAS,PHI,PHI@WAS,1:00PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.9265$nfl.g.13520089,Matthew,Stafford,nfl.p.9265$nfl.g.13520089 - Matthew Stafford,QB,LA,NYJ,LA@NYJ,1:00PM EST,25,14.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27590$nfl.g.13520089,Jimmy,Garoppolo,nfl.p.27590$nfl.g.13520089 - Jimmy Garoppolo,QB,LA,NYJ,LA@NYJ,1:00PM EST,20,10.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29360$nfl.g.13520089,Demarcus,Robinson,nfl.p.29360$nfl.g.13520089 - Demarcus Robinson,WR,LA,NYJ,LA@NYJ,1:00PM EST,13,7.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30182$nfl.g.13520089,Cooper,Kupp,nfl.p.30182$nfl.g.13520089 - Cooper Kupp,WR,LA,NYJ,LA@NYJ,1:00PM EST,28,13.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32803$nfl.g.13520089,Colby,Parkinson,nfl.p.32803$nfl.g.13520089 - Colby Parkinson,TE,LA,NYJ,LA@NYJ,1:00PM EST,10,3.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32831$nfl.g.13520089,Tyler,Johnson,nfl.p.32831$nfl.g.13520089 - Tyler Johnson,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,3.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33445$nfl.g.13520089,Tutu,Atwell,nfl.p.33445$nfl.g.13520089 - Tutu Atwell,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,5.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33469$nfl.g.13520089,Hunter,Long,nfl.p.33469$nfl.g.13520089 - Hunter Long,TE,LA,NYJ,LA@NYJ,1:00PM EST,10,1.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34120$nfl.g.13520089,Kyren,Williams,nfl.p.34120$nfl.g.13520089 - Kyren Williams,RB,LA,NYJ,LA@NYJ,1:00PM EST,34,15.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34310$nfl.g.13520089,Ronnie,Rivers,nfl.p.34310$nfl.g.13520089 - Ronnie Rivers,RB,LA,NYJ,LA@NYJ,1:00PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40153$nfl.g.13520089,Stetson,Bennett,nfl.p.40153$nfl.g.13520089 - Stetson Bennett,QB,LA,NYJ,LA@NYJ,1:00PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40164$nfl.g.13520089,Davis,Allen,nfl.p.40164$nfl.g.13520089 - Davis Allen,TE,LA,NYJ,LA@NYJ,1:00PM EST,10,1.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40168$nfl.g.13520089,Puka,Nacua,nfl.p.40168$nfl.g.13520089 - Puka Nacua,WR,LA,NYJ,LA@NYJ,1:00PM EST,38,15.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40399$nfl.g.13520089,Xavier,Smith,nfl.p.40399$nfl.g.13520089 - Xavier Smith,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40962$nfl.g.13520089,Blake,Corum,nfl.p.40962$nfl.g.13520089 - Blake Corum,RB,LA,NYJ,LA@NYJ,1:00PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41083$nfl.g.13520089,Jordan,Whittington,nfl.p.41083$nfl.g.13520089 - Jordan Whittington,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41193$nfl.g.13520089,Cody,Schrader,nfl.p.41193$nfl.g.13520089 - Cody Schrader,RB,LA,NYJ,LA@NYJ,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.7200$nfl.g.13520089,Aaron,Rodgers,nfl.p.7200$nfl.g.13520089 - Aaron Rodgers,QB,NYJ,LA,LA@NYJ,1:00PM EST,26,16.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.24967$nfl.g.13520089,Tyrod,Taylor,nfl.p.24967$nfl.g.13520089 - Tyrod Taylor,QB,NYJ,LA,LA@NYJ,1:00PM EST,20,6.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27581$nfl.g.13520089,Davante,Adams,nfl.p.27581$nfl.g.13520089 - Davante Adams,WR,NYJ,LA,LA@NYJ,1:00PM EST,35,14.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31127$nfl.g.13520089,Tyler,Conklin,nfl.p.31127$nfl.g.13520089 - Tyler Conklin,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,4.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33507$nfl.g.13520089,Kene,Nwangwu,nfl.p.33507$nfl.g.13520089 - Kene Nwangwu,RB,NYJ,LA,LA@NYJ,1:00PM EST,10,3.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33705$nfl.g.13520089,Kenny,Yeboah,nfl.p.33705$nfl.g.13520089 - Kenny Yeboah,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33965$nfl.g.13520089,Garrett,Wilson,nfl.p.33965$nfl.g.13520089 - Garrett Wilson,WR,NYJ,LA,LA@NYJ,1:00PM EST,28,12.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33991$nfl.g.13520089,Breece,Hall,nfl.p.33991$nfl.g.13520089 - Breece Hall,RB,NYJ,LA,LA@NYJ,1:00PM EST,29,13.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34057$nfl.g.13520089,Jeremy,Ruckert,nfl.p.34057$nfl.g.13520089 - Jeremy Ruckert,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40548$nfl.g.13520089,Xavier,Gipson,nfl.p.40548$nfl.g.13520089 - Xavier Gipson,WR,NYJ,LA,LA@NYJ,1:00PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40944$nfl.g.13520089,Malachi,Corley,nfl.p.40944$nfl.g.13520089 - Malachi Corley,WR,NYJ,LA,LA@NYJ,1:00PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40981$nfl.g.13520089,Braelon,Allen,nfl.p.40981$nfl.g.13520089 - Braelon Allen,RB,NYJ,LA,LA@NYJ,1:00PM EST,10,4.9,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41031$nfl.g.13520089,Isaiah,Davis,nfl.p.41031$nfl.g.13520089 - Isaiah Davis,RB,NYJ,LA,LA@NYJ,1:00PM EST,10,2.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.14$nfl.g.13520089,Los Angeles,Rams,nfl.t.14$nfl.g.13520089 - Los Angeles Rams,DEF,LA,NYJ,LA@NYJ,1:00PM EST,14,6.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.20$nfl.g.13520089,New York,Jets,nfl.t.20$nfl.g.13520089 - New York Jets,DEF,NYJ,LA,LA@NYJ,1:00PM EST,13,5.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31268$nfl.g.13520089,Allen,Lazard,nfl.p.31268$nfl.g.13520089 - Allen Lazard,WR,NYJ,LA,LA@NYJ,1:00PM EST,15,9.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29344$nfl.g.13520089,Tyler,Higbee,nfl.p.29344$nfl.g.13520089 - Tyler Higbee,TE,LA,NYJ,LA@NYJ,1:00PM EST,13,5.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33710$nfl.g.13520089,Brandon,Smith,nfl.p.33710$nfl.g.13520089 - Brandon Smith,WR,NYJ,LA,LA@NYJ,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40255$nfl.g.13520089,Zack,Kuntz,nfl.p.40255$nfl.g.13520089 - Zack Kuntz,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29951$nfl.g.13520090,C.J.,Ham,nfl.p.29951$nfl.g.13520090 - C.J. Ham,RB,MIN,SEA,MIN@SEA,4:05PM EST,10,1.0,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30295$nfl.g.13520090,Aaron,Jones Sr.,nfl.p.30295$nfl.g.13520090 - Aaron Jones Sr.,RB,MIN,SEA,MIN@SEA,4:05PM EST,26,13.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30373$nfl.g.13520090,Johnny,Mundt,nfl.p.30373$nfl.g.13520090 - Johnny Mundt,TE,MIN,SEA,MIN@SEA,4:05PM EST,10,2.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30563$nfl.g.13520090,Nick,Mullens,nfl.p.30563$nfl.g.13520090 - Nick Mullens,QB,MIN,SEA,MIN@SEA,4:05PM EST,20,0.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30973$nfl.g.13520090,Sam,Darnold,nfl.p.30973$nfl.g.13520090 - Sam Darnold,QB,MIN,SEA,MIN@SEA,4:05PM EST,30,18.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31320$nfl.g.13520090,Trent,Sherfield Sr.,nfl.p.31320$nfl.g.13520090 - Trent Sherfield Sr.,WR,MIN,SEA,MIN@SEA,4:05PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31641$nfl.g.13520090,Brandon,Powell,nfl.p.31641$nfl.g.13520090 - Brandon Powell,WR,MIN,SEA,MIN@SEA,4:05PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31840$nfl.g.13520090,T.J.,Hockenson,nfl.p.31840$nfl.g.13520090 - T.J. Hockenson,TE,MIN,SEA,MIN@SEA,4:05PM EST,16,7.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31901$nfl.g.13520090,Josh,Oliver,nfl.p.31901$nfl.g.13520090 - Josh Oliver,TE,MIN,SEA,MIN@SEA,4:05PM EST,11,5.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32221$nfl.g.13520090,Brett,Rypien,nfl.p.32221$nfl.g.13520090 - Brett Rypien,QB,MIN,SEA,MIN@SEA,4:05PM EST,20,2.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32692$nfl.g.13520090,Justin,Jefferson,nfl.p.32692$nfl.g.13520090 - Justin Jefferson,WR,MIN,SEA,MIN@SEA,4:05PM EST,34,15.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32722$nfl.g.13520090,Cam,Akers,nfl.p.32722$nfl.g.13520090 - Cam Akers,RB,MIN,SEA,MIN@SEA,4:05PM EST,11,5.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34125$nfl.g.13520090,Ty,Chandler,nfl.p.34125$nfl.g.13520090 - Ty Chandler,RB,MIN,SEA,MIN@SEA,4:05PM EST,10,2.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34147$nfl.g.13520090,Jalen,Nailor,nfl.p.34147$nfl.g.13520090 - Jalen Nailor,WR,MIN,SEA,MIN@SEA,4:05PM EST,10,5.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40042$nfl.g.13520090,Jordan,Addison,nfl.p.40042$nfl.g.13520090 - Jordan Addison,WR,MIN,SEA,MIN@SEA,4:05PM EST,31,12.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26662$nfl.g.13520090,Geno,Smith,nfl.p.26662$nfl.g.13520090 - Geno Smith,QB,SEA,MIN,MIN@SEA,4:05PM EST,23,15.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28457$nfl.g.13520090,Tyler,Lockett,nfl.p.28457$nfl.g.13520090 - Tyler Lockett,WR,SEA,MIN,MIN@SEA,4:05PM EST,11,6.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30627$nfl.g.13520090,Pharaoh,Brown,nfl.p.30627$nfl.g.13520090 - Pharaoh Brown,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,0.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31852$nfl.g.13520090,Noah,Fant,nfl.p.31852$nfl.g.13520090 - Noah Fant,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,4.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31896$nfl.g.13520090,DK,Metcalf,nfl.p.31896$nfl.g.13520090 - DK Metcalf,WR,SEA,MIN,MIN@SEA,4:05PM EST,23,10.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32948$nfl.g.13520090,Cody,White,nfl.p.32948$nfl.g.13520090 - Cody White,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,2.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33996$nfl.g.13520090,Kenneth,Walker III,nfl.p.33996$nfl.g.13520090 - Kenneth Walker III,RB,SEA,MIN,MIN@SEA,4:05PM EST,24,14.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34100$nfl.g.13520090,Sam,Howell,nfl.p.34100$nfl.g.13520090 - Sam Howell,QB,SEA,MIN,MIN@SEA,4:05PM EST,20,0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34189$nfl.g.13520090,Dareke,Young,nfl.p.34189$nfl.g.13520090 - Dareke Young,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40041$nfl.g.13520090,Jaxon,Smith-Njigba,nfl.p.40041$nfl.g.13520090 - Jaxon Smith-Njigba,WR,SEA,MIN,MIN@SEA,4:05PM EST,30,12.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40075$nfl.g.13520090,Zach,Charbonnet,nfl.p.40075$nfl.g.13520090 - Zach Charbonnet,RB,SEA,MIN,MIN@SEA,4:05PM EST,23,10.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40267$nfl.g.13520090,Kenny,McIntosh,nfl.p.40267$nfl.g.13520090 - Kenny McIntosh,RB,SEA,MIN,MIN@SEA,4:05PM EST,10,0.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40452$nfl.g.13520090,Jake,Bobo,nfl.p.40452$nfl.g.13520090 - Jake Bobo,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40519$nfl.g.13520090,Brady,Russell,nfl.p.40519$nfl.g.13520090 - Brady Russell,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,0.0,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41001$nfl.g.13520090,AJ,Barner,nfl.p.41001$nfl.g.13520090 - AJ Barner,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,3.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.16$nfl.g.13520090,Minnesota,Vikings,nfl.t.16$nfl.g.13520090 - Minnesota Vikings,DEF,MIN,SEA,MIN@SEA,4:05PM EST,20,10.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.26$nfl.g.13520090,Seattle,Seahawks,nfl.t.26$nfl.g.13520090 - Seattle Seahawks,DEF,SEA,MIN,MIN@SEA,4:05PM EST,12,8.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33517$nfl.g.13520090,Jaelon,Darden,nfl.p.33517$nfl.g.13520090 - Jaelon Darden,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,0.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40185$nfl.g.13520090,Jaren,Hall,nfl.p.40185$nfl.g.13520090 - Jaren Hall,QB,SEA,MIN,MIN@SEA,4:05PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41344$nfl.g.13520090,George,Holani,nfl.p.41344$nfl.g.13520090 - George Holani,RB,SEA,MIN,MIN@SEA,4:05PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28556$nfl.g.13520091,Michael,Burton,nfl.p.28556$nfl.g.13520091 - Michael Burton,RB,DEN,LAC,DEN@LAC,8:15PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31010$nfl.g.13520091,Courtland,Sutton,nfl.p.31010$nfl.g.13520091 - Courtland Sutton,WR,DEN,LAC,DEN@LAC,8:15PM EST,31,11.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31965$nfl.g.13520091,Jarrett,Stidham,nfl.p.31965$nfl.g.13520091 - Jarrett Stidham,QB,DEN,LAC,DEN@LAC,8:15PM EST,20,-0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32494$nfl.g.13520091,Lil'Jordan,Humphrey,nfl.p.32494$nfl.g.13520091 - Lil'Jordan Humphrey,WR,DEN,LAC,DEN@LAC,8:15PM EST,10,3.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32775$nfl.g.13520091,Adam,Trautman,nfl.p.32775$nfl.g.13520091 - Adam Trautman,TE,DEN,LAC,DEN@LAC,8:15PM EST,10,3.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33390$nfl.g.13520091,Zach,Wilson,nfl.p.33390$nfl.g.13520091 - Zach Wilson,QB,DEN,LAC,DEN@LAC,8:15PM EST,20,10.6,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33423$nfl.g.13520091,Javonte,Williams,nfl.p.33423$nfl.g.13520091 - Javonte Williams,RB,DEN,LAC,DEN@LAC,8:15PM EST,15,8.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34654$nfl.g.13520091,Lucas,Krull,nfl.p.34654$nfl.g.13520091 - Lucas Krull,TE,DEN,LAC,DEN@LAC,8:15PM EST,10,2.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40090$nfl.g.13520091,Marvin,Mims Jr.,nfl.p.40090$nfl.g.13520091 - Marvin Mims Jr.,WR,DEN,LAC,DEN@LAC,8:15PM EST,15,4.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40696$nfl.g.13520091,Jaleel,McLaughlin,nfl.p.40696$nfl.g.13520091 - Jaleel McLaughlin,RB,DEN,LAC,DEN@LAC,8:15PM EST,12,5.1,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40702$nfl.g.13520091,Nate,Adkins,nfl.p.40702$nfl.g.13520091 - Nate Adkins,TE,DEN,LAC,DEN@LAC,8:15PM EST,10,2.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40875$nfl.g.13520091,Bo,Nix,nfl.p.40875$nfl.g.13520091 - Bo Nix,QB,DEN,LAC,DEN@LAC,8:15PM EST,27,18.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41009$nfl.g.13520091,Troy,Franklin,nfl.p.41009$nfl.g.13520091 - Troy Franklin,WR,DEN,LAC,DEN@LAC,8:15PM EST,10,3.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41019$nfl.g.13520091,Audric,Estime,nfl.p.41019$nfl.g.13520091 - Audric Estime,RB,DEN,LAC,DEN@LAC,8:15PM EST,10,3.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41097$nfl.g.13520091,Devaughn,Vele,nfl.p.41097$nfl.g.13520091 - Devaughn Vele,WR,DEN,LAC,DEN@LAC,8:15PM EST,16,6.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28839$nfl.g.13520091,Taylor,Heinicke,nfl.p.28839$nfl.g.13520091 - Taylor Heinicke,QB,LAC,DEN,DEN@LAC,8:15PM EST,20,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31031$nfl.g.13520091,DJ,Chark Jr.,nfl.p.31031$nfl.g.13520091 - DJ Chark Jr.,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,2.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31090$nfl.g.13520091,Will,Dissly,nfl.p.31090$nfl.g.13520091 - Will Dissly,TE,LAC,DEN,DEN@LAC,8:15PM EST,14,5.3,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31424$nfl.g.13520091,Gus,Edwards,nfl.p.31424$nfl.g.13520091 - Gus Edwards,RB,LAC,DEN,DEN@LAC,8:15PM EST,14,5.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31998$nfl.g.13520091,Easton,Stick,nfl.p.31998$nfl.g.13520091 - Easton Stick,QB,LAC,DEN,DEN@LAC,8:15PM EST,20,13.7,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32676$nfl.g.13520091,Justin,Herbert,nfl.p.32676$nfl.g.13520091 - Justin Herbert,QB,LAC,DEN,DEN@LAC,8:15PM EST,25,15.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32691$nfl.g.13520091,Jalen,Reagor,nfl.p.32691$nfl.g.13520091 - Jalen Reagor,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,1.3,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33465$nfl.g.13520091,Joshua,Palmer,nfl.p.33465$nfl.g.13520091 - Joshua Palmer,WR,LAC,DEN,DEN@LAC,8:15PM EST,14,5.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34087$nfl.g.13520091,Hassan,Haskins,nfl.p.34087$nfl.g.13520091 - Hassan Haskins,RB,LAC,DEN,DEN@LAC,8:15PM EST,10,1.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34625$nfl.g.13520091,Tucker,Fisk,nfl.p.34625$nfl.g.13520091 - Tucker Fisk,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34637$nfl.g.13520091,Stone,Smartt,nfl.p.34637$nfl.g.13520091 - Stone Smartt,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,2.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40051$nfl.g.13520091,Quentin,Johnston,nfl.p.40051$nfl.g.13520091 - Quentin Johnston,WR,LAC,DEN,DEN@LAC,8:15PM EST,18,8.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40133$nfl.g.13520091,Derius,Davis,nfl.p.40133$nfl.g.13520091 - Derius Davis,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,1.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40225$nfl.g.13520091,Scott,Matlock,nfl.p.40225$nfl.g.13520091 - Scott Matlock,RB,LAC,DEN,DEN@LAC,8:15PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40908$nfl.g.13520091,Ladd,McConkey,nfl.p.40908$nfl.g.13520091 - Ladd McConkey,WR,LAC,DEN,DEN@LAC,8:15PM EST,29,11.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41052$nfl.g.13520091,Kimani,Vidal,nfl.p.41052$nfl.g.13520091 - Kimani Vidal,RB,LAC,DEN,DEN@LAC,8:15PM EST,10,3.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.7$nfl.g.13520091,Denver,Broncos,nfl.t.7$nfl.g.13520091 - Denver Broncos,DEF,DEN,LAC,DEN@LAC,8:15PM EST,18,10.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.24$nfl.g.13520091,Los Angeles,Chargers,nfl.t.24$nfl.g.13520091 - Los Angeles Chargers,DEF,LAC,DEN,DEN@LAC,8:15PM EST,13,7.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28658$nfl.g.13520091,Eric,Tomlinson,nfl.p.28658$nfl.g.13520091 - Eric Tomlinson,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,0.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32712$nfl.g.13520091,Laviska,Shenault Jr.,nfl.p.32712$nfl.g.13520091 - Laviska Shenault Jr.,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,1.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34152$nfl.g.13520091,Tyler,Badie,nfl.p.34152$nfl.g.13520091 - Tyler Badie,RB,DEN,LAC,DEN@LAC,8:15PM EST,10,2.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41098$nfl.g.13520091,Brenden,Rice,nfl.p.41098$nfl.g.13520091 - Brenden Rice,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33567$nfl.g.13520091,Simi,Fehoko,nfl.p.33567$nfl.g.13520091 - Simi Fehoko,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,2.3,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32725$nfl.g.13520091,J.K.,Dobbins,nfl.p.32725$nfl.g.13520091 - J.K. Dobbins,RB,LAC,DEN,DEN@LAC,8:15PM EST,21,13.8,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30995$nfl.g.13520091,Hayden,Hurst,nfl.p.30995$nfl.g.13520091 - Hayden Hurst,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,1.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30136$nfl.g.13520092,Evan,Engram,nfl.p.30136$nfl.g.13520092 - Evan Engram,TE,JAC,LV,JAC@LV,4:25PM EST,10,7.3,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30217$nfl.g.13520092,C.J.,Beathard,nfl.p.30217$nfl.g.13520092 - C.J. Beathard,QB,JAC,LV,JAC@LV,4:25PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32608$nfl.g.13520092,D'Ernest,Johnson,nfl.p.32608$nfl.g.13520092 - D'Ernest Johnson,RB,JAC,LV,JAC@LV,4:25PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32762$nfl.g.13520092,Devin,Duvernay,nfl.p.32762$nfl.g.13520092 - Devin Duvernay,WR,JAC,LV,JAC@LV,4:25PM EST,10,1.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32764$nfl.g.13520092,Josiah,Deguara,nfl.p.32764$nfl.g.13520092 - Josiah Deguara,TE,JAC,LV,JAC@LV,4:25PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33403$nfl.g.13520092,Mac,Jones,nfl.p.33403$nfl.g.13520092 - Mac Jones,QB,JAC,LV,JAC@LV,4:25PM EST,23,8.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33413$nfl.g.13520092,Travis,Etienne Jr.,nfl.p.33413$nfl.g.13520092 - Travis Etienne Jr.,RB,JAC,LV,JAC@LV,4:25PM EST,17,7.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33533$nfl.g.13520092,Luke,Farrell,nfl.p.33533$nfl.g.13520092 - Luke Farrell,TE,JAC,LV,JAC@LV,4:25PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33649$nfl.g.13520092,Tim,Jones,nfl.p.33649$nfl.g.13520092 - Tim Jones,WR,JAC,LV,JAC@LV,4:25PM EST,10,1.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40078$nfl.g.13520092,Brenton,Strange,nfl.p.40078$nfl.g.13520092 - Brenton Strange,TE,JAC,LV,JAC@LV,4:25PM EST,12,5.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40095$nfl.g.13520092,Tank,Bigsby,nfl.p.40095$nfl.g.13520092 - Tank Bigsby,RB,JAC,LV,JAC@LV,4:25PM EST,17,7.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40234$nfl.g.13520092,Parker,Washington,nfl.p.40234$nfl.g.13520092 - Parker Washington,WR,JAC,LV,JAC@LV,4:25PM EST,15,4.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40883$nfl.g.13520092,Brian,Thomas Jr.,nfl.p.40883$nfl.g.13520092 - Brian Thomas Jr.,WR,JAC,LV,JAC@LV,4:25PM EST,31,13.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41041$nfl.g.13520092,Keilan,Robinson,nfl.p.41041$nfl.g.13520092 - Keilan Robinson,RB,JAC,LV,JAC@LV,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28442$nfl.g.13520092,Ameer,Abdullah,nfl.p.28442$nfl.g.13520092 - Ameer Abdullah,RB,LV,JAC,JAC@LV,4:25PM EST,10,5.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31934$nfl.g.13520092,Alexander,Mattison,nfl.p.31934$nfl.g.13520092 - Alexander Mattison,RB,LV,JAC,JAC@LV,4:25PM EST,15,8.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32231$nfl.g.13520092,Jakobi,Meyers,nfl.p.32231$nfl.g.13520092 - Jakobi Meyers,WR,LV,JAC,JAC@LV,4:25PM EST,28,11.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32785$nfl.g.13520092,Harrison,Bryant,nfl.p.32785$nfl.g.13520092 - Harrison Bryant,TE,LV,JAC,JAC@LV,4:25PM EST,10,2.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33447$nfl.g.13520092,Terrace,Marshall Jr.,nfl.p.33447$nfl.g.13520092 - Terrace Marshall Jr.,WR,LV,JAC,JAC@LV,4:25PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34030$nfl.g.13520092,Desmond,Ridder,nfl.p.34030$nfl.g.13520092 - Desmond Ridder,QB,LV,JAC,JAC@LV,4:25PM EST,20,5.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34551$nfl.g.13520092,Sincere,McCormick,nfl.p.34551$nfl.g.13520092 - Sincere McCormick,RB,LV,JAC,JAC@LV,4:25PM EST,16,6.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40065$nfl.g.13520092,Michael,Mayer,nfl.p.40065$nfl.g.13520092 - Michael Mayer,TE,LV,JAC,JAC@LV,4:25PM EST,10,2.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40114$nfl.g.13520092,Tre,Tucker,nfl.p.40114$nfl.g.13520092 - Tre Tucker,WR,LV,JAC,JAC@LV,4:25PM EST,15,6.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40138$nfl.g.13520092,Aidan,O'Connell,nfl.p.40138$nfl.g.13520092 - Aidan O'Connell,QB,LV,JAC,JAC@LV,4:25PM EST,20,8.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40167$nfl.g.13520092,Justin,Shorter,nfl.p.40167$nfl.g.13520092 - Justin Shorter,TE,LV,JAC,JAC@LV,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40878$nfl.g.13520092,Brock,Bowers,nfl.p.40878$nfl.g.13520092 - Brock Bowers,TE,LV,JAC,JAC@LV,4:25PM EST,28,11.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41054$nfl.g.13520092,Dylan,Laube,nfl.p.41054$nfl.g.13520092 - Dylan Laube,RB,LV,JAC,JAC@LV,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41162$nfl.g.13520092,Ramel,Keyton,nfl.p.41162$nfl.g.13520092 - Ramel Keyton,WR,LV,JAC,JAC@LV,4:25PM EST,10,0.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.30$nfl.g.13520092,Jacksonville,Jaguars,nfl.t.30$nfl.g.13520092 - Jacksonville Jaguars,DEF,JAC,LV,JAC@LV,4:25PM EST,10,4.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.13$nfl.g.13520092,Las Vegas,Raiders,nfl.t.13$nfl.g.13520092 - Las Vegas Raiders,DEF,LV,JAC,JAC@LV,4:25PM EST,10,3.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30230$nfl.g.13520092,Josh,Reynolds,nfl.p.30230$nfl.g.13520092 - Josh Reynolds,WR,JAC,LV,JAC@LV,4:25PM EST,10,5.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41133$nfl.g.13520092,Carter,Bradley,nfl.p.41133$nfl.g.13520092 - Carter Bradley,QB,LV,JAC,JAC@LV,4:25PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.26753$nfl.g.13520093,Kyle,Juszczyk,nfl.p.26753$nfl.g.13520093 - Kyle Juszczyk,RB,SF,MIA,SF@MIA,4:25PM EST,10,2.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28464$nfl.g.13520093,Chris,Conley,nfl.p.28464$nfl.g.13520093 - Chris Conley,WR,SF,MIA,SF@MIA,4:25PM EST,10,0.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29435$nfl.g.13520093,Brandon,Allen,nfl.p.29435$nfl.g.13520093 - Brandon Allen,QB,SF,MIA,SF@MIA,4:25PM EST,20,2.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30248$nfl.g.13520093,Joshua,Dobbs,nfl.p.30248$nfl.g.13520093 - Joshua Dobbs,QB,SF,MIA,SF@MIA,4:25PM EST,20,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30259$nfl.g.13520093,George,Kittle,nfl.p.30259$nfl.g.13520093 - George Kittle,TE,SF,MIA,SF@MIA,4:25PM EST,25,13.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30287$nfl.g.13520093,Eric,Saubert,nfl.p.30287$nfl.g.13520093 - Eric Saubert,TE,SF,MIA,SF@MIA,4:25PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31868$nfl.g.13520093,Deebo,Samuel Sr.,nfl.p.31868$nfl.g.13520093 - Deebo Samuel Sr.,WR,SF,MIA,SF@MIA,4:25PM EST,15,7.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32887$nfl.g.13520093,Jauan,Jennings,nfl.p.32887$nfl.g.13520093 - Jauan Jennings,WR,SF,MIA,SF@MIA,4:25PM EST,27,12.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34218$nfl.g.13520093,Brock,Purdy,nfl.p.34218$nfl.g.13520093 - Brock Purdy,QB,SF,MIA,SF@MIA,4:25PM EST,25,17.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34374$nfl.g.13520093,Jake,Tonges,nfl.p.34374$nfl.g.13520093 - Jake Tonges,TE,SF,MIA,SF@MIA,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40165$nfl.g.13520093,Israel,Abanikanda,nfl.p.40165$nfl.g.13520093 - Israel Abanikanda,RB,SF,MIA,SF@MIA,4:25PM EST,10,1.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40261$nfl.g.13520093,Brayden,Willis,nfl.p.40261$nfl.g.13520093 - Brayden Willis,TE,SF,MIA,SF@MIA,4:25PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40892$nfl.g.13520093,Ricky,Pearsall,nfl.p.40892$nfl.g.13520093 - Ricky Pearsall,WR,SF,MIA,SF@MIA,4:25PM EST,10,4.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40996$nfl.g.13520093,Jacob,Cowing,nfl.p.40996$nfl.g.13520093 - Jacob Cowing,WR,SF,MIA,SF@MIA,4:25PM EST,10,0.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40998$nfl.g.13520093,Isaac,Guerendo,nfl.p.40998$nfl.g.13520093 - Isaac Guerendo,RB,SF,MIA,SF@MIA,4:25PM EST,22,5.3,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27540$nfl.g.13520093,Odell,Beckham Jr.,nfl.p.27540$nfl.g.13520093 - Odell Beckham Jr.,WR,MIA,SF,SF@MIA,4:25PM EST,10,1.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.28654$nfl.g.13520093,Raheem,Mostert,nfl.p.28654$nfl.g.13520093 - Raheem Mostert,RB,MIA,SF,SF@MIA,4:25PM EST,10,5.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29399$nfl.g.13520093,Tyreek,Hill,nfl.p.29399$nfl.g.13520093 - Tyreek Hill,WR,MIA,SF,SF@MIA,4:25PM EST,28,10.7,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30213$nfl.g.13520093,Jonnu,Smith,nfl.p.30213$nfl.g.13520093 - Jonnu Smith,TE,MIA,SF,SF@MIA,4:25PM EST,25,10.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30955$nfl.g.13520093,River,Cracraft,nfl.p.30955$nfl.g.13520093 - River Cracraft,WR,MIA,SF,SF@MIA,4:25PM EST,10,0.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31093$nfl.g.13520093,Durham,Smythe,nfl.p.31093$nfl.g.13520093 - Durham Smythe,TE,MIA,SF,SF@MIA,4:25PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31394$nfl.g.13520093,Jeff,Wilson Jr.,nfl.p.31394$nfl.g.13520093 - Jeff Wilson Jr.,RB,MIA,SF,SF@MIA,4:25PM EST,10,2.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32344$nfl.g.13520093,Alec,Ingold,nfl.p.32344$nfl.g.13520093 - Alec Ingold,RB,MIA,SF,SF@MIA,4:25PM EST,10,2.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32675$nfl.g.13520093,Tua,Tagovailoa,nfl.p.32675$nfl.g.13520093 - Tua Tagovailoa,QB,MIA,SF,SF@MIA,4:25PM EST,27,17.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32993$nfl.g.13520093,Tyler,Huntley,nfl.p.32993$nfl.g.13520093 - Tyler Huntley,QB,MIA,SF,SF@MIA,4:25PM EST,20,9.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33394$nfl.g.13520093,Jaylen,Waddle,nfl.p.33394$nfl.g.13520093 - Jaylen Waddle,WR,MIA,SF,SF@MIA,4:25PM EST,23,8.1,D," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33444$nfl.g.13520093,Dee,Eskridge,nfl.p.33444$nfl.g.13520093 - Dee Eskridge,WR,MIA,SF,SF@MIA,4:25PM EST,10,1.2,D," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33891$nfl.g.13520093,Jack,Stoll,nfl.p.33891$nfl.g.13520093 - Jack Stoll,TE,MIA,SF,SF@MIA,4:25PM EST,10,0.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40118$nfl.g.13520093,De'Von,Achane,nfl.p.40118$nfl.g.13520093 - De'Von Achane,RB,MIA,SF,SF@MIA,4:25PM EST,32,15.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40629$nfl.g.13520093,Julian,Hill,nfl.p.40629$nfl.g.13520093 - Julian Hill,TE,MIA,SF,SF@MIA,4:25PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41010$nfl.g.13520093,Jaylen,Wright,nfl.p.41010$nfl.g.13520093 - Jaylen Wright,RB,MIA,SF,SF@MIA,4:25PM EST,10,2.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41058$nfl.g.13520093,Malik,Washington,nfl.p.41058$nfl.g.13520093 - Malik Washington,WR,MIA,SF,SF@MIA,4:25PM EST,10,2.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.25$nfl.g.13520093,San Francisco,49ers,nfl.t.25$nfl.g.13520093 - San Francisco 49ers,DEF,SF,MIA,SF@MIA,4:25PM EST,16,6.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.15$nfl.g.13520093,Miami,Dolphins,nfl.t.15$nfl.g.13520093 - Miami Dolphins,DEF,MIA,SF,SF@MIA,4:25PM EST,12,4.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33235$nfl.g.13520093,Patrick,Taylor Jr.,nfl.p.33235$nfl.g.13520093 - Patrick Taylor Jr.,RB,SF,MIA,SF@MIA,4:25PM EST,10,2.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40251$nfl.g.13520093,Grant,DuBose,nfl.p.40251$nfl.g.13520093 - Grant DuBose,WR,MIA,SF,SF@MIA,4:25PM EST,10,1.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34513$nfl.g.13520093,Tanner,Conner,nfl.p.34513$nfl.g.13520093 - Tanner Conner,TE,MIA,SF,SF@MIA,4:25PM EST,10,0.8,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27535$nfl.g.13520094,Mike,Evans,nfl.p.27535$nfl.g.13520094 - Mike Evans,WR,TB,DAL,TB@DAL,8:20PM EST,33,14.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29274$nfl.g.13520094,Sterling,Shepard,nfl.p.29274$nfl.g.13520094 - Sterling Shepard,WR,TB,DAL,TB@DAL,8:20PM EST,14,5.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30971$nfl.g.13520094,Baker,Mayfield,nfl.p.30971$nfl.g.13520094 - Baker Mayfield,QB,TB,DAL,TB@DAL,8:20PM EST,32,21.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33452$nfl.g.13520094,Kyle,Trask,nfl.p.33452$nfl.g.13520094 - Kyle Trask,QB,TB,DAL,TB@DAL,8:20PM EST,20,0.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34047$nfl.g.13520094,Rachaad,White,nfl.p.34047$nfl.g.13520094 - Rachaad White,RB,TB,DAL,TB@DAL,8:20PM EST,25,12.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34062$nfl.g.13520094,Cade,Otton,nfl.p.34062$nfl.g.13520094 - Cade Otton,TE,TB,DAL,TB@DAL,8:20PM EST,15,7.9,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34174$nfl.g.13520094,Ko,Kieft,nfl.p.34174$nfl.g.13520094 - Ko Kieft,TE,TB,DAL,TB@DAL,8:20PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40193$nfl.g.13520094,Payne,Durham,nfl.p.40193$nfl.g.13520094 - Payne Durham,TE,TB,DAL,TB@DAL,8:20PM EST,10,1.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40223$nfl.g.13520094,Trey,Palmer,nfl.p.40223$nfl.g.13520094 - Trey Palmer,WR,TB,DAL,TB@DAL,8:20PM EST,10,2.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40671$nfl.g.13520094,Rakim,Jarrett,nfl.p.40671$nfl.g.13520094 - Rakim Jarrett,WR,TB,DAL,TB@DAL,8:20PM EST,10,2.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40676$nfl.g.13520094,Ryan,Miller,nfl.p.40676$nfl.g.13520094 - Ryan Miller,WR,TB,DAL,TB@DAL,8:20PM EST,10,2.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40742$nfl.g.13520094,Sean,Tucker,nfl.p.40742$nfl.g.13520094 - Sean Tucker,RB,TB,DAL,TB@DAL,8:20PM EST,10,4.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40954$nfl.g.13520094,Jalen,McMillan,nfl.p.40954$nfl.g.13520094 - Jalen McMillan,WR,TB,DAL,TB@DAL,8:20PM EST,21,6.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40993$nfl.g.13520094,Bucky,Irving,nfl.p.40993$nfl.g.13520094 - Bucky Irving,RB,TB,DAL,TB@DAL,8:20PM EST,30,12.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41120$nfl.g.13520094,Devin,Culp,nfl.p.41120$nfl.g.13520094 - Devin Culp,TE,TB,DAL,TB@DAL,8:20PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27548$nfl.g.13520094,Brandin,Cooks,nfl.p.27548$nfl.g.13520094 - Brandin Cooks,WR,DAL,TB,TB@DAL,8:20PM EST,15,5.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.29238$nfl.g.13520094,Ezekiel,Elliott,nfl.p.29238$nfl.g.13520094 - Ezekiel Elliott,RB,DAL,TB,TB@DAL,8:20PM EST,10,3.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30788$nfl.g.13520094,Cooper,Rush,nfl.p.30788$nfl.g.13520094 - Cooper Rush,QB,DAL,TB,TB@DAL,8:20PM EST,22,9.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32687$nfl.g.13520094,CeeDee,Lamb,nfl.p.32687$nfl.g.13520094 - CeeDee Lamb,WR,DAL,TB,TB@DAL,8:20PM EST,37,14.2," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33100$nfl.g.13520094,Rico,Dowdle,nfl.p.33100$nfl.g.13520094 - Rico Dowdle,RB,DAL,TB,TB@DAL,8:20PM EST,28,11.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33391$nfl.g.13520094,Trey,Lance,nfl.p.33391$nfl.g.13520094 - Trey Lance,QB,DAL,TB,TB@DAL,8:20PM EST,20,0.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34044$nfl.g.13520094,Jalen,Tolbert,nfl.p.34044$nfl.g.13520094 - Jalen Tolbert,WR,DAL,TB,TB@DAL,8:20PM EST,14,6.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34085$nfl.g.13520094,Jake,Ferguson,nfl.p.34085$nfl.g.13520094 - Jake Ferguson,TE,DAL,TB,TB@DAL,8:20PM EST,12,5.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34709$nfl.g.13520094,KaVontae,Turpin,nfl.p.34709$nfl.g.13520094 - KaVontae Turpin,WR,DAL,TB,TB@DAL,8:20PM EST,13,5.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40061$nfl.g.13520094,Luke,Schoonmaker,nfl.p.40061$nfl.g.13520094 - Luke Schoonmaker,TE,DAL,TB,TB@DAL,8:20PM EST,10,4.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40073$nfl.g.13520094,Jonathan,Mingo,nfl.p.40073$nfl.g.13520094 - Jonathan Mingo,WR,DAL,TB,TB@DAL,8:20PM EST,10,1.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40240$nfl.g.13520094,Deuce,Vaughn,nfl.p.40240$nfl.g.13520094 - Deuce Vaughn,RB,DAL,TB,TB@DAL,8:20PM EST,10,1.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40257$nfl.g.13520094,Jalen,Brooks,nfl.p.40257$nfl.g.13520094 - Jalen Brooks,WR,DAL,TB,TB@DAL,8:20PM EST,10,2.5,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40778$nfl.g.13520094,Princeton,Fant,nfl.p.40778$nfl.g.13520094 - Princeton Fant,TE,DAL,TB,TB@DAL,8:20PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40780$nfl.g.13520094,Hunter,Luepke,nfl.p.40780$nfl.g.13520094 - Hunter Luepke,RB,DAL,TB,TB@DAL,8:20PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41087$nfl.g.13520094,Ryan,Flournoy,nfl.p.41087$nfl.g.13520094 - Ryan Flournoy,WR,DAL,TB,TB@DAL,8:20PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41371$nfl.g.13520094,Brevyn,Spann-Ford,nfl.p.41371$nfl.g.13520094 - Brevyn Spann-Ford,TE,DAL,TB,TB@DAL,8:20PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.27$nfl.g.13520094,Tampa Bay,Buccaneers,nfl.t.27$nfl.g.13520094 - Tampa Bay Buccaneers,DEF,TB,DAL,TB@DAL,8:20PM EST,14,6.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.6$nfl.g.13520094,Dallas,Cowboys,nfl.t.6$nfl.g.13520094 - Dallas Cowboys,DEF,DAL,TB,TB@DAL,8:20PM EST,13,7.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41300$nfl.g.13520094,Kameron,Johnson,nfl.p.41300$nfl.g.13520094 - Kameron Johnson,WR,TB,DAL,TB@DAL,8:20PM EST,10,0.0,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.27564$nfl.g.13520095,Derek,Carr,nfl.p.27564$nfl.g.13520095 - Derek Carr,QB,NO,GB,NO@GB,8:15PM EST,22,15.6,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30180$nfl.g.13520095,Alvin,Kamara,nfl.p.30180$nfl.g.13520095 - Alvin Kamara,RB,NO,GB,NO@GB,8:15PM EST,33,16.5,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.30247$nfl.g.13520095,Jamaal,Williams,nfl.p.30247$nfl.g.13520095 - Jamaal Williams,RB,NO,GB,NO@GB,8:15PM EST,10,2.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31144$nfl.g.13520095,Marquez,Valdes-Scantling,nfl.p.31144$nfl.g.13520095 - Marquez Valdes-Scantling,WR,NO,GB,NO@GB,8:15PM EST,18,6.4,Q," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31178$nfl.g.13520095,Cedrick,Wilson Jr.,nfl.p.31178$nfl.g.13520095 - Cedrick Wilson Jr.,WR,NO,GB,NO@GB,8:15PM EST,10,3.3," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31969$nfl.g.13520095,Foster,Moreau,nfl.p.31969$nfl.g.13520095 - Foster Moreau,TE,NO,GB,NO@GB,8:15PM EST,10,5.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33113$nfl.g.13520095,Juwan,Johnson,nfl.p.33113$nfl.g.13520095 - Juwan Johnson,TE,NO,GB,NO@GB,8:15PM EST,14,6.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33901$nfl.g.13520095,Adam,Prentice,nfl.p.33901$nfl.g.13520095 - Adam Prentice,RB,NO,GB,NO@GB,8:15PM EST,10,0.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40144$nfl.g.13520095,Jake,Haener,nfl.p.40144$nfl.g.13520095 - Jake Haener,QB,NO,GB,NO@GB,8:15PM EST,20,1.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40631$nfl.g.13520095,Jordan,Mims,nfl.p.40631$nfl.g.13520095 - Jordan Mims,RB,NO,GB,NO@GB,8:15PM EST,10,1.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41043$nfl.g.13520095,Spencer,Rattler,nfl.p.41043$nfl.g.13520095 - Spencer Rattler,QB,NO,GB,NO@GB,8:15PM EST,20,9.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41180$nfl.g.13520095,Dallin,Holker,nfl.p.41180$nfl.g.13520095 - Dallin Holker,TE,NO,GB,NO@GB,8:15PM EST,10,0.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41188$nfl.g.13520095,Mason,Tipton,nfl.p.41188$nfl.g.13520095 - Mason Tipton,WR,NO,GB,NO@GB,8:15PM EST,10,2.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31856$nfl.g.13520095,Josh,Jacobs,nfl.p.31856$nfl.g.13520095 - Josh Jacobs,RB,GB,NO,NO@GB,8:15PM EST,37,16.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.32696$nfl.g.13520095,Jordan,Love,nfl.p.32696$nfl.g.13520095 - Jordan Love,QB,GB,NO,NO@GB,8:15PM EST,28,18.1," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33989$nfl.g.13520095,Christian,Watson,nfl.p.33989$nfl.g.13520095 - Christian Watson,WR,GB,NO,NO@GB,8:15PM EST,17,7.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34042$nfl.g.13520095,Malik,Willis,nfl.p.34042$nfl.g.13520095 - Malik Willis,QB,GB,NO,NO@GB,8:15PM EST,20,11.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34088$nfl.g.13520095,Romeo,Doubs,nfl.p.34088$nfl.g.13520095 - Romeo Doubs,WR,GB,NO,NO@GB,8:15PM EST,20,8.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34169$nfl.g.13520095,John,FitzPatrick,nfl.p.34169$nfl.g.13520095 - John FitzPatrick,TE,GB,NO,NO@GB,8:15PM EST,10,0.7," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34185$nfl.g.13520095,Bo,Melton,nfl.p.34185$nfl.g.13520095 - Bo Melton,WR,GB,NO,NO@GB,8:15PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40063$nfl.g.13520095,Jayden,Reed,nfl.p.40063$nfl.g.13520095 - Jayden Reed,WR,GB,NO,NO@GB,8:15PM EST,21,11.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40102$nfl.g.13520095,Tucker,Kraft,nfl.p.40102$nfl.g.13520095 - Tucker Kraft,TE,GB,NO,NO@GB,8:15PM EST,17,8.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40201$nfl.g.13520095,Dontayvion,Wicks,nfl.p.40201$nfl.g.13520095 - Dontayvion Wicks,WR,GB,NO,NO@GB,8:15PM EST,11,4.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40335$nfl.g.13520095,Ben,Sims,nfl.p.40335$nfl.g.13520095 - Ben Sims,TE,GB,NO,NO@GB,8:15PM EST,10,1.5," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40445$nfl.g.13520095,Malik,Heath,nfl.p.40445$nfl.g.13520095 - Malik Heath,WR,GB,NO,NO@GB,8:15PM EST,10,4.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40625$nfl.g.13520095,Chris,Brooks,nfl.p.40625$nfl.g.13520095 - Chris Brooks,RB,GB,NO,NO@GB,8:15PM EST,10,2.4," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40707$nfl.g.13520095,Emanuel,Wilson,nfl.p.40707$nfl.g.13520095 - Emanuel Wilson,RB,GB,NO,NO@GB,8:15PM EST,10,4.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.18$nfl.g.13520095,New Orleans,Saints,nfl.t.18$nfl.g.13520095 - New Orleans Saints,DEF,NO,GB,NO@GB,8:15PM EST,10,6.6," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.t.9$nfl.g.13520095,Green Bay,Packers,nfl.t.9$nfl.g.13520095 - Green Bay Packers,DEF,GB,NO,NO@GB,8:15PM EST,16,8.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40108$nfl.g.13520095,Kendre,Miller,nfl.p.40108$nfl.g.13520095 - Kendre Miller,RB,NO,GB,NO@GB,8:15PM EST,12,4.0," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.31014$nfl.g.13520095,Dante,Pettis,nfl.p.31014$nfl.g.13520095 - Dante Pettis,WR,NO,GB,NO@GB,8:15PM EST,10,1.8," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.34242$nfl.g.13520095,Kevin,Austin Jr.,nfl.p.34242$nfl.g.13520095 - Kevin Austin Jr.,WR,NO,GB,NO@GB,8:15PM EST,10,2.9," "," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.41045$nfl.g.13520095,Bub,Means,nfl.p.41045$nfl.g.13520095 - Bub Means,WR,NO,GB,NO@GB,8:15PM EST,10,5.6,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40074$nfl.g.13520095,Luke,Musgrave,nfl.p.40074$nfl.g.13520095 - Luke Musgrave,TE,GB,NO,NO@GB,8:15PM EST,10,1.2,IR," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.40971$nfl.g.13520095,MarShawn,Lloyd,nfl.p.40971$nfl.g.13520095 - MarShawn Lloyd,RB,GB,NO,NO@GB,8:15PM EST,10,2.3,O," "
-" "," "," "," "," "," "," "," "," "," "," "," "," ",nfl.p.33966$nfl.g.13520095,Chris,Olave,nfl.p.33966$nfl.g.13520095 - Chris Olave,WR,NO,GB,NO@GB,8:15PM EST,22,7.6,IR," "
+Contest ID,Entry ID,QB,RB1,RB2,WR1,WR2,WR3,TE,FLEX,DEF, ,Instructions,ID,First Name,Last Name,ID + Name,Position,Team,Opponent,Game,Time,Salary,FPPG,Injury Status,Starting
+14443604,223824366, , , , , , , , , , ,1. The Contest ID column lists the contest you are editing; you may only edit one contest at a time, , , , , , , , , , , , , 
+ , , , , , , , , , , , ,2. The Entry ID column lists all of your contest entries for this contest, , , , , , , , , , , , , 
+ , , , , , , , , , , , ,3. Your current lineup is listed next to each entry (blank for reserved entries), , , , , , , , , , , , , 
+ , , , , , , , , , , , ,4. You can change the lineup for an entry by entering the IDs of the players in the row next to that entry, , , , , , , , , , , , , 
+ , , , , , , , , , , , ,"5. Use values from the ""ID"" or ""ID + Name"" column (you cannot use just the player's name)", , , , , , , , , , , , , 
+ , , , , , , , , , , , ,6. For faster processing only include entries you are changing in the file you upload, , , , , , , , , , , , , 
+ , , , , , , , , , , , ,"Note: For each entry, the salary cap is 200", , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , ,nfl.p.28389$nfl.g.13520080,Jameis,Winston,nfl.p.28389$nfl.g.13520080 - Jameis Winston,QB,CLE,CIN,CLE@CIN,1:00PM EST,23,13,Q, 
+ , , , , , , , , , , , , ,nfl.p.30142$nfl.g.13520080,David,Njoku,nfl.p.30142$nfl.g.13520080 - David Njoku,TE,CLE,CIN,CLE@CIN,1:00PM EST,24,10.6,Q, 
+ , , , , , , , , , , , , ,nfl.p.30202$nfl.g.13520080,D'Onta,Foreman,nfl.p.30202$nfl.g.13520080 - D'Onta Foreman,RB,CLE,CIN,CLE@CIN,1:00PM EST,10,3.2, , 
+ , , , , , , , , , , , , ,nfl.p.31005$nfl.g.13520080,Nick,Chubb,nfl.p.31005$nfl.g.13520080 - Nick Chubb,RB,CLE,CIN,CLE@CIN,1:00PM EST,10,7.6,IR, 
+ , , , , , , , , , , , , ,nfl.p.31068$nfl.g.13520080,Jordan,Akins,nfl.p.31068$nfl.g.13520080 - Jordan Akins,TE,CLE,CIN,CLE@CIN,1:00PM EST,10,3.6, , 
+ , , , , , , , , , , , , ,nfl.p.32685$nfl.g.13520080,Jerry,Jeudy,nfl.p.32685$nfl.g.13520080 - Jerry Jeudy,WR,CLE,CIN,CLE@CIN,1:00PM EST,36,12, , 
+ , , , , , , , , , , , , ,nfl.p.33422$nfl.g.13520080,Elijah,Moore,nfl.p.33422$nfl.g.13520080 - Elijah Moore,WR,CLE,CIN,CLE@CIN,1:00PM EST,18,5.8, , 
+ , , , , , , , , , , , , ,nfl.p.34083$nfl.g.13520080,Pierre,Strong Jr.,nfl.p.34083$nfl.g.13520080 - Pierre Strong Jr.,RB,CLE,CIN,CLE@CIN,1:00PM EST,10,2, , 
+ , , , , , , , , , , , , ,nfl.p.34093$nfl.g.13520080,Bailey,Zappe,nfl.p.34093$nfl.g.13520080 - Bailey Zappe,QB,CLE,CIN,CLE@CIN,1:00PM EST,20,7.8, , 
+ , , , , , , , , , , , , ,nfl.p.34112$nfl.g.13520080,Jerome,Ford,nfl.p.34112$nfl.g.13520080 - Jerome Ford,RB,CLE,CIN,CLE@CIN,1:00PM EST,22,7.6, , 
+ , , , , , , , , , , , , ,nfl.p.40093$nfl.g.13520080,Cedric,Tillman,nfl.p.40093$nfl.g.13520080 - Cedric Tillman,WR,CLE,CIN,CLE@CIN,1:00PM EST,23,7.3,O, 
+ , , , , , , , , , , , , ,nfl.p.40195$nfl.g.13520080,Dorian,Thompson-Robinson,nfl.p.40195$nfl.g.13520080 - Dorian Thompson-Robinson,QB,CLE,CIN,CLE@CIN,1:00PM EST,20,2.3, , 
+ , , , , , , , , , , , , ,nfl.p.40433$nfl.g.13520080,Blake,Whiteheart,nfl.p.40433$nfl.g.13520080 - Blake Whiteheart,TE,CLE,CIN,CLE@CIN,1:00PM EST,10,2.4, , 
+ , , , , , , , , , , , , ,nfl.p.41016$nfl.g.13520080,Jamari,Thrash,nfl.p.41016$nfl.g.13520080 - Jamari Thrash,WR,CLE,CIN,CLE@CIN,1:00PM EST,10,1.2, , 
+ , , , , , , , , , , , , ,nfl.p.31012$nfl.g.13520080,Mike,Gesicki,nfl.p.31012$nfl.g.13520080 - Mike Gesicki,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,6.3, , 
+ , , , , , , , , , , , , ,nfl.p.31257$nfl.g.13520080,Tanner,Hudson,nfl.p.31257$nfl.g.13520080 - Tanner Hudson,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,3.4,O, 
+ , , , , , , , , , , , , ,nfl.p.31884$nfl.g.13520080,Drew,Sample,nfl.p.31884$nfl.g.13520080 - Drew Sample,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.32014$nfl.g.13520080,Trayveon,Williams,nfl.p.32014$nfl.g.13520080 - Trayveon Williams,RB,CIN,CLE,CLE@CIN,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.32138$nfl.g.13520080,Jake,Browning,nfl.p.32138$nfl.g.13520080 - Jake Browning,QB,CIN,CLE,CLE@CIN,1:00PM EST,20,-0.1, , 
+ , , , , , , , , , , , , ,nfl.p.32671$nfl.g.13520080,Joe,Burrow,nfl.p.32671$nfl.g.13520080 - Joe Burrow,QB,CIN,CLE,CLE@CIN,1:00PM EST,35,22.1, , 
+ , , , , , , , , , , , , ,nfl.p.32703$nfl.g.13520080,Tee,Higgins,nfl.p.32703$nfl.g.13520080 - Tee Higgins,WR,CIN,CLE,CLE@CIN,1:00PM EST,32,14.2, , 
+ , , , , , , , , , , , , ,nfl.p.33393$nfl.g.13520080,Ja'Marr,Chase,nfl.p.33393$nfl.g.13520080 - Ja'Marr Chase,WR,CIN,CLE,CLE@CIN,1:00PM EST,40,20.3, , 
+ , , , , , , , , , , , , ,nfl.p.33605$nfl.g.13520080,Khalil,Herbert,nfl.p.33605$nfl.g.13520080 - Khalil Herbert,RB,CIN,CLE,CLE@CIN,1:00PM EST,10,1.4, , 
+ , , , , , , , , , , , , ,nfl.p.40158$nfl.g.13520080,Charlie,Jones,nfl.p.40158$nfl.g.13520080 - Charlie Jones,WR,CIN,CLE,CLE@CIN,1:00PM EST,10,0.7,Q, 
+ , , , , , , , , , , , , ,nfl.p.40196$nfl.g.13520080,Chase,Brown,nfl.p.40196$nfl.g.13520080 - Chase Brown,RB,CIN,CLE,CLE@CIN,1:00PM EST,36,14.6, , 
+ , , , , , , , , , , , , ,nfl.p.40211$nfl.g.13520080,Andrei,Iosivas,nfl.p.40211$nfl.g.13520080 - Andrei Iosivas,WR,CIN,CLE,CLE@CIN,1:00PM EST,14,5.7, , 
+ , , , , , , , , , , , , ,nfl.p.40974$nfl.g.13520080,Jermaine,Burton,nfl.p.40974$nfl.g.13520080 - Jermaine Burton,WR,CIN,CLE,CLE@CIN,1:00PM EST,10,2.1, , 
+ , , , , , , , , , , , , ,nfl.p.41066$nfl.g.13520080,Tanner,McLachlan,nfl.p.41066$nfl.g.13520080 - Tanner McLachlan,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.41353$nfl.g.13520080,Cam,Grandy,nfl.p.41353$nfl.g.13520080 - Cam Grandy,TE,CIN,CLE,CLE@CIN,1:00PM EST,10,1.4, , 
+ , , , , , , , , , , , , ,nfl.p.41421$nfl.g.13520080,Isaiah,Williams,nfl.p.41421$nfl.g.13520080 - Isaiah Williams,WR,CIN,CLE,CLE@CIN,1:00PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.t.5$nfl.g.13520080,Cleveland,Browns,nfl.t.5$nfl.g.13520080 - Cleveland Browns,DEF,CLE,CIN,CLE@CIN,1:00PM EST,11,5.1, , 
+ , , , , , , , , , , , , ,nfl.t.4$nfl.g.13520080,Cincinnati,Bengals,nfl.t.4$nfl.g.13520080 - Cincinnati Bengals,DEF,CIN,CLE,CLE@CIN,1:00PM EST,15,5.4, , 
+ , , , , , , , , , , , , ,nfl.p.34158$nfl.g.13520080,Michael,Woods II,nfl.p.34158$nfl.g.13520080 - Michael Woods II,WR,CLE,CIN,CLE@CIN,1:00PM EST,10,3.1, , 
+ , , , , , , , , , , , , ,nfl.p.32871$nfl.g.13520080,James,Proche II,nfl.p.32871$nfl.g.13520080 - James Proche II,WR,CLE,CIN,CLE@CIN,1:00PM EST,10,0.6, , 
+ , , , , , , , , , , , , ,nfl.p.31219$nfl.g.13520080,Logan,Woodside,nfl.p.31219$nfl.g.13520080 - Logan Woodside,QB,CIN,CLE,CLE@CIN,1:00PM EST,20,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.26664$nfl.g.13520081,Robert,Woods,nfl.p.26664$nfl.g.13520081 - Robert Woods,WR,HOU,KC,HOU@KC,1:00PM EST,10,1.9, , 
+ , , , , , , , , , , , , ,nfl.p.30161$nfl.g.13520081,Joe,Mixon,nfl.p.30161$nfl.g.13520081 - Joe Mixon,RB,HOU,KC,HOU@KC,1:00PM EST,35,17.9, , 
+ , , , , , , , , , , , , ,nfl.p.30860$nfl.g.13520081,Dare,Ogunbowale,nfl.p.30860$nfl.g.13520081 - Dare Ogunbowale,RB,HOU,KC,HOU@KC,1:00PM EST,10,2.9, , 
+ , , , , , , , , , , , , ,nfl.p.31107$nfl.g.13520081,Dalton,Schultz,nfl.p.31107$nfl.g.13520081 - Dalton Schultz,TE,HOU,KC,HOU@KC,1:00PM EST,13,5.6, , 
+ , , , , , , , , , , , , ,nfl.p.32187$nfl.g.13520081,Steven,Sims,nfl.p.32187$nfl.g.13520081 - Steven Sims,WR,HOU,KC,HOU@KC,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.33455$nfl.g.13520081,Davis,Mills,nfl.p.33455$nfl.g.13520081 - Davis Mills,QB,HOU,KC,HOU@KC,1:00PM EST,20,1.6, , 
+ , , , , , , , , , , , , ,nfl.p.33477$nfl.g.13520081,Nico,Collins,nfl.p.33477$nfl.g.13520081 - Nico Collins,WR,HOU,KC,HOU@KC,1:00PM EST,33,15.7, , 
+ , , , , , , , , , , , , ,nfl.p.33999$nfl.g.13520081,John,Metchie III,nfl.p.33999$nfl.g.13520081 - John Metchie III,WR,HOU,KC,HOU@KC,1:00PM EST,10,4.1,O, 
+ , , , , , , , , , , , , ,nfl.p.34063$nfl.g.13520081,Dameon,Pierce,nfl.p.34063$nfl.g.13520081 - Dameon Pierce,RB,HOU,KC,HOU@KC,1:00PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.p.40030$nfl.g.13520081,C.J.,Stroud,nfl.p.40030$nfl.g.13520081 - C.J. Stroud,QB,HOU,KC,HOU@KC,1:00PM EST,24,14.6, , 
+ , , , , , , , , , , , , ,nfl.p.40097$nfl.g.13520081,Tank,Dell,nfl.p.40097$nfl.g.13520081 - Tank Dell,WR,HOU,KC,HOU@KC,1:00PM EST,18,8.2,D, 
+ , , , , , , , , , , , , ,nfl.p.40232$nfl.g.13520081,Xavier,Hutchinson,nfl.p.40232$nfl.g.13520081 - Xavier Hutchinson,WR,HOU,KC,HOU@KC,1:00PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.p.40987$nfl.g.13520081,Cade,Stover,nfl.p.40987$nfl.g.13520081 - Cade Stover,TE,HOU,KC,HOU@KC,1:00PM EST,10,2.4,O, 
+ , , , , , , , , , , , , ,nfl.p.26650$nfl.g.13520081,DeAndre,Hopkins,nfl.p.26650$nfl.g.13520081 - DeAndre Hopkins,WR,KC,HOU,HOU@KC,1:00PM EST,22,7.8, , 
+ , , , , , , , , , , , , ,nfl.p.26686$nfl.g.13520081,Travis,Kelce,nfl.p.26686$nfl.g.13520081 - Travis Kelce,TE,KC,HOU,HOU@KC,1:00PM EST,22,8.6, , 
+ , , , , , , , , , , , , ,nfl.p.29236$nfl.g.13520081,Carson,Wentz,nfl.p.29236$nfl.g.13520081 - Carson Wentz,QB,KC,HOU,HOU@KC,1:00PM EST,20,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.30123$nfl.g.13520081,Patrick,Mahomes,nfl.p.30123$nfl.g.13520081 - Patrick Mahomes,QB,KC,HOU,HOU@KC,1:00PM EST,28,17.8, , 
+ , , , , , , , , , , , , ,nfl.p.30175$nfl.g.13520081,JuJu,Smith-Schuster,nfl.p.30175$nfl.g.13520081 - JuJu Smith-Schuster,WR,KC,HOU,HOU@KC,1:00PM EST,10,4.5, , 
+ , , , , , , , , , , , , ,nfl.p.30199$nfl.g.13520081,Kareem,Hunt,nfl.p.30199$nfl.g.13520081 - Kareem Hunt,RB,KC,HOU,HOU@KC,1:00PM EST,18,11.3, , 
+ , , , , , , , , , , , , ,nfl.p.30227$nfl.g.13520081,Samaje,Perine,nfl.p.30227$nfl.g.13520081 - Samaje Perine,RB,KC,HOU,HOU@KC,1:00PM EST,10,4.1, , 
+ , , , , , , , , , , , , ,nfl.p.31114$nfl.g.13520081,Justin,Watson,nfl.p.31114$nfl.g.13520081 - Justin Watson,WR,KC,HOU,HOU@KC,1:00PM EST,10,2.7, , 
+ , , , , , , , , , , , , ,nfl.p.32702$nfl.g.13520081,Clyde,Edwards-Helaire,nfl.p.32702$nfl.g.13520081 - Clyde Edwards-Helaire,RB,KC,HOU,HOU@KC,1:00PM EST,10,3.6, , 
+ , , , , , , , , , , , , ,nfl.p.33550$nfl.g.13520081,Noah,Gray,nfl.p.33550$nfl.g.13520081 - Noah Gray,TE,KC,HOU,HOU@KC,1:00PM EST,16,6.6, , 
+ , , , , , , , , , , , , ,nfl.p.34207$nfl.g.13520081,Isiah,Pacheco,nfl.p.34207$nfl.g.13520081 - Isiah Pacheco,RB,KC,HOU,HOU@KC,1:00PM EST,18,8.2, , 
+ , , , , , , , , , , , , ,nfl.p.40877$nfl.g.13520081,Xavier,Worthy,nfl.p.40877$nfl.g.13520081 - Xavier Worthy,WR,KC,HOU,HOU@KC,1:00PM EST,19,9.3, , 
+ , , , , , , , , , , , , ,nfl.p.41464$nfl.g.13520081,Carson,Steele,nfl.p.41464$nfl.g.13520081 - Carson Steele,RB,KC,HOU,HOU@KC,1:00PM EST,10,1.4, , 
+ , , , , , , , , , , , , ,nfl.t.34$nfl.g.13520081,Houston,Texans,nfl.t.34$nfl.g.13520081 - Houston Texans,DEF,HOU,KC,HOU@KC,1:00PM EST,15,8.4, , 
+ , , , , , , , , , , , , ,nfl.t.12$nfl.g.13520081,Kansas City,Chiefs,nfl.t.12$nfl.g.13520081 - Kansas City Chiefs,DEF,KC,HOU,HOU@KC,1:00PM EST,14,6.5, , 
+ , , , , , , , , , , , , ,nfl.p.40571$nfl.g.13520081,Nikko,Remigio,nfl.p.40571$nfl.g.13520081 - Nikko Remigio,WR,KC,HOU,HOU@KC,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.31857$nfl.g.13520081,Hollywood,Brown,nfl.p.31857$nfl.g.13520081 - Hollywood Brown,WR,KC,HOU,HOU@KC,1:00PM EST,20,7, , 
+ , , , , , , , , , , , , ,nfl.p.30571$nfl.g.13520081,Anthony,Firkser,nfl.p.30571$nfl.g.13520081 - Anthony Firkser,TE,KC,HOU,HOU@KC,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.31882$nfl.g.13520081,Irv,Smith,nfl.p.31882$nfl.g.13520081 - Irv Smith,TE,HOU,KC,HOU@KC,1:00PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.p.34009$nfl.g.13520081,Skyy,Moore,nfl.p.34009$nfl.g.13520081 - Skyy Moore,WR,KC,HOU,HOU@KC,1:00PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.34607$nfl.g.13520081,Peyton,Hendershot,nfl.p.34607$nfl.g.13520081 - Peyton Hendershot,TE,KC,HOU,HOU@KC,1:00PM EST,10,1,IR, 
+ , , , , , , , , , , , , ,nfl.p.25785$nfl.g.13520082,Russell,Wilson,nfl.p.25785$nfl.g.13520082 - Russell Wilson,QB,PIT,BAL,PIT@BAL,4:30PM EST,25,16.2, , 
+ , , , , , , , , , , , , ,nfl.p.26652$nfl.g.13520082,Cordarrelle,Patterson,nfl.p.26652$nfl.g.13520082 - Cordarrelle Patterson,RB,PIT,BAL,PIT@BAL,4:30PM EST,10,2.8, , 
+ , , , , , , , , , , , , ,nfl.p.28531$nfl.g.13520082,MyCole,Pruitt,nfl.p.28531$nfl.g.13520082 - MyCole Pruitt,TE,PIT,BAL,PIT@BAL,4:30PM EST,10,1.6, , 
+ , , , , , , , , , , , , ,nfl.p.30120$nfl.g.13520082,Mike,Williams,nfl.p.30120$nfl.g.13520082 - Mike Williams,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,3.6, , 
+ , , , , , , , , , , , , ,nfl.p.31301$nfl.g.13520082,Kyle,Allen,nfl.p.31301$nfl.g.13520082 - Kyle Allen,QB,PIT,BAL,PIT@BAL,4:30PM EST,20,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.32040$nfl.g.13520082,Scotty,Miller,nfl.p.32040$nfl.g.13520082 - Scotty Miller,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,1.9, , 
+ , , , , , , , , , , , , ,nfl.p.32727$nfl.g.13520082,Van,Jefferson,nfl.p.32727$nfl.g.13520082 - Van Jefferson,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,3.7, , 
+ , , , , , , , , , , , , ,nfl.p.33399$nfl.g.13520082,Justin,Fields,nfl.p.33399$nfl.g.13520082 - Justin Fields,QB,PIT,BAL,PIT@BAL,4:30PM EST,20,12,O, 
+ , , , , , , , , , , , , ,nfl.p.33412$nfl.g.13520082,Najee,Harris,nfl.p.33412$nfl.g.13520082 - Najee Harris,RB,PIT,BAL,PIT@BAL,4:30PM EST,24,10.9, , 
+ , , , , , , , , , , , , ,nfl.p.33443$nfl.g.13520082,Pat,Freiermuth,nfl.p.33443$nfl.g.13520082 - Pat Freiermuth,TE,PIT,BAL,PIT@BAL,4:30PM EST,18,7.3, , 
+ , , , , , , , , , , , , ,nfl.p.33637$nfl.g.13520082,Ben,Skowronek,nfl.p.33637$nfl.g.13520082 - Ben Skowronek,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.34007$nfl.g.13520082,George,Pickens,nfl.p.34007$nfl.g.13520082 - George Pickens,WR,PIT,BAL,PIT@BAL,4:30PM EST,27,10.7,O, 
+ , , , , , , , , , , , , ,nfl.p.34094$nfl.g.13520082,Calvin,Austin III,nfl.p.34094$nfl.g.13520082 - Calvin Austin III,WR,PIT,BAL,PIT@BAL,4:30PM EST,16,6.5, , 
+ , , , , , , , , , , , , ,nfl.p.34163$nfl.g.13520082,Connor,Heyward,nfl.p.34163$nfl.g.13520082 - Connor Heyward,TE,PIT,BAL,PIT@BAL,4:30PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.p.34447$nfl.g.13520082,Jaylen,Warren,nfl.p.34447$nfl.g.13520082 - Jaylen Warren,RB,PIT,BAL,PIT@BAL,4:30PM EST,16,6.9, , 
+ , , , , , , , , , , , , ,nfl.p.40094$nfl.g.13520082,Darnell,Washington,nfl.p.40094$nfl.g.13520082 - Darnell Washington,TE,PIT,BAL,PIT@BAL,4:30PM EST,10,2.8, , 
+ , , , , , , , , , , , , ,nfl.p.8937$nfl.g.13520082,Josh,Johnson,nfl.p.8937$nfl.g.13520082 - Josh Johnson,QB,BAL,PIT,PIT@BAL,4:30PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.28408$nfl.g.13520082,Nelson,Agholor,nfl.p.28408$nfl.g.13520082 - Nelson Agholor,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,3.2,O, 
+ , , , , , , , , , , , , ,nfl.p.29279$nfl.g.13520082,Derrick,Henry,nfl.p.29279$nfl.g.13520082 - Derrick Henry,RB,BAL,PIT,PIT@BAL,4:30PM EST,35,18.3, , 
+ , , , , , , , , , , , , ,nfl.p.30592$nfl.g.13520082,Patrick,Ricard,nfl.p.30592$nfl.g.13520082 - Patrick Ricard,RB,BAL,PIT,PIT@BAL,4:30PM EST,10,2.3, , 
+ , , , , , , , , , , , , ,nfl.p.31002$nfl.g.13520082,Lamar,Jackson,nfl.p.31002$nfl.g.13520082 - Lamar Jackson,QB,BAL,PIT,PIT@BAL,4:30PM EST,38,25.5, , 
+ , , , , , , , , , , , , ,nfl.p.31056$nfl.g.13520082,Mark,Andrews,nfl.p.31056$nfl.g.13520082 - Mark Andrews,TE,BAL,PIT,PIT@BAL,4:30PM EST,21,8.9, , 
+ , , , , , , , , , , , , ,nfl.p.31898$nfl.g.13520082,Diontae,Johnson,nfl.p.31898$nfl.g.13520082 - Diontae Johnson,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,7, , 
+ , , , , , , , , , , , , ,nfl.p.31945$nfl.g.13520082,Justice,Hill,nfl.p.31945$nfl.g.13520082 - Justice Hill,RB,BAL,PIT,PIT@BAL,4:30PM EST,14,7.1,Q, 
+ , , , , , , , , , , , , ,nfl.p.33415$nfl.g.13520082,Rashod,Bateman,nfl.p.33415$nfl.g.13520082 - Rashod Bateman,WR,BAL,PIT,PIT@BAL,4:30PM EST,22,9.6, , 
+ , , , , , , , , , , , , ,nfl.p.33519$nfl.g.13520082,Tylan,Wallace,nfl.p.33519$nfl.g.13520082 - Tylan Wallace,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,3.8, , 
+ , , , , , , , , , , , , ,nfl.p.34095$nfl.g.13520082,Isaiah,Likely,nfl.p.34095$nfl.g.13520082 - Isaiah Likely,TE,BAL,PIT,PIT@BAL,4:30PM EST,11,6.9, , 
+ , , , , , , , , , , , , ,nfl.p.40039$nfl.g.13520082,Zay,Flowers,nfl.p.40039$nfl.g.13520082 - Zay Flowers,WR,BAL,PIT,PIT@BAL,4:30PM EST,26,11.1, , 
+ , , , , , , , , , , , , ,nfl.p.40641$nfl.g.13520082,Keaton,Mitchell,nfl.p.40641$nfl.g.13520082 - Keaton Mitchell,RB,BAL,PIT,PIT@BAL,4:30PM EST,10,0,O, 
+ , , , , , , , , , , , , ,nfl.p.40991$nfl.g.13520082,Devontez,Walker,nfl.p.40991$nfl.g.13520082 - Devontez Walker,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,4.3, , 
+ , , , , , , , , , , , , ,nfl.p.41033$nfl.g.13520082,Rasheen,Ali,nfl.p.41033$nfl.g.13520082 - Rasheen Ali,RB,BAL,PIT,PIT@BAL,4:30PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.t.23$nfl.g.13520082,Pittsburgh,Steelers,nfl.t.23$nfl.g.13520082 - Pittsburgh Steelers,DEF,PIT,BAL,PIT@BAL,4:30PM EST,13,9.2, , 
+ , , , , , , , , , , , , ,nfl.t.33$nfl.g.13520082,Baltimore,Ravens,nfl.t.33$nfl.g.13520082 - Baltimore Ravens,DEF,BAL,PIT,PIT@BAL,4:30PM EST,13,5.8, , 
+ , , , , , , , , , , , , ,nfl.p.32398$nfl.g.13520082,Deonte,Harty,nfl.p.32398$nfl.g.13520082 - Deonte Harty,WR,BAL,PIT,PIT@BAL,4:30PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.40952$nfl.g.13520082,Roman,Wilson,nfl.p.40952$nfl.g.13520082 - Roman Wilson,WR,PIT,BAL,PIT@BAL,4:30PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.28365$nfl.g.13520083,Chris,Manhertz,nfl.p.28365$nfl.g.13520083 - Chris Manhertz,TE,NYG,ATL,NYG@ATL,1:00PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.p.31874$nfl.g.13520083,Drew,Lock,nfl.p.31874$nfl.g.13520083 - Drew Lock,QB,NYG,ATL,NYG@ATL,1:00PM EST,20,8.4, , 
+ , , , , , , , , , , , , ,nfl.p.31906$nfl.g.13520083,Devin,Singletary,nfl.p.31906$nfl.g.13520083 - Devin Singletary,RB,NYG,ATL,NYG@ATL,1:00PM EST,11,6.6, , 
+ , , , , , , , , , , , , ,nfl.p.32003$nfl.g.13520083,Darius,Slayton,nfl.p.32003$nfl.g.13520083 - Darius Slayton,WR,NYG,ATL,NYG@ATL,1:00PM EST,11,6, , 
+ , , , , , , , , , , , , ,nfl.p.33545$nfl.g.13520083,Ihmir,Smith-Marsette,nfl.p.33545$nfl.g.13520083 - Ihmir Smith-Marsette,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.33998$nfl.g.13520083,Wan'Dale,Robinson,nfl.p.33998$nfl.g.13520083 - Wan'Dale Robinson,WR,NYG,ATL,NYG@ATL,1:00PM EST,15,7.3, , 
+ , , , , , , , , , , , , ,nfl.p.34036$nfl.g.13520083,Greg,Dulcich,nfl.p.34036$nfl.g.13520083 - Greg Dulcich,TE,NYG,ATL,NYG@ATL,1:00PM EST,10,1.3, , 
+ , , , , , , , , , , , , ,nfl.p.34068$nfl.g.13520083,Daniel,Bellinger,nfl.p.34068$nfl.g.13520083 - Daniel Bellinger,TE,NYG,ATL,NYG@ATL,1:00PM EST,10,2.4, , 
+ , , , , , , , , , , , , ,nfl.p.40128$nfl.g.13520083,Jalin,Hyatt,nfl.p.40128$nfl.g.13520083 - Jalin Hyatt,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.40198$nfl.g.13520083,Eric,Gray,nfl.p.40198$nfl.g.13520083 - Eric Gray,RB,NYG,ATL,NYG@ATL,1:00PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.40529$nfl.g.13520083,Bryce,Ford-Wheaton,nfl.p.40529$nfl.g.13520083 - Bryce Ford-Wheaton,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40533$nfl.g.13520083,Tommy,DeVito,nfl.p.40533$nfl.g.13520083 - Tommy DeVito,QB,NYG,ATL,NYG@ATL,1:00PM EST,20,6.7, , 
+ , , , , , , , , , , , , ,nfl.p.40899$nfl.g.13520083,Malik,Nabers,nfl.p.40899$nfl.g.13520083 - Malik Nabers,WR,NYG,ATL,NYG@ATL,1:00PM EST,29,13.4, , 
+ , , , , , , , , , , , , ,nfl.p.41048$nfl.g.13520083,Tyrone,Tracy Jr.,nfl.p.41048$nfl.g.13520083 - Tyrone Tracy Jr.,RB,NYG,ATL,NYG@ATL,1:00PM EST,21,9.5,Q, 
+ , , , , , , , , , , , , ,nfl.p.25812$nfl.g.13520083,Kirk,Cousins,nfl.p.25812$nfl.g.13520083 - Kirk Cousins,QB,ATL,NYG,NYG@ATL,1:00PM EST,21,13.7, , 
+ , , , , , , , , , , , , ,nfl.p.31157$nfl.g.13520083,Ray-Ray,McCloud,nfl.p.31157$nfl.g.13520083 - Ray-Ray McCloud,WR,ATL,NYG,NYG@ATL,1:00PM EST,19,6.7, , 
+ , , , , , , , , , , , , ,nfl.p.31329$nfl.g.13520083,Ross,Dwelley,nfl.p.31329$nfl.g.13520083 - Ross Dwelley,TE,ATL,NYG,NYG@ATL,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.31769$nfl.g.13520083,KhaDarel,Hodge,nfl.p.31769$nfl.g.13520083 - KhaDarel Hodge,WR,ATL,NYG,NYG@ATL,1:00PM EST,10,2,Q, 
+ , , , , , , , , , , , , ,nfl.p.32843$nfl.g.13520083,Darnell,Mooney,nfl.p.32843$nfl.g.13520083 - Darnell Mooney,WR,ATL,NYG,NYG@ATL,1:00PM EST,24,10.4, , 
+ , , , , , , , , , , , , ,nfl.p.32860$nfl.g.13520083,Charlie,Woerner,nfl.p.32860$nfl.g.13520083 - Charlie Woerner,TE,ATL,NYG,NYG@ATL,1:00PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.33392$nfl.g.13520083,Kyle,Pitts,nfl.p.33392$nfl.g.13520083 - Kyle Pitts,TE,ATL,NYG,NYG@ATL,1:00PM EST,12,6.5, , 
+ , , , , , , , , , , , , ,nfl.p.33571$nfl.g.13520083,Avery,Williams,nfl.p.33571$nfl.g.13520083 - Avery Williams,RB,ATL,NYG,NYG@ATL,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.33963$nfl.g.13520083,Drake,London,nfl.p.33963$nfl.g.13520083 - Drake London,WR,ATL,NYG,NYG@ATL,1:00PM EST,29,12.3, , 
+ , , , , , , , , , , , , ,nfl.p.34107$nfl.g.13520083,Tyler,Allgeier,nfl.p.34107$nfl.g.13520083 - Tyler Allgeier,RB,ATL,NYG,NYG@ATL,1:00PM EST,14,6.2, , 
+ , , , , , , , , , , , , ,nfl.p.40055$nfl.g.13520083,Bijan,Robinson,nfl.p.40055$nfl.g.13520083 - Bijan Robinson,RB,ATL,NYG,NYG@ATL,1:00PM EST,38,16.7, , 
+ , , , , , , , , , , , , ,nfl.p.40298$nfl.g.13520083,Robert,Burns,nfl.p.40298$nfl.g.13520083 - Robert Burns,RB,ATL,NYG,NYG@ATL,1:00PM EST,10,0,PUP, 
+ , , , , , , , , , , , , ,nfl.p.40889$nfl.g.13520083,Michael,Penix Jr.,nfl.p.40889$nfl.g.13520083 - Michael Penix Jr.,QB,ATL,NYG,NYG@ATL,1:00PM EST,20,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.41074$nfl.g.13520083,Casey,Washington,nfl.p.41074$nfl.g.13520083 - Casey Washington,WR,ATL,NYG,NYG@ATL,1:00PM EST,10,1,O, 
+ , , , , , , , , , , , , ,nfl.t.19$nfl.g.13520083,New York,Giants,nfl.t.19$nfl.g.13520083 - New York Giants,DEF,NYG,ATL,NYG@ATL,1:00PM EST,11,5.2, , 
+ , , , , , , , , , , , , ,nfl.t.1$nfl.g.13520083,Atlanta,Falcons,nfl.t.1$nfl.g.13520083 - Atlanta Falcons,DEF,ATL,NYG,NYG@ATL,1:00PM EST,14,5, , 
+ , , , , , , , , , , , , ,nfl.p.40420$nfl.g.13520083,Carlos,Washington Jr.,nfl.p.40420$nfl.g.13520083 - Carlos Washington Jr.,RB,ATL,NYG,NYG@ATL,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.31431$nfl.g.13520083,Tim,Boyle,nfl.p.31431$nfl.g.13520083 - Tim Boyle,QB,NYG,ATL,NYG@ATL,1:00PM EST,20,5, , 
+ , , , , , , , , , , , , ,nfl.p.32612$nfl.g.13520083,Gunner,Olszewski,nfl.p.32612$nfl.g.13520083 - Gunner Olszewski,WR,NYG,ATL,NYG@ATL,1:00PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.29269$nfl.g.13520084,Hunter,Henry,nfl.p.29269$nfl.g.13520084 - Hunter Henry,TE,NE,BUF,NE@BUF,4:25PM EST,16,7.2, , 
+ , , , , , , , , , , , , ,nfl.p.29315$nfl.g.13520084,Austin,Hooper,nfl.p.29315$nfl.g.13520084 - Austin Hooper,TE,NE,BUF,NE@BUF,4:25PM EST,13,5, , 
+ , , , , , , , , , , , , ,nfl.p.29325$nfl.g.13520084,Jacoby,Brissett,nfl.p.29325$nfl.g.13520084 - Jacoby Brissett,QB,NE,BUF,NE@BUF,4:25PM EST,20,7.7, , 
+ , , , , , , , , , , , , ,nfl.p.30551$nfl.g.13520084,Kendrick,Bourne,nfl.p.30551$nfl.g.13520084 - Kendrick Bourne,WR,NE,BUF,NE@BUF,4:25PM EST,16,4.8, , 
+ , , , , , , , , , , , , ,nfl.p.32736$nfl.g.13520084,Antonio,Gibson,nfl.p.32736$nfl.g.13520084 - Antonio Gibson,RB,NE,BUF,NE@BUF,4:25PM EST,10,5.2, , 
+ , , , , , , , , , , , , ,nfl.p.33199$nfl.g.13520084,JaMycal,Hasty,nfl.p.33199$nfl.g.13520084 - JaMycal Hasty,RB,NE,BUF,NE@BUF,4:25PM EST,10,2.2,O, 
+ , , , , , , , , , , , , ,nfl.p.33508$nfl.g.13520084,Rhamondre,Stevenson,nfl.p.33508$nfl.g.13520084 - Rhamondre Stevenson,RB,NE,BUF,NE@BUF,4:25PM EST,19,11.3, , 
+ , , , , , , , , , , , , ,nfl.p.40222$nfl.g.13520084,DeMario,Douglas,nfl.p.40222$nfl.g.13520084 - DeMario Douglas,WR,NE,BUF,NE@BUF,4:25PM EST,17,6.6, , 
+ , , , , , , , , , , , , ,nfl.p.40224$nfl.g.13520084,Kayshon,Boutte,nfl.p.40224$nfl.g.13520084 - Kayshon Boutte,WR,NE,BUF,NE@BUF,4:25PM EST,14,4.7, , 
+ , , , , , , , , , , , , ,nfl.p.40881$nfl.g.13520084,Drake,Maye,nfl.p.40881$nfl.g.13520084 - Drake Maye,QB,NE,BUF,NE@BUF,4:25PM EST,24,14.4, , 
+ , , , , , , , , , , , , ,nfl.p.40914$nfl.g.13520084,Ja'Lynn,Polk,nfl.p.40914$nfl.g.13520084 - Ja'Lynn Polk,WR,NE,BUF,NE@BUF,4:25PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.p.40982$nfl.g.13520084,Javon,Baker,nfl.p.40982$nfl.g.13520084 - Javon Baker,WR,NE,BUF,NE@BUF,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.41060$nfl.g.13520084,Joe,Milton III,nfl.p.41060$nfl.g.13520084 - Joe Milton III,QB,NE,BUF,NE@BUF,4:25PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.41106$nfl.g.13520084,Jaheim,Bell,nfl.p.41106$nfl.g.13520084 - Jaheim Bell,TE,NE,BUF,NE@BUF,4:25PM EST,10,0.2, , 
+ , , , , , , , , , , , , ,nfl.p.28392$nfl.g.13520084,Amari,Cooper,nfl.p.28392$nfl.g.13520084 - Amari Cooper,WR,BUF,NE,NE@BUF,4:25PM EST,22,7.8, , 
+ , , , , , , , , , , , , ,nfl.p.30115$nfl.g.13520084,Mitchell,Trubisky,nfl.p.30115$nfl.g.13520084 - Mitchell Trubisky,QB,BUF,NE,NE@BUF,4:25PM EST,20,-0.1, , 
+ , , , , , , , , , , , , ,nfl.p.30153$nfl.g.13520084,Curtis,Samuel,nfl.p.30153$nfl.g.13520084 - Curtis Samuel,WR,BUF,NE,NE@BUF,4:25PM EST,11,3,Q, 
+ , , , , , , , , , , , , ,nfl.p.30231$nfl.g.13520084,Mack,Hollins,nfl.p.30231$nfl.g.13520084 - Mack Hollins,WR,BUF,NE,NE@BUF,4:25PM EST,12,5.1, , 
+ , , , , , , , , , , , , ,nfl.p.30977$nfl.g.13520084,Josh,Allen,nfl.p.30977$nfl.g.13520084 - Josh Allen,QB,BUF,NE,NE@BUF,4:25PM EST,40,25, , 
+ , , , , , , , , , , , , ,nfl.p.31928$nfl.g.13520084,Dawson,Knox,nfl.p.31928$nfl.g.13520084 - Dawson Knox,TE,BUF,NE,NE@BUF,4:25PM EST,10,3.7, , 
+ , , , , , , , , , , , , ,nfl.p.32018$nfl.g.13520084,Ty,Johnson,nfl.p.32018$nfl.g.13520084 - Ty Johnson,RB,BUF,NE,NE@BUF,4:25PM EST,13,5.4, , 
+ , , , , , , , , , , , , ,nfl.p.33357$nfl.g.13520084,Reggie,Gilliam,nfl.p.33357$nfl.g.13520084 - Reggie Gilliam,RB,BUF,NE,NE@BUF,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.33819$nfl.g.13520084,Quintin,Morris,nfl.p.33819$nfl.g.13520084 - Quintin Morris,TE,BUF,NE,NE@BUF,4:25PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.p.34019$nfl.g.13520084,James,Cook,nfl.p.34019$nfl.g.13520084 - James Cook,RB,BUF,NE,NE@BUF,4:25PM EST,34,15.7, , 
+ , , , , , , , , , , , , ,nfl.p.34104$nfl.g.13520084,Khalil,Shakir,nfl.p.34104$nfl.g.13520084 - Khalil Shakir,WR,BUF,NE,NE@BUF,4:25PM EST,27,10.6, , 
+ , , , , , , , , , , , , ,nfl.p.40048$nfl.g.13520084,Dalton,Kincaid,nfl.p.40048$nfl.g.13520084 - Dalton Kincaid,TE,BUF,NE,NE@BUF,4:25PM EST,16,6.5, , 
+ , , , , , , , , , , , , ,nfl.p.40911$nfl.g.13520084,Keon,Coleman,nfl.p.40911$nfl.g.13520084 - Keon Coleman,WR,BUF,NE,NE@BUF,4:25PM EST,21,8, , 
+ , , , , , , , , , , , , ,nfl.p.40980$nfl.g.13520084,Ray,Davis,nfl.p.40980$nfl.g.13520084 - Ray Davis,RB,BUF,NE,NE@BUF,4:25PM EST,13,6.4, , 
+ , , , , , , , , , , , , ,nfl.t.17$nfl.g.13520084,New England,Patriots,nfl.t.17$nfl.g.13520084 - New England Patriots,DEF,NE,BUF,NE@BUF,4:25PM EST,10,4.4, , 
+ , , , , , , , , , , , , ,nfl.t.2$nfl.g.13520084,Buffalo,Bills,nfl.t.2$nfl.g.13520084 - Buffalo Bills,DEF,BUF,NE,NE@BUF,4:25PM EST,19,7.4, , 
+ , , , , , , , , , , , , ,nfl.p.41352$nfl.g.13520084,Jack,Westover,nfl.p.41352$nfl.g.13520084 - Jack Westover,TE,NE,BUF,NE@BUF,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.31141$nfl.g.13520084,Mike,White,nfl.p.31141$nfl.g.13520084 - Mike White,QB,BUF,NE,NE@BUF,4:25PM EST,20,0.5, , 
+ , , , , , , , , , , , , ,nfl.p.27589$nfl.g.13520085,Allen,Robinson,nfl.p.27589$nfl.g.13520085 - Allen Robinson,WR,DET,CHI,DET@CHI,1:00PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.p.29235$nfl.g.13520085,Jared,Goff,nfl.p.29235$nfl.g.13520085 - Jared Goff,QB,DET,CHI,DET@CHI,1:00PM EST,31,19.5, , 
+ , , , , , , , , , , , , ,nfl.p.30511$nfl.g.13520085,Tim,Patrick,nfl.p.30511$nfl.g.13520085 - Tim Patrick,WR,DET,CHI,DET@CHI,1:00PM EST,18,5.5, , 
+ , , , , , , , , , , , , ,nfl.p.31905$nfl.g.13520085,David,Montgomery,nfl.p.31905$nfl.g.13520085 - David Montgomery,RB,DET,CHI,DET@CHI,1:00PM EST,28,14.6,O, 
+ , , , , , , , , , , , , ,nfl.p.32596$nfl.g.13520085,Craig,Reynolds,nfl.p.32596$nfl.g.13520085 - Craig Reynolds,RB,DET,CHI,DET@CHI,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.33500$nfl.g.13520085,Amon-Ra,St. Brown,nfl.p.33500$nfl.g.13520085 - Amon-Ra St. Brown,WR,DET,CHI,DET@CHI,1:00PM EST,34,15.4, , 
+ , , , , , , , , , , , , ,nfl.p.33774$nfl.g.13520085,Brock,Wright,nfl.p.33774$nfl.g.13520085 - Brock Wright,TE,DET,CHI,DET@CHI,1:00PM EST,10,2.8, , 
+ , , , , , , , , , , , , ,nfl.p.33803$nfl.g.13520085,Shane,Zylstra,nfl.p.33803$nfl.g.13520085 - Shane Zylstra,TE,DET,CHI,DET@CHI,1:00PM EST,10,1.4, , 
+ , , , , , , , , , , , , ,nfl.p.33967$nfl.g.13520085,Jameson,Williams,nfl.p.33967$nfl.g.13520085 - Jameson Williams,WR,DET,CHI,DET@CHI,1:00PM EST,23,10.9, , 
+ , , , , , , , , , , , , ,nfl.p.40059$nfl.g.13520085,Jahmyr,Gibbs,nfl.p.40059$nfl.g.13520085 - Jahmyr Gibbs,RB,DET,CHI,DET@CHI,1:00PM EST,38,17.6, , 
+ , , , , , , , , , , , , ,nfl.p.40064$nfl.g.13520085,Sam,LaPorta,nfl.p.40064$nfl.g.13520085 - Sam LaPorta,TE,DET,CHI,DET@CHI,1:00PM EST,20,8.2, , 
+ , , , , , , , , , , , , ,nfl.p.40096$nfl.g.13520085,Hendon,Hooker,nfl.p.40096$nfl.g.13520085 - Hendon Hooker,QB,DET,CHI,DET@CHI,1:00PM EST,20,0.9, , 
+ , , , , , , , , , , , , ,nfl.p.41006$nfl.g.13520085,Sione,Vaki,nfl.p.41006$nfl.g.13520085 - Sione Vaki,RB,DET,CHI,DET@CHI,1:00PM EST,10,0.5, , 
+ , , , , , , , , , , , , ,nfl.p.7777$nfl.g.13520085,Marcedes,Lewis,nfl.p.7777$nfl.g.13520085 - Marcedes Lewis,TE,CHI,DET,DET@CHI,1:00PM EST,10,0.2, , 
+ , , , , , , , , , , , , ,nfl.p.26699$nfl.g.13520085,Keenan,Allen,nfl.p.26699$nfl.g.13520085 - Keenan Allen,WR,CHI,DET,DET@CHI,1:00PM EST,26,9.8, , 
+ , , , , , , , , , , , , ,nfl.p.30157$nfl.g.13520085,Gerald,Everett,nfl.p.30157$nfl.g.13520085 - Gerald Everett,TE,CHI,DET,DET@CHI,1:00PM EST,10,0.9, , 
+ , , , , , , , , , , , , ,nfl.p.30994$nfl.g.13520085,DJ,Moore,nfl.p.30994$nfl.g.13520085 - DJ Moore,WR,CHI,DET,DET@CHI,1:00PM EST,29,10.8, , 
+ , , , , , , , , , , , , ,nfl.p.32036$nfl.g.13520085,Travis,Homer,nfl.p.32036$nfl.g.13520085 - Travis Homer,RB,CHI,DET,DET@CHI,1:00PM EST,10,0.6,D, 
+ , , , , , , , , , , , , ,nfl.p.32705$nfl.g.13520085,D'Andre,Swift,nfl.p.32705$nfl.g.13520085 - D'Andre Swift,RB,CHI,DET,DET@CHI,1:00PM EST,20,11.7, , 
+ , , , , , , , , , , , , ,nfl.p.32713$nfl.g.13520085,Cole,Kmet,nfl.p.32713$nfl.g.13520085 - Cole Kmet,TE,CHI,DET,DET@CHI,1:00PM EST,14,6.7, , 
+ , , , , , , , , , , , , ,nfl.p.32835$nfl.g.13520085,Collin,Johnson,nfl.p.32835$nfl.g.13520085 - Collin Johnson,WR,CHI,DET,DET@CHI,1:00PM EST,10,0.3, , 
+ , , , , , , , , , , , , ,nfl.p.40141$nfl.g.13520085,Tyler,Scott,nfl.p.40141$nfl.g.13520085 - Tyler Scott,WR,CHI,DET,DET@CHI,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.40162$nfl.g.13520085,Roschon,Johnson,nfl.p.40162$nfl.g.13520085 - Roschon Johnson,RB,CHI,DET,DET@CHI,1:00PM EST,11,6.4, , 
+ , , , , , , , , , , , , ,nfl.p.40504$nfl.g.13520085,Tyson,Bagent,nfl.p.40504$nfl.g.13520085 - Tyson Bagent,QB,CHI,DET,DET@CHI,1:00PM EST,20,0.2, , 
+ , , , , , , , , , , , , ,nfl.p.40900$nfl.g.13520085,Caleb,Williams,nfl.p.40900$nfl.g.13520085 - Caleb Williams,QB,CHI,DET,DET@CHI,1:00PM EST,28,15.6, , 
+ , , , , , , , , , , , , ,nfl.p.40901$nfl.g.13520085,Rome,Odunze,nfl.p.40901$nfl.g.13520085 - Rome Odunze,WR,CHI,DET,DET@CHI,1:00PM EST,20,7.5, , 
+ , , , , , , , , , , , , ,nfl.t.8$nfl.g.13520085,Detroit,Lions,nfl.t.8$nfl.g.13520085 - Detroit Lions,DEF,DET,CHI,DET@CHI,1:00PM EST,17,7.5, , 
+ , , , , , , , , , , , , ,nfl.t.3$nfl.g.13520085,Chicago,Bears,nfl.t.3$nfl.g.13520085 - Chicago Bears,DEF,CHI,DET,DET@CHI,1:00PM EST,11,6.9, , 
+ , , , , , , , , , , , , ,nfl.p.34712$nfl.g.13520085,Maurice,Alexander,nfl.p.34712$nfl.g.13520085 - Maurice Alexander,WR,DET,CHI,DET@CHI,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.32273$nfl.g.13520085,Stephen,Carlson,nfl.p.32273$nfl.g.13520085 - Stephen Carlson,TE,CHI,DET,DET@CHI,1:00PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.29631$nfl.g.13520085,Kalif,Raymond,nfl.p.29631$nfl.g.13520085 - Kalif Raymond,WR,DET,CHI,DET@CHI,1:00PM EST,10,4.2,IR, 
+ , , , , , , , , , , , , ,nfl.p.29288$nfl.g.13520086,Tyler,Boyd,nfl.p.29288$nfl.g.13520086 - Tyler Boyd,WR,TEN,IND,TEN@IND,1:00PM EST,10,4.1, , 
+ , , , , , , , , , , , , ,nfl.p.29328$nfl.g.13520086,Nick,Vannett,nfl.p.29328$nfl.g.13520086 - Nick Vannett,TE,TEN,IND,TEN@IND,1:00PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.30996$nfl.g.13520086,Calvin,Ridley,nfl.p.30996$nfl.g.13520086 - Calvin Ridley,WR,TEN,IND,TEN@IND,1:00PM EST,23,9.4, , 
+ , , , , , , , , , , , , ,nfl.p.31046$nfl.g.13520086,Mason,Rudolph,nfl.p.31046$nfl.g.13520086 - Mason Rudolph,QB,TEN,IND,TEN@IND,1:00PM EST,20,14.2, , 
+ , , , , , , , , , , , , ,nfl.p.31960$nfl.g.13520086,Tony,Pollard,nfl.p.31960$nfl.g.13520086 - Tony Pollard,RB,TEN,IND,TEN@IND,1:00PM EST,25,11.9,Q, 
+ , , , , , , , , , , , , ,nfl.p.32782$nfl.g.13520086,Joshua,Kelley,nfl.p.32782$nfl.g.13520086 - Joshua Kelley,RB,TEN,IND,TEN@IND,1:00PM EST,10,3.4, , 
+ , , , , , , , , , , , , ,nfl.p.33348$nfl.g.13520086,Nick,Westbrook-Ikhine,nfl.p.33348$nfl.g.13520086 - Nick Westbrook-Ikhine,WR,TEN,IND,TEN@IND,1:00PM EST,19,9, , 
+ , , , , , , , , , , , , ,nfl.p.34099$nfl.g.13520086,Chig,Okonkwo,nfl.p.34099$nfl.g.13520086 - Chig Okonkwo,TE,TEN,IND,TEN@IND,1:00PM EST,11,4.6, , 
+ , , , , , , , , , , , , ,nfl.p.34451$nfl.g.13520086,Julius,Chestnut,nfl.p.34451$nfl.g.13520086 - Julius Chestnut,RB,TEN,IND,TEN@IND,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.40068$nfl.g.13520086,Will,Levis,nfl.p.40068$nfl.g.13520086 - Will Levis,QB,TEN,IND,TEN@IND,1:00PM EST,20,10.9,Q, 
+ , , , , , , , , , , , , ,nfl.p.40119$nfl.g.13520086,Tyjae,Spears,nfl.p.40119$nfl.g.13520086 - Tyjae Spears,RB,TEN,IND,TEN@IND,1:00PM EST,19,6.7, , 
+ , , , , , , , , , , , , ,nfl.p.40182$nfl.g.13520086,Josh,Whyle,nfl.p.40182$nfl.g.13520086 - Josh Whyle,TE,TEN,IND,TEN@IND,1:00PM EST,10,3, , 
+ , , , , , , , , , , , , ,nfl.p.40263$nfl.g.13520086,Colton,Dowell,nfl.p.40263$nfl.g.13520086 - Colton Dowell,WR,TEN,IND,TEN@IND,1:00PM EST,10,0.2,PUP, 
+ , , , , , , , , , , , , ,nfl.p.41065$nfl.g.13520086,Jha'Quan,Jackson,nfl.p.41065$nfl.g.13520086 - Jha'Quan Jackson,WR,TEN,IND,TEN@IND,1:00PM EST,10,0.1, , 
+ , , , , , , , , , , , , ,nfl.p.41251$nfl.g.13520086,Bryce,Oliver,nfl.p.41251$nfl.g.13520086 - Bryce Oliver,WR,TEN,IND,TEN@IND,1:00PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.41662$nfl.g.13520086,David,Martin-Robinson,nfl.p.41662$nfl.g.13520086 - David Martin-Robinson,TE,TEN,IND,TEN@IND,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.8795$nfl.g.13520086,Joe,Flacco,nfl.p.8795$nfl.g.13520086 - Joe Flacco,QB,IND,TEN,TEN@IND,1:00PM EST,20,14.8, , 
+ , , , , , , , , , , , , ,nfl.p.30112$nfl.g.13520086,Mo,Alie-Cox,nfl.p.30112$nfl.g.13520086 - Mo Alie-Cox,TE,IND,TEN,TEN@IND,1:00PM EST,10,2.7,Q, 
+ , , , , , , , , , , , , ,nfl.p.32292$nfl.g.13520086,Ashton,Dulin,nfl.p.32292$nfl.g.13520086 - Ashton Dulin,WR,IND,TEN,TEN@IND,1:00PM EST,10,1.7,Q, 
+ , , , , , , , , , , , , ,nfl.p.32704$nfl.g.13520086,Michael,Pittman Jr.,nfl.p.32704$nfl.g.13520086 - Michael Pittman Jr.,WR,IND,TEN,TEN@IND,1:00PM EST,20,7.4, , 
+ , , , , , , , , , , , , ,nfl.p.32711$nfl.g.13520086,Jonathan,Taylor,nfl.p.32711$nfl.g.13520086 - Jonathan Taylor,RB,IND,TEN,TEN@IND,1:00PM EST,27,13.2, , 
+ , , , , , , , , , , , , ,nfl.p.33476$nfl.g.13520086,Trey,Sermon,nfl.p.33476$nfl.g.13520086 - Trey Sermon,RB,IND,TEN,TEN@IND,1:00PM EST,10,3.4, , 
+ , , , , , , , , , , , , ,nfl.p.33515$nfl.g.13520086,Kylen,Granson,nfl.p.33515$nfl.g.13520086 - Kylen Granson,TE,IND,TEN,TEN@IND,1:00PM EST,10,1.4, , 
+ , , , , , , , , , , , , ,nfl.p.33606$nfl.g.13520086,Sam,Ehlinger,nfl.p.33606$nfl.g.13520086 - Sam Ehlinger,QB,IND,TEN,TEN@IND,1:00PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.34008$nfl.g.13520086,Alec,Pierce,nfl.p.34008$nfl.g.13520086 - Alec Pierce,WR,IND,TEN,TEN@IND,1:00PM EST,16,7.8,O, 
+ , , , , , , , , , , , , ,nfl.p.34148$nfl.g.13520086,Drew,Ogletree,nfl.p.34148$nfl.g.13520086 - Drew Ogletree,TE,IND,TEN,TEN@IND,1:00PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.p.34261$nfl.g.13520086,Tyler,Goodson,nfl.p.34261$nfl.g.13520086 - Tyler Goodson,RB,IND,TEN,TEN@IND,1:00PM EST,10,3.2, , 
+ , , , , , , , , , , , , ,nfl.p.40040$nfl.g.13520086,Anthony,Richardson,nfl.p.40040$nfl.g.13520086 - Anthony Richardson,QB,IND,TEN,TEN@IND,1:00PM EST,26,15.4, , 
+ , , , , , , , , , , , , ,nfl.p.40126$nfl.g.13520086,Josh,Downs,nfl.p.40126$nfl.g.13520086 - Josh Downs,WR,IND,TEN,TEN@IND,1:00PM EST,24,10.5, , 
+ , , , , , , , , , , , , ,nfl.p.40180$nfl.g.13520086,Will,Mallory,nfl.p.40180$nfl.g.13520086 - Will Mallory,TE,IND,TEN,TEN@IND,1:00PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.40915$nfl.g.13520086,Adonai,Mitchell,nfl.p.40915$nfl.g.13520086 - Adonai Mitchell,WR,IND,TEN,TEN@IND,1:00PM EST,10,2.5, , 
+ , , , , , , , , , , , , ,nfl.p.41046$nfl.g.13520086,Anthony,Gould,nfl.p.41046$nfl.g.13520086 - Anthony Gould,WR,IND,TEN,TEN@IND,1:00PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.t.10$nfl.g.13520086,Tennessee,Titans,nfl.t.10$nfl.g.13520086 - Tennessee Titans,DEF,TEN,IND,TEN@IND,1:00PM EST,12,4.5, , 
+ , , , , , , , , , , , , ,nfl.t.11$nfl.g.13520086,Indianapolis,Colts,nfl.t.11$nfl.g.13520086 - Indianapolis Colts,DEF,IND,TEN,TEN@IND,1:00PM EST,18,6.1, , 
+ , , , , , , , , , , , , ,nfl.p.33351$nfl.g.13520086,Mason,Kinsey,nfl.p.33351$nfl.g.13520086 - Mason Kinsey,WR,TEN,IND,TEN@IND,1:00PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.34300$nfl.g.13520086,Thomas,Odukoya,nfl.p.34300$nfl.g.13520086 - Thomas Odukoya,TE,TEN,IND,TEN@IND,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.30150$nfl.g.13520087,Zay,Jones,nfl.p.30150$nfl.g.13520087 - Zay Jones,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,0.6, , 
+ , , , , , , , , , , , , ,nfl.p.30218$nfl.g.13520087,James,Conner,nfl.p.30218$nfl.g.13520087 - James Conner,RB,ARI,CAR,ARI@CAR,1:00PM EST,36,14.6, , 
+ , , , , , , , , , , , , ,nfl.p.30502$nfl.g.13520087,Zach,Pascal,nfl.p.30502$nfl.g.13520087 - Zach Pascal,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.31833$nfl.g.13520087,Kyler,Murray,nfl.p.31833$nfl.g.13520087 - Kyler Murray,QB,ARI,CAR,ARI@CAR,1:00PM EST,30,17.2, , 
+ , , , , , , , , , , , , ,nfl.p.32523$nfl.g.13520087,Greg,Dortch,nfl.p.32523$nfl.g.13520087 - Greg Dortch,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,3.3, , 
+ , , , , , , , , , , , , ,nfl.p.32814$nfl.g.13520087,DeeJay,Dallas,nfl.p.32814$nfl.g.13520087 - DeeJay Dallas,RB,ARI,CAR,ARI@CAR,1:00PM EST,10,0.7,Q, 
+ , , , , , , , , , , , , ,nfl.p.34010$nfl.g.13520087,Trey,McBride,nfl.p.34010$nfl.g.13520087 - Trey McBride,TE,ARI,CAR,ARI@CAR,1:00PM EST,26,11.6, , 
+ , , , , , , , , , , , , ,nfl.p.40121$nfl.g.13520087,Michael,Wilson,nfl.p.40121$nfl.g.13520087 - Michael Wilson,WR,ARI,CAR,ARI@CAR,1:00PM EST,16,6.5, , 
+ , , , , , , , , , , , , ,nfl.p.40188$nfl.g.13520087,Clayton,Tune,nfl.p.40188$nfl.g.13520087 - Clayton Tune,QB,ARI,CAR,ARI@CAR,1:00PM EST,20,0.2, , 
+ , , , , , , , , , , , , ,nfl.p.40226$nfl.g.13520087,Elijah,Higgins,nfl.p.40226$nfl.g.13520087 - Elijah Higgins,TE,ARI,CAR,ARI@CAR,1:00PM EST,10,2.8, , 
+ , , , , , , , , , , , , ,nfl.p.40430$nfl.g.13520087,Emari,Demercado,nfl.p.40430$nfl.g.13520087 - Emari Demercado,RB,ARI,CAR,ARI@CAR,1:00PM EST,10,3.6,IR, 
+ , , , , , , , , , , , , ,nfl.p.40643$nfl.g.13520087,Travis,Vokolek,nfl.p.40643$nfl.g.13520087 - Travis Vokolek,TE,ARI,CAR,ARI@CAR,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40893$nfl.g.13520087,Marvin,Harrison Jr.,nfl.p.40893$nfl.g.13520087 - Marvin Harrison Jr.,WR,ARI,CAR,ARI@CAR,1:00PM EST,21,9.4, , 
+ , , , , , , , , , , , , ,nfl.p.40958$nfl.g.13520087,Trey,Benson,nfl.p.40958$nfl.g.13520087 - Trey Benson,RB,ARI,CAR,ARI@CAR,1:00PM EST,10,3.7,O, 
+ , , , , , , , , , , , , ,nfl.p.40959$nfl.g.13520087,Tip,Reiman,nfl.p.40959$nfl.g.13520087 - Tip Reiman,TE,ARI,CAR,ARI@CAR,1:00PM EST,10,1.3, , 
+ , , , , , , , , , , , , ,nfl.p.41202$nfl.g.13520087,Xavier,Weaver,nfl.p.41202$nfl.g.13520087 - Xavier Weaver,WR,ARI,CAR,ARI@CAR,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.24822$nfl.g.13520087,Andy,Dalton,nfl.p.24822$nfl.g.13520087 - Andy Dalton,QB,CAR,ARI,ARI@CAR,1:00PM EST,20,10.8, , 
+ , , , , , , , , , , , , ,nfl.p.27277$nfl.g.13520087,Adam,Thielen,nfl.p.27277$nfl.g.13520087 - Adam Thielen,WR,CAR,ARI,ARI@CAR,1:00PM EST,25,10, , 
+ , , , , , , , , , , , , ,nfl.p.30339$nfl.g.13520087,David,Moore,nfl.p.30339$nfl.g.13520087 - David Moore,WR,CAR,ARI,ARI@CAR,1:00PM EST,14,4.4,Q, 
+ , , , , , , , , , , , , ,nfl.p.33471$nfl.g.13520087,Tommy,Tremble,nfl.p.33471$nfl.g.13520087 - Tommy Tremble,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,3.8, , 
+ , , , , , , , , , , , , ,nfl.p.33514$nfl.g.13520087,Chuba,Hubbard,nfl.p.33514$nfl.g.13520087 - Chuba Hubbard,RB,CAR,ARI,ARI@CAR,1:00PM EST,26,13.5, , 
+ , , , , , , , , , , , , ,nfl.p.33729$nfl.g.13520087,Feleipe,Franks,nfl.p.33729$nfl.g.13520087 - Feleipe Franks,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.34520$nfl.g.13520087,Deven,Thompkins,nfl.p.34520$nfl.g.13520087 - Deven Thompkins,WR,CAR,ARI,ARI@CAR,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.34617$nfl.g.13520087,Raheem,Blackshear,nfl.p.34617$nfl.g.13520087 - Raheem Blackshear,RB,CAR,ARI,ARI@CAR,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40029$nfl.g.13520087,Bryce,Young,nfl.p.40029$nfl.g.13520087 - Bryce Young,QB,CAR,ARI,ARI@CAR,1:00PM EST,22,11.2, , 
+ , , , , , , , , , , , , ,nfl.p.40890$nfl.g.13520087,Xavier,Legette,nfl.p.40890$nfl.g.13520087 - Xavier Legette,WR,CAR,ARI,ARI@CAR,1:00PM EST,17,7,O, 
+ , , , , , , , , , , , , ,nfl.p.40995$nfl.g.13520087,Ja'Tavion,Sanders,nfl.p.40995$nfl.g.13520087 - Ja'Tavion Sanders,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,3.9, , 
+ , , , , , , , , , , , , ,nfl.p.41293$nfl.g.13520087,Jalen,Coker,nfl.p.41293$nfl.g.13520087 - Jalen Coker,WR,CAR,ARI,ARI@CAR,1:00PM EST,17,7.5,Q, 
+ , , , , , , , , , , , , ,nfl.t.22$nfl.g.13520087,Arizona,Cardinals,nfl.t.22$nfl.g.13520087 - Arizona Cardinals,DEF,ARI,CAR,ARI@CAR,1:00PM EST,15,6.4, , 
+ , , , , , , , , , , , , ,nfl.t.29$nfl.g.13520087,Carolina,Panthers,nfl.t.29$nfl.g.13520087 - Carolina Panthers,DEF,CAR,ARI,ARI@CAR,1:00PM EST,10,2.7, , 
+ , , , , , , , , , , , , ,nfl.p.34027$nfl.g.13520087,Velus,Jones Jr.,nfl.p.34027$nfl.g.13520087 - Velus Jones Jr.,WR,CAR,ARI,ARI@CAR,1:00PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.p.31228$nfl.g.13520087,Mike,Boone,nfl.p.31228$nfl.g.13520087 - Mike Boone,RB,CAR,ARI,ARI@CAR,1:00PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.31885$nfl.g.13520087,Miles,Sanders,nfl.p.31885$nfl.g.13520087 - Miles Sanders,RB,CAR,ARI,ARI@CAR,1:00PM EST,14,4,IR, 
+ , , , , , , , , , , , , ,nfl.p.31071$nfl.g.13520087,Ian,Thomas,nfl.p.31071$nfl.g.13520087 - Ian Thomas,TE,CAR,ARI,ARI@CAR,1:00PM EST,10,0.7,IR, 
+ , , , , , , , , , , , , ,nfl.p.30972$nfl.g.13520088,Saquon,Barkley,nfl.p.30972$nfl.g.13520088 - Saquon Barkley,RB,PHI,WAS,PHI@WAS,1:00PM EST,40,21, , 
+ , , , , , , , , , , , , ,nfl.p.31883$nfl.g.13520088,A.J.,Brown,nfl.p.31883$nfl.g.13520088 - A.J. Brown,WR,PHI,WAS,PHI@WAS,1:00PM EST,33,13.9, , 
+ , , , , , , , , , , , , ,nfl.p.32723$nfl.g.13520088,Jalen,Hurts,nfl.p.32723$nfl.g.13520088 - Jalen Hurts,QB,PHI,WAS,PHI@WAS,1:00PM EST,36,22.5, , 
+ , , , , , , , , , , , , ,nfl.p.33398$nfl.g.13520088,DeVonta,Smith,nfl.p.33398$nfl.g.13520088 - DeVonta Smith,WR,PHI,WAS,PHI@WAS,1:00PM EST,24,11.8, , 
+ , , , , , , , , , , , , ,nfl.p.33538$nfl.g.13520088,Kenneth,Gainwell,nfl.p.33538$nfl.g.13520088 - Kenneth Gainwell,RB,PHI,WAS,PHI@WAS,1:00PM EST,11,3.4, , 
+ , , , , , , , , , , , , ,nfl.p.33971$nfl.g.13520088,Jahan,Dotson,nfl.p.33971$nfl.g.13520088 - Jahan Dotson,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.33975$nfl.g.13520088,Kenny,Pickett,nfl.p.33975$nfl.g.13520088 - Kenny Pickett,QB,PHI,WAS,PHI@WAS,1:00PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.34154$nfl.g.13520088,Grant,Calcaterra,nfl.p.34154$nfl.g.13520088 - Grant Calcaterra,TE,PHI,WAS,PHI@WAS,1:00PM EST,10,3.5, , 
+ , , , , , , , , , , , , ,nfl.p.34378$nfl.g.13520088,Britain,Covey,nfl.p.34378$nfl.g.13520088 - Britain Covey,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,1.7,O, 
+ , , , , , , , , , , , , ,nfl.p.40220$nfl.g.13520088,Tanner,McKee,nfl.p.40220$nfl.g.13520088 - Tanner McKee,QB,PHI,WAS,PHI@WAS,1:00PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.41002$nfl.g.13520088,Will,Shipley,nfl.p.41002$nfl.g.13520088 - Will Shipley,RB,PHI,WAS,PHI@WAS,1:00PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.p.41030$nfl.g.13520088,Ainias,Smith,nfl.p.41030$nfl.g.13520088 - Ainias Smith,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.41089$nfl.g.13520088,Johnny,Wilson,nfl.p.41089$nfl.g.13520088 - Johnny Wilson,WR,PHI,WAS,PHI@WAS,1:00PM EST,10,0.9, , 
+ , , , , , , , , , , , , ,nfl.p.26658$nfl.g.13520088,Zach,Ertz,nfl.p.26658$nfl.g.13520088 - Zach Ertz,TE,WAS,PHI,PHI@WAS,1:00PM EST,17,7.7,Q, 
+ , , , , , , , , , , , , ,nfl.p.28390$nfl.g.13520088,Marcus,Mariota,nfl.p.28390$nfl.g.13520088 - Marcus Mariota,QB,WAS,PHI,PHI@WAS,1:00PM EST,20,9.9, , 
+ , , , , , , , , , , , , ,nfl.p.29441$nfl.g.13520088,Jeff,Driskel,nfl.p.29441$nfl.g.13520088 - Jeff Driskel,QB,WAS,PHI,PHI@WAS,1:00PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.30275$nfl.g.13520088,Jeremy,McNichols,nfl.p.30275$nfl.g.13520088 - Jeremy McNichols,RB,WAS,PHI,PHI@WAS,1:00PM EST,10,4, , 
+ , , , , , , , , , , , , ,nfl.p.30352$nfl.g.13520088,Noah,Brown,nfl.p.30352$nfl.g.13520088 - Noah Brown,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,6.3,IR, 
+ , , , , , , , , , , , , ,nfl.p.31908$nfl.g.13520088,Terry,McLaurin,nfl.p.31908$nfl.g.13520088 - Terry McLaurin,WR,WAS,PHI,PHI@WAS,1:00PM EST,32,13.9, , 
+ , , , , , , , , , , , , ,nfl.p.32123$nfl.g.13520088,Olamide,Zaccheaus,nfl.p.32123$nfl.g.13520088 - Olamide Zaccheaus,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,3.3, , 
+ , , , , , , , , , , , , ,nfl.p.33470$nfl.g.13520088,Dyami,Brown,nfl.p.33470$nfl.g.13520088 - Dyami Brown,WR,WAS,PHI,PHI@WAS,1:00PM EST,11,3.3, , 
+ , , , , , , , , , , , , ,nfl.p.33512$nfl.g.13520088,John,Bates,nfl.p.33512$nfl.g.13520088 - John Bates,TE,WAS,PHI,PHI@WAS,1:00PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.p.34054$nfl.g.13520088,Brian,Robinson Jr.,nfl.p.34054$nfl.g.13520088 - Brian Robinson Jr.,RB,WAS,PHI,PHI@WAS,1:00PM EST,24,12.6, , 
+ , , , , , , , , , , , , ,nfl.p.40231$nfl.g.13520088,Chris,Rodriguez Jr.,nfl.p.40231$nfl.g.13520088 - Chris Rodriguez Jr.,RB,WAS,PHI,PHI@WAS,1:00PM EST,10,4.2, , 
+ , , , , , , , , , , , , ,nfl.p.40896$nfl.g.13520088,Jayden,Daniels,nfl.p.40896$nfl.g.13520088 - Jayden Daniels,QB,WAS,PHI,PHI@WAS,1:00PM EST,33,20.8, , 
+ , , , , , , , , , , , , ,nfl.p.40931$nfl.g.13520088,Ben,Sinnott,nfl.p.40931$nfl.g.13520088 - Ben Sinnott,TE,WAS,PHI,PHI@WAS,1:00PM EST,10,2.3, , 
+ , , , , , , , , , , , , ,nfl.p.40964$nfl.g.13520088,Luke,McCaffrey,nfl.p.40964$nfl.g.13520088 - Luke McCaffrey,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.t.21$nfl.g.13520088,Philadelphia,Eagles,nfl.t.21$nfl.g.13520088 - Philadelphia Eagles,DEF,PHI,WAS,PHI@WAS,1:00PM EST,16,7.4, , 
+ , , , , , , , , , , , , ,nfl.t.28$nfl.g.13520088,Washington,Commanders,nfl.t.28$nfl.g.13520088 - Washington Commanders,DEF,WAS,PHI,PHI@WAS,1:00PM EST,12,5.4, , 
+ , , , , , , , , , , , , ,nfl.p.28545$nfl.g.13520088,C.J.,Uzomah,nfl.p.28545$nfl.g.13520088 - C.J. Uzomah,TE,PHI,WAS,PHI@WAS,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40550$nfl.g.13520088,E.J.,Jenkins,nfl.p.40550$nfl.g.13520088 - E.J. Jenkins,TE,PHI,WAS,PHI@WAS,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.32846$nfl.g.13520088,K.J.,Osborn,nfl.p.32846$nfl.g.13520088 - K.J. Osborn,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,2.5, , 
+ , , , , , , , , , , , , ,nfl.p.28493$nfl.g.13520088,Jamison,Crowder,nfl.p.28493$nfl.g.13520088 - Jamison Crowder,WR,WAS,PHI,PHI@WAS,1:00PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.32140$nfl.g.13520088,Khari,Blasingame,nfl.p.32140$nfl.g.13520088 - Khari Blasingame,RB,PHI,WAS,PHI@WAS,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.30423$nfl.g.13520088,Austin,Ekeler,nfl.p.30423$nfl.g.13520088 - Austin Ekeler,RB,WAS,PHI,PHI@WAS,1:00PM EST,23,10.1,IR, 
+ , , , , , , , , , , , , ,nfl.p.41233$nfl.g.13520088,Colson,Yankoff,nfl.p.41233$nfl.g.13520088 - Colson Yankoff,TE,WAS,PHI,PHI@WAS,1:00PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.9265$nfl.g.13520089,Matthew,Stafford,nfl.p.9265$nfl.g.13520089 - Matthew Stafford,QB,LA,NYJ,LA@NYJ,1:00PM EST,25,14.7, , 
+ , , , , , , , , , , , , ,nfl.p.27590$nfl.g.13520089,Jimmy,Garoppolo,nfl.p.27590$nfl.g.13520089 - Jimmy Garoppolo,QB,LA,NYJ,LA@NYJ,1:00PM EST,20,10.4, , 
+ , , , , , , , , , , , , ,nfl.p.29360$nfl.g.13520089,Demarcus,Robinson,nfl.p.29360$nfl.g.13520089 - Demarcus Robinson,WR,LA,NYJ,LA@NYJ,1:00PM EST,13,7.1, , 
+ , , , , , , , , , , , , ,nfl.p.30182$nfl.g.13520089,Cooper,Kupp,nfl.p.30182$nfl.g.13520089 - Cooper Kupp,WR,LA,NYJ,LA@NYJ,1:00PM EST,28,13.4, , 
+ , , , , , , , , , , , , ,nfl.p.32803$nfl.g.13520089,Colby,Parkinson,nfl.p.32803$nfl.g.13520089 - Colby Parkinson,TE,LA,NYJ,LA@NYJ,1:00PM EST,10,3.8, , 
+ , , , , , , , , , , , , ,nfl.p.32831$nfl.g.13520089,Tyler,Johnson,nfl.p.32831$nfl.g.13520089 - Tyler Johnson,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,3.7, , 
+ , , , , , , , , , , , , ,nfl.p.33445$nfl.g.13520089,Tutu,Atwell,nfl.p.33445$nfl.g.13520089 - Tutu Atwell,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,5.4, , 
+ , , , , , , , , , , , , ,nfl.p.33469$nfl.g.13520089,Hunter,Long,nfl.p.33469$nfl.g.13520089 - Hunter Long,TE,LA,NYJ,LA@NYJ,1:00PM EST,10,1.2, , 
+ , , , , , , , , , , , , ,nfl.p.34120$nfl.g.13520089,Kyren,Williams,nfl.p.34120$nfl.g.13520089 - Kyren Williams,RB,LA,NYJ,LA@NYJ,1:00PM EST,34,15.8, , 
+ , , , , , , , , , , , , ,nfl.p.34310$nfl.g.13520089,Ronnie,Rivers,nfl.p.34310$nfl.g.13520089 - Ronnie Rivers,RB,LA,NYJ,LA@NYJ,1:00PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.p.40153$nfl.g.13520089,Stetson,Bennett,nfl.p.40153$nfl.g.13520089 - Stetson Bennett,QB,LA,NYJ,LA@NYJ,1:00PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.40164$nfl.g.13520089,Davis,Allen,nfl.p.40164$nfl.g.13520089 - Davis Allen,TE,LA,NYJ,LA@NYJ,1:00PM EST,10,1.4, , 
+ , , , , , , , , , , , , ,nfl.p.40168$nfl.g.13520089,Puka,Nacua,nfl.p.40168$nfl.g.13520089 - Puka Nacua,WR,LA,NYJ,LA@NYJ,1:00PM EST,38,15.5, , 
+ , , , , , , , , , , , , ,nfl.p.40399$nfl.g.13520089,Xavier,Smith,nfl.p.40399$nfl.g.13520089 - Xavier Smith,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.p.40962$nfl.g.13520089,Blake,Corum,nfl.p.40962$nfl.g.13520089 - Blake Corum,RB,LA,NYJ,LA@NYJ,1:00PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.p.41083$nfl.g.13520089,Jordan,Whittington,nfl.p.41083$nfl.g.13520089 - Jordan Whittington,WR,LA,NYJ,LA@NYJ,1:00PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.41193$nfl.g.13520089,Cody,Schrader,nfl.p.41193$nfl.g.13520089 - Cody Schrader,RB,LA,NYJ,LA@NYJ,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.7200$nfl.g.13520089,Aaron,Rodgers,nfl.p.7200$nfl.g.13520089 - Aaron Rodgers,QB,NYJ,LA,LA@NYJ,1:00PM EST,26,16.2, , 
+ , , , , , , , , , , , , ,nfl.p.24967$nfl.g.13520089,Tyrod,Taylor,nfl.p.24967$nfl.g.13520089 - Tyrod Taylor,QB,NYJ,LA,LA@NYJ,1:00PM EST,20,6.1, , 
+ , , , , , , , , , , , , ,nfl.p.27581$nfl.g.13520089,Davante,Adams,nfl.p.27581$nfl.g.13520089 - Davante Adams,WR,NYJ,LA,LA@NYJ,1:00PM EST,35,14.3, , 
+ , , , , , , , , , , , , ,nfl.p.31127$nfl.g.13520089,Tyler,Conklin,nfl.p.31127$nfl.g.13520089 - Tyler Conklin,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,4.7, , 
+ , , , , , , , , , , , , ,nfl.p.33507$nfl.g.13520089,Kene,Nwangwu,nfl.p.33507$nfl.g.13520089 - Kene Nwangwu,RB,NYJ,LA,LA@NYJ,1:00PM EST,10,3,IR, 
+ , , , , , , , , , , , , ,nfl.p.33705$nfl.g.13520089,Kenny,Yeboah,nfl.p.33705$nfl.g.13520089 - Kenny Yeboah,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.33965$nfl.g.13520089,Garrett,Wilson,nfl.p.33965$nfl.g.13520089 - Garrett Wilson,WR,NYJ,LA,LA@NYJ,1:00PM EST,28,12.3, , 
+ , , , , , , , , , , , , ,nfl.p.33991$nfl.g.13520089,Breece,Hall,nfl.p.33991$nfl.g.13520089 - Breece Hall,RB,NYJ,LA,LA@NYJ,1:00PM EST,29,13.7, , 
+ , , , , , , , , , , , , ,nfl.p.34057$nfl.g.13520089,Jeremy,Ruckert,nfl.p.34057$nfl.g.13520089 - Jeremy Ruckert,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.40548$nfl.g.13520089,Xavier,Gipson,nfl.p.40548$nfl.g.13520089 - Xavier Gipson,WR,NYJ,LA,LA@NYJ,1:00PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.p.40944$nfl.g.13520089,Malachi,Corley,nfl.p.40944$nfl.g.13520089 - Malachi Corley,WR,NYJ,LA,LA@NYJ,1:00PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.40981$nfl.g.13520089,Braelon,Allen,nfl.p.40981$nfl.g.13520089 - Braelon Allen,RB,NYJ,LA,LA@NYJ,1:00PM EST,10,4.9,Q, 
+ , , , , , , , , , , , , ,nfl.p.41031$nfl.g.13520089,Isaiah,Davis,nfl.p.41031$nfl.g.13520089 - Isaiah Davis,RB,NYJ,LA,LA@NYJ,1:00PM EST,10,2.8, , 
+ , , , , , , , , , , , , ,nfl.t.14$nfl.g.13520089,Los Angeles,Rams,nfl.t.14$nfl.g.13520089 - Los Angeles Rams,DEF,LA,NYJ,LA@NYJ,1:00PM EST,14,6.7, , 
+ , , , , , , , , , , , , ,nfl.t.20$nfl.g.13520089,New York,Jets,nfl.t.20$nfl.g.13520089 - New York Jets,DEF,NYJ,LA,LA@NYJ,1:00PM EST,13,5.9, , 
+ , , , , , , , , , , , , ,nfl.p.31268$nfl.g.13520089,Allen,Lazard,nfl.p.31268$nfl.g.13520089 - Allen Lazard,WR,NYJ,LA,LA@NYJ,1:00PM EST,15,9.8, , 
+ , , , , , , , , , , , , ,nfl.p.29344$nfl.g.13520089,Tyler,Higbee,nfl.p.29344$nfl.g.13520089 - Tyler Higbee,TE,LA,NYJ,LA@NYJ,1:00PM EST,13,5.3, , 
+ , , , , , , , , , , , , ,nfl.p.33710$nfl.g.13520089,Brandon,Smith,nfl.p.33710$nfl.g.13520089 - Brandon Smith,WR,NYJ,LA,LA@NYJ,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40255$nfl.g.13520089,Zack,Kuntz,nfl.p.40255$nfl.g.13520089 - Zack Kuntz,TE,NYJ,LA,LA@NYJ,1:00PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.29951$nfl.g.13520090,C.J.,Ham,nfl.p.29951$nfl.g.13520090 - C.J. Ham,RB,MIN,SEA,MIN@SEA,4:05PM EST,10,1,Q, 
+ , , , , , , , , , , , , ,nfl.p.30295$nfl.g.13520090,Aaron,Jones Sr.,nfl.p.30295$nfl.g.13520090 - Aaron Jones Sr.,RB,MIN,SEA,MIN@SEA,4:05PM EST,26,13.3, , 
+ , , , , , , , , , , , , ,nfl.p.30373$nfl.g.13520090,Johnny,Mundt,nfl.p.30373$nfl.g.13520090 - Johnny Mundt,TE,MIN,SEA,MIN@SEA,4:05PM EST,10,2.9, , 
+ , , , , , , , , , , , , ,nfl.p.30563$nfl.g.13520090,Nick,Mullens,nfl.p.30563$nfl.g.13520090 - Nick Mullens,QB,MIN,SEA,MIN@SEA,4:05PM EST,20,0.3, , 
+ , , , , , , , , , , , , ,nfl.p.30973$nfl.g.13520090,Sam,Darnold,nfl.p.30973$nfl.g.13520090 - Sam Darnold,QB,MIN,SEA,MIN@SEA,4:05PM EST,30,18.8, , 
+ , , , , , , , , , , , , ,nfl.p.31320$nfl.g.13520090,Trent,Sherfield Sr.,nfl.p.31320$nfl.g.13520090 - Trent Sherfield Sr.,WR,MIN,SEA,MIN@SEA,4:05PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.31641$nfl.g.13520090,Brandon,Powell,nfl.p.31641$nfl.g.13520090 - Brandon Powell,WR,MIN,SEA,MIN@SEA,4:05PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.31840$nfl.g.13520090,T.J.,Hockenson,nfl.p.31840$nfl.g.13520090 - T.J. Hockenson,TE,MIN,SEA,MIN@SEA,4:05PM EST,16,7.3, , 
+ , , , , , , , , , , , , ,nfl.p.31901$nfl.g.13520090,Josh,Oliver,nfl.p.31901$nfl.g.13520090 - Josh Oliver,TE,MIN,SEA,MIN@SEA,4:05PM EST,11,5.2, , 
+ , , , , , , , , , , , , ,nfl.p.32221$nfl.g.13520090,Brett,Rypien,nfl.p.32221$nfl.g.13520090 - Brett Rypien,QB,MIN,SEA,MIN@SEA,4:05PM EST,20,2.9, , 
+ , , , , , , , , , , , , ,nfl.p.32692$nfl.g.13520090,Justin,Jefferson,nfl.p.32692$nfl.g.13520090 - Justin Jefferson,WR,MIN,SEA,MIN@SEA,4:05PM EST,34,15.3, , 
+ , , , , , , , , , , , , ,nfl.p.32722$nfl.g.13520090,Cam,Akers,nfl.p.32722$nfl.g.13520090 - Cam Akers,RB,MIN,SEA,MIN@SEA,4:05PM EST,11,5.2, , 
+ , , , , , , , , , , , , ,nfl.p.34125$nfl.g.13520090,Ty,Chandler,nfl.p.34125$nfl.g.13520090 - Ty Chandler,RB,MIN,SEA,MIN@SEA,4:05PM EST,10,2.1, , 
+ , , , , , , , , , , , , ,nfl.p.34147$nfl.g.13520090,Jalen,Nailor,nfl.p.34147$nfl.g.13520090 - Jalen Nailor,WR,MIN,SEA,MIN@SEA,4:05PM EST,10,5.4, , 
+ , , , , , , , , , , , , ,nfl.p.40042$nfl.g.13520090,Jordan,Addison,nfl.p.40042$nfl.g.13520090 - Jordan Addison,WR,MIN,SEA,MIN@SEA,4:05PM EST,31,12.7, , 
+ , , , , , , , , , , , , ,nfl.p.26662$nfl.g.13520090,Geno,Smith,nfl.p.26662$nfl.g.13520090 - Geno Smith,QB,SEA,MIN,MIN@SEA,4:05PM EST,23,15.9, , 
+ , , , , , , , , , , , , ,nfl.p.28457$nfl.g.13520090,Tyler,Lockett,nfl.p.28457$nfl.g.13520090 - Tyler Lockett,WR,SEA,MIN,MIN@SEA,4:05PM EST,11,6.2, , 
+ , , , , , , , , , , , , ,nfl.p.30627$nfl.g.13520090,Pharaoh,Brown,nfl.p.30627$nfl.g.13520090 - Pharaoh Brown,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,0.9, , 
+ , , , , , , , , , , , , ,nfl.p.31852$nfl.g.13520090,Noah,Fant,nfl.p.31852$nfl.g.13520090 - Noah Fant,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,4.8, , 
+ , , , , , , , , , , , , ,nfl.p.31896$nfl.g.13520090,DK,Metcalf,nfl.p.31896$nfl.g.13520090 - DK Metcalf,WR,SEA,MIN,MIN@SEA,4:05PM EST,23,10.5, , 
+ , , , , , , , , , , , , ,nfl.p.32948$nfl.g.13520090,Cody,White,nfl.p.32948$nfl.g.13520090 - Cody White,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,2.7, , 
+ , , , , , , , , , , , , ,nfl.p.33996$nfl.g.13520090,Kenneth,Walker III,nfl.p.33996$nfl.g.13520090 - Kenneth Walker III,RB,SEA,MIN,MIN@SEA,4:05PM EST,24,14.8, , 
+ , , , , , , , , , , , , ,nfl.p.34100$nfl.g.13520090,Sam,Howell,nfl.p.34100$nfl.g.13520090 - Sam Howell,QB,SEA,MIN,MIN@SEA,4:05PM EST,20,0.2, , 
+ , , , , , , , , , , , , ,nfl.p.34189$nfl.g.13520090,Dareke,Young,nfl.p.34189$nfl.g.13520090 - Dareke Young,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40041$nfl.g.13520090,Jaxon,Smith-Njigba,nfl.p.40041$nfl.g.13520090 - Jaxon Smith-Njigba,WR,SEA,MIN,MIN@SEA,4:05PM EST,30,12.5, , 
+ , , , , , , , , , , , , ,nfl.p.40075$nfl.g.13520090,Zach,Charbonnet,nfl.p.40075$nfl.g.13520090 - Zach Charbonnet,RB,SEA,MIN,MIN@SEA,4:05PM EST,23,10.4, , 
+ , , , , , , , , , , , , ,nfl.p.40267$nfl.g.13520090,Kenny,McIntosh,nfl.p.40267$nfl.g.13520090 - Kenny McIntosh,RB,SEA,MIN,MIN@SEA,4:05PM EST,10,0.9, , 
+ , , , , , , , , , , , , ,nfl.p.40452$nfl.g.13520090,Jake,Bobo,nfl.p.40452$nfl.g.13520090 - Jake Bobo,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.40519$nfl.g.13520090,Brady,Russell,nfl.p.40519$nfl.g.13520090 - Brady Russell,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,0,O, 
+ , , , , , , , , , , , , ,nfl.p.41001$nfl.g.13520090,AJ,Barner,nfl.p.41001$nfl.g.13520090 - AJ Barner,TE,SEA,MIN,MIN@SEA,4:05PM EST,10,3.6, , 
+ , , , , , , , , , , , , ,nfl.t.16$nfl.g.13520090,Minnesota,Vikings,nfl.t.16$nfl.g.13520090 - Minnesota Vikings,DEF,MIN,SEA,MIN@SEA,4:05PM EST,20,10.4, , 
+ , , , , , , , , , , , , ,nfl.t.26$nfl.g.13520090,Seattle,Seahawks,nfl.t.26$nfl.g.13520090 - Seattle Seahawks,DEF,SEA,MIN,MIN@SEA,4:05PM EST,12,8, , 
+ , , , , , , , , , , , , ,nfl.p.33517$nfl.g.13520090,Jaelon,Darden,nfl.p.33517$nfl.g.13520090 - Jaelon Darden,WR,SEA,MIN,MIN@SEA,4:05PM EST,10,0.1, , 
+ , , , , , , , , , , , , ,nfl.p.40185$nfl.g.13520090,Jaren,Hall,nfl.p.40185$nfl.g.13520090 - Jaren Hall,QB,SEA,MIN,MIN@SEA,4:05PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.41344$nfl.g.13520090,George,Holani,nfl.p.41344$nfl.g.13520090 - George Holani,RB,SEA,MIN,MIN@SEA,4:05PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.28556$nfl.g.13520091,Michael,Burton,nfl.p.28556$nfl.g.13520091 - Michael Burton,RB,DEN,LAC,DEN@LAC,8:15PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.p.31010$nfl.g.13520091,Courtland,Sutton,nfl.p.31010$nfl.g.13520091 - Courtland Sutton,WR,DEN,LAC,DEN@LAC,8:15PM EST,31,11.2, , 
+ , , , , , , , , , , , , ,nfl.p.31965$nfl.g.13520091,Jarrett,Stidham,nfl.p.31965$nfl.g.13520091 - Jarrett Stidham,QB,DEN,LAC,DEN@LAC,8:15PM EST,20,-0.2, , 
+ , , , , , , , , , , , , ,nfl.p.32494$nfl.g.13520091,Lil'Jordan,Humphrey,nfl.p.32494$nfl.g.13520091 - Lil'Jordan Humphrey,WR,DEN,LAC,DEN@LAC,8:15PM EST,10,3.5, , 
+ , , , , , , , , , , , , ,nfl.p.32775$nfl.g.13520091,Adam,Trautman,nfl.p.32775$nfl.g.13520091 - Adam Trautman,TE,DEN,LAC,DEN@LAC,8:15PM EST,10,3, , 
+ , , , , , , , , , , , , ,nfl.p.33390$nfl.g.13520091,Zach,Wilson,nfl.p.33390$nfl.g.13520091 - Zach Wilson,QB,DEN,LAC,DEN@LAC,8:15PM EST,20,10.6,O, 
+ , , , , , , , , , , , , ,nfl.p.33423$nfl.g.13520091,Javonte,Williams,nfl.p.33423$nfl.g.13520091 - Javonte Williams,RB,DEN,LAC,DEN@LAC,8:15PM EST,15,8.1, , 
+ , , , , , , , , , , , , ,nfl.p.34654$nfl.g.13520091,Lucas,Krull,nfl.p.34654$nfl.g.13520091 - Lucas Krull,TE,DEN,LAC,DEN@LAC,8:15PM EST,10,2.7, , 
+ , , , , , , , , , , , , ,nfl.p.40090$nfl.g.13520091,Marvin,Mims Jr.,nfl.p.40090$nfl.g.13520091 - Marvin Mims Jr.,WR,DEN,LAC,DEN@LAC,8:15PM EST,15,4.3, , 
+ , , , , , , , , , , , , ,nfl.p.40696$nfl.g.13520091,Jaleel,McLaughlin,nfl.p.40696$nfl.g.13520091 - Jaleel McLaughlin,RB,DEN,LAC,DEN@LAC,8:15PM EST,12,5.1,O, 
+ , , , , , , , , , , , , ,nfl.p.40702$nfl.g.13520091,Nate,Adkins,nfl.p.40702$nfl.g.13520091 - Nate Adkins,TE,DEN,LAC,DEN@LAC,8:15PM EST,10,2.4, , 
+ , , , , , , , , , , , , ,nfl.p.40875$nfl.g.13520091,Bo,Nix,nfl.p.40875$nfl.g.13520091 - Bo Nix,QB,DEN,LAC,DEN@LAC,8:15PM EST,27,18.2, , 
+ , , , , , , , , , , , , ,nfl.p.41009$nfl.g.13520091,Troy,Franklin,nfl.p.41009$nfl.g.13520091 - Troy Franklin,WR,DEN,LAC,DEN@LAC,8:15PM EST,10,3.6, , 
+ , , , , , , , , , , , , ,nfl.p.41019$nfl.g.13520091,Audric,Estime,nfl.p.41019$nfl.g.13520091 - Audric Estime,RB,DEN,LAC,DEN@LAC,8:15PM EST,10,3, , 
+ , , , , , , , , , , , , ,nfl.p.41097$nfl.g.13520091,Devaughn,Vele,nfl.p.41097$nfl.g.13520091 - Devaughn Vele,WR,DEN,LAC,DEN@LAC,8:15PM EST,16,6.3, , 
+ , , , , , , , , , , , , ,nfl.p.28839$nfl.g.13520091,Taylor,Heinicke,nfl.p.28839$nfl.g.13520091 - Taylor Heinicke,QB,LAC,DEN,DEN@LAC,8:15PM EST,20,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.31031$nfl.g.13520091,DJ,Chark Jr.,nfl.p.31031$nfl.g.13520091 - DJ Chark Jr.,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,2, , 
+ , , , , , , , , , , , , ,nfl.p.31090$nfl.g.13520091,Will,Dissly,nfl.p.31090$nfl.g.13520091 - Will Dissly,TE,LAC,DEN,DEN@LAC,8:15PM EST,14,5.3,O, 
+ , , , , , , , , , , , , ,nfl.p.31424$nfl.g.13520091,Gus,Edwards,nfl.p.31424$nfl.g.13520091 - Gus Edwards,RB,LAC,DEN,DEN@LAC,8:15PM EST,14,5.7, , 
+ , , , , , , , , , , , , ,nfl.p.31998$nfl.g.13520091,Easton,Stick,nfl.p.31998$nfl.g.13520091 - Easton Stick,QB,LAC,DEN,DEN@LAC,8:15PM EST,20,13.7,O, 
+ , , , , , , , , , , , , ,nfl.p.32676$nfl.g.13520091,Justin,Herbert,nfl.p.32676$nfl.g.13520091 - Justin Herbert,QB,LAC,DEN,DEN@LAC,8:15PM EST,25,15.7, , 
+ , , , , , , , , , , , , ,nfl.p.32691$nfl.g.13520091,Jalen,Reagor,nfl.p.32691$nfl.g.13520091 - Jalen Reagor,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,1.3,IR, 
+ , , , , , , , , , , , , ,nfl.p.33465$nfl.g.13520091,Joshua,Palmer,nfl.p.33465$nfl.g.13520091 - Joshua Palmer,WR,LAC,DEN,DEN@LAC,8:15PM EST,14,5.8, , 
+ , , , , , , , , , , , , ,nfl.p.34087$nfl.g.13520091,Hassan,Haskins,nfl.p.34087$nfl.g.13520091 - Hassan Haskins,RB,LAC,DEN,DEN@LAC,8:15PM EST,10,1.8, , 
+ , , , , , , , , , , , , ,nfl.p.34625$nfl.g.13520091,Tucker,Fisk,nfl.p.34625$nfl.g.13520091 - Tucker Fisk,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.34637$nfl.g.13520091,Stone,Smartt,nfl.p.34637$nfl.g.13520091 - Stone Smartt,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,2.9, , 
+ , , , , , , , , , , , , ,nfl.p.40051$nfl.g.13520091,Quentin,Johnston,nfl.p.40051$nfl.g.13520091 - Quentin Johnston,WR,LAC,DEN,DEN@LAC,8:15PM EST,18,8.8, , 
+ , , , , , , , , , , , , ,nfl.p.40133$nfl.g.13520091,Derius,Davis,nfl.p.40133$nfl.g.13520091 - Derius Davis,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,1.9, , 
+ , , , , , , , , , , , , ,nfl.p.40225$nfl.g.13520091,Scott,Matlock,nfl.p.40225$nfl.g.13520091 - Scott Matlock,RB,LAC,DEN,DEN@LAC,8:15PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.p.40908$nfl.g.13520091,Ladd,McConkey,nfl.p.40908$nfl.g.13520091 - Ladd McConkey,WR,LAC,DEN,DEN@LAC,8:15PM EST,29,11.5, , 
+ , , , , , , , , , , , , ,nfl.p.41052$nfl.g.13520091,Kimani,Vidal,nfl.p.41052$nfl.g.13520091 - Kimani Vidal,RB,LAC,DEN,DEN@LAC,8:15PM EST,10,3.5, , 
+ , , , , , , , , , , , , ,nfl.t.7$nfl.g.13520091,Denver,Broncos,nfl.t.7$nfl.g.13520091 - Denver Broncos,DEF,DEN,LAC,DEN@LAC,8:15PM EST,18,10.4, , 
+ , , , , , , , , , , , , ,nfl.t.24$nfl.g.13520091,Los Angeles,Chargers,nfl.t.24$nfl.g.13520091 - Los Angeles Chargers,DEF,LAC,DEN,DEN@LAC,8:15PM EST,13,7.7, , 
+ , , , , , , , , , , , , ,nfl.p.28658$nfl.g.13520091,Eric,Tomlinson,nfl.p.28658$nfl.g.13520091 - Eric Tomlinson,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,0.5, , 
+ , , , , , , , , , , , , ,nfl.p.32712$nfl.g.13520091,Laviska,Shenault Jr.,nfl.p.32712$nfl.g.13520091 - Laviska Shenault Jr.,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,1.2, , 
+ , , , , , , , , , , , , ,nfl.p.34152$nfl.g.13520091,Tyler,Badie,nfl.p.34152$nfl.g.13520091 - Tyler Badie,RB,DEN,LAC,DEN@LAC,8:15PM EST,10,2,IR, 
+ , , , , , , , , , , , , ,nfl.p.41098$nfl.g.13520091,Brenden,Rice,nfl.p.41098$nfl.g.13520091 - Brenden Rice,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.33567$nfl.g.13520091,Simi,Fehoko,nfl.p.33567$nfl.g.13520091 - Simi Fehoko,WR,LAC,DEN,DEN@LAC,8:15PM EST,10,2.3,IR, 
+ , , , , , , , , , , , , ,nfl.p.32725$nfl.g.13520091,J.K.,Dobbins,nfl.p.32725$nfl.g.13520091 - J.K. Dobbins,RB,LAC,DEN,DEN@LAC,8:15PM EST,21,13.8,IR, 
+ , , , , , , , , , , , , ,nfl.p.30995$nfl.g.13520091,Hayden,Hurst,nfl.p.30995$nfl.g.13520091 - Hayden Hurst,TE,LAC,DEN,DEN@LAC,8:15PM EST,10,1.6, , 
+ , , , , , , , , , , , , ,nfl.p.30136$nfl.g.13520092,Evan,Engram,nfl.p.30136$nfl.g.13520092 - Evan Engram,TE,JAC,LV,JAC@LV,4:25PM EST,10,7.3,IR, 
+ , , , , , , , , , , , , ,nfl.p.30217$nfl.g.13520092,C.J.,Beathard,nfl.p.30217$nfl.g.13520092 - C.J. Beathard,QB,JAC,LV,JAC@LV,4:25PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.32608$nfl.g.13520092,D'Ernest,Johnson,nfl.p.32608$nfl.g.13520092 - D'Ernest Johnson,RB,JAC,LV,JAC@LV,4:25PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.32762$nfl.g.13520092,Devin,Duvernay,nfl.p.32762$nfl.g.13520092 - Devin Duvernay,WR,JAC,LV,JAC@LV,4:25PM EST,10,1.3, , 
+ , , , , , , , , , , , , ,nfl.p.32764$nfl.g.13520092,Josiah,Deguara,nfl.p.32764$nfl.g.13520092 - Josiah Deguara,TE,JAC,LV,JAC@LV,4:25PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.33403$nfl.g.13520092,Mac,Jones,nfl.p.33403$nfl.g.13520092 - Mac Jones,QB,JAC,LV,JAC@LV,4:25PM EST,23,8.5, , 
+ , , , , , , , , , , , , ,nfl.p.33413$nfl.g.13520092,Travis,Etienne Jr.,nfl.p.33413$nfl.g.13520092 - Travis Etienne Jr.,RB,JAC,LV,JAC@LV,4:25PM EST,17,7.5, , 
+ , , , , , , , , , , , , ,nfl.p.33533$nfl.g.13520092,Luke,Farrell,nfl.p.33533$nfl.g.13520092 - Luke Farrell,TE,JAC,LV,JAC@LV,4:25PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.p.33649$nfl.g.13520092,Tim,Jones,nfl.p.33649$nfl.g.13520092 - Tim Jones,WR,JAC,LV,JAC@LV,4:25PM EST,10,1, , 
+ , , , , , , , , , , , , ,nfl.p.40078$nfl.g.13520092,Brenton,Strange,nfl.p.40078$nfl.g.13520092 - Brenton Strange,TE,JAC,LV,JAC@LV,4:25PM EST,12,5.2, , 
+ , , , , , , , , , , , , ,nfl.p.40095$nfl.g.13520092,Tank,Bigsby,nfl.p.40095$nfl.g.13520092 - Tank Bigsby,RB,JAC,LV,JAC@LV,4:25PM EST,17,7.8, , 
+ , , , , , , , , , , , , ,nfl.p.40234$nfl.g.13520092,Parker,Washington,nfl.p.40234$nfl.g.13520092 - Parker Washington,WR,JAC,LV,JAC@LV,4:25PM EST,15,4.9, , 
+ , , , , , , , , , , , , ,nfl.p.40883$nfl.g.13520092,Brian,Thomas Jr.,nfl.p.40883$nfl.g.13520092 - Brian Thomas Jr.,WR,JAC,LV,JAC@LV,4:25PM EST,31,13, , 
+ , , , , , , , , , , , , ,nfl.p.41041$nfl.g.13520092,Keilan,Robinson,nfl.p.41041$nfl.g.13520092 - Keilan Robinson,RB,JAC,LV,JAC@LV,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.28442$nfl.g.13520092,Ameer,Abdullah,nfl.p.28442$nfl.g.13520092 - Ameer Abdullah,RB,LV,JAC,JAC@LV,4:25PM EST,10,5.5, , 
+ , , , , , , , , , , , , ,nfl.p.31934$nfl.g.13520092,Alexander,Mattison,nfl.p.31934$nfl.g.13520092 - Alexander Mattison,RB,LV,JAC,JAC@LV,4:25PM EST,15,8.8, , 
+ , , , , , , , , , , , , ,nfl.p.32231$nfl.g.13520092,Jakobi,Meyers,nfl.p.32231$nfl.g.13520092 - Jakobi Meyers,WR,LV,JAC,JAC@LV,4:25PM EST,28,11, , 
+ , , , , , , , , , , , , ,nfl.p.32785$nfl.g.13520092,Harrison,Bryant,nfl.p.32785$nfl.g.13520092 - Harrison Bryant,TE,LV,JAC,JAC@LV,4:25PM EST,10,2.2, , 
+ , , , , , , , , , , , , ,nfl.p.33447$nfl.g.13520092,Terrace,Marshall Jr.,nfl.p.33447$nfl.g.13520092 - Terrace Marshall Jr.,WR,LV,JAC,JAC@LV,4:25PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.34030$nfl.g.13520092,Desmond,Ridder,nfl.p.34030$nfl.g.13520092 - Desmond Ridder,QB,LV,JAC,JAC@LV,4:25PM EST,20,5.9, , 
+ , , , , , , , , , , , , ,nfl.p.34551$nfl.g.13520092,Sincere,McCormick,nfl.p.34551$nfl.g.13520092 - Sincere McCormick,RB,LV,JAC,JAC@LV,4:25PM EST,16,6,IR, 
+ , , , , , , , , , , , , ,nfl.p.40065$nfl.g.13520092,Michael,Mayer,nfl.p.40065$nfl.g.13520092 - Michael Mayer,TE,LV,JAC,JAC@LV,4:25PM EST,10,2.5, , 
+ , , , , , , , , , , , , ,nfl.p.40114$nfl.g.13520092,Tre,Tucker,nfl.p.40114$nfl.g.13520092 - Tre Tucker,WR,LV,JAC,JAC@LV,4:25PM EST,15,6.3, , 
+ , , , , , , , , , , , , ,nfl.p.40138$nfl.g.13520092,Aidan,O'Connell,nfl.p.40138$nfl.g.13520092 - Aidan O'Connell,QB,LV,JAC,JAC@LV,4:25PM EST,20,8.6, , 
+ , , , , , , , , , , , , ,nfl.p.40167$nfl.g.13520092,Justin,Shorter,nfl.p.40167$nfl.g.13520092 - Justin Shorter,TE,LV,JAC,JAC@LV,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40878$nfl.g.13520092,Brock,Bowers,nfl.p.40878$nfl.g.13520092 - Brock Bowers,TE,LV,JAC,JAC@LV,4:25PM EST,28,11.9, , 
+ , , , , , , , , , , , , ,nfl.p.41054$nfl.g.13520092,Dylan,Laube,nfl.p.41054$nfl.g.13520092 - Dylan Laube,RB,LV,JAC,JAC@LV,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.41162$nfl.g.13520092,Ramel,Keyton,nfl.p.41162$nfl.g.13520092 - Ramel Keyton,WR,LV,JAC,JAC@LV,4:25PM EST,10,0.4, , 
+ , , , , , , , , , , , , ,nfl.t.30$nfl.g.13520092,Jacksonville,Jaguars,nfl.t.30$nfl.g.13520092 - Jacksonville Jaguars,DEF,JAC,LV,JAC@LV,4:25PM EST,10,4, , 
+ , , , , , , , , , , , , ,nfl.t.13$nfl.g.13520092,Las Vegas,Raiders,nfl.t.13$nfl.g.13520092 - Las Vegas Raiders,DEF,LV,JAC,JAC@LV,4:25PM EST,10,3.8, , 
+ , , , , , , , , , , , , ,nfl.p.30230$nfl.g.13520092,Josh,Reynolds,nfl.p.30230$nfl.g.13520092 - Josh Reynolds,WR,JAC,LV,JAC@LV,4:25PM EST,10,5, , 
+ , , , , , , , , , , , , ,nfl.p.41133$nfl.g.13520092,Carter,Bradley,nfl.p.41133$nfl.g.13520092 - Carter Bradley,QB,LV,JAC,JAC@LV,4:25PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.26753$nfl.g.13520093,Kyle,Juszczyk,nfl.p.26753$nfl.g.13520093 - Kyle Juszczyk,RB,SF,MIA,SF@MIA,4:25PM EST,10,2.3, , 
+ , , , , , , , , , , , , ,nfl.p.28464$nfl.g.13520093,Chris,Conley,nfl.p.28464$nfl.g.13520093 - Chris Conley,WR,SF,MIA,SF@MIA,4:25PM EST,10,0.1, , 
+ , , , , , , , , , , , , ,nfl.p.29435$nfl.g.13520093,Brandon,Allen,nfl.p.29435$nfl.g.13520093 - Brandon Allen,QB,SF,MIA,SF@MIA,4:25PM EST,20,2.8, , 
+ , , , , , , , , , , , , ,nfl.p.30248$nfl.g.13520093,Joshua,Dobbs,nfl.p.30248$nfl.g.13520093 - Joshua Dobbs,QB,SF,MIA,SF@MIA,4:25PM EST,20,0, , 
+ , , , , , , , , , , , , ,nfl.p.30259$nfl.g.13520093,George,Kittle,nfl.p.30259$nfl.g.13520093 - George Kittle,TE,SF,MIA,SF@MIA,4:25PM EST,25,13.7, , 
+ , , , , , , , , , , , , ,nfl.p.30287$nfl.g.13520093,Eric,Saubert,nfl.p.30287$nfl.g.13520093 - Eric Saubert,TE,SF,MIA,SF@MIA,4:25PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.31868$nfl.g.13520093,Deebo,Samuel Sr.,nfl.p.31868$nfl.g.13520093 - Deebo Samuel Sr.,WR,SF,MIA,SF@MIA,4:25PM EST,15,7.5, , 
+ , , , , , , , , , , , , ,nfl.p.32887$nfl.g.13520093,Jauan,Jennings,nfl.p.32887$nfl.g.13520093 - Jauan Jennings,WR,SF,MIA,SF@MIA,4:25PM EST,27,12.2, , 
+ , , , , , , , , , , , , ,nfl.p.34218$nfl.g.13520093,Brock,Purdy,nfl.p.34218$nfl.g.13520093 - Brock Purdy,QB,SF,MIA,SF@MIA,4:25PM EST,25,17.3, , 
+ , , , , , , , , , , , , ,nfl.p.34374$nfl.g.13520093,Jake,Tonges,nfl.p.34374$nfl.g.13520093 - Jake Tonges,TE,SF,MIA,SF@MIA,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40165$nfl.g.13520093,Israel,Abanikanda,nfl.p.40165$nfl.g.13520093 - Israel Abanikanda,RB,SF,MIA,SF@MIA,4:25PM EST,10,1.8, , 
+ , , , , , , , , , , , , ,nfl.p.40261$nfl.g.13520093,Brayden,Willis,nfl.p.40261$nfl.g.13520093 - Brayden Willis,TE,SF,MIA,SF@MIA,4:25PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40892$nfl.g.13520093,Ricky,Pearsall,nfl.p.40892$nfl.g.13520093 - Ricky Pearsall,WR,SF,MIA,SF@MIA,4:25PM EST,10,4, , 
+ , , , , , , , , , , , , ,nfl.p.40996$nfl.g.13520093,Jacob,Cowing,nfl.p.40996$nfl.g.13520093 - Jacob Cowing,WR,SF,MIA,SF@MIA,4:25PM EST,10,0.5, , 
+ , , , , , , , , , , , , ,nfl.p.40998$nfl.g.13520093,Isaac,Guerendo,nfl.p.40998$nfl.g.13520093 - Isaac Guerendo,RB,SF,MIA,SF@MIA,4:25PM EST,22,5.3,O, 
+ , , , , , , , , , , , , ,nfl.p.27540$nfl.g.13520093,Odell,Beckham Jr.,nfl.p.27540$nfl.g.13520093 - Odell Beckham Jr.,WR,MIA,SF,SF@MIA,4:25PM EST,10,1.2, , 
+ , , , , , , , , , , , , ,nfl.p.28654$nfl.g.13520093,Raheem,Mostert,nfl.p.28654$nfl.g.13520093 - Raheem Mostert,RB,MIA,SF,SF@MIA,4:25PM EST,10,5.3, , 
+ , , , , , , , , , , , , ,nfl.p.29399$nfl.g.13520093,Tyreek,Hill,nfl.p.29399$nfl.g.13520093 - Tyreek Hill,WR,MIA,SF,SF@MIA,4:25PM EST,28,10.7,Q, 
+ , , , , , , , , , , , , ,nfl.p.30213$nfl.g.13520093,Jonnu,Smith,nfl.p.30213$nfl.g.13520093 - Jonnu Smith,TE,MIA,SF,SF@MIA,4:25PM EST,25,10.4, , 
+ , , , , , , , , , , , , ,nfl.p.30955$nfl.g.13520093,River,Cracraft,nfl.p.30955$nfl.g.13520093 - River Cracraft,WR,MIA,SF,SF@MIA,4:25PM EST,10,0.6, , 
+ , , , , , , , , , , , , ,nfl.p.31093$nfl.g.13520093,Durham,Smythe,nfl.p.31093$nfl.g.13520093 - Durham Smythe,TE,MIA,SF,SF@MIA,4:25PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.31394$nfl.g.13520093,Jeff,Wilson Jr.,nfl.p.31394$nfl.g.13520093 - Jeff Wilson Jr.,RB,MIA,SF,SF@MIA,4:25PM EST,10,2, , 
+ , , , , , , , , , , , , ,nfl.p.32344$nfl.g.13520093,Alec,Ingold,nfl.p.32344$nfl.g.13520093 - Alec Ingold,RB,MIA,SF,SF@MIA,4:25PM EST,10,2.5, , 
+ , , , , , , , , , , , , ,nfl.p.32675$nfl.g.13520093,Tua,Tagovailoa,nfl.p.32675$nfl.g.13520093 - Tua Tagovailoa,QB,MIA,SF,SF@MIA,4:25PM EST,27,17.6, , 
+ , , , , , , , , , , , , ,nfl.p.32993$nfl.g.13520093,Tyler,Huntley,nfl.p.32993$nfl.g.13520093 - Tyler Huntley,QB,MIA,SF,SF@MIA,4:25PM EST,20,9.6, , 
+ , , , , , , , , , , , , ,nfl.p.33394$nfl.g.13520093,Jaylen,Waddle,nfl.p.33394$nfl.g.13520093 - Jaylen Waddle,WR,MIA,SF,SF@MIA,4:25PM EST,23,8.1,D, 
+ , , , , , , , , , , , , ,nfl.p.33444$nfl.g.13520093,Dee,Eskridge,nfl.p.33444$nfl.g.13520093 - Dee Eskridge,WR,MIA,SF,SF@MIA,4:25PM EST,10,1.2,D, 
+ , , , , , , , , , , , , ,nfl.p.33891$nfl.g.13520093,Jack,Stoll,nfl.p.33891$nfl.g.13520093 - Jack Stoll,TE,MIA,SF,SF@MIA,4:25PM EST,10,0.5, , 
+ , , , , , , , , , , , , ,nfl.p.40118$nfl.g.13520093,De'Von,Achane,nfl.p.40118$nfl.g.13520093 - De'Von Achane,RB,MIA,SF,SF@MIA,4:25PM EST,32,15, , 
+ , , , , , , , , , , , , ,nfl.p.40629$nfl.g.13520093,Julian,Hill,nfl.p.40629$nfl.g.13520093 - Julian Hill,TE,MIA,SF,SF@MIA,4:25PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.41010$nfl.g.13520093,Jaylen,Wright,nfl.p.41010$nfl.g.13520093 - Jaylen Wright,RB,MIA,SF,SF@MIA,4:25PM EST,10,2.1, , 
+ , , , , , , , , , , , , ,nfl.p.41058$nfl.g.13520093,Malik,Washington,nfl.p.41058$nfl.g.13520093 - Malik Washington,WR,MIA,SF,SF@MIA,4:25PM EST,10,2.3, , 
+ , , , , , , , , , , , , ,nfl.t.25$nfl.g.13520093,San Francisco,49ers,nfl.t.25$nfl.g.13520093 - San Francisco 49ers,DEF,SF,MIA,SF@MIA,4:25PM EST,16,6.4, , 
+ , , , , , , , , , , , , ,nfl.t.15$nfl.g.13520093,Miami,Dolphins,nfl.t.15$nfl.g.13520093 - Miami Dolphins,DEF,MIA,SF,SF@MIA,4:25PM EST,12,4.4, , 
+ , , , , , , , , , , , , ,nfl.p.33235$nfl.g.13520093,Patrick,Taylor Jr.,nfl.p.33235$nfl.g.13520093 - Patrick Taylor Jr.,RB,SF,MIA,SF@MIA,4:25PM EST,10,2.5, , 
+ , , , , , , , , , , , , ,nfl.p.40251$nfl.g.13520093,Grant,DuBose,nfl.p.40251$nfl.g.13520093 - Grant DuBose,WR,MIA,SF,SF@MIA,4:25PM EST,10,1,IR, 
+ , , , , , , , , , , , , ,nfl.p.34513$nfl.g.13520093,Tanner,Conner,nfl.p.34513$nfl.g.13520093 - Tanner Conner,TE,MIA,SF,SF@MIA,4:25PM EST,10,0.8,IR, 
+ , , , , , , , , , , , , ,nfl.p.27535$nfl.g.13520094,Mike,Evans,nfl.p.27535$nfl.g.13520094 - Mike Evans,WR,TB,DAL,TB@DAL,8:20PM EST,33,14.1, , 
+ , , , , , , , , , , , , ,nfl.p.29274$nfl.g.13520094,Sterling,Shepard,nfl.p.29274$nfl.g.13520094 - Sterling Shepard,WR,TB,DAL,TB@DAL,8:20PM EST,14,5.3, , 
+ , , , , , , , , , , , , ,nfl.p.30971$nfl.g.13520094,Baker,Mayfield,nfl.p.30971$nfl.g.13520094 - Baker Mayfield,QB,TB,DAL,TB@DAL,8:20PM EST,32,21.5, , 
+ , , , , , , , , , , , , ,nfl.p.33452$nfl.g.13520094,Kyle,Trask,nfl.p.33452$nfl.g.13520094 - Kyle Trask,QB,TB,DAL,TB@DAL,8:20PM EST,20,0.2, , 
+ , , , , , , , , , , , , ,nfl.p.34047$nfl.g.13520094,Rachaad,White,nfl.p.34047$nfl.g.13520094 - Rachaad White,RB,TB,DAL,TB@DAL,8:20PM EST,25,12.5, , 
+ , , , , , , , , , , , , ,nfl.p.34062$nfl.g.13520094,Cade,Otton,nfl.p.34062$nfl.g.13520094 - Cade Otton,TE,TB,DAL,TB@DAL,8:20PM EST,15,7.9,O, 
+ , , , , , , , , , , , , ,nfl.p.34174$nfl.g.13520094,Ko,Kieft,nfl.p.34174$nfl.g.13520094 - Ko Kieft,TE,TB,DAL,TB@DAL,8:20PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40193$nfl.g.13520094,Payne,Durham,nfl.p.40193$nfl.g.13520094 - Payne Durham,TE,TB,DAL,TB@DAL,8:20PM EST,10,1.1, , 
+ , , , , , , , , , , , , ,nfl.p.40223$nfl.g.13520094,Trey,Palmer,nfl.p.40223$nfl.g.13520094 - Trey Palmer,WR,TB,DAL,TB@DAL,8:20PM EST,10,2.1, , 
+ , , , , , , , , , , , , ,nfl.p.40671$nfl.g.13520094,Rakim,Jarrett,nfl.p.40671$nfl.g.13520094 - Rakim Jarrett,WR,TB,DAL,TB@DAL,8:20PM EST,10,2.4, , 
+ , , , , , , , , , , , , ,nfl.p.40676$nfl.g.13520094,Ryan,Miller,nfl.p.40676$nfl.g.13520094 - Ryan Miller,WR,TB,DAL,TB@DAL,8:20PM EST,10,2.6, , 
+ , , , , , , , , , , , , ,nfl.p.40742$nfl.g.13520094,Sean,Tucker,nfl.p.40742$nfl.g.13520094 - Sean Tucker,RB,TB,DAL,TB@DAL,8:20PM EST,10,4.1, , 
+ , , , , , , , , , , , , ,nfl.p.40954$nfl.g.13520094,Jalen,McMillan,nfl.p.40954$nfl.g.13520094 - Jalen McMillan,WR,TB,DAL,TB@DAL,8:20PM EST,21,6.6, , 
+ , , , , , , , , , , , , ,nfl.p.40993$nfl.g.13520094,Bucky,Irving,nfl.p.40993$nfl.g.13520094 - Bucky Irving,RB,TB,DAL,TB@DAL,8:20PM EST,30,12, , 
+ , , , , , , , , , , , , ,nfl.p.41120$nfl.g.13520094,Devin,Culp,nfl.p.41120$nfl.g.13520094 - Devin Culp,TE,TB,DAL,TB@DAL,8:20PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.27548$nfl.g.13520094,Brandin,Cooks,nfl.p.27548$nfl.g.13520094 - Brandin Cooks,WR,DAL,TB,TB@DAL,8:20PM EST,15,5.8, , 
+ , , , , , , , , , , , , ,nfl.p.29238$nfl.g.13520094,Ezekiel,Elliott,nfl.p.29238$nfl.g.13520094 - Ezekiel Elliott,RB,DAL,TB,TB@DAL,8:20PM EST,10,3.5, , 
+ , , , , , , , , , , , , ,nfl.p.30788$nfl.g.13520094,Cooper,Rush,nfl.p.30788$nfl.g.13520094 - Cooper Rush,QB,DAL,TB,TB@DAL,8:20PM EST,22,9.3, , 
+ , , , , , , , , , , , , ,nfl.p.32687$nfl.g.13520094,CeeDee,Lamb,nfl.p.32687$nfl.g.13520094 - CeeDee Lamb,WR,DAL,TB,TB@DAL,8:20PM EST,37,14.2, , 
+ , , , , , , , , , , , , ,nfl.p.33100$nfl.g.13520094,Rico,Dowdle,nfl.p.33100$nfl.g.13520094 - Rico Dowdle,RB,DAL,TB,TB@DAL,8:20PM EST,28,11.3, , 
+ , , , , , , , , , , , , ,nfl.p.33391$nfl.g.13520094,Trey,Lance,nfl.p.33391$nfl.g.13520094 - Trey Lance,QB,DAL,TB,TB@DAL,8:20PM EST,20,0.6, , 
+ , , , , , , , , , , , , ,nfl.p.34044$nfl.g.13520094,Jalen,Tolbert,nfl.p.34044$nfl.g.13520094 - Jalen Tolbert,WR,DAL,TB,TB@DAL,8:20PM EST,14,6.9, , 
+ , , , , , , , , , , , , ,nfl.p.34085$nfl.g.13520094,Jake,Ferguson,nfl.p.34085$nfl.g.13520094 - Jake Ferguson,TE,DAL,TB,TB@DAL,8:20PM EST,12,5.9, , 
+ , , , , , , , , , , , , ,nfl.p.34709$nfl.g.13520094,KaVontae,Turpin,nfl.p.34709$nfl.g.13520094 - KaVontae Turpin,WR,DAL,TB,TB@DAL,8:20PM EST,13,5.8, , 
+ , , , , , , , , , , , , ,nfl.p.40061$nfl.g.13520094,Luke,Schoonmaker,nfl.p.40061$nfl.g.13520094 - Luke Schoonmaker,TE,DAL,TB,TB@DAL,8:20PM EST,10,4, , 
+ , , , , , , , , , , , , ,nfl.p.40073$nfl.g.13520094,Jonathan,Mingo,nfl.p.40073$nfl.g.13520094 - Jonathan Mingo,WR,DAL,TB,TB@DAL,8:20PM EST,10,1.6, , 
+ , , , , , , , , , , , , ,nfl.p.40240$nfl.g.13520094,Deuce,Vaughn,nfl.p.40240$nfl.g.13520094 - Deuce Vaughn,RB,DAL,TB,TB@DAL,8:20PM EST,10,1.3, , 
+ , , , , , , , , , , , , ,nfl.p.40257$nfl.g.13520094,Jalen,Brooks,nfl.p.40257$nfl.g.13520094 - Jalen Brooks,WR,DAL,TB,TB@DAL,8:20PM EST,10,2.5,O, 
+ , , , , , , , , , , , , ,nfl.p.40778$nfl.g.13520094,Princeton,Fant,nfl.p.40778$nfl.g.13520094 - Princeton Fant,TE,DAL,TB,TB@DAL,8:20PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40780$nfl.g.13520094,Hunter,Luepke,nfl.p.40780$nfl.g.13520094 - Hunter Luepke,RB,DAL,TB,TB@DAL,8:20PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.p.41087$nfl.g.13520094,Ryan,Flournoy,nfl.p.41087$nfl.g.13520094 - Ryan Flournoy,WR,DAL,TB,TB@DAL,8:20PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.41371$nfl.g.13520094,Brevyn,Spann-Ford,nfl.p.41371$nfl.g.13520094 - Brevyn Spann-Ford,TE,DAL,TB,TB@DAL,8:20PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.t.27$nfl.g.13520094,Tampa Bay,Buccaneers,nfl.t.27$nfl.g.13520094 - Tampa Bay Buccaneers,DEF,TB,DAL,TB@DAL,8:20PM EST,14,6.1, , 
+ , , , , , , , , , , , , ,nfl.t.6$nfl.g.13520094,Dallas,Cowboys,nfl.t.6$nfl.g.13520094 - Dallas Cowboys,DEF,DAL,TB,TB@DAL,8:20PM EST,13,7.1, , 
+ , , , , , , , , , , , , ,nfl.p.41300$nfl.g.13520094,Kameron,Johnson,nfl.p.41300$nfl.g.13520094 - Kameron Johnson,WR,TB,DAL,TB@DAL,8:20PM EST,10,0,IR, 
+ , , , , , , , , , , , , ,nfl.p.27564$nfl.g.13520095,Derek,Carr,nfl.p.27564$nfl.g.13520095 - Derek Carr,QB,NO,GB,NO@GB,8:15PM EST,22,15.6,O, 
+ , , , , , , , , , , , , ,nfl.p.30180$nfl.g.13520095,Alvin,Kamara,nfl.p.30180$nfl.g.13520095 - Alvin Kamara,RB,NO,GB,NO@GB,8:15PM EST,33,16.5,O, 
+ , , , , , , , , , , , , ,nfl.p.30247$nfl.g.13520095,Jamaal,Williams,nfl.p.30247$nfl.g.13520095 - Jamaal Williams,RB,NO,GB,NO@GB,8:15PM EST,10,2.4, , 
+ , , , , , , , , , , , , ,nfl.p.31144$nfl.g.13520095,Marquez,Valdes-Scantling,nfl.p.31144$nfl.g.13520095 - Marquez Valdes-Scantling,WR,NO,GB,NO@GB,8:15PM EST,18,6.4,Q, 
+ , , , , , , , , , , , , ,nfl.p.31178$nfl.g.13520095,Cedrick,Wilson Jr.,nfl.p.31178$nfl.g.13520095 - Cedrick Wilson Jr.,WR,NO,GB,NO@GB,8:15PM EST,10,3.3, , 
+ , , , , , , , , , , , , ,nfl.p.31969$nfl.g.13520095,Foster,Moreau,nfl.p.31969$nfl.g.13520095 - Foster Moreau,TE,NO,GB,NO@GB,8:15PM EST,10,5.1, , 
+ , , , , , , , , , , , , ,nfl.p.33113$nfl.g.13520095,Juwan,Johnson,nfl.p.33113$nfl.g.13520095 - Juwan Johnson,TE,NO,GB,NO@GB,8:15PM EST,14,6.1, , 
+ , , , , , , , , , , , , ,nfl.p.33901$nfl.g.13520095,Adam,Prentice,nfl.p.33901$nfl.g.13520095 - Adam Prentice,RB,NO,GB,NO@GB,8:15PM EST,10,0, , 
+ , , , , , , , , , , , , ,nfl.p.40144$nfl.g.13520095,Jake,Haener,nfl.p.40144$nfl.g.13520095 - Jake Haener,QB,NO,GB,NO@GB,8:15PM EST,20,1.8, , 
+ , , , , , , , , , , , , ,nfl.p.40631$nfl.g.13520095,Jordan,Mims,nfl.p.40631$nfl.g.13520095 - Jordan Mims,RB,NO,GB,NO@GB,8:15PM EST,10,1.7, , 
+ , , , , , , , , , , , , ,nfl.p.41043$nfl.g.13520095,Spencer,Rattler,nfl.p.41043$nfl.g.13520095 - Spencer Rattler,QB,NO,GB,NO@GB,8:15PM EST,20,9.1, , 
+ , , , , , , , , , , , , ,nfl.p.41180$nfl.g.13520095,Dallin,Holker,nfl.p.41180$nfl.g.13520095 - Dallin Holker,TE,NO,GB,NO@GB,8:15PM EST,10,0.8, , 
+ , , , , , , , , , , , , ,nfl.p.41188$nfl.g.13520095,Mason,Tipton,nfl.p.41188$nfl.g.13520095 - Mason Tipton,WR,NO,GB,NO@GB,8:15PM EST,10,2.1, , 
+ , , , , , , , , , , , , ,nfl.p.31856$nfl.g.13520095,Josh,Jacobs,nfl.p.31856$nfl.g.13520095 - Josh Jacobs,RB,GB,NO,NO@GB,8:15PM EST,37,16.7, , 
+ , , , , , , , , , , , , ,nfl.p.32696$nfl.g.13520095,Jordan,Love,nfl.p.32696$nfl.g.13520095 - Jordan Love,QB,GB,NO,NO@GB,8:15PM EST,28,18.1, , 
+ , , , , , , , , , , , , ,nfl.p.33989$nfl.g.13520095,Christian,Watson,nfl.p.33989$nfl.g.13520095 - Christian Watson,WR,GB,NO,NO@GB,8:15PM EST,17,7.4, , 
+ , , , , , , , , , , , , ,nfl.p.34042$nfl.g.13520095,Malik,Willis,nfl.p.34042$nfl.g.13520095 - Malik Willis,QB,GB,NO,NO@GB,8:15PM EST,20,11.7, , 
+ , , , , , , , , , , , , ,nfl.p.34088$nfl.g.13520095,Romeo,Doubs,nfl.p.34088$nfl.g.13520095 - Romeo Doubs,WR,GB,NO,NO@GB,8:15PM EST,20,8.6, , 
+ , , , , , , , , , , , , ,nfl.p.34169$nfl.g.13520095,John,FitzPatrick,nfl.p.34169$nfl.g.13520095 - John FitzPatrick,TE,GB,NO,NO@GB,8:15PM EST,10,0.7, , 
+ , , , , , , , , , , , , ,nfl.p.34185$nfl.g.13520095,Bo,Melton,nfl.p.34185$nfl.g.13520095 - Bo Melton,WR,GB,NO,NO@GB,8:15PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.40063$nfl.g.13520095,Jayden,Reed,nfl.p.40063$nfl.g.13520095 - Jayden Reed,WR,GB,NO,NO@GB,8:15PM EST,21,11, , 
+ , , , , , , , , , , , , ,nfl.p.40102$nfl.g.13520095,Tucker,Kraft,nfl.p.40102$nfl.g.13520095 - Tucker Kraft,TE,GB,NO,NO@GB,8:15PM EST,17,8.5, , 
+ , , , , , , , , , , , , ,nfl.p.40201$nfl.g.13520095,Dontayvion,Wicks,nfl.p.40201$nfl.g.13520095 - Dontayvion Wicks,WR,GB,NO,NO@GB,8:15PM EST,11,4.9, , 
+ , , , , , , , , , , , , ,nfl.p.40335$nfl.g.13520095,Ben,Sims,nfl.p.40335$nfl.g.13520095 - Ben Sims,TE,GB,NO,NO@GB,8:15PM EST,10,1.5, , 
+ , , , , , , , , , , , , ,nfl.p.40445$nfl.g.13520095,Malik,Heath,nfl.p.40445$nfl.g.13520095 - Malik Heath,WR,GB,NO,NO@GB,8:15PM EST,10,4.4, , 
+ , , , , , , , , , , , , ,nfl.p.40625$nfl.g.13520095,Chris,Brooks,nfl.p.40625$nfl.g.13520095 - Chris Brooks,RB,GB,NO,NO@GB,8:15PM EST,10,2.4, , 
+ , , , , , , , , , , , , ,nfl.p.40707$nfl.g.13520095,Emanuel,Wilson,nfl.p.40707$nfl.g.13520095 - Emanuel Wilson,RB,GB,NO,NO@GB,8:15PM EST,10,4, , 
+ , , , , , , , , , , , , ,nfl.t.18$nfl.g.13520095,New Orleans,Saints,nfl.t.18$nfl.g.13520095 - New Orleans Saints,DEF,NO,GB,NO@GB,8:15PM EST,10,6.6, , 
+ , , , , , , , , , , , , ,nfl.t.9$nfl.g.13520095,Green Bay,Packers,nfl.t.9$nfl.g.13520095 - Green Bay Packers,DEF,GB,NO,NO@GB,8:15PM EST,16,8.8, , 
+ , , , , , , , , , , , , ,nfl.p.40108$nfl.g.13520095,Kendre,Miller,nfl.p.40108$nfl.g.13520095 - Kendre Miller,RB,NO,GB,NO@GB,8:15PM EST,12,4, , 
+ , , , , , , , , , , , , ,nfl.p.31014$nfl.g.13520095,Dante,Pettis,nfl.p.31014$nfl.g.13520095 - Dante Pettis,WR,NO,GB,NO@GB,8:15PM EST,10,1.8, , 
+ , , , , , , , , , , , , ,nfl.p.34242$nfl.g.13520095,Kevin,Austin Jr.,nfl.p.34242$nfl.g.13520095 - Kevin Austin Jr.,WR,NO,GB,NO@GB,8:15PM EST,10,2.9, , 
+ , , , , , , , , , , , , ,nfl.p.41045$nfl.g.13520095,Bub,Means,nfl.p.41045$nfl.g.13520095 - Bub Means,WR,NO,GB,NO@GB,8:15PM EST,10,5.6,IR, 
+ , , , , , , , , , , , , ,nfl.p.40074$nfl.g.13520095,Luke,Musgrave,nfl.p.40074$nfl.g.13520095 - Luke Musgrave,TE,GB,NO,NO@GB,8:15PM EST,10,1.2,Q, 
+ , , , , , , , , , , , , ,nfl.p.40971$nfl.g.13520095,MarShawn,Lloyd,nfl.p.40971$nfl.g.13520095 - MarShawn Lloyd,RB,GB,NO,NO@GB,8:15PM EST,10,2.3,O, 
+ , , , , , , , , , , , , ,nfl.p.33966$nfl.g.13520095,Chris,Olave,nfl.p.33966$nfl.g.13520095 - Chris Olave,WR,NO,GB,NO@GB,8:15PM EST,22,7.6,IR, 
