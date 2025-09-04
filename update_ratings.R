@@ -10,12 +10,12 @@
 # library("leaps")
 # library("ggrepel")
 
-#Week
-past_week <- 11
-upcoming_week <- 12
+# #Week
+# past_week <- 18
+# upcoming_week <- 19
 
 #Year
-This_Year <- Years_Dataframe$This_Year[1]
+This_Year <- This_Year_d
 
 #read files
 #predictions
@@ -39,8 +39,10 @@ d_past_week_st_snaps <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weekl
 
 past_week_player_stats <- d_past_week_player_stats %>% 
   select(player, pos, g_number, week, team, opp, att_19, cmp_18, yds_22, td_23, int, att_37, yds_38, td_40, tgt_43, rec, yds_45, td_47, fmb_62, x2pm, off_percent_68)
-past_week_st_snaps <- d_past_week_st_snaps %>% 
-  select(player, pos, g_number, week, team, opp, st_snp_17)
+past_week_st_snaps <- d_past_week_st_snaps
+names(past_week_st_snaps)[names(past_week_st_snaps) == "st_snp_17"] <- "st_snp"
+past_week_st_snaps <- past_week_st_snaps %>% 
+  select(player, pos, g_number, week, team, opp, st_snp)
 
 colnames(past_week_player_stats) <- c("player", "pos", "game_number", "week", "team", "opp", "pas_att", "cmp", "pas_yds", "pas_tds", "int", "rus_att", "rus_yds", "rus_tds", "tgt", "rec", "rec_yds", "rec_tds", "fmb_game", "two_point", "snap_per")
 colnames(past_week_st_snaps) <- c("player", "pos", "game_number", "week", "team", "opp", "st_snaps")
@@ -219,34 +221,34 @@ updated_player_percents <- updated_player_percents %>%
          upd_rec_tds_per = upd_rec_tds_per*(old_tot_rec_tds_per/new_tot_rec_tds_per))
 
 #Regress to sum to 1
-reg_coef <- 2
-
-updated_player_percents_by_team <- updated_player_percents %>%
-  group_by(team) %>%
-  summarise(tot_rus_att_per = sum(upd_rus_att_per),
-            tot_rus_yds_per = sum(upd_rus_yds_per),
-            tot_rus_tds_per = sum(upd_rus_tds_per),
-            tot_tgt_per = sum(upd_tgt_per),
-            tot_rec_per = sum(upd_rec_per),
-            tot_rec_yds_per = sum(upd_rec_yds_per),
-            tot_rec_tds_per = sum(upd_rec_tds_per)) %>%
-  mutate(reg_rus_att_per = (((1 - tot_rus_att_per)/reg_coef) + tot_rus_att_per)/(tot_rus_att_per),
-         reg_rus_yds_per = (((1 - tot_rus_yds_per)/reg_coef) + tot_rus_yds_per)/(tot_rus_yds_per),
-         reg_rus_tds_per = (((1 - tot_rus_tds_per)/reg_coef) + tot_rus_tds_per)/(tot_rus_tds_per),
-         reg_tgt_per = (((1 - tot_tgt_per)/reg_coef) + tot_tgt_per)/(tot_tgt_per),
-         reg_rec_per = (((1 - tot_rec_per)/reg_coef) + tot_rec_per)/(tot_rec_per),
-         reg_rec_yds_per = (((1 - tot_rec_yds_per)/reg_coef) + tot_rec_yds_per)/(tot_rec_yds_per),
-         reg_rec_tds_per = (((1 - tot_rec_tds_per)/reg_coef) + tot_rec_tds_per)/(tot_rec_tds_per))
-
-updated_player_percents <- updated_player_percents %>%
-  left_join(updated_player_percents_by_team, by = c("team")) %>%
-  mutate(upd_rus_att_per = upd_rus_att_per*reg_rus_att_per,
-         upd_rus_yds_per = upd_rus_yds_per*reg_rus_yds_per,
-         upd_rus_tds_per = upd_rus_tds_per*reg_rus_tds_per,
-         upd_tgt_per = upd_tgt_per*reg_tgt_per,
-         upd_rec_per = upd_rec_per*reg_rec_per,
-         upd_rec_yds_per = upd_rec_yds_per*reg_rec_yds_per,
-         upd_rec_tds_per = upd_rec_tds_per*reg_rec_tds_per)
+# reg_coef <- 2
+# 
+# updated_player_percents_by_team <- updated_player_percents %>%
+#   group_by(team) %>%
+#   summarise(tot_rus_att_per = sum(upd_rus_att_per),
+#             tot_rus_yds_per = sum(upd_rus_yds_per),
+#             tot_rus_tds_per = sum(upd_rus_tds_per),
+#             tot_tgt_per = sum(upd_tgt_per),
+#             tot_rec_per = sum(upd_rec_per),
+#             tot_rec_yds_per = sum(upd_rec_yds_per),
+#             tot_rec_tds_per = sum(upd_rec_tds_per)) %>%
+#   mutate(reg_rus_att_per = (((1 - tot_rus_att_per)/reg_coef) + tot_rus_att_per)/(tot_rus_att_per),
+#          reg_rus_yds_per = (((1 - tot_rus_yds_per)/reg_coef) + tot_rus_yds_per)/(tot_rus_yds_per),
+#          reg_rus_tds_per = (((1 - tot_rus_tds_per)/reg_coef) + tot_rus_tds_per)/(tot_rus_tds_per),
+#          reg_tgt_per = (((1 - tot_tgt_per)/reg_coef) + tot_tgt_per)/(tot_tgt_per),
+#          reg_rec_per = (((1 - tot_rec_per)/reg_coef) + tot_rec_per)/(tot_rec_per),
+#          reg_rec_yds_per = (((1 - tot_rec_yds_per)/reg_coef) + tot_rec_yds_per)/(tot_rec_yds_per),
+#          reg_rec_tds_per = (((1 - tot_rec_tds_per)/reg_coef) + tot_rec_tds_per)/(tot_rec_tds_per))
+# 
+# updated_player_percents <- updated_player_percents %>%
+#   left_join(updated_player_percents_by_team, by = c("team")) %>%
+#   mutate(upd_rus_att_per = upd_rus_att_per*reg_rus_att_per,
+#          upd_rus_yds_per = upd_rus_yds_per*reg_rus_yds_per,
+#          upd_rus_tds_per = upd_rus_tds_per*reg_rus_tds_per,
+#          upd_tgt_per = upd_tgt_per*reg_tgt_per,
+#          upd_rec_per = upd_rec_per*reg_rec_per,
+#          upd_rec_yds_per = upd_rec_yds_per*reg_rec_yds_per,
+#          upd_rec_tds_per = upd_rec_tds_per*reg_rec_tds_per)
 
 #select
 updated_player_percents <- updated_player_percents %>% 
@@ -295,8 +297,7 @@ updated_QB_ratings <- full_join(past_week_QB_ratings, QB_ratings_dif, by = "play
 
 ##dnp
 dnp_QB_ratings <- updated_QB_ratings %>%
-  filter(is.na(snap_per) | snap_per == 0) %>% 
-  filter(!is.na(team.x))
+  filter(is.na(snap_per) | snap_per == 0) 
 
 #players who played
 updated_QB_ratings <- updated_QB_ratings %>%
@@ -369,7 +370,7 @@ colnames(updated_QB_ratings) <- colnames(past_week_QB_ratings)
 
 ####Off Team Ratings####
 #get team stats
-past_week_team_stats2 <- past_week_player_stats %>% 
+past_week_team_stats <- past_week_player_stats %>% 
   group_by(team) %>% 
   summarise(across(pas_att:rec_tds, sum),
                            .groups = 'drop') %>% 
@@ -417,32 +418,32 @@ updated_off_team_ratings <- updated_off_team_ratings %>%
 
 #update ratings for regressing to 1 in player percents
 #coefs from make predictions
-rus_att <- 0
-rus_yds <- 0
-rus_tds <- 0
-pas_att <- 0.1
-cmp <- 0.4
-pas_yds <- 0.1
-pas_tds <- 0
-
-team_adjustment <- updated_player_percents_by_team %>%
-  mutate(rus_att_adj = ((tot_rus_att_per - 1)*rus_att + 1)/(((tot_rus_att_per - 1)/reg_coef)*rus_att + 1),
-         rus_yds_adj = ((tot_rus_yds_per - 1)*rus_yds + 1)/(((tot_rus_yds_per - 1)/reg_coef)*rus_yds + 1),
-         rus_tds_adj = ((tot_rus_tds_per - 1)*rus_tds + 1)/(((tot_rus_tds_per - 1)/reg_coef)*rus_tds + 1),
-         pas_att_adj = ((tot_tgt_per - 1)*pas_att + 1)/(((tot_tgt_per - 1)/reg_coef)*pas_att + 1),
-         pas_cmp_adj = ((tot_rec_per - 1)*cmp + 1)/(((tot_rec_per - 1)/reg_coef)*cmp + 1),
-         pas_yds_adj = ((tot_rec_yds_per - 1)*pas_yds + 1)/(((tot_rec_yds_per - 1)/reg_coef)*pas_yds + 1),
-         pas_tds_adj = ((tot_rec_tds_per - 1)*pas_tds + 1)/(((tot_rec_tds_per - 1)/reg_coef)*pas_tds + 1))
-
-updated_off_team_ratings <- updated_off_team_ratings %>%
-  left_join(team_adjustment, by = c("team")) %>%
-  mutate(upd_rus_att_rat = upd_rus_att_rat*rus_att_adj,
-         upd_rus_yds_rat = upd_rus_yds_rat*rus_yds_adj,
-         upd_rus_tds_rat = upd_rus_tds_rat*rus_tds_adj,
-         upd_pas_att_rat = upd_pas_att_rat*pas_att_adj,
-         upd_cmp_rat = upd_cmp_rat*pas_cmp_adj,
-         upd_pas_yds_rat = upd_pas_yds_rat*pas_yds_adj,
-         upd_pas_tds_rat = upd_pas_tds_rat*pas_tds_adj)
+# rus_att <- 0
+# rus_yds <- 0
+# rus_tds <- 0
+# pas_att <- 0.1
+# cmp <- 0.4
+# pas_yds <- 0.1
+# pas_tds <- 0
+# 
+# team_adjustment <- updated_player_percents_by_team %>%
+#   mutate(rus_att_adj = ((tot_rus_att_per - 1)*rus_att + 1)/(((tot_rus_att_per - 1)/reg_coef)*rus_att + 1),
+#          rus_yds_adj = ((tot_rus_yds_per - 1)*rus_yds + 1)/(((tot_rus_yds_per - 1)/reg_coef)*rus_yds + 1),
+#          rus_tds_adj = ((tot_rus_tds_per - 1)*rus_tds + 1)/(((tot_rus_tds_per - 1)/reg_coef)*rus_tds + 1),
+#          pas_att_adj = ((tot_tgt_per - 1)*pas_att + 1)/(((tot_tgt_per - 1)/reg_coef)*pas_att + 1),
+#          pas_cmp_adj = ((tot_rec_per - 1)*cmp + 1)/(((tot_rec_per - 1)/reg_coef)*cmp + 1),
+#          pas_yds_adj = ((tot_rec_yds_per - 1)*pas_yds + 1)/(((tot_rec_yds_per - 1)/reg_coef)*pas_yds + 1),
+#          pas_tds_adj = ((tot_rec_tds_per - 1)*pas_tds + 1)/(((tot_rec_tds_per - 1)/reg_coef)*pas_tds + 1))
+# 
+# updated_off_team_ratings <- updated_off_team_ratings %>%
+#   left_join(team_adjustment, by = c("team")) %>%
+#   mutate(upd_rus_att_rat = upd_rus_att_rat*rus_att_adj,
+#          upd_rus_yds_rat = upd_rus_yds_rat*rus_yds_adj,
+#          upd_rus_tds_rat = upd_rus_tds_rat*rus_tds_adj,
+#          upd_pas_att_rat = upd_pas_att_rat*pas_att_adj,
+#          upd_cmp_rat = upd_cmp_rat*pas_cmp_adj,
+#          upd_pas_yds_rat = upd_pas_yds_rat*pas_yds_adj,
+#          upd_pas_tds_rat = upd_pas_tds_rat*pas_tds_adj)
 
 #clean up
 updated_off_team_ratings <- updated_off_team_ratings %>% 

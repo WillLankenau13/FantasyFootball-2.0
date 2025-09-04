@@ -10,24 +10,26 @@
 # library("leaps")
 # library("ggrepel")
 
-#Week
-# upcoming_week <- 2
+# #Week
+upcoming_week <- 1
 
 #Year
-This_Year <- Years_Dataframe$This_Year[1]
+This_Year <- This_Year_d
 
 #inactives list
-inactive_designations <- c("O", "SUSP", "PUP", "IR")
+inactive_designations <- c("O", "SUSP", "PUP", "IR", "NFI")
 
 #import files
 player_percents <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Player_Percents.csv", sep = "")))
 QB_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/QB_ratings.csv", sep = "")))
-off_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Off_Team_ratings.csv", sep = "")))
-def_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Def_Team_ratings.csv", sep = "")))
+off_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Off_Team_Ratings.csv", sep = "")))
+def_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Def_Team_Ratings.csv", sep = "")))
 starting_qbs <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/startingQBs/", This_Year, "/Week_", upcoming_week, "_Starting_QBs.csv", sep = "")))
 teams <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/teams.csv", sep = "")))
+# active_players <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/activePlayers/", This_Year, "/Week_", upcoming_week, "_Active_Players.csv", sep = ""))) %>%
+#   mutate(active = 1)
 
-
+active_players <- player_names_func(active_players)
 
 #yahoo
 yahoo <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/Yahoo/", This_Year, "/Yahoo_Week_", upcoming_week, ".csv", sep = ""))) %>% 
@@ -44,7 +46,13 @@ yahoo <- yahoo %>%
   rename("Team" = "Short_Name") %>% 
   left_join(teams, by = c("Opponent" = "Yahoo")) %>% 
   select(ID:Position, Team, Short_Name, Game:player) %>% 
-  rename("Opponent" = "Short_Name") 
+  rename("Opponent" = "Short_Name")
+
+#active_players
+# yahoo <- yahoo %>%
+#   full_join(active_players, by = c("player", "Team" = "team", "Position" = "pos")) %>%
+#   filter(Position == "DEF" | active == 1 | `Injury Status` == "Q") %>%
+#   select(!active)
 
 #injury status
 injury_status <- yahoo %>% 
@@ -66,10 +74,10 @@ yahoo <- yahoo %>%
   filter(Position != "QB" | startingQB == 1)
 
 ##Replacement
-pas_att_rep = 20
-cmp_rep = 9
-pas_yds_rep = 150
-pas_tds_rep = 0.6
+pas_att_rep = 30
+cmp_rep = 18
+pas_yds_rep = 210
+pas_tds_rep = 1
 int_rep = 1
 
 starting_qb_ratings <- starting_qb_ratings %>% 
@@ -81,12 +89,15 @@ starting_qb_ratings <- starting_qb_ratings %>%
          games_played = ifelse(is.na(games_played), 0, games_played),
          py_games_played = ifelse(is.na(py_games_played),0, py_games_played))
 
+#tested
+qb_adj <- 0.7
+
 QB_adj_off_team_ratings <- left_join(off_team_ratings, starting_qb_ratings, by = c("team")) %>%
-  mutate(off_cmp_rat = off_cmp_rat*0.2 + cmp_rat*0.8,
-         off_pas_att_rat = off_pas_att_rat*0.2 + pas_att_rat*0.8,
-         off_pas_yds_rat = off_pas_yds_rat*0.2 + pas_yds_rat*0.8,
-         off_pas_tds_rat = off_pas_tds_rat*0.2 + pas_tds_rat*0.8,
-         off_int_rat = off_int_rat*0.2 + int_rat*0.8) %>%
+  mutate(off_cmp_rat = off_cmp_rat*(1-qb_adj) + cmp_rat*qb_adj,
+         off_pas_att_rat = off_pas_att_rat*(1-qb_adj) + pas_att_rat*qb_adj,
+         off_pas_yds_rat = off_pas_yds_rat*(1-qb_adj) + pas_yds_rat*qb_adj,
+         off_pas_tds_rat = off_pas_tds_rat*(1-qb_adj) + pas_tds_rat*qb_adj,
+         off_int_rat = off_int_rat*(1-qb_adj) + int_rat*qb_adj) %>%
   select(team:off_int_rat)
 
 ####update ratings for active rushers and receivers####
@@ -96,6 +107,21 @@ adjusted <- left_join(yahoo, player_percents, by = c("player", "Position" = "pos
   rename("pos" = "position")
 
 adjusted[, 6:18][is.na(adjusted[, 6:18])] <- 0
+
+#filter out qb
+#qbs unaffected by injuries and inactives
+qb <- adjusted %>% 
+  filter(pos == "QB")
+qb_vals <- qb
+names(qb_vals) <- gsub("^adj_", "qb_", names(qb_vals))
+qb_vals <- qb_vals %>% 
+  select(player, team, qb_rus_att_per:qb_rus_tds_per) %>% 
+  full_join(starting_qbs, by = c("player" = "QB", "team")) %>% 
+  select(!player)
+qb_vals[is.na(qb_vals[])] <- 0
+
+adjusted <- adjusted %>% 
+  filter(pos != "QB")
 
 #Get percent by team
 adjusted_by_team <- adjusted %>% 
@@ -111,15 +137,26 @@ adjusted_by_team <- adjusted %>%
 #Adjust individuals
 adjusted <- adjusted %>% 
   full_join(adjusted_by_team, by = c("team")) %>% 
-  mutate(adj_rus_att_per = adj_rus_att_per/tot_rus_att_per,
-         adj_rus_yds_per = adj_rus_yds_per/tot_rus_yds_per,
-         adj_rus_tds_per = adj_rus_tds_per/tot_rus_tds_per,
+  left_join(qb_vals, by = "team") %>% 
+  mutate(adj_rus_att_per = (1-qb_rus_att_per)*adj_rus_att_per/tot_rus_att_per,
+         adj_rus_yds_per = (1-qb_rus_yds_per)*adj_rus_yds_per/tot_rus_yds_per,
+         adj_rus_tds_per = (1-qb_rus_tds_per)*adj_rus_tds_per/tot_rus_tds_per,
          adj_tgt_per = adj_tgt_per/tot_tgt_per,
          adj_rec_per = adj_rec_per/tot_rec_per,
          adj_rec_yds_per = adj_rec_yds_per/tot_rec_yds_per,
          adj_rec_tds_per = adj_rec_tds_per/tot_rec_tds_per) %>% 
   select(player:injury_status, games_played:fmb, adj_rus_att_per:adj_rec_tds_per, py_qb_fl, py_fl_per_tou)
 
+
+#bring back qbs
+adjusted_by_team <- adjusted_by_team %>% 
+  left_join(qb_vals, by = "team") %>% 
+  mutate(tot_rus_att_per = tot_rus_att_per + qb_rus_att_per,
+          tot_rus_yds_per = tot_rus_yds_per + qb_rus_yds_per,
+          tot_rus_tds_per = tot_rus_tds_per + qb_rus_tds_per) %>% 
+  select(team:tot_rec_tds_per)
+
+adjusted <- rbind(adjusted, qb)
 
 ####update offensive ratings####
 rus_att <- 0
