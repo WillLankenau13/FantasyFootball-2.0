@@ -11,8 +11,8 @@
 # library("ggrepel")
 
 # #Week
-# past_week <- 18
-# upcoming_week <- 19
+past_week <- 3
+upcoming_week <- 4
 
 #Year
 This_Year <- This_Year_d
@@ -117,47 +117,48 @@ player_percents <- past_week_player_percents %>%
   full_join(t_past_week_adjusted_combined_player_percents_rat, by = c("player")) %>% 
   mutate(team = ifelse(is.na(team.x), team.y, team.x),
        pos = ifelse(is.na(pos.x), pos.y, pos.x)) %>% 
-  select(player, pos, game_number, week, team, opp, rus_att_per:snap_per, games_played:py_fl_per_tou)
+  select(player, pos, game_number, week, team, opp, rus_att_per:snap_per, games_played:py_fl_per_tou, injury_status)
 
+
+#filter out players who may have been injured
 player_percents <- player_percents %>% 
-  filter(!is.na(snap_per))
-
+  filter(!(is.na(snap_per) & injury_status %in% c("Q", "D")))
 
 #NAs to 0
 player_percents[, 7:30][is.na(player_percents[, 7:30])] <- 0
 
+#for players who actually played
+player_percents <- player_percents %>% 
+  mutate(played = ifelse(snap_per > 0, 1, 0))
 
 #increase games played, touches, and fumbles (only for players with offensive snaps)
 player_percents <- player_percents %>%
-  mutate(games_played = games_played + 1,
+  mutate(games_played = 1 + played,
          touches = touches + touches_game,
          fmb = fmb + fmb_game)
 
 #volatility
 #tested
-#low
-# player_percents <- player_percents %>%
-#   mutate(vol = 0.03 + (0.3/games_played)*(1 + (17 - py_games_played)/34))
-
-#high
-# player_percents <- player_percents %>%
-#   mutate(vol = 0.1 + (0.5/games_played)*(1 + (17 - py_games_played)/34))
-
-#old
 player_percents <- player_percents %>%
-  mutate(vol = 0.05 + (0.5/games_played)*(1 + (17 - py_games_played)/34))
+mutate(rus_vol = 0.05 + (0.5/(games_played + 0.5 + (1-played)))*(1 + (17 - py_games_played)/17),
+       rec_vol = 0.05 + (0.3/(games_played + 1 + (1-played)))*(1 + (17 - py_games_played)/50))
+
+# player_percents <- player_percents %>%
+#   mutate(rus_vol = 0.05 + (0.5/(games_played + 0.5))*(1 + (17 - py_games_played)/17),
+#          rec_vol = 0.05 + (0.3/(games_played + 1))*(1 + (17 - py_games_played)/50))
+
 
 #get changes
 player_percents_changes <- player_percents %>% 
-  mutate(d_rus_att_per = (rus_att_per - adj_rus_att_per)*vol,
-         d_rus_yds_per = (rus_yds_per - adj_rus_yds_per)*vol,
-         d_rus_tds_per = (rus_tds_per - adj_rus_tds_per)*vol,
-         d_tgt_per = (tgt_per - adj_tgt_per)*vol,
-         d_rec_per = (rec_per - adj_rec_per)*vol,
-         d_rec_yds_per = (rec_yds_per - adj_rec_yds_per)*vol,
-         d_rec_tds_per = (rec_tds_per - adj_rec_tds_per)*vol,
+  mutate(d_rus_att_per = (rus_att_per - adj_rus_att_per)*rus_vol,
+         d_rus_yds_per = (rus_yds_per - adj_rus_yds_per)*rus_vol,
+         d_rus_tds_per = (rus_tds_per - adj_rus_tds_per)*rus_vol,
+         d_tgt_per = (tgt_per - adj_tgt_per)*rec_vol,
+         d_rec_per = (rec_per - adj_rec_per)*rec_vol,
+         d_rec_yds_per = (rec_yds_per - adj_rec_yds_per)*rec_vol,
+         d_rec_tds_per = (rec_tds_per - adj_rec_tds_per)*rec_vol,
          this_year_touches = touches) %>% 
-  select(player, pos, team, games_played, py_games_played, touches, fmb, d_rus_att_per:d_rec_tds_per)
+  select(player, pos, team, games_played, py_games_played, played, touches, fmb, d_rus_att_per:d_rec_tds_per)
 
 #update player percents
 t_past_week_combined_player_percents_rat <- past_week_combined_player_percents_rat %>% 
@@ -172,7 +173,7 @@ rep_py_qb_fl <- 0.21
 
 updated_player_percents$py_fl_per_tou[is.na(updated_player_percents$py_fl_per_tou)] <- rep_py_fl_per_tou
 updated_player_percents$py_qb_fl[is.na(updated_player_percents$py_qb_fl)] <- rep_py_qb_fl
-updated_player_percents[, 4:21][is.na(updated_player_percents)[, 4:21]] <- 0
+updated_player_percents[, 4:22][is.na(updated_player_percents)[, 4:22]] <- 0
 
 updated_player_percents <- updated_player_percents %>% 
   mutate(upd_rus_att_per = adj_rus_att_per + d_rus_att_per,
@@ -181,7 +182,14 @@ updated_player_percents <- updated_player_percents %>%
          upd_tgt_per = adj_tgt_per + d_tgt_per,
          upd_rec_per = adj_rec_per + d_rec_per,
          upd_rec_yds_per = adj_rec_yds_per + d_rec_yds_per,
-         upd_rec_tds_per = adj_rec_tds_per + d_rec_tds_per) 
+         upd_rec_tds_per = adj_rec_tds_per + d_rec_tds_per) %>% 
+  mutate(upd_rus_att_per = ifelse(played == 0 & upd_rus_att_per < 0.05 & adj_rus_att_per >= 0.05, 0.05, upd_rus_att_per),
+         upd_rus_yds_per = ifelse(played == 0 & upd_rus_yds_per < 0.05 & adj_rus_yds_per >= 0.05, 0.05, upd_rus_yds_per),
+         upd_rus_tds_per = ifelse(played == 0 & upd_rus_tds_per < 0.05 & upd_rus_tds_per >= 0.05, 0.05, upd_rus_tds_per),
+         upd_tgt_per = ifelse(played == 0 & upd_tgt_per < 0.05 & adj_tgt_per >= 0.05, 0.05, upd_tgt_per),
+         upd_rec_per = ifelse(played == 0 & upd_rec_per < 0.03 & adj_rec_per >= 0.03, 0.03, upd_rec_per),
+         upd_rec_yds_per = ifelse(played == 0 & upd_rec_yds_per < 0.03 & adj_rec_yds_per >= 0.03, 0.03, upd_rec_yds_per),
+         upd_rec_tds_per = ifelse(played == 0 & upd_rec_tds_per < 0.03 & adj_rec_tds_per >= 0.03, 0.03, upd_rec_tds_per))
 
 #fix high variance percents
 #tested
@@ -290,7 +298,7 @@ QB_ratings_dif <- QB_ratings_dif %>%
          d_cmp = cmp*snap_mul - team_cmp_pred,
          d_pas_yds = pas_yds*snap_mul - team_pas_yds_pred,
          d_pas_tds = pas_tds*snap_mul - team_pas_tds_pred,
-         d_int = int*snap_mul - team_pas_tds_pred)
+         d_int = int*snap_mul - team_int_pred)
 
 #update QB ratings
 updated_QB_ratings <- full_join(past_week_QB_ratings, QB_ratings_dif, by = "player")
@@ -329,6 +337,9 @@ updated_QB_ratings[is.na(updated_QB_ratings)] <- 0
 #increment games played
 updated_QB_ratings <- updated_QB_ratings %>%
   mutate(games_played = games_played + 1)
+
+#fix negative ratings
+updated_QB_ratings[updated_QB_ratings < 0] <- 0
 
 #volatility
 #tested
@@ -521,5 +532,4 @@ write_csv(full_updated_player_percents, eval(paste("~/R Stuff/FantasyFootball 2.
 write_csv(updated_QB_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/QB_Ratings.csv", sep = "")))
 write_csv(full_updated_off_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Off_Team_Ratings.csv", sep = "")))
 write_csv(full_updated_def_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Def_Team_Ratings.csv", sep = "")))
-
 
