@@ -44,6 +44,7 @@ player_names_func <- function(df){
              pos = ifelse(player == "Lawrence Cager", "TE", pos),
              pos = ifelse(player == "Anthony Firkser", "TE", pos),
              pos = ifelse(player == "Andrew Beck", "TE", pos),
+             pos = ifelse(player == "Scott Matlock", "RB", pos),
              pos = ifelse(pos == "FB", "RB", pos))
   }
   if("position" %in% colnames(df)){
@@ -52,6 +53,7 @@ player_names_func <- function(df){
              position = ifelse(player == "Lawrence Cager", "TE", position),
              position = ifelse(player == "Anthony Firkser", "TE", position),
              position = ifelse(player == "Andrew Beck", "TE", position),
+             position = ifelse(player == "Scott Matlock", "RB", position),
              position = ifelse(position == "FB", "RB", position))
   }
   if("Pos" %in% colnames(df)){
@@ -60,6 +62,7 @@ player_names_func <- function(df){
              Pos = ifelse(player == "Lawrence Cager", "TE", Pos),
              Pos = ifelse(player == "Anthony Firkser", "TE", Pos),
              Pos = ifelse(player == "Andrew Beck", "TE", Pos),
+             Pos = ifelse(player == "Scott Matlock", "RB", Pos),
              Pos = ifelse(Pos == "FB", "RB", Pos))
   }
   if("Position" %in% colnames(df)){
@@ -68,6 +71,7 @@ player_names_func <- function(df){
              Position = ifelse(player == "Lawrence Cager", "TE", Position),
              Position = ifelse(player == "Anthony Firkser", "TE", Position),
              Position = ifelse(player == "Andrew Beck", "TE", Position),
+             Position = ifelse(player == "Scott Matlock", "RB", Position),
              Position = ifelse(Position == "FB", "RB", Position))
   }
   
@@ -100,6 +104,7 @@ player_names_func <- function(df){
   df[df == "DK Metcalf"] <- "D K Metcalf"
   df[df == "PJ Walker"] <- "P J Walker"
   df[df == "AJ McCarron"] <- "A J McCarron"
+  df[df == "AJ Dillon"] <- "A J Dillon"
   
   df[df == "Eli Mitchell"] <- "Elijah Mitchell"
   df[df == "Gabe Davis"] <- "Gabriel Davis"
