@@ -11,13 +11,14 @@
 # library("ggrepel")
 
 # #Week
-upcoming_week <- 1
+upcoming_week <- 4
 
 #Year
 This_Year <- This_Year_d
 
 #inactives list
-inactive_designations <- c("O", "SUSP", "PUP", "IR", "NFI")
+inactive_designations <- c("O", "SUSP", "PUP", "IR", "NFI", "D", "PI")
+#PI is projected inactive
 
 #import files
 player_percents <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Player_Percents.csv", sep = "")))
@@ -29,7 +30,7 @@ teams <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/teams.csv", sep = ""
 # active_players <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/activePlayers/", This_Year, "/Week_", upcoming_week, "_Active_Players.csv", sep = ""))) %>%
 #   mutate(active = 1)
 
-active_players <- player_names_func(active_players)
+# active_players <- player_names_func(active_players)
 
 #yahoo
 yahoo <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/Yahoo/", This_Year, "/Yahoo_Week_", upcoming_week, ".csv", sep = ""))) %>% 
@@ -46,7 +47,8 @@ yahoo <- yahoo %>%
   rename("Team" = "Short_Name") %>% 
   left_join(teams, by = c("Opponent" = "Yahoo")) %>% 
   select(ID:Position, Team, Short_Name, Game:player) %>% 
-  rename("Opponent" = "Short_Name")
+  rename("Opponent" = "Short_Name") %>% 
+  filter(Position != "DEF")
 
 #active_players
 # yahoo <- yahoo %>%
