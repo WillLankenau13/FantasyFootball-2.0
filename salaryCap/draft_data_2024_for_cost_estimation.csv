@@ -1,0 +1,554 @@
+player,team,pos,fpts,pos_rank,estimated_cost,cost
+Christian McCaffrey,San Francisco 49ers,RB,306.7174043,1,81.7494003,62
+CeeDee Lamb,Dallas Cowboys,WR,292.4112603,1,63.25189762,60
+Tyreek Hill,Miami Dolphins,WR,281.5135403,2,59.31279968,69
+Bijan Robinson,Atlanta Falcons,RB,247.9549094,3,77.3763012,60
+Kyren Williams,Los Angeles Rams,RB,238.4595963,7,73.1220027,31
+Amon Ra St Brown,Detroit Lions,WR,256.5880518,5,55.61901443,61
+Justin Jefferson,Minnesota Vikings,WR,253.0183304,4,52.15526468,54
+Josh Allen,Buffalo Bills,QB,347.4145395,1,55.91907251,48
+Saquon Barkley,Philadelphia Eagles,RB,230.384607,5,68.9865048,41
+Jonathan Taylor,Indianapolis Colts,RB,226.0835001,4,64.9698075,42
+Jalen Hurts,Philadelphia Eagles,QB,340.3827665,2,47.50835127,37
+Breece Hall,New York Jets,RB,221.0326147,2,61.0719108,58
+Travis Etienne,Jacksonville Jaguars,RB,216.6071847,10,57.2928147,22
+Rachaad White,Tampa Bay Buccaneers,RB,215.8102655,15,53.6325192,11
+Alvin Kamara,New Orleans Saints,RB,215.7049128,17,50.0910243,7
+Lamar Jackson,Baltimore Ravens,QB,332.4390969,3,40.36267662,38
+Jahmyr Gibbs,Detroit Lions,RB,211.6843705,8,46.66833,41
+Isiah Pacheco,Kansas City Chiefs,RB,211.4600971,9,43.3644363,41
+Derrick Henry,Baltimore Ravens,RB,208.9296002,6,40.1793432,44
+Puka Nacua,Los Angeles Rams,WR,229.1174405,7,48.90722465,29
+Ja Marr Chase,Cincinnati Bengals,WR,228.9580673,3,45.86146074,53
+De Von Achane,Miami Dolphins,RB,204.4491417,13,37.1130507,33
+A J Brown,Philadelphia Eagles,WR,224.8111052,6,43.00537591,52
+James Cook,Buffalo Bills,RB,202.2269048,12,34.1655588,23
+Josh Jacobs,Green Bay Packers,RB,200.6406362,11,31.3368675,32
+Joe Mixon,Houston Texans,RB,200.2561383,14,28.6269768,13
+Kenneth Walker,Seattle Seahawks,RB,197.6818228,16,26.0358867,11
+Patrick Mahomes,Kansas City Chiefs,QB,307.5987026,4,34.29177439,29
+Dak Prescott,Dallas Cowboys,QB,307.1486214,6,29.13398936,25
+Aaron Jones,Minnesota Vikings,RB,187.4623789,19,23.5635972,15
+Nico Collins,Houston Texans,WR,206.1861114,11,40.32715765,27
+Mike Evans,Tampa Bay Buccaneers,WR,206.0039283,10,37.81572907,30
+Keenan Allen,Chicago Bears,WR,203.9502578,38,35.46070312,6
+James Conner,Arizona Cardinals,RB,180.8244834,22,21.2101083,8
+Anthony Richardson,Indianapolis Colts,QB,297.1246449,5,24.75198064,25
+David Montgomery,Detroit Lions,RB,179.6511691,18,18.97542,11
+Tony Pollard,Tennessee Titans,RB,179.5036563,25,16.8595323,3
+Brandon Aiyuk,San Francisco 49ers,WR,199.0005194,14,33.25233961,25
+D J Moore,Chicago Bears,WR,198.7464637,21,31.18150495,23
+Davante Adams,Las Vegas Raiders,WR,197.5616606,17,29.23963433,20
+Raheem Mostert,Miami Dolphins,RB,177.1384285,23,14.8624452,5
+Rhamondre Stevenson,New England Patriots,RB,175.7431253,24,12.9841587,5
+Chris Olave,New Orleans Saints,WR,195.9377237,12,27.41869634,25
+Travis Kelce,Kansas City Chiefs,TE,184.6705597,1,50.2000462,24
+C J Stroud,Houston Texans,QB,291.148979,7,21.02906465,16
+D K Metcalf,Seattle Seahawks,WR,192.8686574,16,25.71115975,22
+Brock Purdy,San Francisco 49ers,QB,289.3964501,11,17.86610803,13
+Amari Cooper,Cleveland Browns,WR,192.1685736,22,24.10996231,18
+Kyler Murray,Arizona Cardinals,QB,288.2797113,9,15.17888795,24
+D Andre Swift,Chicago Bears,RB,170.0254396,26,11.2246728,4
+Michael Pittman,Indianapolis Colts,WR,189.5023538,31,22.60848162,19
+Jordan Love,Green Bay Packers,QB,285.6116685,10,12.89584945,17
+Zack Moss,Cincinnati Bengals,RB,168.3879684,30,9.5839875,4
+Stefon Diggs,Houston Texans,WR,188.2934167,26,21.20050769,15
+Brian Robinson,Washington Commanders,RB,167.4762684,28,8.0621028,4
+Sam LaPorta,Detroit Lions,TE,176.4519343,2,38.97872354,25
+DeVonta Smith,Philadelphia Eagles,WR,187.1558692,19,19.88021724,21
+Jaylen Waddle,Miami Dolphins,WR,185.6730154,20,18.64214968,26
+Javonte Williams,Denver Broncos,RB,165.152028,27,6.6590187,7
+Austin Ekeler,Washington Commanders,RB,164.8541084,37,5.3747352,1
+Trevor Lawrence,Jacksonville Jaguars,QB,281.6026569,14,10.95620006,14
+Najee Harris,Pittsburgh Steelers,RB,164.0252182,21,4.2092523,4
+Cooper Kupp,Los Angeles Rams,WR,184.4093873,18,17.48118446,36
+Justin Herbert,Los Angeles Chargers,QB,280.5925051,15,9.308291032,11
+Drake London,Atlanta Falcons,WR,183.1202667,15,16.39251993,30
+Mark Andrews,Baltimore Ravens,TE,169.7503022,3,30.2657269,16
+George Pickens,Pittsburgh Steelers,WR,180.52526,24,15.37165346,12
+Tank Dell,Houston Texans,WR,180.0571367,25,14.41436284,11
+Garrett Wilson,New York Jets,WR,179.6327309,8,13.51668879,46
+Joe Burrow,Cincinnati Bengals,QB,275.3668178,8,7.90824204,12
+Jaylen Warren,Pittsburgh Steelers,RB,155.8229021,32,3.16257,2
+Kirk Cousins,Atlanta Falcons,QB,271.9609177,19,6.718772753,12
+Jared Goff,Detroit Lions,QB,270.9782622,17,5.708210128,12
+Zay Flowers,Baltimore Ravens,WR,172.4015878,29,12.67491862,16
+Rashee Rice,Kansas City Chiefs,WR,172.0272008,30,11.88557083,15
+Ezekiel Elliott,Dallas Cowboys,RB,150.6338465,34,2.2346883,1
+Chris Godwin,Tampa Bay Buccaneers,WR,170.9854684,32,11.14538074,5
+George Kittle,San Francisco 49ers,TE,159.904978,4,23.50036486,10
+Calvin Ridley,Tennessee Titans,WR,170.2707858,28,10.451287,6
+Christian Kirk,Jacksonville Jaguars,WR,170.1449795,33,9.800418893,7
+Baker Mayfield,Tampa Bay Buccaneers,QB,265.8278609,20,4.849645026,3
+Tua Tagovailoa,Miami Dolphins,QB,264.866515,18,4.120215681,13
+Tee Higgins,Cincinnati Bengals,WR,167.7290499,23,9.190084481,17
+Devin Singletary,New York Giants,RB,147.2845138,29,1.4256072,2
+Evan Engram,Jacksonville Jaguars,TE,156.2446231,10,18.24727853,6
+Jerome Ford,Cleveland Browns,RB,146.5073031,36,1,2
+Nick Chubb,Cleveland Browns,RB,145.8480498,38,1,4
+Jacoby Brissett,New England Patriots,QB,260.7042727,33,3.500498937,
+Geno Smith,Seattle Seahawks,QB,259.7827054,23,2.973993052,4
+Matthew Stafford,Los Angeles Rams,QB,259.6285651,21,2.526678291,6
+Deshaun Watson,Cleveland Browns,QB,258.9793661,16,2.146643612,1
+Chuba Hubbard,Carolina Panthers,RB,141.6183367,41,1,1
+David Njoku,Cleveland Browns,TE,150.0260402,9,14.16842571,4
+Jayden Reed,Green Bay Packers,WR,160.7263067,34,8.617759473,9
+DeAndre Hopkins,Tennessee Titans,WR,160.7087134,41,8.081076784,4
+Tyjae Spears,Tennessee Titans,RB,139.8283565,35,1,1
+Terry McLaurin,Washington Commanders,WR,160.0492475,35,7.577816739,15
+Marvin Harrison,Arizona Cardinals,WR,159.7993151,13,7.105897897,34
+Trey McBride,Arizona Cardinals,TE,148.3041385,5,11.0013275,17
+Jayden Daniels,Washington Commanders,QB,254.1531579,12,1.823769498,23
+Diontae Johnson,Carolina Panthers,WR,156.045657,36,6.663368443,7
+Gus Edwards,Los Angeles Chargers,RB,135.1910094,31,1,1
+Malik Nabers,New York Giants,WR,155.5401825,27,6.248398113,20
+Russell Wilson,Pittsburgh Steelers,QB,252.0275694,30,1.549458495,1
+Jordan Addison,Minnesota Vikings,WR,153.8849476,42,5.859270624,3
+Mike Williams,New York Jets,WR,153.7595881,55,5.494376579,2
+Jake Ferguson,Dallas Cowboys,TE,141.0002315,8,8.542177459,9
+Dalton Kincaid,Buffalo Bills,TE,140.6848482,7,6.632726438,14
+Courtland Sutton,Denver Broncos,WR,150.4675345,40,5.152206806,5
+T J Hockenson,Minnesota Vikings,TE,138.8563525,18,5.150099048,1
+Zamir White,Las Vegas Raiders,RB,129.0539556,20,1,4
+Jakobi Meyers,Las Vegas Raiders,WR,148.9234748,57,4.831346122,1
+Adam Thielen,Carolina Panthers,WR,148.7874073,63,4.530467472,1
+Kyle Pitts,Atlanta Falcons,TE,137.4808282,6,3.998886499,11
+Tyler Lockett,Seattle Seahawks,WR,147.1578955,51,4.24832645,3
+Daniel Jones,New York Giants,QB,242.3876821,25,1.316406284,1
+Derek Carr,New Orleans Saints,QB,241.7643211,26,1.118407179,1
+Christian Watson,Green Bay Packers,WR,145.1037366,37,3.983756144,3
+Caleb Williams,Chicago Bears,QB,240.4077559,13,1,10
+Joshua Palmer,Los Angeles Chargers,WR,140.6265913,52,3.735662313,4
+Khalil Herbert,Chicago Bears,RB,118.0419727,47,1,
+Tyler Allgeier,Atlanta Falcons,RB,117.463584,45,1,
+Blake Corum,Los Angeles Rams,RB,115.5927564,43,1,1
+J K Dobbins,Los Angeles Chargers,RB,115.4671864,40,1,
+Brian Thomas,Jacksonville Jaguars,WR,134.9100823,46,3.503018863,4
+Jaxon Smith Njigba,Seattle Seahawks,WR,134.6300952,45,3.2848636,3
+Brandin Cooks,Dallas Cowboys,WR,134.2076695,54,3.080294253,1
+Dallas Goedert,Philadelphia Eagles,TE,123.1077071,12,3.105006929,2
+Chase Brown,Cincinnati Bengals,RB,112.754253,33,1,4
+Curtis Samuel,Buffalo Bills,WR,132.6618315,53,2.88846474,3
+Brock Bowers,Las Vegas Raiders,TE,121.2811404,11,2.410938153,3
+Jerry Jeudy,Cleveland Browns,WR,131.4966965,48,2.70858167,1
+Will Levis,Tennessee Titans,QB,228.0237355,24,1,3
+Xavier Worthy,Kansas City Chiefs,WR,131.0133573,39,2.539901064,2
+Antonio Gibson,New England Patriots,RB,110.1465866,48,1,
+Keon Coleman,Buffalo Bills,WR,130.0427779,58,2.381725271,2
+Dalton Schultz,Houston Texans,TE,119.0184609,13,1.872016041,2
+Trey Benson,Arizona Cardinals,RB,109.3394846,46,1,1
+Rashid Shaheed,New Orleans Saints,WR,128.6892719,59,2.233400091,3
+Ty Chandler,Minnesota Vikings,RB,107.9208862,42,1,
+Bo Nix,Denver Broncos,QB,224.0368039,28,1,13
+Ladd McConkey,Los Angeles Chargers,WR,127.1156424,47,2.094312064,3
+Gabriel Davis,Jacksonville Jaguars,WR,126.7323352,50,1.963885932,
+Romeo Doubs,Green Bay Packers,WR,125.7746869,60,1.841582265,3
+Gardner Minshew,Las Vegas Raiders,QB,221.4307145,31,1,1
+Zach Charbonnet,Seattle Seahawks,RB,104.1820292,50,1,1
+Alexander Mattison,Las Vegas Raiders,RB,103.1837095,54,1,
+Cole Kmet,Chicago Bears,TE,112.5000426,17,1.45356033,1
+Rome Odunze,Chicago Bears,WR,123.3496139,43,1.726895226,13
+Dallas Cowboys,NA,DST,118.8,1,6.258480601,2
+Younghoe Koo,ATL,K,146.9,1,3.240791898,2
+Sam Darnold,Minnesota Vikings,QB,217.8743169,27,1,2
+Jaleel McLaughlin,Denver Broncos,RB,100.4787538,49,1,1
+Baltimore Ravens,NA,DST,117.1,2,4.957677773,3
+Kendrick Bourne,New England Patriots,WR,118.6858571,80,1.619350477,
+Rico Dowdle,Dallas Cowboys,RB,97.9585079,44,1,1
+New York Jets,NA,DST,114.6,3,3.927242164,1
+Jameson Williams,Detroit Lions,WR,116.8969831,44,1.518503225,6
+Bryce Young,Carolina Panthers,QB,212.695373,29,1,3
+Justin Tucker,BAL,K,141.3,2,2.79495977,2
+Philadelphia Eagles,NA,DST,112.3,4,3.110978915,1
+Houston Texans,NA,DST,112.2,5,2.464373064,1
+Khalil Shakir,Buffalo Bills,WR,114.9218342,56,1.423936371,1
+Josh Downs,Indianapolis Colts,WR,114.9011107,70,1.335258798,1
+Kansas City Chiefs,NA,DST,111.5,6,1.952161929,2
+Pittsburgh Steelers,NA,DST,111.4,7,1.546412049,1
+San Francisco 49ers,NA,DST,110.5,8,1.22499583,3
+Bucky Irving,Tampa Bay Buccaneers,RB,93.18601306,51,1,1
+Harrison Butker,KC,K,138.8,3,2.41046027,2
+Wan Dale Robinson,New York Giants,WR,113.389729,72,1.25210374,
+Brandon Aubrey,DAL,K,138.6,4,2.078855939,2
+Cleveland Browns,NA,DST,109.8,9,1,2
+Ray Davis,Buffalo Bills,RB,92.51455418,55,1,
+Buffalo Bills,NA,DST,109.2,10,1,1
+Indianapolis Colts,NA,DST,109.2,11,1,
+Hunter Henry,New England Patriots,TE,101.4963851,16,1.128642911,
+Michael Wilson,Arizona Cardinals,WR,111.954853,67,1.174127277,
+Miami Dolphins,NA,DST,108.4,12,1,1
+Cincinnati Bengals,NA,DST,107.7,13,1,1
+Darius Slayton,New York Giants,WR,110.7650521,73,1.101006905,
+Jake Elliott,PHI,K,135.6,5,1.792870045,1
+MarShawn Lloyd,Green Bay Packers,RB,89.02076876,53,1,
+Los Angeles Chargers,NA,DST,105.3,14,1,
+Pat Freiermuth,Pittsburgh Steelers,TE,97.7342115,15,1,3
+Jacksonville Jaguars,NA,DST,105.2,15,1,
+Jason Myers,SEA,K,133.5,6,1.546226912,1
+Green Bay Packers,NA,DST,104.8,16,1,
+Dontayvion Wicks,Green Bay Packers,WR,108.1184341,65,1.032440203,1
+Washington Commanders,NA,DST,104.6,17,1,
+Atlanta Falcons,NA,DST,104.6,18,1,
+New York Giants,NA,DST,104,19,1,
+New Orleans Saints,NA,DST,103.9,20,1,
+Taysom Hill,New Orleans Saints,TE,96.39610754,14,1,3
+Ka imi Fairbairn,HOU,K,131.9,7,1.333514199,1
+Seattle Seahawks,NA,DST,103.1,21,1,
+Tampa Bay Buccaneers,NA,DST,103,22,1,1
+Cameron Dicker,LAC,K,131.5,8,1.150064138,
+Las Vegas Raiders,NA,DST,102.6,23,1,
+DJ Chark,Los Angeles Chargers,WR,105.2289749,69,1,
+Denver Broncos,NA,DST,101.5,24,1,
+Blake Grupe,NO,K,130.2,9,1,
+Chicago Bears,NA,DST,101,25,1,1
+Darnell Mooney,Atlanta Falcons,WR,104.3315698,62,1,1
+Greg Zuerlein,NYJ,K,129.6,10,1,
+Detroit Lions,NA,DST,100.4,26,1,1
+Ja Lynn Polk,New England Patriots,WR,103.7477952,64,1,
+D Onta Foreman,Cleveland Browns,RB,83.342966,66,1,
+Evan McPherson,CIN,K,128.7,11,1,2
+Noah Brown,Washington Commanders,WR,103.26449,93,1,
+Tyler Bass,BUF,K,128.5,12,1,
+Cairo Santos,CHI,K,128,13,1,
+Jake Moody,SF,K,127.9,14,1,1
+Minnesota Vikings,NA,DST,99,27,1,
+Juwan Johnson,New Orleans Saints,TE,91.4448491,22,1,
+Matt Gay,IND,K,127.6,15,1,
+Luke Musgrave,Green Bay Packers,TE,90.96380695,21,1,1
+Cade Otton,Tampa Bay Buccaneers,TE,90.80979704,20,1,1
+Tyler Conklin,New York Jets,TE,90.4289537,19,1,1
+Brayden Narveson,GB,K,126.5,16,1,
+Jason Sanders,MIA,K,126.4,17,1,1
+Los Angeles Rams,NA,DST,97.5,28,1,
+Tennessee Titans,NA,DST,96.6,29,1,
+Chigoziem Okonkwo,Tennessee Titans,TE,88.75400625,24,1,1
+Samaje Perine,Kansas City Chiefs,RB,77.441061,68,1,
+Adonai Mitchell,Indianapolis Colts,WR,97.5221134,66,1,1
+Chase McLaughlin,TB,K,122.8,18,1,
+Audric Estime,Denver Broncos,RB,76.93079774,67,1,
+Jonnu Smith,Miami Dolphins,TE,86.2897655,26,1,
+Keaton Mitchell,Baltimore Ravens,RB,76.62295289,72,1,
+Arizona Cardinals,NA,DST,93.5,30,1,
+Tyler Boyd,Tennessee Titans,WR,96.8591611,81,1,
+Matt Prater,ARI,K,121.8,19,1,
+Dustin Hopkins,CLE,K,121.6,20,1,
+Cam Little,JAC,K,121.5,21,1,
+Jake Bates,DET,K,120.9,22,1,
+New England Patriots,NA,DST,92.1,31,1,
+Joshua Karty,LAR,K,120.5,23,1,
+Josh Reynolds,Denver Broncos,WR,95.00970393,75,1,
+Roschon Johnson,Chicago Bears,RB,74.43480612,63,1,
+Miles Sanders,Carolina Panthers,RB,74.23632399,60,1,
+Jamaal Williams,New Orleans Saints,RB,74.0644779,56,1,
+Tyrone Tracy,New York Giants,RB,73.45393719,57,1,
+Jaylen Wright,Miami Dolphins,RB,73.18989874,62,1,
+Carolina Panthers,NA,DST,89.5,32,1,
+Taysom Hill,New Orleans Saints,TE,80.82510754,14,1,
+Isaiah Likely,Baltimore Ravens,TE,80.29483312,23,1,
+Xavier Legette,Carolina Panthers,WR,91.0802463,74,1,
+Zach Ertz,Washington Commanders,TE,80.0967592,30,1,
+Demarcus Robinson,Los Angeles Rams,WR,89.91600552,68,1,
+Chris Boswell,PIT,K,114.8,24,1,
+Nick Folk,TEN,K,114.4,25,1,
+Aaron Rodgers,New York Jets,QB,184.0808939,22,1,5
+Wil Lutz,DEN,K,113.2,26,1,
+Daniel Carlson,LV,K,113,27,1,
+Will Reichard,MIN,K,108.3,28,1,
+Eddy Pineiro,CAR,K,107.5,29,1,
+Cade York,WAS,K,106.8,30,1,
+Graham Gano,NYG,K,104.5,31,1,
+Joey Slye,NE,K,96.6,32,1,
+Elijah Moore,Cleveland Browns,WR,88.60293014,94,1,
+Ricky Pearsall,San Francisco 49ers,WR,88.45387785,92,1,
+Rashod Bateman,Baltimore Ravens,WR,86.29879298,71,1,
+Jahan Dotson,Philadelphia Eagles,WR,86.14856615,85,1,
+Odell Beckham,Miami Dolphins,WR,83.92391065,99,1,
+Quentin Johnston,Los Angeles Chargers,WR,81.7371569,78,1,
+Jalen McMillan,Tampa Bay Buccaneers,WR,78.99195973,77,1,1
+Zay Jones,Arizona Cardinals,WR,78.74112776,110,1,
+Marvin Mims,Denver Broncos,WR,77.67868493,76,1,
+Noah Fant,Seattle Seahawks,TE,76.35105692,25,1,1
+Roman Wilson,Pittsburgh Steelers,WR,76.29118137,83,1,1
+Tyler Higbee,Los Angeles Rams,TE,74.99409934,37,1,
+Jermaine Burton,Cincinnati Bengals,WR,74.55003425,87,1,
+Jonathan Mingo,Carolina Panthers,WR,73.38463779,97,1,
+Jalin Hyatt,New York Giants,WR,72.04321445,79,1,
+Gerald Everett,Chicago Bears,TE,71.97179819,36,1,
+Kalif Raymond,Detroit Lions,WR,71.89868565,102,1,
+Tre Tucker,Las Vegas Raiders,WR,71.50798456,88,1,
+Hayden Hurst,Los Angeles Chargers,TE,70.94002183,27,1,
+K J Osborn,New England Patriots,WR,69.98018444,115,1,
+Ben Sinnott,Washington Commanders,TE,69.07115664,29,1,
+Trey Palmer,Tampa Bay Buccaneers,WR,67.8969479,101,1,
+Alec Pierce,Indianapolis Colts,WR,67.66511755,104,1,
+Kenneth Gainwell,Philadelphia Eagles,RB,66.36824225,65,1,
+Justice Hill,Baltimore Ravens,RB,66.36611761,69,1,
+Greg Dortch,Arizona Cardinals,WR,66.2691248,90,1,
+Jalen Tolbert,Dallas Cowboys,WR,66.20453716,84,1,
+Troy Franklin,Denver Broncos,WR,65.40193166,91,1,
+Dameon Pierce,Houston Texans,RB,65.06447532,64,1,
+Isaac Guerendo,San Francisco 49ers,RB,64.63064558,78,1,
+A T Perry,New Orleans Saints,WR,64.36143711,106,1,
+Clyde Edwards Helaire,Kansas City Chiefs,RB,64.14184114,61,1,
+Kylen Granson,Indianapolis Colts,TE,63.09687374,35,1,
+Kendre Miller,New Orleans Saints,RB,62.82670555,70,1,
+Mike Gesicki,Cincinnati Bengals,TE,62.08614388,28,1,1
+Tucker Kraft,Green Bay Packers,TE,61.98394905,32,1,
+Bo Melton,Green Bay Packers,WR,61.82918911,192,1,
+Tutu Atwell,Los Angeles Rams,WR,61.67509514,126,1,
+Luke McCaffrey,Washington Commanders,WR,61.06907744,96,1,
+Nelson Agholor,Baltimore Ravens,WR,60.98253789,114,1,
+Cedrick Wilson,New Orleans Saints,WR,60.44290857,103,1,
+Michael Mayer,Las Vegas Raiders,TE,60.21888671,39,1,
+Dawson Knox,Buffalo Bills,TE,60.08056779,31,1,
+Jase McClellan,Atlanta Falcons,RB,60.03487411,90,1,
+Will Shipley,Philadelphia Eagles,RB,60.02320158,80,1,
+Kimani Vidal,Los Angeles Chargers,RB,59.93266946,73,1,
+Jordan Mason,San Francisco 49ers,RB,59.87336005,52,1,1
+Ray Ray McCloud,Atlanta Falcons,WR,58.79472751,89,1,
+Andrei Iosivas,Cincinnati Bengals,WR,58.3501456,86,1,
+Tanner Hudson,Cincinnati Bengals,TE,58.20511747,52,1,
+Treylon Burks,Tennessee Titans,WR,57.00088606,105,1,
+Cam Akers,Houston Texans,RB,55.06356983,81,1,
+Jauan Jennings,San Francisco 49ers,WR,53.6932169,113,1,
+Sione Vaki,Detroit Lions,RB,52.43034225,117,1,
+Greg Dulcich,Denver Broncos,TE,52.15862002,33,1,
+KaVontae Turpin,Dallas Cowboys,WR,51.95516406,107,1,
+Theo Johnson,New York Giants,TE,51.48990243,34,1,
+Colby Parkinson,Los Angeles Rams,TE,51.48959231,40,1,
+Justin Watson,Kansas City Chiefs,WR,50.67178212,130,1,
+Tommy Tremble,Carolina Panthers,TE,50.14915904,41,1,
+Emari Demercado,Arizona Cardinals,RB,50.10120118,84,1,
+Dyami Brown,Washington Commanders,WR,49.7393735,98,1,
+Kevin Harris,New England Patriots,RB,49.38937775,94,1,
+Cedric Tillman,Cleveland Browns,WR,49.37601744,112,1,
+Devontez Walker,Baltimore Ravens,WR,48.94458334,116,1,
+Daniel Bellinger,New York Giants,TE,48.93690325,42,1,
+Rasheen Ali,Baltimore Ravens,RB,48.58316848,91,1,
+Calvin Austin,Pittsburgh Steelers,WR,48.2403162,111,1,
+Noah Gray,Kansas City Chiefs,TE,47.91711642,43,1,
+Nick Westbrook Ikhine,Tennessee Titans,WR,47.66318409,149,1,
+Durham Smythe,Miami Dolphins,TE,46.99446984,48,1,
+Ja Tavion Sanders,Carolina Panthers,TE,46.82463189,38,1,
+Dylan Laube,Las Vegas Raiders,RB,46.56997265,88,1,
+Robert Woods,Houston Texans,WR,46.33990916,174,1,
+Allen Lazard,New York Jets,WR,46.26503285,120,1,
+Parker Washington,Jacksonville Jaguars,WR,46.18134883,125,1,
+Van Jefferson,Pittsburgh Steelers,WR,46.1643519,109,1,
+Trenton Irwin,Cincinnati Bengals,WR,45.92609718,123,1,
+Tank Bigsby,Jacksonville Jaguars,RB,45.19071438,59,1,
+Ty Johnson,Buffalo Bills,RB,44.36774974,79,1,
+Chris Rodriguez,Washington Commanders,RB,44.13192936,74,1,
+Javon Baker,New England Patriots,WR,43.78808075,119,1,
+KhaDarel Hodge,Atlanta Falcons,WR,41.67896168,117,1,
+Braelon Allen,New York Jets,RB,41.525,58,1,
+Mack Hollins,Buffalo Bills,WR,41.31246296,128,1,
+Malachi Corley,New York Jets,WR,40.445,95,1,
+Xavier Gipson,New York Jets,WR,40.43099595,121,1,
+Emanuel Wilson,Green Bay Packers,RB,39.72421966,71,1,
+Brandon Powell,Minnesota Vikings,WR,39.62685002,142,1,
+Brevin Jordan,Houston Texans,TE,39.60521738,46,1,
+Will Dissly,Los Angeles Chargers,TE,39.21363155,44,1,
+Olamide Zaccheaus,Washington Commanders,WR,38.49389571,118,1,
+Marquez Valdes Scantling,Buffalo Bills,WR,38.38836432,139,1,
+Keilan Robinson,Jacksonville Jaguars,RB,38.14686926,129,1,
+Adam Trautman,Denver Broncos,TE,38.04506508,50,1,
+Michael Carter,Arizona Cardinals,RB,37.73835132,92,1,
+Tyquan Thornton,New England Patriots,WR,37.69710553,127,1,
+Isaiah Hodgins,New York Giants,WR,37.45668269,132,1,
+Josh Oliver,Minnesota Vikings,TE,37.39517662,47,1,
+Mo Alie Cox,Indianapolis Colts,TE,37.11301002,45,1,
+Jalen Nailor,Minnesota Vikings,WR,37.05609346,108,1,
+Tyler Goodson,Indianapolis Colts,RB,36.72483147,89,1,
+Cordarrelle Patterson,Pittsburgh Steelers,RB,36.65054288,82,1,
+Chase Edmonds,Tampa Bay Buccaneers,RB,36.52216626,,1,
+Jake Bobo,Seattle Seahawks,WR,36.35286792,131,1,
+Elijah Higgins,Arizona Cardinals,TE,36.0843971,56,1,
+Chris Moore,Arizona Cardinals,WR,36.00509804,176,1,
+Quez Watkins,Pittsburgh Steelers,WR,35.57000812,156,1,
+Austin Hooper,New England Patriots,TE,35.12363898,53,1,
+Pierre Strong,Cleveland Browns,RB,34.97059068,83,1,
+John Metchie,Houston Texans,WR,34.94076741,122,1,
+Trey Sermon,Indianapolis Colts,RB,34.76546797,76,1,
+David Bell,Cleveland Browns,WR,34.73144009,133,1,
+Jeff Wilson,Miami Dolphins,RB,34.56313784,108,1,
+Braxton Berrios,Miami Dolphins,WR,34.55310431,147,1,
+Jawhar Jordan,Houston Texans,RB,33.87602701,96,1,
+Skyy Moore,Kansas City Chiefs,WR,33.38102516,170,1,
+Will Mallory,Indianapolis Colts,TE,33.27924693,68,1,
+Deuce Vaughn,Dallas Cowboys,RB,32.85083613,86,1,
+Tyler Johnson,Los Angeles Rams,WR,32.51856233,209,1,
+AJ Barner,Seattle Seahawks,TE,31.39139101,69,1,
+Foster Moreau,New Orleans Saints,TE,31.23723993,63,1,
+Johnny Mundt,Minnesota Vikings,TE,30.8717982,57,1,
+Eric Gray,New York Giants,RB,30.31494003,77,1,
+Parris Campbell,Philadelphia Eagles,WR,30.04102688,141,1,
+Brock Wright,Detroit Lions,TE,30.02539154,51,1,
+Evan Hull,Indianapolis Colts,RB,29.9554135,85,1,
+Tip Reiman,Arizona Cardinals,TE,29.86106816,81,1,
+Lucas Krull,Denver Broncos,TE,29.5825475,82,1,
+Jacob Cowing,San Francisco 49ers,WR,29.56536729,146,1,
+Donovan Peoples Jones,Detroit Lions,WR,29.52672919,135,1,
+D J Montgomery,Indianapolis Colts,WR,29.50840336,129,1,
+Erick All,Cincinnati Bengals,TE,28.9530421,79,1,
+Ameer Abdullah,Las Vegas Raiders,RB,28.77112848,98,1,
+Pharaoh Brown,Seattle Seahawks,TE,28.41751109,67,1,
+Bub Means,New Orleans Saints,WR,28.12970898,140,1,
+Jeremy Ruckert,New York Jets,TE,27.79065901,54,1,
+Connor Heyward,Pittsburgh Steelers,TE,27.69615441,71,1,
+Ronnie Rivers,Los Angeles Rams,RB,27.29521001,99,1,
+Ainias Smith,Philadelphia Eagles,WR,27.26368224,143,1,
+Josh Whyle,Tennessee Titans,TE,26.45597203,61,1,
+Drew Sample,Cincinnati Bengals,TE,26.20904718,86,1,
+David Moore,Carolina Panthers,WR,26.03278055,171,1,
+Jamari Thrash,Cleveland Browns,WR,25.94182186,144,1,
+D Ernest Johnson,Jacksonville Jaguars,RB,25.92645638,102,1,
+Tyler Scott,Chicago Bears,WR,25.61172555,163,1,
+Jared Wiley,Kansas City Chiefs,TE,25.50006743,72,1,
+Malik Washington,Miami Dolphins,WR,25.49258464,136,1,
+Casey Washington,Atlanta Falcons,WR,24.76270297,168,1,
+Kyle Juszczyk,San Francisco 49ers,RB,24.76236391,93,1,
+Laviska Shenault,Seattle Seahawks,WR,24.73888192,190,1,
+Jalen Guyton,Las Vegas Raiders,WR,24.61626735,185,1,
+Ryan Flournoy,Dallas Cowboys,WR,24.42616848,145,1,
+Stone Smartt,Los Angeles Chargers,TE,24.25929095,70,1,
+Jamison Crowder,Washington Commanders,WR,24.17303273,165,1,
+Robert Tonyan,Minnesota Vikings,TE,24.15289165,58,1,
+Jalen Reagor,New England Patriots,WR,23.75897815,173,1,
+Rakim Jarrett,Tampa Bay Buccaneers,WR,23.7249959,134,1,
+Cade Stover,Houston Texans,TE,23.72201009,78,1,
+Jordan Akins,Cleveland Browns,TE,23.39910326,64,1,
+Mecole Hardman,Kansas City Chiefs,WR,23.07917272,181,1,
+Jalen Brooks,Dallas Cowboys,WR,23.06438668,169,1,
+Craig Reynolds,Detroit Lions,RB,23.00199022,103,1,
+Johnny Wilson,Philadelphia Eagles,WR,22.99217973,148,1,
+Davis Allen,Los Angeles Rams,TE,22.9608704,62,1,
+Jaheim Bell,New England Patriots,TE,22.87208986,49,1,
+River Cracraft,Miami Dolphins,WR,22.55938154,194,1,
+Anthony Gould,Indianapolis Colts,WR,22.55933225,183,1,
+Luke Schoonmaker,Dallas Cowboys,TE,22.37561345,60,1,
+Derius Davis,Los Angeles Chargers,WR,22.01590857,166,1,
+Isaiah McKenzie,New York Giants,WR,21.91490532,160,1,
+Equanimeous St Brown,New Orleans Saints,WR,21.47215401,167,1,
+Patrick Taylor,San Francisco 49ers,RB,21.42532074,125,1,
+Tanner McLachlan,Cincinnati Bengals,TE,20.58524634,66,1,
+Deonte Harty,Baltimore Ravens,WR,20.57776613,184,1,
+Jordan Whittington,Los Angeles Rams,WR,20.32343537,159,1,
+Darnell Washington,Pittsburgh Steelers,TE,20.18517247,59,1,
+Tejhaun Palmer,Arizona Cardinals,WR,20.17515379,158,1,
+Malik Heath,Green Bay Packers,WR,20.1058355,196,1,
+Luke Farrell,Jacksonville Jaguars,TE,20.09064609,89,1,
+Israel Abanikanda,New York Jets,RB,19.95931788,116,1,
+Devaughn Vele,Denver Broncos,WR,19.49968599,151,1,
+John Bates,Washington Commanders,TE,19.33549558,96,1,
+Harrison Bryant,Las Vegas Raiders,TE,19.02299165,93,1,
+Trayveon Williams,Cincinnati Bengals,RB,18.96316044,100,1,
+MyCole Pruitt,Pittsburgh Steelers,TE,18.23929266,87,1,
+Justyn Ross,Kansas City Chiefs,WR,18.09207538,164,1,
+Ian Thomas,Carolina Panthers,TE,17.68402286,74,1,
+Jason Brownlee,New York Jets,WR,17.65597701,189,1,
+Isaiah Davis,New York Jets,RB,17.65,87,1,
+Devin Culp,Tampa Bay Buccaneers,TE,17.48225491,65,1,
+Xavier Hutchinson,Houston Texans,WR,17.02750317,182,1,
+Charlie Jones,Cincinnati Bengals,WR,16.74411033,186,1,
+Brenton Strange,Jacksonville Jaguars,TE,16.20996253,77,1,
+Tyrion Davis Price,Philadelphia Eagles,RB,16.00867199,137,1,
+Ronnie Bell,San Francisco 49ers,WR,15.8589923,188,1,
+Chris Conley,San Francisco 49ers,WR,15.83052621,191,1,
+Payne Durham,Tampa Bay Buccaneers,TE,15.45003877,85,1,
+Brenden Rice,Los Angeles Chargers,WR,15.25566025,175,1,
+Nick Muse,Minnesota Vikings,TE,14.87160991,109,1,
+Peyton Hendershot,Kansas City Chiefs,TE,14.63252473,92,1,
+Charlie Kolar,Baltimore Ravens,TE,14.38274601,99,1,
+Keaontay Ingram,Kansas City Chiefs,RB,14.31776343,133,1,
+Raheem Blackshear,Carolina Panthers,RB,14.20393726,119,1,
+Hunter Luepke,Dallas Cowboys,RB,14.10639007,107,1,
+Kayshon Boutte,New England Patriots,WR,13.59952347,179,1,
+Dare Ogunbowale,Houston Texans,RB,13.538667,110,1,
+Tim Jones,Jacksonville Jaguars,WR,13.39780647,195,1,
+Devin Duvernay,Jacksonville Jaguars,WR,12.85456018,172,1,
+Byron Pringle,Washington Commanders,WR,12.730347,217,1,
+Grant Calcaterra,Philadelphia Eagles,TE,12.55922629,88,1,
+Alec Ingold,Miami Dolphins,RB,11.97516861,121,1,
+Quintin Morris,Buffalo Bills,TE,11.94841885,91,1,
+Sean Tucker,Tampa Bay Buccaneers,RB,11.89984451,109,1,
+Zach Pascal,Arizona Cardinals,WR,11.26201219,177,1,
+Marcedes Lewis,Chicago Bears,TE,11.02122167,97,1,
+Jha Quan Jackson,Tennessee Titans,WR,10.81377534,208,1,
+Julian Hill,Miami Dolphins,TE,10.49533689,103,1,
+Albert Okwuegbunam,Philadelphia Eagles,TE,10.33439331,83,1,
+Ben Sims,Green Bay Packers,TE,10.25604444,98,1,
+Ross Dwelley,Atlanta Falcons,TE,9.89367819,90,1,
+Nate Adkins,Denver Broncos,TE,9.841373581,102,1,
+Josiah Deguara,Jacksonville Jaguars,TE,9.593896537,108,1,
+Britain Covey,Philadelphia Eagles,WR,8.527200285,200,1,
+Charlie Woerner,Atlanta Falcons,TE,8.449352508,105,1,
+Jordan Mims,New Orleans Saints,RB,8.276336971,112,1,
+Velus Jones,Chicago Bears,WR,8.258932772,206,1,
+Kenny Yeboah,New York Jets,TE,8.153747128,111,1,
+Eric Saubert,San Francisco 49ers,TE,8.056488072,104,1,
+Ko Kieft,Tampa Bay Buccaneers,TE,7.631985705,100,1,
+Patrick Ricard,Baltimore Ravens,RB,7.52625182,130,1,
+DeeJay Dallas,Arizona Cardinals,RB,7.522680204,126,1,
+Simi Fehoko,Los Angeles Chargers,WR,7.33128077,211,1,
+Teagan Quitoriano,Houston Texans,TE,7.319055297,112,1,
+Mitchell Wilcox,New England Patriots,TE,6.82828321,116,1,
+DeAndre Carter,Chicago Bears,WR,5.493676358,215,1,
+Chris Manhertz,New York Giants,TE,5.475310969,110,1,
+C J Ham,Minnesota Vikings,RB,5.454082684,135,1,
+Adam Prentice,New Orleans Saints,RB,5.275954559,131,1,
+Michael Burton,Denver Broncos,RB,5.012172819,132,1,
+Tylan Wallace,Baltimore Ravens,WR,4.61911233,205,1,
+Trishton Jackson,Minnesota Vikings,WR,4.479527124,213,1,
+Gunner Olszewski,New York Giants,WR,4.438301457,203,1,
+Reggie Gilliam,Buffalo Bills,RB,4.376103329,128,1,
+Travis Homer,Chicago Bears,RB,3.922251609,124,1,
+Irvin Charles,New York Jets,WR,2.975,207,1,
+Bobby Okereke,NYG,IDP,1,1,,2
+Maxx Crosby,LV,IDP,2,2,,1
+Antoine Winfield,TB,IDP,3,3,,1
+Foyesade Oluokun,JAC,IDP,4,4,,5
+Micah Parsons,DAL,IDP,5,5,,1
+Jessie Bates III,ATL,IDP,6,6,,
+Zaire Franklin,IND,IDP,7,7,,2
+T.J. Watt,PIT,IDP,8,8,,
+Camryn Bynum,MIN,IDP,9,9,,
+Ernest Jones IV,TEN,IDP,10,10,,
+Josh Hines-Allen,JAC,IDP,11,11,,
+Brian Branch,DET,IDP,12,12,,
+Fred Warner,SF,IDP,13,13,,1
+Myles Garrett,CLE,IDP,14,14,,
+Josh Metellus,MIN,IDP,15,15,,
+Lavonte David,TB,IDP,16,16,,
+Danielle Hunter,HOU,IDP,17,17,,
+Jaquan Brisker,CHI,IDP,18,18,,
+Roquan Smith,BAL,IDP,19,19,,3
+Khalil Mack,LAC,IDP,20,20,,
+Kyle Hamilton,BAL,IDP,21,21,,
+T.J. Edwards,CHI,IDP,22,22,,1
+Aidan Hutchinson,DET,IDP,23,23,,
+Derwin James,LAC,IDP,24,24,,
+Bobby Wagner,WAS,IDP,25,25,,
+Brian Burns,NYG,IDP,26,26,,
+Reed Blankenship,PHI,IDP,27,27,,
+E.J. Speed,IND,IDP,28,28,,
+Nick Bosa,SF,IDP,29,29,,
+Devon Witherspoon,SEA,IDP,30,30,,
+Jonathon Brooks,,RB,31,,,4
+Deebo Samuel,,WR,32,,,30
+Marcus Jones,,IDP,33,,,1
+Jeffrey Simmons,,IDP,34,,,1
+Hollywood Brown,,WR,35,,,5
+Khalil Dorsey,,IDP,36,,,1
+Brandin Echols,,IDP,37,,,1
+Chauncey Golsten,,IDP,38,,,1
+Jalen Reeves Maybin,,IDP,39,,,1
+Alex Singleton,,IDP,40,,,2
+Mack Wilson,,IDP,41,,,1
+DJ Moore,,IDP,42,,,1
+Nick Bolton,,IDP,43,,,1
+Kamu Grubier Hill,,IDP,44,,,1
+Zeke Turner,,IDP,45,,,1
+Keisean Nixon,,IDP,46,,,1
+Malcolm Rodriguez,,IDP,47,,,1
+Jaylinn Hawkins,,IDP,,,,1

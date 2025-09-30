@@ -1,10 +1,28 @@
 
+year <- 2025
+
+Past_Year_d <- year-1
+This_Year_d <- year
+
+a <- 1
+
+while(a < 19){
+  upcoming_week <- a
+  source("make_predictions.R")
+
+  past_week <- a
+  upcoming_week <- a+1
+  source("update_ratings.R")
+
+  a <- a+1
+}
+
 
 df_list <- list()
-year <- 2023
 
 
-c <- 3
+
+c <- 2
 
 while(c < 19){
   
@@ -79,17 +97,24 @@ while(c < 19){
 
 combined <- do.call(rbind, df_list)
 
-data <- combined %>% 
-  filter(fpts > 0) %>%
-  filter(fpros_pred > 7) %>% 
-  mutate(my_resid = (fpts - fpts_pred),
-         fpros_resid = (fpts - fpros_pred),
-         my_r_sq = my_resid^2,
-         fpros_r_sq = fpros_resid^2) %>%
+data <- combined %>%
   filter(!is.na(fpts)) %>%
   filter(!is.na(fpts_pred)) %>%
   filter(!is.na(fpros_pred)) %>% 
+  filter(fpts > 0) %>% 
+  mutate(my_resid = (fpts - fpts_pred),
+         fpros_resid = (fpts - fpros_pred),
+         my_r_sq = my_resid^2,
+         fpros_r_sq = fpros_resid^2,
+         abs_my_resid = abs(my_resid),
+         abs_fpros_resid = abs(fpros_resid)) %>% 
   mutate(pos = pos.x) 
+
+median(data$abs_my_resid)
+median(data$abs_fpros_resid)
+
+mean(data$abs_my_resid)
+mean(data$abs_fpros_resid)
 
 mean_d <- mean(data$fpts)
 
@@ -111,6 +136,9 @@ sum(data$my_r_sq)/nrow(data)
 #2023: 51.11 vs 48.37
 #2024: 53.27 vs 49.48
 
+#healthy scratch players fix
+#35.90
+
 qb <- data %>%
   filter(pos == "QB") 
 
@@ -119,6 +147,8 @@ sum(qb$my_r_sq)/nrow(qb)
 #2022: 49.18 vs 46.09
 #2023: 52.54 vs 49.28
 #2024: 61.73 vs 58.13
+
+#61.45
 
 rb <- data %>%
   filter(pos == "RB")
@@ -129,6 +159,8 @@ sum(rb$my_r_sq)/nrow(rb)
 #2023: 50.67 vs 48.66
 #2024: 50.47 vs 47.78
 
+#35.01
+
 wr <- data %>%
   filter(pos == "WR")
 
@@ -137,6 +169,8 @@ sum(wr$my_r_sq)/nrow(wr)
 #2022: 46.64 vs 43.95
 #2023: 53.07 vs 50.29
 #2024: 53.61 vs 48.64
+
+#36.91
 
 te <- data %>%
   filter(pos == "TE")
@@ -147,8 +181,10 @@ sum(te$my_r_sq)/nrow(te)
 #2023: 41.57 vs 38.10
 #2024: 39.79 vs 37.13
 
+#20.38
+
 ind2 <- combined %>% 
-  filter(player == "Taysom Hill") %>% 
+  filter(player == "George Kittle") %>% 
   select(player, team.x, opponent, week, rec_yds, rec_yds_pred, adj_rec_yds_per)
 
 t <- data %>% 
@@ -163,5 +199,35 @@ d <- qb %>%
            select(player, pos, team.x, week, fpts, fpts_pred, fpros_pred, my_resid, fpros_resid, rus_yds, rus_yds_pred, rus_yds_resid)
   
 
+r <- data %>% 
+  select(player, pos, team.x, week, fpts, fpts_pred, fpros_pred) %>% 
+  filter(fpros_pred > 0 | fpts_pred > 0)
 
+mean_fpts <- mean(r$fpts)
 
+a <- 0.3
+
+r <- r %>% 
+  mutate(com_fpts = a*fpts_pred + (1-a)*fpros_pred,
+         ssr = (fpts - fpts_pred)^2,
+         sst = (fpts - mean_fpts)^2,
+         ssc = (fpts - com_fpts)^2,
+         ssrfp = (fpts - fpros_pred)^2)
+
+sum(r$ssr)
+sum(r$sst)
+
+1 - sum(r$ssr)/sum(r$sst)
+1 - sum(r$ssrfp)/sum(r$sst)
+1 - sum(r$ssc)/sum(r$sst)
+
+summary(lm(fpts ~ fpts_pred, r))$r.squared
+
+mod <- lm(fpts ~ fpts_pred, r)
+summary(mod)
+
+mod2 <- lm(fpts ~ fpros_pred, r)
+summary(mod2)
+
+mod3 <- lm(fpts ~ 0 + fpts_pred + fpros_pred, r)
+summary(mod3)
