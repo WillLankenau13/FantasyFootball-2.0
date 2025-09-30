@@ -16,6 +16,22 @@ qb_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/"
 d_off_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", Past_Year, "/Week_19/Off_Team_Ratings.csv", sep = "")))
 d_def_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", Past_Year, "/Week_19/Def_Team_Ratings.csv", sep = "")))
 
+
+#depth chart
+if(This_Year >= 2025){
+  d_depth_chart <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/depthCharts/", This_Year, "/Week_1_Depth_Chart.csv", sep = "")))
+  
+  depth_chart <- d_depth_chart %>%
+    select(2)
+  colnames(depth_chart) <- c("player")
+  
+  depth_chart <- depth_chart %>%
+    filter(!is.na(player)) %>%
+    filter(!(player %in% starting_QBs$team))
+  
+  depth_chart <- player_names_func(depth_chart)
+}
+
 #Yahoo Week 1
 Yahoo_Week_1 <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/Yahoo/", This_Year, "/Yahoo_Week_1.csv", sep = ""))) %>% 
   select(ID:Starting) %>% 
@@ -98,72 +114,135 @@ player_percents <- full_join(player_percents, Yahoo_Week_1, by = c("player")) %>
   select(player, pos, team, games_played:py_fl_per_tou) %>% 
   filter(!is.na(pos))
 
-#get only top players
-#6 WR
-#4 RB
-#3 TE
-#we will consider only players with high percents already
-#players with percents outside the top will be adjusted the same rate as the top players
-
 #NA team players
 na_team_player_percents <- player_percents %>% 
   filter(is.na(team))
 
-#value for comparison
-player_percents <- player_percents %>% 
-  mutate(per_value = ifelse(pos == "WR", rec_yds_per, ifelse(pos == "RB", rus_yds_per, ifelse(pos == "TE", rec_yds_per, 0))))
-
-#get only top players
-top_player_percents <- player_percents %>%
-  filter(!is.na(team)) %>% 
-  group_by(team, pos) %>%
-  mutate(rank = row_number(desc(per_value))) %>%
-  filter(
-    (pos == "WR" & rank <= 6) |
-      (pos == "RB" & rank <= 4) |
-      (pos == "TE" & rank <= 3) |
-      !(pos %in% c("WR", "RB", "TE"))   # keep all other positions
-  ) %>%
-  ungroup() %>%
-  select(-rank) %>% # drop helper column if not needed
-  filter(player %in% starting_QBs$player | pos != "QB") #starting qbs only 
-
-
-#by team
-top_player_percents_by_team <- top_player_percents %>% 
-  group_by(team) %>% 
-  summarise(across(rus_att_per:rec_tds_per, sum,
-                   .names = "tot_{.col}"),
-            .groups = 'drop') 
-
-#adjust values
-top_player_percents <- top_player_percents %>% 
-  left_join(top_player_percents_by_team, by = "team")
-
-adj <- function(df, cols){
-  #rcombine
-  for(col in cols){
-    df[, paste("adj_", col, "_per", sep = "")] <- df[, paste(col, "_per", sep = "")] / df[, paste("tot_", col, "_per", sep = "")]
+if(This_Year >= 2025){
+  dc_player_percents <- player_percents %>% 
+    filter(!is.na(team)) %>% 
+    filter(player %in% starting_QBs$player | pos != "QB") %>% 
+    filter(player %in% depth_chart$player)
+  
+  
+  #by team
+  dc_player_percents_by_team <- dc_player_percents %>% 
+    group_by(team) %>% 
+    summarise(across(rus_att_per:rec_tds_per, sum,
+                     .names = "tot_{.col}"),
+              .groups = 'drop') 
+  
+  #adjust values
+  dc_player_percents <- dc_player_percents %>% 
+    left_join(dc_player_percents_by_team, by = "team")
+  
+  adj <- function(df, cols){
+    #rcombine
+    for(col in cols){
+      df[, paste("adj_", col, "_per", sep = "")] <- df[, paste(col, "_per", sep = "")] / df[, paste("tot_", col, "_per", sep = "")]
+    }
+    
+    return(df)
   }
   
-  return(df)
+  cols <- c("rus_att", "rus_yds", "rus_tds",
+            "tgt", "rec", "rec_yds", "rec_tds")
+  
+  adj_dc_player_percents <- adj(dc_player_percents, cols)
+  
+  #non-top player percents
+  non_dc_player_percents <- player_percents %>% 
+    filter(!is.na(team)) %>% 
+    filter(!(player %in% adj_dc_player_percents$player)) %>% 
+    left_join(dc_player_percents_by_team, by = "team")
+  
+  adj_non_dc_player_percents <- adj(non_dc_player_percents, cols)
+  
+  adj_non_dc_player_percents <- adj_non_dc_player_percents %>% 
+    mutate(adj_rus_att_per = pmin(adj_rus_att_per, 0.05),
+           adj_rus_yds_per = pmin(adj_rus_yds_per, 0.05),
+           adj_rus_tds_per = pmin(adj_rus_tds_per, 0.05),
+           adj_tgt_per = pmin(adj_tgt_per, 0.03),
+           adj_rec_per = pmin(adj_rec_per, 0.03),
+           adj_rec_yds_per = pmin(adj_rec_yds_per, 0.03),
+           adj_rec_tds_per = pmin(adj_rec_tds_per, 0.03))
+  
+  #rbind
+  adj_player_percents <- rbind(adj_dc_player_percents, adj_non_dc_player_percents)
+} else {
+  #get only top players
+  #6 WR
+  #4 RB
+  #3 TE
+  #we will consider only players with high percents already
+  #players with percents outside the top will be adjusted the same rate as the top players
+  #value for comparison
+  player_percents <- player_percents %>%
+    mutate(per_value = ifelse(pos == "WR", rec_yds_per, ifelse(pos == "RB", rus_yds_per, ifelse(pos == "TE", rec_yds_per, 0))))
+
+  #get only top players
+  top_player_percents <- player_percents %>%
+    filter(!is.na(team)) %>%
+    group_by(team, pos) %>%
+    mutate(rank = row_number(desc(per_value))) %>%
+    filter(
+      (pos == "WR" & rank <= 6) |
+        (pos == "RB" & rank <= 4) |
+        (pos == "TE" & rank <= 3) |
+        !(pos %in% c("WR", "RB", "TE"))   # keep all other positions
+    ) %>%
+    ungroup() %>%
+    select(-rank) %>% # drop helper column if not needed
+    filter(player %in% starting_QBs$player | pos != "QB") #starting qbs only
+  
+  #by team
+  top_player_percents_by_team <- top_player_percents %>% 
+    group_by(team) %>% 
+    summarise(across(rus_att_per:rec_tds_per, sum,
+                     .names = "tot_{.col}"),
+              .groups = 'drop') 
+  
+  #adjust values
+  top_player_percents <- top_player_percents %>% 
+    left_join(top_player_percents_by_team, by = "team")
+  
+  adj <- function(df, cols){
+    #rcombine
+    for(col in cols){
+      df[, paste("adj_", col, "_per", sep = "")] <- df[, paste(col, "_per", sep = "")] / df[, paste("tot_", col, "_per", sep = "")]
+    }
+    
+    return(df)
+  }
+  
+  cols <- c("rus_att", "rus_yds", "rus_tds",
+            "tgt", "rec", "rec_yds", "rec_tds")
+  
+  adj_top_player_percents <- adj(top_player_percents, cols)
+  
+  #non-top player percents
+  non_top_player_percents <- player_percents %>% 
+    filter(!is.na(team)) %>% 
+    filter(!(player %in% adj_top_player_percents$player)) %>% 
+    left_join(top_player_percents_by_team, by = "team")
+  
+  adj_non_top_player_percents <- adj(non_top_player_percents, cols)
+  
+  adj_non_top_player_percents <- adj_non_top_player_percents %>% 
+    mutate(adj_rus_att_per = pmin(adj_rus_att_per, 0.05),
+           adj_rus_yds_per = pmin(adj_rus_yds_per, 0.05),
+           adj_rus_tds_per = pmin(adj_rus_tds_per, 0.05),
+           adj_tgt_per = pmin(adj_tgt_per, 0.03),
+           adj_rec_per = pmin(adj_rec_per, 0.03),
+           adj_rec_yds_per = pmin(adj_rec_yds_per, 0.03),
+           adj_rec_tds_per = pmin(adj_rec_tds_per, 0.03))
+  
+  #rbind
+  adj_player_percents <- rbind(adj_top_player_percents, adj_non_top_player_percents)
 }
 
-cols <- c("rus_att", "rus_yds", "rus_tds",
-          "tgt", "rec", "rec_yds", "rec_tds")
 
-adj_top_player_percents <- adj(top_player_percents, cols)
-
-#non-top player percents
-non_top_player_percents <- player_percents %>% 
-  filter(!is.na(team)) %>% 
-  filter(!(player %in% adj_top_player_percents$player)) %>% 
-  left_join(top_player_percents_by_team, by = "team")
-
-adj_non_top_player_percents <- adj(non_top_player_percents, cols)
-
-#rbind and select
-adj_player_percents <- rbind(adj_top_player_percents, adj_non_top_player_percents)
+#select
 adj_player_percents <- adj_player_percents %>% 
   select(player:fmb, adj_rus_att_per:adj_rec_tds_per, py_qb_fl, py_fl_per_tou)
 
