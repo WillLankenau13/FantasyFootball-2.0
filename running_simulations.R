@@ -50,3 +50,16 @@ Past_Year_d <- year-1
 This_Year_d <- year
 
 source("preSeason_adjustments.R")
+
+c <- 1
+
+while(c < 4){
+  upcoming_week <- c
+  source("make_predictions.R")
+  
+  past_week <- c
+  upcoming_week <- c+1
+  source("update_ratings.R")
+  
+  c <- c+1
+}
