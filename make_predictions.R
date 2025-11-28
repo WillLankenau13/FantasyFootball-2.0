@@ -11,7 +11,7 @@
 # library("ggrepel")
 
 # #Week
-upcoming_week <- 4
+upcoming_week <- 13
 
 #Year
 This_Year <- This_Year_d
@@ -301,7 +301,8 @@ fumbles <- player_percents %>%
 
 player_predictions <- player_predictions %>%
   left_join(fumbles, by = c("player", "pos", "team")) %>%
-  mutate(fl_pred = ifelse(pos == "QB", adj_qb_fl, adj_fl_per_tou*(rec_pred + rus_att_pred))) %>%
+  mutate(fl_pred = ifelse(pos == "QB", 0.21, 0.007*(rec_pred + rus_att_pred))) %>% 
+  #mutate(fl_pred = ifelse(pos == "QB", adj_qb_fl, adj_fl_per_tou*(rec_pred + rus_att_pred))) %>%
 select(player:rus_tds_pred, py_fl_per_tou, py_qb_fl, fl_pred)
 
 ####FPTS Predictions####

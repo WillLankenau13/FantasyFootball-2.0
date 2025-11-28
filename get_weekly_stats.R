@@ -134,8 +134,12 @@ weekly_stats <- player_names_func(weekly_stats)
 weekly_stats <- weekly_stats %>% 
   full_join(snaps, by = c("player", "pos", "team", "opp", "week")) %>% 
   filter(pos %in% c("QB", "RB", "WR", "TE")) %>% 
-  select(player, pos, week, team, opp, pas_att, cmp, pas_yds, pas_tds, int, sc_att, sc_yds, sc_tds, rus_att, rus_yds, rus_tds, tgt, rec, rec_yds, rec_tds, st_snaps, snap_per, fmb, fmb_l)
+  select(player, pos, week, team, opp, pas_att, cmp, pas_yds, pas_tds, int, sc_att, sc_yds, sc_tds, rus_att, rus_yds, rus_tds, tgt, rec, rec_yds, rec_tds, snap_per, st_snaps, fmb, fmb_l)
 
 #NAs to 0
 weekly_stats[is.na(weekly_stats)] <- 0
+
+#touches
+weekly_stats <- weekly_stats %>% 
+  mutate(touches = rus_att + rec)
 

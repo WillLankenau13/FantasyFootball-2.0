@@ -11,8 +11,8 @@
 # library("ggrepel")
 
 # #Week
-past_week <- 3
-upcoming_week <- 4
+past_week <- 12
+upcoming_week <- 13
 
 #Year
 This_Year <- This_Year_d
@@ -32,9 +32,9 @@ past_week_QB_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weekl
 past_week_adjusted_combined_player_percents_rat <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyAdjusted/", This_Year, "/Week_", past_week, "/Player_Percents_Adjusted.csv", sep = "")))
 
 #player stats
-d_past_week_player_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/", This_Year, "/byWeek/Week_", past_week, "_Stats.csv", sep = ""))) %>% 
+d_past_week_player_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStatsOLD/", This_Year, "/byWeek/Week_", past_week, "_Stats.csv", sep = ""))) %>% 
   clean_names()
-d_past_week_st_snaps <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/", This_Year, "/byWeek/Week_", past_week, "_ST_Snaps.csv", sep = ""))) %>% 
+d_past_week_st_snaps <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStatsOLD/", This_Year, "/byWeek/Week_", past_week, "_ST_Snaps.csv", sep = ""))) %>% 
   clean_names()
 
 past_week_player_stats <- d_past_week_player_stats %>% 
