@@ -9,13 +9,15 @@ library("dplyr")
 library("modelr")
 library("leaps")
 library("ggrepel")
+library("nflfastR")
+library("nflreadr")
 
 
 
 ###Years
 #Set Years
 # Past_Year_d <- 2021
-# This_Year_d <- 2022
+This_Year_d <- 2025
 # 
 # Years_Dataframe <- data.frame(Past_Year = Past_Year_d,
 #                               This_Year = This_Year_d)
@@ -45,6 +47,7 @@ player_names_func <- function(df){
              pos = ifelse(player == "Anthony Firkser", "TE", pos),
              pos = ifelse(player == "Andrew Beck", "TE", pos),
              pos = ifelse(player == "Scott Matlock", "RB", pos),
+             pos = ifelse(pos == "HB", "RB", pos),
              pos = ifelse(pos == "FB", "RB", pos))
   }
   if("position" %in% colnames(df)){
@@ -115,9 +118,11 @@ player_names_func <- function(df){
   df[df == "Scotty Miller"] <- "Scott Miller"
   df[df == "Andrew Ogletree"] <- "Drew Ogletree"
   df[df == "Dee Eskridge"] <- "D Wayne Eskridge"
+  df[df == "Mitch Tinsley"] <- "Mitchell Tinsley"
   
   df[df == "Robbie Chosen"] <- "Robbie Anderson"
   df[df == "Hollywood Brown"] <- "Marquise Brown"
+  df[df == "Bam Knight"] <- "Zonovan Knight"
   
   df[df == "DeMario Douglas"] <- "Demario Douglas"
   df[df == "JaMycal Hasty"] <- "Jamycal Hasty"
