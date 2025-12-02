@@ -1,19 +1,18 @@
 
 
-#Week
-past_week <- 1
-  
+# #Week
+past_week <- 16
+
 #Year
 This_Year <- This_Year_d
 
 #raw data
-roster <- fast_scraper_roster(2025) %>% 
+roster <- fast_scraper_roster(This_Year) %>% 
     select(!c(week, team))
-snaps <- load_snap_counts(2025) %>% 
+snaps <- load_snap_counts(This_Year) %>% 
   filter(week == past_week)
-pbp_data <- load_pbp(2025) %>% 
+pbp_data <- load_pbp(This_Year) %>% 
   filter(week == past_week)
-
 
 #initial tidying
 snaps <- snaps %>% 
@@ -22,11 +21,14 @@ snaps <- snaps %>%
          "snap_per" = "offense_pct")
 snaps <- player_names_func(snaps)
 pbp_data[pbp_data == "Mi.Wilson"] <- "M.Wilson"
+pbp_data <- pbp_data %>% 
+  mutate(pass_att = incomplete_pass + complete_pass + interception)
 
 #filter out plays
 pbp_data <- pbp_data %>% 
   filter(play_type != "no_play") %>%
-  filter(sack == 0) %>% 
+  filter(play_type != "qb_kneel") %>% 
+  filter(play_type != "qb_spike") %>% 
   filter(play_type_nfl != "UNSPECIFIED") %>%
   filter(is.na(two_point_conv_result))
 
@@ -35,7 +37,9 @@ pbp_data <- pbp_data %>%
 weekly_passing_stats <- pbp_data %>% 
   filter(qb_scramble == 0) %>% 
   group_by(posteam, defteam, week, passer_player_name, passer_player_id) %>% 
-  summarize(pas_att = sum(pass),
+  summarize(dbs = sum(qb_dropback),
+            sks = sum(sack),
+            pas_att = sum(pass_att),
             cmp = sum(complete_pass),
             pas_yds = sum(receiving_yards, na.rm = TRUE) + sum(lateral_receiving_yards, na.rm = TRUE),
             pas_tds = sum(pass_touchdown),
@@ -43,6 +47,22 @@ weekly_passing_stats <- pbp_data %>%
   filter(!is.na(passer_player_name)) %>% 
   rename("player" = "passer_player_name") %>% 
   rename("player_id" = "passer_player_id")
+
+weekly_rushing_stats <- pbp_data %>% 
+  filter(qb_scramble == 0) %>% 
+  group_by(posteam, defteam, week, rusher_player_name, rusher_player_id) %>% 
+  summarize(rus_att = sum(rush),
+            rus_yds = sum(rushing_yards, na.rm = TRUE)) %>% 
+  filter(!is.na(rusher_player_name)) %>%
+  rename("player" = "rusher_player_name") %>% 
+  rename("player_id" = "rusher_player_id")
+
+weekly_lateral_rushing_stats <- pbp_data %>% 
+  group_by(posteam, defteam, week, lateral_rusher_player_name, lateral_rusher_player_id) %>% 
+  summarize(lat_rus_yds = sum(lateral_rushing_yards, na.rm = TRUE)) %>% 
+  filter(!is.na(lateral_rusher_player_name)) %>%
+  rename("player" = "lateral_rusher_player_name") %>% 
+  rename("player_id" = "lateral_rusher_player_id")
 
 weekly_receiving_stats <- pbp_data %>% 
   filter(qb_scramble == 0) %>% 
@@ -61,22 +81,6 @@ weekly_lateral_receiving_stats <- pbp_data %>%
   filter(!is.na(lateral_receiver_player_name)) %>% 
   rename("player" = "lateral_receiver_player_name") %>% 
   rename("player_id" = "lateral_receiver_player_id")
-
-weekly_rushing_stats <- pbp_data %>% 
-  filter(qb_scramble == 0) %>% 
-  group_by(posteam, defteam, week, rusher_player_name, rusher_player_id) %>% 
-  summarize(rus_att = sum(rush),
-            rus_yds = sum(rushing_yards, na.rm = TRUE)) %>% 
-  filter(!is.na(rusher_player_name)) %>%
-  rename("player" = "rusher_player_name") %>% 
-  rename("player_id" = "rusher_player_id")
-
-weekly_lateral_rushing_stats <- pbp_data %>% 
-  group_by(posteam, defteam, week, lateral_rusher_player_name, lateral_rusher_player_id) %>% 
-  summarize(lat_rus_yds = sum(lateral_rushing_yards, na.rm = TRUE)) %>% 
-  filter(!is.na(lateral_rusher_player_name)) %>%
-  rename("player" = "lateral_rusher_player_name") %>% 
-  rename("player_id" = "lateral_rusher_player_id")
 
 weekly_td_stats <- pbp_data %>% 
   group_by(posteam, defteam, week, td_player_name, td_player_id) %>% 
@@ -99,8 +103,8 @@ weekly_scramble_stats <- pbp_data %>%
 weekly_fumble_stats <- pbp_data %>% 
   filter(pass == 1| rush == 1) %>% 
   group_by(posteam, defteam, week, fumbled_1_player_name, fumbled_1_player_id) %>% 
-  summarize(fmb = n(),
-            fmb_l = sum(fumbled_1_team != fumble_recovery_1_team, na.rm = TRUE)) %>% 
+  summarize(fmb_g = n(),
+            fmb_l_g = sum(fumbled_1_team != fumble_recovery_1_team, na.rm = TRUE)) %>% 
   filter(!is.na(fumbled_1_player_name)) %>%
   rename("player" = "fumbled_1_player_name") %>% 
   rename("player_id" = "fumbled_1_player_id")
@@ -125,7 +129,8 @@ weekly_stats <- weekly_stats %>%
          "pos" = "position",
          "team" = "posteam",
          "opp" = "defteam") %>% 
-  select(player, pos, week, team, opp, pas_att, cmp, pas_yds, pas_tds, int, sc_att, sc_yds, sc_tds, rus_att, rus_yds, rus_tds, tgt, rec, rec_yds, rec_tds, fmb, fmb_l)
+  mutate(touches_g = rus_att + rec) %>% 
+  select(player, pos, week, team, opp, dbs, pas_att, cmp, pas_yds, pas_tds, int, sks, sc_att, sc_yds, sc_tds, rus_att, rus_yds, rus_tds, tgt, rec, rec_yds, rec_tds, fmb_g, fmb_l_g, touches_g)
 
 #player names func
 weekly_stats <- player_names_func(weekly_stats)
@@ -134,12 +139,25 @@ weekly_stats <- player_names_func(weekly_stats)
 weekly_stats <- weekly_stats %>% 
   full_join(snaps, by = c("player", "pos", "team", "opp", "week")) %>% 
   filter(pos %in% c("QB", "RB", "WR", "TE")) %>% 
-  select(player, pos, week, team, opp, pas_att, cmp, pas_yds, pas_tds, int, sc_att, sc_yds, sc_tds, rus_att, rus_yds, rus_tds, tgt, rec, rec_yds, rec_tds, snap_per, st_snaps, fmb, fmb_l)
+  select(player, pos, week, team, opp, dbs, pas_att, cmp, pas_yds, pas_tds, int, sks, sc_att, sc_yds, sc_tds, rus_att, rus_yds, rus_tds, tgt, rec, rec_yds, rec_tds, fmb_g, fmb_l_g, touches_g, snap_per, st_snaps)
 
 #NAs to 0
 weekly_stats[is.na(weekly_stats)] <- 0
 
-#touches
+####Hamlin Game####
+if(This_Year == 2022 & past_week == 17){
+  weekly_stats <- weekly_stats %>% 
+    filter(team != "BUF") %>% 
+    filter(team != "CIN")
+}
+
+
+#remove sks and dbs
 weekly_stats <- weekly_stats %>% 
-  mutate(touches = rus_att + rec)
+  select(!c(dbs, sks))
+
+#write csv
+write_csv(weekly_stats, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/", This_Year, "/byWeek/Week_", past_week, "_Stats.csv", sep = "")))
+
+
 
