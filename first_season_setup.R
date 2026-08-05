@@ -1,4 +1,6 @@
 
+
+
 #year
 Past_Year <- 2021
 First_Year <- 2022
@@ -13,7 +15,7 @@ py_player_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/fullSeason
 off_rat_function <- function(df, cols){
   #rcombine
   for(col in cols){
-    df[, paste(col, "_rat", sep = "")] <- df[, paste(col, sep = "")] / df[, "games"]
+    df[, paste("off_", col, "_rat", sep = "")] <- df[, paste(col, sep = "")] / df[, "games"]
   }
   
   return(df)
@@ -21,7 +23,7 @@ off_rat_function <- function(df, cols){
 
 col_list <- c("pas_att", "cmp", "pas_yds", "pas_tds", "int", "rus_att", "rus_yds", "rus_tds")
 off_team_ratings <- off_rat_function(py_team_offense, col_list) %>% 
-  select(team, pas_att_rat:rus_tds_rat)
+  select(team, off_pas_att_rat:off_rus_tds_rat)
 
 
 ####Defensive Team Ratings####
@@ -77,7 +79,7 @@ player_percents <- py_player_stats %>%
 pp_function <- function(df, cols){
   #rcombine
   for(col in cols){
-    df[, paste("adj_", col, "_per", sep = "")] <- (df[, paste(col, sep = "")]/df[, "games"])/ (df[, paste(col, "_team", sep = "")]/df[, "games_team"])
+    df[, paste(col, "_per", sep = "")] <- (df[, paste(col, sep = "")]/df[, "games"])/ (df[, paste(col, "_team", sep = "")]/df[, "games_team"])
   }
   
   return(df)
@@ -86,19 +88,16 @@ pp_function <- function(df, cols){
 col_list <- c("rus_att", "rus_yds", "rus_tds", "tgt", "rec", "rec_yds", "rec_tds")
 player_percents <- pp_function(player_percents, col_list) %>% 
   mutate(py_games_played = NA,
-         games_played = games,
-         fmb = fmb_l) %>% 
-  select(player, pos, team, py_games_played, games_played, touches, fmb, adj_rus_att_per:adj_rec_tds_per) %>% 
-  mutate(py_qb_fl = 0,
-         py_fl_per_tou = 0)
+         games_played = games) %>% 
+  select(player, pos, team, py_games_played, games_played, rus_att_per:rec_tds_per)
 
 #adjustments
 player_percents <- player_percents %>% 
-  mutate(adj_rus_yds_per = 0.95*adj_rus_yds_per + 0.05*adj_rus_att_per,
-          adj_rus_tds_per = 0.75*adj_rus_tds_per + 0.1*adj_rus_yds_per + 0.15*adj_rus_att_per,
-          adj_rec_per = 0.85*adj_rec_per + 0.15*adj_tgt_per,
-          adj_rec_yds_per = 0.9*adj_rec_yds_per + adj_rec_per*0 + adj_tgt_per*0.1,
-          adj_rec_tds_per = 0.7*adj_rec_tds_per + 0.1*adj_rec_yds_per + 0*adj_rec_per + 0.2*adj_tgt_per)
+  mutate(rus_yds_per = 0.95*rus_yds_per + 0.05*rus_att_per,
+          rus_tds_per = 0.75*rus_tds_per + 0.1*rus_yds_per + 0.15*rus_att_per,
+          rec_per = 0.85*rec_per + 0.15*tgt_per,
+          rec_yds_per = 0.9*rec_yds_per + rec_per*0 + tgt_per*0.1,
+          rec_tds_per = 0.7*rec_tds_per + 0.1*rec_yds_per + 0*rec_per + 0.2*tgt_per)
 
 
 

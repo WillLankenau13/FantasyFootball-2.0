@@ -11,12 +11,14 @@ library("leaps")
 library("ggrepel")
 library("nflfastR")
 library("nflreadr")
+library("lpSolve")
+library("jsonlite")
 
 
 
 ###Years
 #Set Years
-# Past_Year_d <- 2021
+Past_Year_d <- 2024
 This_Year_d <- 2025
 # 
 # Years_Dataframe <- data.frame(Past_Year = Past_Year_d,
@@ -29,6 +31,7 @@ This_Year_d <- 2025
 player_names_func <- function(df){
   
   if("player" %in% colnames(df)){
+  df$player <- str_replace_all(df$player, "\\.", "")
   df$player <- str_replace_all(df$player, "[^[:alnum:]]", " ")
   df$player <- str_replace_all(df$player, "\\s+", " ")
   df$player <- str_replace_all(df$player, " IV", " ")
@@ -46,36 +49,25 @@ player_names_func <- function(df){
              pos = ifelse(player == "Lawrence Cager", "TE", pos),
              pos = ifelse(player == "Anthony Firkser", "TE", pos),
              pos = ifelse(player == "Andrew Beck", "TE", pos),
+             pos = ifelse(player == "Juwan Johnson", "TE", pos),
+             pos = ifelse(player == "Jody Fortson", "TE", pos),
+             pos = ifelse(player == "Tanner Conner", "TE", pos),
+             pos = ifelse(player == "Feleipe Franks", "TE", pos),
+             pos = ifelse(player == "Chris Myarick", "TE", pos),
+             pos = ifelse(player == "Giovanni Ricci", "TE", pos),
+             pos = ifelse(player == "Colson Yankoff", "TE", pos),
+             pos = ifelse(player == "Darren Waller", "TE", pos),
              pos = ifelse(player == "Scott Matlock", "RB", pos),
+             pos = ifelse(player == "Keith Smith", "RB", pos),
+             pos = ifelse(player == "Ty Montgomery", "WR", pos),
+             pos = ifelse(player == "Jacob Harris", "WR", pos),
+             pos = ifelse(player == "Velus Jones", "WR", pos),
+             pos = ifelse(player == "Tyreik McAllister", "WR", pos),
+             pos = ifelse(player == "Justin Shorter", "WR", pos),
+             pos = ifelse(player == "Jack Westover", "WR", pos),
+             pos = ifelse(player == "Jeff Driskel", "QB", pos),
              pos = ifelse(pos == "HB", "RB", pos),
              pos = ifelse(pos == "FB", "RB", pos))
-  }
-  if("position" %in% colnames(df)){
-    df <- df %>% 
-      mutate(position = ifelse(player == "Taysom Hill", "TE", position),
-             position = ifelse(player == "Lawrence Cager", "TE", position),
-             position = ifelse(player == "Anthony Firkser", "TE", position),
-             position = ifelse(player == "Andrew Beck", "TE", position),
-             position = ifelse(player == "Scott Matlock", "RB", position),
-             position = ifelse(position == "FB", "RB", position))
-  }
-  if("Pos" %in% colnames(df)){
-    df <- df %>% 
-      mutate(Pos = ifelse(player == "Taysom Hill", "TE", Pos),
-             Pos = ifelse(player == "Lawrence Cager", "TE", Pos),
-             Pos = ifelse(player == "Anthony Firkser", "TE", Pos),
-             Pos = ifelse(player == "Andrew Beck", "TE", Pos),
-             Pos = ifelse(player == "Scott Matlock", "RB", Pos),
-             Pos = ifelse(Pos == "FB", "RB", Pos))
-  }
-  if("Position" %in% colnames(df)){
-    df <- df %>% 
-      mutate(Position = ifelse(player == "Taysom Hill", "TE", Position),
-             Position = ifelse(player == "Lawrence Cager", "TE", Position),
-             Position = ifelse(player == "Anthony Firkser", "TE", Position),
-             Position = ifelse(player == "Andrew Beck", "TE", Position),
-             Position = ifelse(player == "Scott Matlock", "RB", Position),
-             Position = ifelse(Position == "FB", "RB", Position))
   }
   
   if("team" %in% colnames(df)){
@@ -108,6 +100,12 @@ player_names_func <- function(df){
   df[df == "PJ Walker"] <- "P J Walker"
   df[df == "AJ McCarron"] <- "A J McCarron"
   df[df == "AJ Dillon"] <- "A J Dillon"
+  df[df == "AJ Henning"] <- "A J Henning"
+  df[df == "CJ Marable"] <- "C J Marable"
+  df[df == "JJ Howland"] <- "J J Howland"
+  df[df == "TJ Sheffield"] <- "T J Sheffield"
+  df[df == "KJ Hamler"] <- "K J Hamler"
+  df[df == "CJ Stroud"] <- "C J Stroud"
   
   df[df == "Eli Mitchell"] <- "Elijah Mitchell"
   df[df == "Gabe Davis"] <- "Gabriel Davis"
@@ -119,7 +117,14 @@ player_names_func <- function(df){
   df[df == "Andrew Ogletree"] <- "Drew Ogletree"
   df[df == "Dee Eskridge"] <- "D Wayne Eskridge"
   df[df == "Mitch Tinsley"] <- "Mitchell Tinsley"
+  df[df == "Phillip Walker"] <- "P J Walker"
+  df[df == "Robby Anderson"] <- "Robbie Anderson"
+  df[df == "Jeffery Wilson"] <- "Jeff Wilson"
+  df[df == "Mike Woods"] <- "Michael Woods"
+  df[df == "Rod Williams"] <- "Rodney Williams"
+  df[df == "Nate Carter"] <- "Nathan Carter"
   
+  df[df == "Deonte Harris"] <- "Deonte Harty"
   df[df == "Robbie Chosen"] <- "Robbie Anderson"
   df[df == "Hollywood Brown"] <- "Marquise Brown"
   df[df == "Bam Knight"] <- "Zonovan Knight"
@@ -127,9 +132,17 @@ player_names_func <- function(df){
   df[df == "DeMario Douglas"] <- "Demario Douglas"
   df[df == "JaMycal Hasty"] <- "Jamycal Hasty"
   df[df == "Grant DuBose"] <- "Grant Dubose"
+  df[df == "JaQuan Hardy"] <- "Jaquan Hardy"
+  df[df == "ZaQuandre White"] <- "Zaquandre White"
+  
+  df[df == "Audric Estimé"] <- "Audric Estime"
+  
+  df[df == "David Sills V"] <- "David Sills"
+  
 
   df[df == "Washington Football Team"] <- "Washington Commanders"
   
   return(df)
 }
+
 

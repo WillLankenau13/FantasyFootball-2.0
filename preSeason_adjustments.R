@@ -1,5 +1,6 @@
 
 
+
 #Years
 # Years_Dataframe <- read_csv("~/R Stuff/FantasyFootball 2.0/Years_Dataframe.csv")
 Past_Year <- This_Year_d-1
@@ -61,45 +62,20 @@ draftees <- draft %>%
          rec_yds_per = rec_rep,
          rec_tds_per = rec_rep) %>% 
   mutate(py_games_played = 0,
-         games_played = 0,
-         touches = 0,
-         fmb = 0) %>% 
-  mutate(py_qb_fl = 0.21,
-         py_fl_per_tou = 0.007) %>% 
+         games_played = 0) %>% 
   select(!rus_rep:rec_rep) %>% 
   select(!pick)
 
 #Past Year Player Percents
 player_percents_past_year <- d_player_percents_past_year 
 
-#Fumbles
-avg_qb_fl <- player_percents_past_year %>% 
-  filter(pos == "QB") %>% 
-  summarize(
-    avg_fl = sum(fmb, na.rm = TRUE) / sum(games_played, na.rm = TRUE)
-  ) %>% 
-  pull(avg_fl)
-
-avg_fl_per_tou <- player_percents_past_year %>% 
-  filter(pos != "QB") %>% 
-  summarize(
-    avg_fl = sum(fmb, na.rm = TRUE) / sum(touches, na.rm = TRUE)
-  ) %>% 
-    pull(avg_fl)
-
-player_percents_past_year <- player_percents_past_year %>% 
-  mutate(py_qb_fl = ifelse(pos == "QB", (fmb/games_played)*(games_played/22) + avg_qb_fl*(22-games_played)/22, 0),
-         py_fl_per_tou = ifelse(pos != "QB", (fmb/600) + avg_fl_per_tou*(600-touches)/600, 0))
-
 #New Season
 player_percents_past_year <- player_percents_past_year %>% 
   mutate(py_games_played = games_played,
-         games_played = 0,
-         fmb = 0,
-         touches = 0)
+         games_played = 0)
 
-#rename it to match past year player percents
-names(player_percents_past_year) <- sub("^adj_", "", names(player_percents_past_year))
+# #rename it to match past year player percents
+# names(player_percents_past_year) <- sub("^adj_", "", names(player_percents_past_year))
 
 #rbind
 draftees <- draftees[, names(player_percents_past_year)]
@@ -110,9 +86,9 @@ player_percents_past_year <- rbind(player_percents_past_year, draftees)
 player_percents <- player_percents_past_year %>% 
   select(!team)
 
-player_percents <- full_join(player_percents, Yahoo_Week_1, by = c("player")) %>% 
-  select(player, pos, team, games_played:py_fl_per_tou) %>% 
-  filter(!is.na(pos))
+player_percents <- full_join(player_percents, Yahoo_Week_1, by = c("player", "pos" = "Position")) %>% 
+  select(player, pos, team, py_games_played:rec_tds_per) %>% 
+  filter(!is.na(rus_att_per))
 
 #NA team players
 na_team_player_percents <- player_percents %>% 
@@ -192,7 +168,7 @@ if(This_Year >= 2025){
         !(pos %in% c("WR", "RB", "TE"))   # keep all other positions
     ) %>%
     ungroup() %>%
-    select(-rank) %>% # drop helper column if not needed
+    select(-rank) %>% # drop helper column
     filter(player %in% starting_QBs$player | pos != "QB") #starting qbs only
   
   #by team
@@ -244,32 +220,39 @@ if(This_Year >= 2025){
 
 #select
 adj_player_percents <- adj_player_percents %>% 
-  select(player:fmb, adj_rus_att_per:adj_rec_tds_per, py_qb_fl, py_fl_per_tou)
+  select(player:games_played, adj_rus_att_per:adj_rec_tds_per)
 
 #rejoing NAs
 colnames(na_team_player_percents) <- colnames(adj_player_percents)
 adj_player_percents <- rbind(adj_player_percents, na_team_player_percents)
 
-
+#rename columns
+names(adj_player_percents) <- sub("^adj_", "", names(adj_player_percents))
 
 ####QBs####
 
 ###regress ratings
 #find averages
 enough_games <- qb_ratings %>% 
-  filter(games_played >= 6)
+  filter(games_played >= 6) #filter is only to find averages
 
 avg_pas_att <- mean(enough_games$pas_att_rat)
 avg_cmp <- mean(enough_games$cmp_rat)
 avg_pas_yds <- mean(enough_games$pas_yds_rat)
 avg_pas_tds <- mean(enough_games$pas_tds_rat)
 avg_int <- mean(enough_games$int_rat)
+avg_sc_att <- mean(enough_games$sc_att_rat)
+avg_sc_yds <- mean(enough_games$sc_yds_rat)
+avg_sc_tds <- mean(enough_games$sc_tds_rat)
 
 pas_att_val <- 0.65
 cmp_val <- 0.68
 pas_yds_val <- 0.65
 pas_tds_val <- 0.4
 int_val <- 0.26
+sc_att_val <- 0.75 #not tested, based on scramble testing optimal percent of average attempts and league average
+sc_yds_val <- 0.75 #not tested
+sc_tds_val <- 0.75 #not tested
 
 #regress
 reg_qb_ratings <- qb_ratings %>% 
@@ -278,11 +261,14 @@ reg_qb_ratings <- qb_ratings %>%
     cmp_rat     = cmp_val     * cmp_rat     + (1 - cmp_val)     * avg_cmp,
     pas_yds_rat = pas_yds_val * pas_yds_rat + (1 - pas_yds_val) * avg_pas_yds,
     pas_tds_rat = pas_tds_val * pas_tds_rat + (1 - pas_tds_val) * avg_pas_tds,
-    int_rat     = int_val     * int_rat     + (1 - int_val)     * avg_int
+    int_rat     = int_val     * int_rat     + (1 - int_val)     * avg_int,
+    sc_att_rat  = sc_att_val  * sc_att_rat  + (1 - sc_att_val)  * avg_sc_att,
+    sc_yds_rat  = sc_yds_val  * sc_yds_rat  + (1 - sc_yds_val)  * avg_sc_yds,
+    sc_tds_rat  = sc_tds_val  * sc_tds_rat  + (1 - sc_tds_val)  * avg_sc_tds
   )
 
 ###draftees
-#well tested
+#well tested except scramble
 qb_draftees <- draft %>% 
   filter(pos == "QB") %>% 
   mutate(py_games_played = 0,
@@ -291,17 +277,24 @@ qb_draftees <- draft %>%
          cmp_rat = 19 + 3.1*(1/sqrt(pick)),
          pas_yds_rat = 245 - 8.5*log(pick),
          pas_tds_rat = 1.25,
-         int_rat = 0.95) %>% 
+         int_rat = 0.95,
+         sc_att_rat = 1.4,
+         sc_yds_rat = 12,
+         sc_tds_rat = 0.05) %>% 
   select(!c(pick, pos))
 
 ###join
 qb_ratings <- rbind(reg_qb_ratings, qb_draftees)
 
+#qb yahoo
+yahoo_qb <- Yahoo_Week_1 %>% 
+  filter(Position == "QB")
+
 ###update teams and fix games
 qb_ratings <- qb_ratings %>% 
   select(!team) %>% 
-  left_join(Yahoo_Week_1, by = "player") %>% 
-  select(player, team, py_games_played:int_rat) %>% 
+  left_join(yahoo_qb, by = "player") %>% 
+  select(player, team, py_games_played:sc_tds_rat) %>% 
   mutate(py_games_played = games_played,
          games_played = 0)
 

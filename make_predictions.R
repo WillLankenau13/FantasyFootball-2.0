@@ -1,17 +1,8 @@
-# library("ggplot2")
-# library("tidyverse")
-# library("lubridate")
-# library("incidence")
-# library("stringr")
-# library("janitor")
-# library("readr")
-# library("dplyr")
-# library("modelr")
-# library("leaps")
-# library("ggrepel")
+
+
 
 # #Week
-upcoming_week <- 13
+upcoming_week <- 17
 
 #Year
 This_Year <- This_Year_d
@@ -37,28 +28,29 @@ yahoo <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/Yahoo/", This_Year, 
   select(ID:Starting) %>% 
   mutate(player = paste(`First Name`, `Last Name`)) %>% 
   filter(!is.na(ID)) %>% 
-  filter(!(`Injury Status` %in% inactive_designations))
+  filter(!(`Injury Status` %in% inactive_designations)) %>% 
+  rename("pos" = "Position")
 
 yahoo <- player_names_func(yahoo)
 
 yahoo <- yahoo %>% 
   left_join(teams, by = c("Team" = "Yahoo")) %>% 
-  select(ID:Position, Short_Name, Opponent:player) %>% 
+  select(ID:pos, Short_Name, Opponent:player) %>% 
   rename("Team" = "Short_Name") %>% 
   left_join(teams, by = c("Opponent" = "Yahoo")) %>% 
-  select(ID:Position, Team, Short_Name, Game:player) %>% 
+  select(ID:pos, Team, Short_Name, Game:player) %>% 
   rename("Opponent" = "Short_Name") %>% 
-  filter(Position != "DEF")
+  filter(pos != "DEF")
 
 #active_players
 # yahoo <- yahoo %>%
-#   full_join(active_players, by = c("player", "Team" = "team", "Position" = "pos")) %>%
+#   full_join(active_players, by = c("player", "Team" = "team", "pos")) %>%
 #   filter(Position == "DEF" | active == 1 | `Injury Status` == "Q") %>%
 #   select(!active)
 
 #injury status
 injury_status <- yahoo %>% 
-  select(player, Position, `Injury Status`)
+  select(player, pos, `Injury Status`)
 colnames(injury_status) = c("player", "pos", "injury_status")
 
 
@@ -73,7 +65,7 @@ starting_qb_ratings <- starting_qbs %>%
 yahoo <- yahoo %>% 
   full_join(starting_qbs, by = c("Team" = "team")) %>% 
   mutate(startingQB = ifelse(player == QB, 1, 0)) %>% 
-  filter(Position != "QB" | startingQB == 1)
+  filter(pos != "QB" | startingQB == 1)
 
 ##Replacement
 pas_att_rep = 30
@@ -81,6 +73,9 @@ cmp_rep = 18
 pas_yds_rep = 210
 pas_tds_rep = 1
 int_rep = 1
+sc_att_rep = 1.4
+sc_yds_rep = 12
+sc_tds_rep = 0.05
 
 starting_qb_ratings <- starting_qb_ratings %>% 
   mutate(pas_att_rat = ifelse(is.na(pas_att_rat), pas_att_rep, pas_att_rat),
@@ -88,6 +83,9 @@ starting_qb_ratings <- starting_qb_ratings %>%
          pas_yds_rat = ifelse(is.na(pas_yds_rat), pas_yds_rep, pas_yds_rat),
          pas_tds_rat = ifelse(is.na(pas_tds_rat), pas_tds_rep, pas_tds_rat),
          int_rat = ifelse(is.na(int_rat), int_rep, int_rat),
+         sc_att_rat = ifelse(is.na(sc_att_rat), sc_att_rep, sc_att_rat),
+         sc_yds_rat = ifelse(is.na(sc_yds_rat), sc_yds_rep, sc_yds_rat),
+         sc_tds_rat = ifelse(is.na(sc_tds_rat), sc_tds_rep, sc_tds_rat),
          games_played = ifelse(is.na(games_played), 0, games_played),
          py_games_played = ifelse(is.na(py_games_played),0, py_games_played))
 
@@ -100,22 +98,22 @@ QB_adj_off_team_ratings <- left_join(off_team_ratings, starting_qb_ratings, by =
          off_pas_yds_rat = off_pas_yds_rat*(1-qb_adj) + pas_yds_rat*qb_adj,
          off_pas_tds_rat = off_pas_tds_rat*(1-qb_adj) + pas_tds_rat*qb_adj,
          off_int_rat = off_int_rat*(1-qb_adj) + int_rat*qb_adj) %>%
-  select(team:off_int_rat)
+  select(team:off_int_rat, sc_att_rat:sc_tds_rat, off_rus_att_rat:off_rus_tds_rat)
 
 ####update ratings for active rushers and receivers####
-adjusted <- left_join(yahoo, player_percents, by = c("player", "Position" = "pos")) %>% 
+adjusted <- left_join(yahoo, player_percents, by = c("player", "pos")) %>% 
   clean_names() %>% 
-  select(player, position, team, opponent, injury_status, games_played:py_fl_per_tou, touches, fmb) %>% 
-  rename("pos" = "position")
+  select(player, pos, team, opponent, injury_status, py_games_played:rec_tds_per)
 
-adjusted[, 6:18][is.na(adjusted[, 6:18])] <- 0
+adjusted[, 6:14][is.na(adjusted[, 6:14])] <- 0
 
 #filter out qb
 #qbs unaffected by injuries and inactives
 qb <- adjusted %>% 
   filter(pos == "QB")
 qb_vals <- qb
-names(qb_vals) <- gsub("^adj_", "qb_", names(qb_vals))
+colnames(qb)[8:14] <- paste0("adj_", colnames(qb)[8:14])
+colnames(qb_vals)[8:14] <- paste0("qb_", colnames(qb_vals)[8:14])
 qb_vals <- qb_vals %>% 
   select(player, team, qb_rus_att_per:qb_rus_tds_per) %>% 
   full_join(starting_qbs, by = c("player" = "QB", "team")) %>% 
@@ -128,26 +126,26 @@ adjusted <- adjusted %>%
 #Get percent by team
 adjusted_by_team <- adjusted %>% 
   group_by(team) %>% 
-  summarise(tot_rus_att_per = sum(adj_rus_att_per),
-            tot_rus_yds_per = sum(adj_rus_yds_per),
-            tot_rus_tds_per = sum(adj_rus_tds_per),
-            tot_tgt_per = sum(adj_tgt_per),
-            tot_rec_per = sum(adj_rec_per),
-            tot_rec_yds_per = sum(adj_rec_yds_per),
-            tot_rec_tds_per = sum(adj_rec_tds_per))
+  summarise(tot_rus_att_per = sum(rus_att_per),
+            tot_rus_yds_per = sum(rus_yds_per),
+            tot_rus_tds_per = sum(rus_tds_per),
+            tot_tgt_per = sum(tgt_per),
+            tot_rec_per = sum(rec_per),
+            tot_rec_yds_per = sum(rec_yds_per),
+            tot_rec_tds_per = sum(rec_tds_per))
 
 #Adjust individuals
 adjusted <- adjusted %>% 
   full_join(adjusted_by_team, by = c("team")) %>% 
   left_join(qb_vals, by = "team") %>% 
-  mutate(adj_rus_att_per = (1-qb_rus_att_per)*adj_rus_att_per/tot_rus_att_per,
-         adj_rus_yds_per = (1-qb_rus_yds_per)*adj_rus_yds_per/tot_rus_yds_per,
-         adj_rus_tds_per = (1-qb_rus_tds_per)*adj_rus_tds_per/tot_rus_tds_per,
-         adj_tgt_per = adj_tgt_per/tot_tgt_per,
-         adj_rec_per = adj_rec_per/tot_rec_per,
-         adj_rec_yds_per = adj_rec_yds_per/tot_rec_yds_per,
-         adj_rec_tds_per = adj_rec_tds_per/tot_rec_tds_per) %>% 
-  select(player:injury_status, games_played:fmb, adj_rus_att_per:adj_rec_tds_per, py_qb_fl, py_fl_per_tou)
+  mutate(adj_rus_att_per = (1-qb_rus_att_per)*rus_att_per/tot_rus_att_per,
+         adj_rus_yds_per = (1-qb_rus_yds_per)*rus_yds_per/tot_rus_yds_per,
+         adj_rus_tds_per = (1-qb_rus_tds_per)*rus_tds_per/tot_rus_tds_per,
+         adj_tgt_per = tgt_per/tot_tgt_per,
+         adj_rec_per = rec_per/tot_rec_per,
+         adj_rec_yds_per = rec_yds_per/tot_rec_yds_per,
+         adj_rec_tds_per = rec_tds_per/tot_rec_tds_per) %>% 
+  select(player:injury_status, py_games_played, games_played, adj_rus_att_per:adj_rec_tds_per)
 
 
 #bring back qbs
@@ -194,14 +192,18 @@ pas_tds <- 0
 adjusted_off_team_ratings <- QB_adj_off_team_ratings %>%
   full_join(adjusted_by_team, by = c("team")) %>%
   transmute(team = team,
+            adj_cmp_rat = off_cmp_rat*((tot_rec_per-1)*cmp + 1),
+            adj_pas_yds_rat = off_pas_yds_rat*((tot_rec_yds_per-1)*pas_yds + 1),
+            adj_pas_tds_rat = off_pas_tds_rat*((tot_rec_tds_per-1)*pas_tds + 1),
+            adj_int_rat = off_int_rat,
+            adj_sc_att_rat = sc_att_rat,
+            adj_sc_yds_rat = sc_yds_rat,
+            adj_sc_tds_rat = sc_tds_rat,
             adj_rus_att_rat = off_rus_att_rat*((tot_rus_att_per-1)*rus_att + 1),
             adj_rus_yds_rat = off_rus_yds_rat*((tot_rus_yds_per-1)*rus_yds + 1),
             adj_rus_tds_rat = off_rus_tds_rat*((tot_rus_tds_per-1)*rus_tds + 1),
             adj_pas_att_rat = off_pas_att_rat*((tot_tgt_per-1)*pas_att + 1),
-            adj_cmp_rat = off_cmp_rat*((tot_rec_per-1)*cmp + 1),
-            adj_pas_yds_rat = off_pas_yds_rat*((tot_rec_yds_per-1)*pas_yds + 1),
-            adj_pas_tds_rat = off_pas_tds_rat*((tot_rec_tds_per-1)*pas_tds + 1),
-            adj_int_rat = off_int_rat)
+            )
 
 #old
 # adjusted_off_team_ratings <- QB_adj_off_team_ratings %>%
@@ -256,14 +258,21 @@ team_predictions <- combine_predictions(team_predictions, "pas_att")
 team_predictions <- combine_predictions(team_predictions, "cmp")
 team_predictions <- combine_predictions(team_predictions, "pas_yds")
 team_predictions <- combine_predictions(team_predictions, "pas_tds")
+team_predictions <- combine_predictions(team_predictions, "int")
 team_predictions <- combine_predictions(team_predictions, "rus_att")
 team_predictions <- combine_predictions(team_predictions, "rus_yds")
 team_predictions <- combine_predictions(team_predictions, "rus_tds")
-team_predictions <- combine_predictions(team_predictions, "int")
+
+#Note that scramble yards are only a factor of predicted scrambles. This is intentional and gives a good estimate
+team_predictions <- team_predictions %>% 
+  mutate(team_sc_att_pred = adj_sc_att_rat,
+         team_sc_yds_pred = team_sc_att_pred*7.52,
+         team_sc_tds_pred = team_sc_att_pred*0.03*0.8 + 0.2*adj_sc_tds_rat)
+
 
 #select cols
 team_predictions <- team_predictions %>% 
-  select(team, team_pas_att_pred:team_int_pred)
+  select(team, team_pas_att_pred:team_int_pred, team_sc_att_pred:team_sc_tds_pred, team_rus_att_pred:team_rus_tds_pred)
 
 ####Player Predictions####
 player_predictions <- adjusted %>% 
@@ -276,6 +285,9 @@ player_predictions <- player_predictions %>%
          pas_yds_pred = team_pas_yds_pred*is_QB,
          pas_tds_pred = team_pas_tds_pred*is_QB,
          int_pred = team_int_pred*is_QB,
+         sc_att_pred = team_sc_att_pred*is_QB,
+         sc_yds_pred = team_sc_yds_pred*is_QB,
+         sc_tds_pred = team_sc_tds_pred*is_QB,
          tgt_pred = team_pas_att_pred*adj_tgt_per,
          rec_pred = team_cmp_pred*adj_rec_per,
          rec_yds_pred = team_pas_yds_pred*adj_rec_yds_per,
@@ -285,35 +297,20 @@ player_predictions <- player_predictions %>%
          rus_tds_pred = team_rus_tds_pred*adj_rus_tds_per) %>% 
   select(player:opponent, pas_att_pred:rus_tds_pred)
 
-####Fumbles####
-rep_fl_per_tou <- 0.007
-rep_py_qb_fl <- 0.21
+#fumbles
+player_predictions <- player_predictions %>% 
+  mutate(fl_pred = ifelse(pos == "QB", pas_att_pred*0.005+sc_att_pred*0.033, (rus_att_pred+rec_pred)*0.005))
 
-fumbles <- player_percents %>%
-  select(player, pos, team, games_played:fmb, py_qb_fl, py_fl_per_tou) %>% 
-  mutate(touches = ifelse(touches == 0 & fmb > 0, fmb, touches),
-    adj_fl_per_tou = (games_played/(py_games_played + games_played))*(fmb/touches) + (py_games_played/(py_games_played + games_played))*(py_fl_per_tou),
-    adj_fl_per_tou = ifelse(adj_fl_per_tou > 0.1, 0.1, adj_fl_per_tou),
-    adj_fl_per_tou = ifelse(is.na(adj_fl_per_tou), rep_fl_per_tou, adj_fl_per_tou),
-    adj_qb_fl = (3*games_played/(py_games_played + 3*games_played))*(fmb/games_played) + (py_games_played/(py_games_played + 3*games_played))*(py_qb_fl),
-    adj_qb_fl = ifelse((py_games_played < 5 & games_played < 5 & adj_qb_fl > 0.45), 0.45, adj_qb_fl)) %>% 
-  select(player, pos, team, games_played:py_fl_per_tou, adj_fl_per_tou, adj_qb_fl)
-
-player_predictions <- player_predictions %>%
-  left_join(fumbles, by = c("player", "pos", "team")) %>%
-  mutate(fl_pred = ifelse(pos == "QB", 0.21, 0.007*(rec_pred + rus_att_pred))) %>% 
-  #mutate(fl_pred = ifelse(pos == "QB", adj_qb_fl, adj_fl_per_tou*(rec_pred + rus_att_pred))) %>%
-select(player:rus_tds_pred, py_fl_per_tou, py_qb_fl, fl_pred)
 
 ####FPTS Predictions####
-player_predictions[, 5:19][is.na(player_predictions[, 5:19])] <- 0
+player_predictions[, 5:20][is.na(player_predictions[, 5:20])] <- 0
 
 player_predictions <- player_predictions %>% 
-  mutate(fpts_pred = pas_yds_pred*0.04 + pas_tds_pred*4 + rus_yds_pred*0.1 + rus_tds_pred*6 + rec_yds_pred*0.1 + rec_tds_pred*6 + 0.5*rec_pred - 1*int_pred - 2*fl_pred)
+  mutate(fpts_pred = pas_yds_pred*0.04 + pas_tds_pred*4 + sc_yds_pred*0.1 + sc_tds_pred*6 + rus_yds_pred*0.1 + rus_tds_pred*6 + rec_yds_pred*0.1 + rec_tds_pred*6 + 0.5*rec_pred - 1*int_pred - 2*fl_pred)
 
 ####Clean Adjusted####
 adjusted <- adjusted %>% 
-  select(player:team, games_played:adj_rec_tds_per, py_qb_fl, py_fl_per_tou)
+  select(player:team, py_games_played:adj_rec_tds_per)
 
 ####Injury status####
 adjusted <- adjusted %>%
@@ -324,4 +321,16 @@ write_csv(player_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyPr
 write_csv(team_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyPredictions/", This_Year, "/Week_", upcoming_week, "_Team_predictions.csv", sep = "")))
 
 write_csv(adjusted, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyAdjusted/", This_Year, "/Week_", upcoming_week, "/Player_Percents_Adjusted.csv", sep = "")))
+
+
+####For Website####
+fw_player_predictions <- player_predictions %>% 
+  mutate(std_pred = pas_yds_pred*0.04 + pas_tds_pred*4 + sc_yds_pred*0.1 + sc_tds_pred*6 + rus_yds_pred*0.1 + rus_tds_pred*6 + rec_yds_pred*0.1 + rec_tds_pred*6 + 0*rec_pred - 1*int_pred - 2*fl_pred,
+         half_pred = pas_yds_pred*0.04 + pas_tds_pred*4 + sc_yds_pred*0.1 + sc_tds_pred*6 + rus_yds_pred*0.1 + rus_tds_pred*6 + rec_yds_pred*0.1 + rec_tds_pred*6 + 0.5*rec_pred - 1*int_pred - 2*fl_pred,
+         ppr_pred = pas_yds_pred*0.04 + pas_tds_pred*4 + sc_yds_pred*0.1 + sc_tds_pred*6 + rus_yds_pred*0.1 + rus_tds_pred*6 + rec_yds_pred*0.1 + rec_tds_pred*6 + 1*rec_pred - 1*int_pred - 2*fl_pred) %>% 
+  select(!fpts_pred) %>% 
+  arrange(desc(half_pred))
+
+write_json(fw_player_predictions, eval(paste("~/FantasyWebsite/public/data/backfill/model_1.0/", This_Year, "/Week_", upcoming_week, "_Player_Predictions.json", sep = "")), pretty = TRUE)
+
 

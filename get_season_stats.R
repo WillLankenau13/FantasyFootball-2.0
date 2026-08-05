@@ -35,14 +35,17 @@ ind_col_list <- c("pas_att", "cmp", "pas_yds", "pas_tds", "int", "sc_att", "sc_y
 player_season_stats <- data %>% 
   mutate(gs = ifelse(snap_per > 0.6 & pos == "QB", 1, 0),
          game_played = snap_per > 0 | st_snaps > 0,
-         fmb_l = fmb_l_g,
+         fmb_l = fmb_l,
          touches = touches_g) %>% 
   group_by(player, pos) %>% 
-  summarize(team = if (n_distinct(team) > 1) {"2TM"} else {team[which.max(week)]},
+  summarize(#player = player[which.max(snap_per)],
+            #pos = pos[which.max(snap_per)],
+            team = if (n_distinct(team) > 1) {"2TM"} else {team[which.max(week)]},
             recent_team = team[which.max(week)],
             across(all_of(ind_col_list), ~ sum(.x, na.rm = TRUE)),
             games = sum(game_played),
-            tot_snap_per = sum(snap_per))
+            tot_snap_per = sum(snap_per)) %>% 
+  filter(!(is.na(player) & is.na(pos)))
 
 
 #write csv

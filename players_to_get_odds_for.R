@@ -1,35 +1,16 @@
 
 
 
+
 #Year and Week
-upcoming_week <- 18
+upcoming_week <- 17
 This_Year <- This_Year_d
 
 #Download combined data
 optim <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/combinedWeeklyPredictions/", This_Year, "/Week_", upcoming_week, ".csv", sep = "")))
 
-#Data with betting over/unders
-optim_wo <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/combinedWeeklyPredictions/", This_Year, "/Week_", upcoming_week, "_With_Betting_Odds.csv", sep = "")))
-
-# optim_wo <- optim_wo %>%
-#   mutate(FPTS = `Odds FPTS`) %>%
-#   select(Player:PAR_PD)
-
-optim_wo <- optim_wo %>%
-  mutate(FPTS = Avg) %>%
-  select(Player:PAR_PD)
-
-colnames(optim_wo) <- colnames(optim)
-
-#combine data with and without betting odds
-optim <- optim %>%
-  filter(!(Player %in% optim_wo$Player))
-
-optim <- rbind(optim, optim_wo)
-
-
 #filter out teams that players cannot be picked from
-filter_teams <- c("CAR", "TB", "SF", "SEA", "BAL", "PIT")
+filter_teams <- c("WAS", "DAL", "MIN", "DET", "DEN", "KC")
 
 optim <- optim %>% 
   filter(!(Team %in% filter_teams))
@@ -41,8 +22,20 @@ optim <- optim %>%
   filter(!(Player %in% not_picking))
 
 #Players I want in my fantasy lineup
-players_picking <- c("Minnesota Vikings")
+players_picking <- c()
 
+a <- 1
+df_list <- list()
+
+optim <- optim %>% 
+  mutate(base_fpts = FPTS)
+
+while(a < 1000){
+  
+  #randomize fpts
+  optim <- optim %>% 
+    mutate(FPTS = rnorm(n(), mean = base_fpts, sd = 1.5))
+  
 
 #set up for optimization
 optim <- optim %>% 
@@ -88,7 +81,7 @@ Const.mat <- matrix(c(Players_o$Salary,
                       QB$zeroes, RB$ones, WR$zeroes, TE$zeroes, DST$zeroes,
                       QB$zeroes, RB$zeroes, WR$ones, TE$zeroes, DST$zeroes,
                       QB$zeroes, RB$zeroes, WR$zeroes, TE$ones, DST$zeroes
-                      ), nrow = 11, byrow = TRUE)
+), nrow = 11, byrow = TRUE)
 
 #Define Constraints
 Salary_con <- 200
@@ -138,14 +131,31 @@ team
 sum(fpts_matrix*solution_matrix)
 
 
+team <- Players_o %>% 
+  filter(Selection == 1) %>% 
+  select(Player, Pos, Team, Opp, Salary, FPTS, ppd, PAR_PD) 
+
+df_list[[a]] <- team
 
 
+a <- a+1
+}
+
+overall <- do.call(rbind, df_list)
 
 
+by_player <- overall %>% 
+  group_by(Player) %>% 
+  summarize(count = n()) %>% 
+  left_join(optim, by = c("Player")) %>% 
+  select(Player, Pos, Team, Opp, Salary, base_fpts, ppd, PAR_PD, count)
 
 
+names <- by_player %>% 
+  filter(count >= 25) %>% 
+  arrange(Pos)
 
-
+write_csv(names, eval(paste("~/R Stuff/FantasyFootball 2.0/names_to_look_at.csv", sep = "")))
 
 
 

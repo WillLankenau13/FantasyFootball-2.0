@@ -11,7 +11,7 @@ library("leaps")
 library("ggrepel")
 
 #week
-which_week <- 18
+which_week <- 1
 
 #Years
 Years_Dataframe <- read_csv("~/R Stuff/FantasyFootball 2.0/Years_Dataframe.csv")

@@ -1,8 +1,8 @@
-library("tidyverse")
+
 
 
 #Year and Week
-upcoming_week <- 4
+upcoming_week <- 18
 This_Year <- This_Year_d
 
 #Read Fantasy Pros Data
@@ -54,6 +54,8 @@ FP$opp <- gsub("\\bvs\\.\\b", "", FP$opp)  # remove "vs."
 FP$opp <- trimws(FP$opp)   
 
 FP <- player_names_func(FP) #player names func
+
+FP$proj_fpts <- as.numeric(FP$proj_fpts)
 
 
 #Combine with my projections
