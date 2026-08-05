@@ -331,6 +331,6 @@ fw_player_predictions <- player_predictions %>%
   select(!fpts_pred) %>% 
   arrange(desc(half_pred))
 
-write_json(fw_player_predictions, eval(paste("~/FantasyWebsite/public/data/backfill/model_1.0/", This_Year, "/Week_", upcoming_week, "_Player_Predictions.json", sep = "")), pretty = TRUE)
+#write_json(fw_player_predictions, eval(paste("~/FantasyWebsite/public/data/backfill/model_1.0/", This_Year, "/Week_", upcoming_week, "_Player_Predictions.json", sep = "")), pretty = TRUE)
 
 
