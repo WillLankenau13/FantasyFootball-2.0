@@ -11,7 +11,7 @@ Player statistics are downloaded from [Stathead](Stathead.com).
 
 # Notes
 
-Model is not fully finished. I intend to have it finished for the 2025/26 NFL Season. 
+
 
 
 # Info
