@@ -3,12 +3,12 @@
 
 
 #download
-d_cum_off_stats <- read_csv("~/R Stuff/FantasyFootball 2.0/cumulativeStats/cumulative_off_stats_2022.csv") %>% 
+d_cum_off_stats <- read_csv("~/R Stuff/FantasyFootball 2.0/archive/cumulativeStats/cumulative_off_stats_2022.csv") %>% 
   clean_names()
-d_cum_def_stats <- read_csv("~/R Stuff/FantasyFootball 2.0/cumulativeStats/cumulative_def_stats_2022.csv") %>%
+d_cum_def_stats <- read_csv("~/R Stuff/FantasyFootball 2.0/archive/cumulativeStats/cumulative_def_stats_2022.csv") %>%
   clean_names()
 
-weekly_stats <- read_csv("~/R Stuff/FantasyFootball 2.0/weeklyStats/2022/Offensive_2022.csv") %>% 
+weekly_stats <- read_csv("~/R Stuff/FantasyFootball 2.0/archive/weeklyStatsOLD/2022/Offensive_2022.csv") %>% 
   clean_names()
 
 
@@ -99,9 +99,15 @@ a <- a+1
 
 }
 
+mean(joined$pas_yds)
+joined <- joined %>% 
+  mutate(avg_rus_yds = mean(joined$rus_yds))
 
+mod <- lm(pas_yds ~ 0 + cum_off_rus_yds + cum_def_rus_yds, joined)
+summary(mod)
 
-
+#defense does matter; good news
+#should test on more than 1 season
 
 
 

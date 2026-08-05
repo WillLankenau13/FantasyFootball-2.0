@@ -1,0 +1,17 @@
+QB
+Pas Yds - 15
+Pas Tds - 0.3
+
+RB
+Tot Yds - 10
+Tds - 0.25
+
+WR
+Rec Yds - 8
+Rec - 1
+Rec Tds - 0.25
+
+TE
+Rec Yds - 8
+Rec - 1
+Rec Tds - 0.25

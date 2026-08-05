@@ -1,4 +1,7 @@
-week <- 3
+
+
+
+week <- 17
 year <- 2025
 
 my_pred <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyPredictions/", year, "/Week_", week, "_Player_Predictions.csv", sep = "")))
@@ -34,15 +37,12 @@ temp <- temp %>%
 
 ###Real Data
 d_past_week_player_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/", year, "/byWeek/Week_", week, "_Stats.csv", sep = ""))) %>%
-  clean_names() %>%
-  select(!date)
+  clean_names() 
 
 player_stats <- player_names_func(d_past_week_player_stats)
 
-player_stats <- player_stats %>%
-  mutate(fpts = yds_22*0.04 + td_23*4 + yds_38*0.1 + td_40*6 + yds_45*0.1 + td_47*6 + 0.5*rec - 1*int - 2*fmb_7) %>%
-  select(player, yds_22, td_23, yds_38, td_40, yds_45, td_47, rec, int, fmb_7, fpts, off_percent_8)
-colnames(player_stats) <- c("player", "pas_yds", "pas_tds", "rus_yds", "rus_tds", "rec_yds", "rec_tds", "rec", "int", "fmb", "fpts", "snap_per")
+player_stats <- player_stats  %>% 
+  mutate(fpts = pas_yds*0.04 + pas_tds*4 + sc_yds*0.1 + sc_tds*6 + rus_yds*0.1 + rus_tds*6 + rec_yds*0.1 + rec_tds*6 + 0.5*rec - 1*int - 2*fmb_l)
 
 #ratings
 temp <- temp %>% 
@@ -55,7 +55,7 @@ temp <- temp %>%
 temp <- temp %>%
   full_join(player_stats, by = c("player"))
 
-s <- temp %>% 
+NAs <- temp %>% 
   select(player, pos.y, team.x, fpts_pred, fpts, fpros_pred) %>% 
   filter(is.na(fpts_pred))
 
@@ -110,3 +110,7 @@ te <- data %>%
 sum(te$fpros_r_sq)/nrow(te)
 sum(te$my_r_sq)/nrow(te) 
 
+
+resids <- data %>% 
+  select(player, pos.y, team.x, fpts_pred, my_resid, fpros_pred, fpros_resid, fpts)
+  

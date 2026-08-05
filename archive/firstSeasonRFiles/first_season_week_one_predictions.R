@@ -1,21 +1,10 @@
-library("ggplot2")
-library("tidyverse")
-library("lubridate")
-library("incidence")
-library("stringr")
-library("janitor")
-library("readr")
-library("dplyr")
-library("modelr")
-library("leaps")
-library("ggrepel")
 
 #Week
 upcoming_week <- 1
 
 ###Years
-Past_Year <- Years_Dataframe$Past_Year[1]
-This_Year <- Years_Dataframe$This_Year[1]
+Past_Year <- 2021
+This_Year <- 2022
 
 ###read files
 Receiving_player_percents <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/preseason/", This_Year, "/Receiving_Percents_", This_Year, ".csv", sep = "")))
@@ -389,7 +378,6 @@ player_predictions <- player_predictions %>%
 #write csv
 write_csv(player_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyPredictions/", This_Year, "/Week_", upcoming_week, "_Player_Predictions.csv", sep = "")))
 write_csv(team_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyPredictions/", This_Year, "/Week_", upcoming_week, "_Team_predictions.csv", sep = "")))
-
 write_csv(combined_player_percents, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Player_Percents.csv", sep = "")))
 write_csv(off_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Off_Team_Ratings.csv", sep = "")))
 write_csv(def_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", This_Year, "/Week_", upcoming_week, "/Def_Team_Ratings.csv", sep = "")))
