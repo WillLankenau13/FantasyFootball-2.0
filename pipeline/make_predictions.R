@@ -2,7 +2,7 @@
 
 
 # #Week
-upcoming_week <- 17
+# upcoming_week <- 1
 
 #Year
 This_Year <- This_Year_d
@@ -159,13 +159,13 @@ adjusted_by_team <- adjusted_by_team %>%
 adjusted <- rbind(adjusted, qb)
 
 ####update offensive ratings####
-rus_att <- 0
-rus_yds <- 0
-rus_tds <- 0
-pas_att <- 0.1
-cmp <- 0.4
-pas_yds <- 0.1
-pas_tds <- 0
+rus_att_upd_coef <- 0
+rus_yds_upd_coef <- 0
+rus_tds_upd_coef <- 0
+pas_att_upd_coef <- 0.1
+cmp_upd_coef <- 0.4
+pas_yds_upd_coef <- 0.1
+pas_tds_upd_coef <- 0
 
 # rus_att <- 0.3
 # rus_yds <- 0.3
@@ -192,17 +192,17 @@ pas_tds <- 0
 adjusted_off_team_ratings <- QB_adj_off_team_ratings %>%
   full_join(adjusted_by_team, by = c("team")) %>%
   transmute(team = team,
-            adj_cmp_rat = off_cmp_rat*((tot_rec_per-1)*cmp + 1),
-            adj_pas_yds_rat = off_pas_yds_rat*((tot_rec_yds_per-1)*pas_yds + 1),
-            adj_pas_tds_rat = off_pas_tds_rat*((tot_rec_tds_per-1)*pas_tds + 1),
+            adj_cmp_rat = off_cmp_rat*((tot_rec_per-1)*cmp_upd_coef + 1),
+            adj_pas_yds_rat = off_pas_yds_rat*((tot_rec_yds_per-1)*pas_yds_upd_coef + 1),
+            adj_pas_tds_rat = off_pas_tds_rat*((tot_rec_tds_per-1)*pas_tds_upd_coef + 1),
             adj_int_rat = off_int_rat,
             adj_sc_att_rat = sc_att_rat,
             adj_sc_yds_rat = sc_yds_rat,
             adj_sc_tds_rat = sc_tds_rat,
-            adj_rus_att_rat = off_rus_att_rat*((tot_rus_att_per-1)*rus_att + 1),
-            adj_rus_yds_rat = off_rus_yds_rat*((tot_rus_yds_per-1)*rus_yds + 1),
-            adj_rus_tds_rat = off_rus_tds_rat*((tot_rus_tds_per-1)*rus_tds + 1),
-            adj_pas_att_rat = off_pas_att_rat*((tot_tgt_per-1)*pas_att + 1),
+            adj_rus_att_rat = off_rus_att_rat*((tot_rus_att_per-1)*rus_att_upd_coef + 1),
+            adj_rus_yds_rat = off_rus_yds_rat*((tot_rus_yds_per-1)*rus_yds_upd_coef + 1),
+            adj_rus_tds_rat = off_rus_tds_rat*((tot_rus_tds_per-1)*rus_tds_upd_coef + 1),
+            adj_pas_att_rat = off_pas_att_rat*((tot_tgt_per-1)*pas_att_upd_coef + 1),
             )
 
 #old
@@ -264,10 +264,12 @@ team_predictions <- combine_predictions(team_predictions, "rus_yds")
 team_predictions <- combine_predictions(team_predictions, "rus_tds")
 
 #Note that scramble yards are only a factor of predicted scrambles. This is intentional and gives a good estimate
+sc_td_coef =  0.2
+
 team_predictions <- team_predictions %>% 
   mutate(team_sc_att_pred = adj_sc_att_rat,
          team_sc_yds_pred = team_sc_att_pred*7.52,
-         team_sc_tds_pred = team_sc_att_pred*0.03*0.8 + 0.2*adj_sc_tds_rat)
+         team_sc_tds_pred = team_sc_att_pred*0.03*(1-sc_td_coef) + sc_td_coef*adj_sc_tds_rat)
 
 
 #select cols
@@ -318,7 +320,7 @@ adjusted <- adjusted %>%
 
 ####Write csv####
 write_csv(player_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyPredictions/", This_Year, "/Week_", upcoming_week, "_Player_Predictions.csv", sep = "")))
-write_csv(team_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyPredictions/", This_Year, "/Week_", upcoming_week, "_Team_predictions.csv", sep = "")))
+write_csv(team_predictions, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyPredictions/", This_Year, "/Week_", upcoming_week, "_Team_Predictions.csv", sep = "")))
 
 write_csv(adjusted, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyAdjusted/", This_Year, "/Week_", upcoming_week, "/Player_Percents_Adjusted.csv", sep = "")))
 

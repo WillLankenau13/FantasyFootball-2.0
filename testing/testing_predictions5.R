@@ -28,15 +28,15 @@ while(c < 19){
   
   week <- c
   
-  old_pred <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/preScramblePredictions/", year, "/Week_", week, "_Player_Predictions.csv", sep = "")))
-  my_pred <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyPredictions/", year, "/Week_", week, "_Player_Predictions.csv", sep = "")))
-  QB_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", year, "/Week_", week, "/QB_Ratings.csv", sep = "")))
+  old_pred <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/predictionsLibrary/preScramblePredictions/", year, "/Week_", week, "_Player_Predictions.csv", sep = "")))
+  my_pred <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyPredictions/", year, "/Week_", week, "_Player_Predictions.csv", sep = "")))
+  QB_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_", week, "/QB_Ratings.csv", sep = "")))
   fpros_qb <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/fantasyPros/", year, "/FantasyPros_", year, "_Week_", week, "_QB_Rankings.csv", sep = "")))
   fpros_rb <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/fantasyPros/", year, "/FantasyPros_", year, "_Week_", week, "_RB_Rankings.csv", sep = "")))
   fpros_wr <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/fantasyPros/", year, "/FantasyPros_", year, "_Week_", week, "_WR_Rankings.csv", sep = "")))
   fpros_te <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/fantasyPros/", year, "/FantasyPros_", year, "_Week_", week, "_TE_Rankings.csv", sep = "")))
-  def_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", year, "/Week_", week, "/Def_Team_ratings.csv", sep = "")))
-  player_percents <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyRatings/", year, "/Week_", week, "/Player_Percents.csv", sep = "")))
+  def_team_ratings <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_", week, "/Def_Team_ratings.csv", sep = "")))
+  player_percents <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_", week, "/Player_Percents.csv", sep = "")))
   
   fpros_pred <- rbind(fpros_qb, fpros_rb, fpros_wr, fpros_te)
   
@@ -70,7 +70,7 @@ while(c < 19){
     mutate(difference = fpts_pred - fpros_pred)
   
   ###Real Data
-  d_past_week_player_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/", year, "/byWeek/Week_", week, "_Stats.csv", sep = ""))) %>%
+  d_past_week_player_stats <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyStats/", year, "/byWeek/Week_", week, "_Stats.csv", sep = ""))) %>%
     clean_names()
   
   player_stats <- player_names_func(d_past_week_player_stats)

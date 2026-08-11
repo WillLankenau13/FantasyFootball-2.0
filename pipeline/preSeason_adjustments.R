@@ -360,10 +360,10 @@ write_csv(qb_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/preseason/rating
 write_csv(off_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/preseason/ratings/", This_Year, "/Off_Team_Ratings.csv", sep = "")))
 write_csv(def_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/preseason/ratings/", This_Year, "/Def_Team_Ratings.csv", sep = "")))
 
-write_csv(adj_player_percents, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/weeklyRatings/", This_Year, "/Week_1/Player_Percents.csv", sep = "")))
-write_csv(qb_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/weeklyRatings/", This_Year, "/Week_1/QB_Ratings.csv", sep = "")))
-write_csv(off_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/weeklyRatings/", This_Year, "/Week_1/Off_Team_Ratings.csv", sep = "")))
-write_csv(def_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyStats/weeklyRatings/", This_Year, "/Week_1/Def_Team_Ratings.csv", sep = "")))
+write_csv(adj_player_percents, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", This_Year, "/Week_1/Player_Percents.csv", sep = "")))
+write_csv(qb_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", This_Year, "/Week_1/QB_Ratings.csv", sep = "")))
+write_csv(off_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", This_Year, "/Week_1/Off_Team_Ratings.csv", sep = "")))
+write_csv(def_team_ratings, eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", This_Year, "/Week_1/Def_Team_Ratings.csv", sep = "")))
 
 
 

@@ -2,8 +2,8 @@
 
 
 #Week
-past_week <- 18
-upcoming_week <- 19
+# past_week <- 18
+# upcoming_week <- 19
 
 #Year
 This_Year <- This_Year_d
@@ -94,9 +94,19 @@ player_percents <- player_percents %>%
 
 #volatility
 #tested
+rus_vol_a <- 0.05
+rus_vol_b <- 0.5
+rus_vol_c <- 0.5
+rus_vol_d <- 17
+
+rec_vol_a <- 0.05
+rec_vol_b <- 0.3
+rec_vol_c <- 1
+rec_vol_d <- 50
+
 player_percents <- player_percents %>%
-mutate(rus_vol = 0.05 + (0.5/(games_played + 0.5 + (1-played)))*(1 + (17 - py_games_played)/17),
-       rec_vol = 0.05 + (0.3/(games_played + 1 + (1-played)))*(1 + (17 - py_games_played)/50))
+mutate(rus_vol = rus_vol_a + (rus_vol_b/(games_played + rus_vol_c + (1-played)))*(1 + (17 - py_games_played)/rus_vol_d),
+       rec_vol = rec_vol_a + (rec_vol_b/(games_played + rec_vol_c + (1-played)))*(1 + (17 - py_games_played)/rec_vol_d))
 
 # player_percents <- player_percents %>%
 #   mutate(rus_vol = 0.05 + (0.5/(games_played + 0.5))*(1 + (17 - py_games_played)/17),
@@ -151,12 +161,22 @@ updated_player_percents <- updated_player_percents %>%
 
 #fix high variance percents
 #tested
+upd_val_1_1 <- 0.9
+upd_val_2_1 <- 0.5
+upd_val_2_2 <- 0.2
+upd_val_3 <- 0.7
+upd_val_4_1 <- 0.8
+upd_val_4_2 <- 0
+upd_val_5_1 <- 0.4
+upd_val_5_2 <- 0.2
+upd_val_5_3 <- 0
+
 updated_player_percents <- updated_player_percents %>%
-  mutate(upd_rus_yds_per = 0.9*upd_rus_yds_per + 0.1*upd_rus_att_per,
-         upd_rus_tds_per = 0.5*upd_rus_tds_per + 0.2*upd_rus_yds_per + 0.3*upd_rus_att_per,
-         upd_rec_per = 0.7*upd_rec_per + 0.3*upd_tgt_per,
-         upd_rec_yds_per = 0.8*upd_rec_yds_per + upd_rec_per*0 + upd_tgt_per*0.2,
-         upd_rec_tds_per = 0.4*upd_rec_tds_per + 0.2*upd_rec_yds_per + 0*upd_rec_per + 0.4*upd_tgt_per)
+  mutate(upd_rus_yds_per = upd_val_1_1*upd_rus_yds_per + (1-upd_val_1_1)*upd_rus_att_per,
+         upd_rus_tds_per = upd_val_2_1*upd_rus_tds_per + upd_val_2_2*upd_rus_yds_per + (1-upd_val_2_1-upd_val_2_2)*upd_rus_att_per,
+         upd_rec_per = upd_val_3*upd_rec_per + (1-upd_val_3)*upd_tgt_per,
+         upd_rec_yds_per = upd_val_4_1*upd_rec_yds_per + upd_val_4_2*upd_rec_per + (1-upd_val_4_1-upd_val_4_2)*upd_tgt_per,
+         upd_rec_tds_per = upd_val_5_1*upd_rec_tds_per + upd_val_5_2*upd_rec_yds_per + upd_val_5_3*upd_rec_per + (1 - upd_val_5_1 - upd_val_5_2 - upd_val_5_3)*upd_tgt_per)
 
 #Normalize player percents
 player_percents_by_team <- updated_player_percents %>%
@@ -311,8 +331,12 @@ updated_QB_ratings <- updated_QB_ratings %>%
 #volatility
 #tested
 #low
+qb_vol_a <- 0.1
+qb_vol_b <- 0.07
+qb_vol_c <- 34
+
 updated_QB_ratings <- updated_QB_ratings %>%
-  mutate(vol = (0.1 + (0.07/games_played)*(1 + (17 - py_games_played)/34))*snap_per/1)
+  mutate(vol = (qb_vol_a + (qb_vol_b/games_played)*(1 + (17 - py_games_played)/qb_vol_c))*snap_per/1)
 
 #high
 # updated_QB_ratings <- updated_QB_ratings %>%
@@ -384,8 +408,11 @@ updated_off_team_ratings <- left_join(off_team_dif, past_week_off_team_ratings, 
 #volatility
 #tested
 #new
+off_vol_a <- 0.8
+off_vol_b <- 0.2
+
 updated_off_team_ratings <- updated_off_team_ratings %>% 
-  mutate(vol = 0.08 + (0.2/past_week))
+  mutate(vol = off_vol_a + (off_vol_b/past_week))
 
 #old
 # updated_off_team_ratings <- updated_off_team_ratings %>% 
@@ -404,14 +431,14 @@ updated_off_team_ratings <- updated_off_team_ratings %>%
 
 #update ratings for regressing to 1 in player percents
 #coefs from make predictions
-# rus_att <- 0
-# rus_yds <- 0
-# rus_tds <- 0
-# pas_att <- 0.1
-# cmp <- 0.4
-# pas_yds <- 0.1
-# pas_tds <- 0
-# 
+rus_att <- 0
+rus_yds <- 0
+rus_tds <- 0
+pas_att <- 0.1
+cmp <- 0.4
+pas_yds <- 0.1
+pas_tds <- 0
+
 # team_adjustment <- updated_player_percents_by_team %>%
 #   mutate(rus_att_adj = ((tot_rus_att_per - 1)*rus_att + 1)/(((tot_rus_att_per - 1)/reg_coef)*rus_att + 1),
 #          rus_yds_adj = ((tot_rus_yds_per - 1)*rus_yds + 1)/(((tot_rus_yds_per - 1)/reg_coef)*rus_yds + 1),
@@ -475,8 +502,11 @@ updated_def_team_ratings <- left_join(def_team_dif, past_week_def_team_ratings, 
 
 #volatility
 #tested
+def_vol_a <- 0.3
+def_vol_b <- 0.2
+
 updated_def_team_ratings <- updated_def_team_ratings %>% 
-  mutate(vol = 0.03 + (0.2/past_week))
+  mutate(vol = def_vol_a + (def_vol_b/past_week))
 
 #update ratings
 updated_def_team_ratings <- updated_def_team_ratings %>% 
