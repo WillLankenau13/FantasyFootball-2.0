@@ -13,6 +13,7 @@ library("nflfastR")
 library("nflreadr")
 library("lpSolve")
 library("jsonlite")
+library("parallel")
 
 
 

@@ -22,18 +22,6 @@ yahoo_2d <- create_2d_list()
 player_stats_2d <- create_2d_list()
 starting_qbs_2d <- create_2d_list()
 
-player_predictions_2d <- create_2d_list()
-team_predictions_2d <- create_2d_list()
-
-player_percents_adjusted_2d <- create_2d_list()
-player_percents_2d <- create_2d_list()
-off_team_ratings_2d <- create_2d_list()
-def_team_ratings_2d <- create_2d_list()
-qb_ratings_2d <- create_2d_list()
-
-weekly_loss_2d <- create_2d_list()
-
-
 draft_1d <- create_1d_list()
 starting_qbs_1d <- create_1d_list()
 
@@ -61,27 +49,28 @@ for (year in c("2022", "2023", "2024", "2025")){
   }
 }
 
-###2021
-year <- 2021
-player_percents_2d[["2021"]][["Week_19"]] <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_19/Player_Percents.csv", sep = "")))
-qb_ratings_2d[["2021"]][["Week_19"]] <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_19/QB_Ratings.csv", sep = "")))
-off_team_ratings_2d[["2021"]][["Week_19"]] <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_19/Off_Team_Ratings.csv", sep = "")))
-def_team_ratings_2d[["2021"]][["Week_19"]] <- read_csv(eval(paste("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/", year, "/Week_19/Def_Team_Ratings.csv", sep = "")))
+###2021 (hardcoded year)
+week19_player_percents_2021 <- read_csv("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/2021/Week_19/Player_Percents.csv")
+week19_qb_ratings_2021 <- read_csv("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/2021/Week_19/QB_Ratings.csv")
+week19_off_team_ratings_2021 <- read_csv("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/2021/Week_19/Off_Team_Ratings.csv")
+week19_def_team_ratings_2021 <- read_csv("~/R Stuff/FantasyFootball 2.0/weeklyData/weeklyRatings/2021/Week_19/Def_Team_Ratings.csv")
 
 
 
 #####Stuff#####
-preseason_adjustments(2022)
-This_Year <- 2022
-past_week <- 1
+# This_Year <- 2022
+# past_week <- 1
 
-get_weekly_loss(This_Year, past_week)
-weekly_loss_2d[["2022"]][[paste0("Week_", past_week)]]
+#get_weekly_loss(This_Year, past_week)
+#weekly_loss_2d[["2022"]][[paste0("Week_", past_week)]]
 
+# preseason_adjustments(2022, initial_params)
+# make_predictions(2022, 1, initial_params)
+# update_ratings(2022, 1, initial_params)
 
 
 #####Preseason Adjustments#####
-preseason_adjustments <- function(This_Year){
+preseason_adjustments <- function(This_Year, params, player_percents_2d, qb_ratings_2d, off_team_ratings_2d, def_team_ratings_2d){
   #Past Year
   Past_Year <- This_Year-1
   
@@ -429,20 +418,17 @@ preseason_adjustments <- function(This_Year){
                   \(x) weights[cur_column()] * x +
                     (1 - weights[cur_column()]) * def_team_avgs[[cur_column()]]))
   
-  
-  
-  
-  
-  ####Write Csv####
-  player_percents_2d[[This_Year_char]][["Week_1"]] <<- adj_player_percents
-  qb_ratings_2d[[This_Year_char]][["Week_1"]] <<- qb_ratings
-  off_team_ratings_2d[[This_Year_char]][["Week_1"]] <<- off_team_ratings
-  def_team_ratings_2d[[This_Year_char]][["Week_1"]] <<- def_team_ratings
-  
+  ####Return####
+  return(list(
+    player_percents = adj_player_percents,
+    qb_ratings = qb_ratings,
+    off_team_ratings = off_team_ratings,
+    def_team_ratings = def_team_ratings
+  ))
 }
 
 #####Make Predictions#####
-make_predictions <- function(This_Year, upcoming_week){
+make_predictions <- function(This_Year, upcoming_week, params, player_percents_2d, qb_ratings_2d, off_team_ratings_2d, def_team_ratings_2d){
   This_Year_char <- as.character(This_Year)
   
   #inactives list
@@ -527,7 +513,8 @@ make_predictions <- function(This_Year, upcoming_week){
            py_games_played = ifelse(is.na(py_games_played),0, py_games_played))
   
   #tested
-  # qb_adj <- 0.7
+  qb_adj <- params["qb_adj"]
+  #qb_adj <- 0.7
   
   QB_adj_off_team_ratings <- left_join(off_team_ratings, starting_qb_ratings, by = c("team")) %>%
     mutate(off_cmp_rat = off_cmp_rat*(1-qb_adj) + cmp_rat*qb_adj,
@@ -596,13 +583,21 @@ make_predictions <- function(This_Year, upcoming_week){
   adjusted <- rbind(adjusted, qb)
   
   ####update offensive ratings####
-  # rus_att_upd_coef <- 0
-  # rus_yds_upd_coef <- 0
-  # rus_tds_upd_coef <- 0
-  # pas_att_upd_coef <- 0.1
-  # cmp_upd_coef <- 0.4
-  # pas_yds_upd_coef <- 0.1
-  # pas_tds_upd_coef <- 0
+  # rus_att_upd_coef <- params["rus_att_upd_coef"]
+  # rus_yds_upd_coef <- params["rus_yds_upd_coef"]
+  # rus_tds_upd_coef <- params["rus_tds_upd_coef"]
+  # pas_att_upd_coef <- params["pas_att_upd_coef"]
+  # cmp_upd_coef <- params["cmp_upd_coef"]
+  # pas_yds_upd_coef <- params["pas_yds_upd_coef"]
+  # pas_tds_upd_coef <- params["pas_tds_upd_coef"]
+  
+  rus_att_upd_coef <-  0
+  rus_yds_upd_coef <-  0
+  rus_tds_upd_coef <-  0
+  pas_att_upd_coef <-  0.1
+  cmp_upd_coef <-  0.4
+  pas_yds_upd_coef <-  0.1
+  pas_tds_upd_coef <-  0
   
   # rus_att <- 0.3
   # rus_yds <- 0.3
@@ -670,14 +665,23 @@ make_predictions <- function(This_Year, upcoming_week){
   ####Tean Predictions####
   #combining coefficients
   #well tested
-  # cmp_off_coef <- 0.7
-  # pas_att_off_coef <- 0.7
-  # pas_yds_off_coef <- 0.8
-  # pas_tds_off_coef <- 0.8
-  # int_off_coef <- 0.7
-  # rus_att_off_coef <- 0.6
-  # rus_yds_off_coef <- 0.5
-  # rus_tds_off_coef <- 0.5
+  # cmp_off_coef <- params["cmp_off_coef"]
+  # pas_att_off_coef <- params["pas_att_off_coef"]
+  # pas_yds_off_coef <- params["pas_yds_off_coef"]
+  # pas_tds_off_coef <- params["pas_tds_off_coef"]
+  # int_off_coef <- params["int_off_coef"]
+  # rus_att_off_coef <- params["rus_att_off_coef"]
+  # rus_yds_off_coef <- params["rus_yds_off_coef"]
+  # rus_tds_off_coef <- params["rus_tds_off_coef"]
+  
+  cmp_off_coef <- 0.7
+  pas_att_off_coef <- 0.7
+  pas_yds_off_coef <- 0.8
+  pas_tds_off_coef <- 0.8
+  int_off_coef <- 0.7
+  rus_att_off_coef <- 0.6
+  rus_yds_off_coef <- 0.5
+  rus_tds_off_coef <- 0.5
   
   
   #combine offense and defense
@@ -701,7 +705,8 @@ make_predictions <- function(This_Year, upcoming_week){
   team_predictions <- combine_predictions(team_predictions, "rus_tds")
   
   #Note that scramble yards are only a factor of predicted scrambles. This is intentional and gives a good estimate
-  # sc_td_coef =  0.2
+  sc_td_coef <- params["sc_td_coef"]
+  sc_td_coef <- 0.2
   
   team_predictions <- team_predictions %>% 
     mutate(team_sc_att_pred = adj_sc_att_rat,
@@ -755,15 +760,16 @@ make_predictions <- function(This_Year, upcoming_week){
   adjusted <- adjusted %>%
     left_join(injury_status, by = c("player", "pos"))
   
-  ####Write csv####
-  player_predictions_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- player_predictions
-  team_predictions_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- team_predictions
-  player_percents_adjusted_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- adjusted
-
+  ####Return####
+  return(list(
+    player_predictions = player_predictions,
+    team_predictions = team_predictions,
+    player_percents_adjusted = adjusted
+  ))
 }
 
 #####Update Ratings#####
-update_ratings <- function(This_Year, past_week){
+update_ratings <- function(This_Year, past_week, params, player_percents_2d, qb_ratings_2d, off_team_ratings_2d, def_team_ratings_2d, player_predictions_2d, team_predictions_2d, player_percents_adjusted_2d){
   #Year
   This_Year_char <- as.character(This_Year)
   
@@ -856,15 +862,25 @@ update_ratings <- function(This_Year, past_week){
   
   #volatility
   #tested
+  rus_vol_a <- params["rus_vol_a"]
+  rus_vol_b <- params["rus_vol_b"]
+  rus_vol_c <- params["rus_vol_c"]
+  rus_vol_d <- params["rus_vol_d"]
+  # 
+  # rec_vol_a <- params["rec_vol_a"]
+  # rec_vol_b <- params["rec_vol_b"]
+  # rec_vol_c <- params["rec_vol_c"]
+  # rec_vol_d <- params["rec_vol_d"]
+  
   # rus_vol_a <- 0.05
   # rus_vol_b <- 0.5
   # rus_vol_c <- 0.5
   # rus_vol_d <- 17
-  # 
-  # rec_vol_a <- 0.05
-  # rec_vol_b <- 0.3
-  # rec_vol_c <- 1
-  # rec_vol_d <- 50
+  
+  rec_vol_a <- 0.05
+  rec_vol_b <- 0.3
+  rec_vol_c <- 1
+  rec_vol_d <- 50
   
   player_percents <- player_percents %>%
     mutate(rus_vol = rus_vol_a + (rus_vol_b/(games_played + rus_vol_c + (1-played)))*(1 + (17 - py_games_played)/rus_vol_d),
@@ -923,15 +939,25 @@ update_ratings <- function(This_Year, past_week){
   
   #fix high variance percents
   #tested
-  # upd_val_1_1 <- 0.9
-  # upd_val_2_1 <- 0.5
-  # upd_val_2_2 <- 0.2
-  # upd_val_3 <- 0.7
-  # upd_val_4_1 <- 0.8
-  # upd_val_4_2 <- 0
-  # upd_val_5_1 <- 0.4
-  # upd_val_5_2 <- 0.2
-  # upd_val_5_3 <- 0
+  # upd_val_1_1 <- params["upd_val_1_1"]
+  # upd_val_2_1 <- params["upd_val_2_1"]
+  # upd_val_2_2 <- params["upd_val_2_2"]
+  # upd_val_3 <- params["upd_val_3"]
+  # upd_val_4_1 <- params["upd_val_4_1"]
+  # upd_val_4_2 <- params["upd_val_4_2"]
+  # upd_val_5_1 <- params["upd_val_5_1"]
+  # upd_val_5_2 <- params["upd_val_5_2"]
+  # upd_val_5_3 <- params["upd_val_5_3"]
+  
+  upd_val_1_1 <- 0.9
+  upd_val_2_1 <- 0.5
+  upd_val_2_2 <- 0.2
+  upd_val_3 <- 0.7
+  upd_val_4_1 <- 0.8
+  upd_val_4_2 <- 0
+  upd_val_5_1 <- 0.4
+  upd_val_5_2 <- 0.2
+  upd_val_5_3 <- 0
   
   updated_player_percents <- updated_player_percents %>%
     mutate(upd_rus_yds_per = upd_val_1_1*upd_rus_yds_per + (1-upd_val_1_1)*upd_rus_att_per,
@@ -1091,12 +1117,16 @@ update_ratings <- function(This_Year, past_week){
     mutate(games_played = games_played + 1)
   
   #volatility
+  # qb_vol_a <- params["qb_vol_a"]
+  # qb_vol_b <- params["qb_vol_b"]
+  # qb_vol_c <- params["qb_vol_c"]
+  
   #tested
   #low
-  # qb_vol_a <- 0.1
-  # qb_vol_b <- 0.07
-  # qb_vol_c <- 34
-  
+  qb_vol_a = 0.1
+  qb_vol_b = 0.07
+  qb_vol_c = 34
+
   updated_QB_ratings <- updated_QB_ratings %>%
     mutate(vol = (qb_vol_a + (qb_vol_b/games_played)*(1 + (17 - py_games_played)/qb_vol_c))*snap_per/1)
   
@@ -1168,10 +1198,13 @@ update_ratings <- function(This_Year, past_week){
   updated_off_team_ratings <- left_join(off_team_dif, past_week_off_team_ratings, by = c("team"))
   
   #volatility
+  off_vol_a <- 0.8
+  off_vol_b <- 0.2
+  
   #tested
   #new
-  # off_vol_a <- 0.8
-  # off_vol_b <- 0.2
+  # off_vol_a <- params["off_vol_a"]
+  # off_vol_b <- params["off_vol_b"]
   
   updated_off_team_ratings <- updated_off_team_ratings %>% 
     mutate(vol = off_vol_a + (off_vol_b/past_week))
@@ -1264,8 +1297,11 @@ update_ratings <- function(This_Year, past_week){
   
   #volatility
   #tested
-  # def_vol_a <- 0.3
-  # def_vol_b <- 0.2
+  # def_vol_a <- params["def_vol_a"]
+  # def_vol_b <- params["def_vol_b"]
+  
+  def_vol_a <- 0.3
+  def_vol_b <- 0.2
   
   updated_def_team_ratings <- updated_def_team_ratings %>% 
     mutate(vol = def_vol_a + (def_vol_b/past_week))
@@ -1294,17 +1330,18 @@ update_ratings <- function(This_Year, past_week){
   full_updated_def_team_ratings <- rbind(not_active_def_team_ratings, updated_def_team_ratings)
   
   
-  ####Write Csv####
-  player_percents_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- full_updated_player_percents
-  qb_ratings_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- updated_QB_ratings
-  off_team_ratings_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- full_updated_off_team_ratings
-  def_team_ratings_2d[[This_Year_char]][[paste0("Week_", upcoming_week)]] <<- full_updated_def_team_ratings
-  
+  ####Return####
+  return(list(
+    player_percents = full_updated_player_percents,
+    qb_ratings = updated_QB_ratings,
+    off_team_ratings = full_updated_off_team_ratings,
+    def_team_ratings = full_updated_def_team_ratings
+  ))
 }
 
 
 #####Get Loss#####
-get_weekly_loss <- function(This_Year, past_week){
+get_weekly_loss <- function(This_Year, past_week, player_predictions_2d){
   #Year
   This_Year_char <- as.character(This_Year)
   
@@ -1333,8 +1370,9 @@ get_weekly_loss <- function(This_Year, past_week){
   
   loss <- sum(combined$resid_sq)
   
-  weekly_loss_2d[[This_Year_char]][[paste0("Week_", past_week)]] <<- loss
+  return(loss)
   
 }
+
 
 
